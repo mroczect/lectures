@@ -1,17 +1,53 @@
 [project]
 name = "lectures"
 version = "0.1.0"
-description = "Add your description here"
+description = "Dokumentasi kuliah Program Studi Teknologi Rekayasa Perangkat Lunak - Politeknik Negeri Batam"
 readme = "README.md"
+requires-python = ">=3.10"
 authors = [
     { name = "mroczect", email = "mroczect@proton.me" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+license = { text = "CC0-1.0" }
+keywords = ["sphinx", "documentation", "lectures", "trpl", "polibatam"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Framework :: Sphinx :: Theme",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+]
 
-[project.scripts]
-lectures = "lectures:main"
+dependencies = [
+    "sphinx>=8.0",
+    "sphinx-book-theme>=1.1",
+    "sphinxcontrib-mermaid>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "sphinx-autobuild>=2024.10.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/mroczect/lectures"
+Repository = "https://github.com/mroczect/lectures"
+Documentation = "https://mroczect.github.io/lectures/"
 
 [build-system]
-requires = ["uv_build>=0.12.3,<0.13.0"]
-build-backend = "uv_build"
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pyi", "py.typed"]
