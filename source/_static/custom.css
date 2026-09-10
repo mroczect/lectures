@@ -1,0 +1,12 @@
+table.jadwal-table th,
+table.dosen-table th {
+    background-color: #276be9;
+    color: #f0f0f0;
+}
+
+table.jadwal-table tr:nth-child(even),
+
+table.jadwal-table td,
+table.dosen-table td {
+    vertical-align: middle;
+}
