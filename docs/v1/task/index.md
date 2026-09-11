@@ -18,7 +18,7 @@ Pastikan setiap tugas dikumpulkan sesuai batas waktu yang ditentukan melalui e-l
 
 ### Matematika Diskrit
 
-- [Tugas Teori Himpunan](/task/tugas-matematika-diskrit-materi-himpunan)
+- [Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan)
 
 ---
 

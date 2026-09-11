@@ -17,6 +17,7 @@
         "@typescript-eslint/parser": "8.70.0",
         "@typescript/native": "npm:typescript@7.0.2",
         "@vite-pwa/vitepress": "^1.1.0",
+        "@viteplus/versions": "^2.0.9",
         "dayjs": "^1.11.23",
         "eslint": "10.10.0",
         "eslint-config-prettier": "10.1.8",
@@ -343,6 +344,8 @@
 
     "@pagefind/windows-x64": ["@pagefind/windows-x64@1.5.2", "", { "os": "win32", "cpu": "x64" }, "sha512-Fa2Iyw7kaDRzGMfNYNUXNW2zbL5FQVDgSOcbDHdzBrDEdpqOqg8TcZ68F22ol6NJ9IGzvUdmeyZypLW5dyhqsg=="],
 
+    "@remotex-labs/xansi": ["@remotex-labs/xansi@1.3.7", "", {}, "sha512-U7pzj4bWxQF16MPGnwf9uWnxV/pyFmjppzsbCsEEEtCrBS/gAJMURkYHsLz5rW0+mT9RCA55l2BjTp9SPLYQoQ=="],
+
     "@rolldown/binding-android-arm-eabi": ["@rolldown/binding-android-arm-eabi@1.2.8", "", { "os": "android", "cpu": "arm" }, "sha512-tN5aztYkKCte4i5SIrrz5yK/HMjEuCqCSCJa418jOV8tZ1cBY3YF2otxB1ktPxzsLA1BeTqwapK0bfjxNvHJVw=="],
 
     "@rolldown/binding-android-arm64": ["@rolldown/binding-android-arm64@1.2.8", "", { "os": "android", "cpu": "arm64" }, "sha512-dIYTWl9XprMUiQFoc55KUyk/oS8SKYH3zFl0LTR7RT0Xj4hgSVyuJcroH8JUu8RcpF8fTB6E0aOwCkZoYPcDSQ=="],
@@ -646,6 +649,8 @@
     "@vite-pwa/vitepress": ["@vite-pwa/vitepress@1.1.0", "", { "peerDependencies": { "@vite-pwa/assets-generator": "^1.0.0", "vite-plugin-pwa": "^1.2.0" }, "optionalPeers": ["@vite-pwa/assets-generator"] }, "sha512-enif5C2JmepS69Ak7PSr6K3Eimsg7VyryZo1Z6NiIPNDnjXFlOqxwBYaq8R/d0M7akArJsjos7KmQnEfNFf5nA=="],
 
     "@vitejs/plugin-vue": ["@vitejs/plugin-vue@6.0.8", "", { "dependencies": { "@rolldown/pluginutils": "^1.0.1" }, "peerDependencies": { "vite": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0", "vue": "^3.2.25" } }, "sha512-0ZjgOg7oO6farnNGup7yvoM/YXZV84OZxHAwtflItNa/6zzQyVb5LNxyea3FEKEX2XlagIKzrlH7wwxkKgtiew=="],
+
+    "@viteplus/versions": ["@viteplus/versions@2.0.9", "", { "dependencies": { "@remotex-labs/xansi": "^1.3.7" }, "peerDependencies": { "vitepress": "^1.6.4 || ^2.0.0" }, "optionalPeers": ["vitepress"] }, "sha512-U1CG95SJT1xX8rarL4AyY8ZfxFZUqyfY+neo57YhX38pDO9l6gXwLOfMtWBt7dufTlUxS4MSKz61Uq5//Riafw=="],
 
     "@vue/compiler-core": ["@vue/compiler-core@3.5.42", "", { "dependencies": { "@babel/parser": "^7.29.8", "@vue/shared": "3.5.42", "entities": "^7.0.1", "estree-walker": "^2.0.2", "source-map-js": "^1.2.1" } }, "sha512-2Ye1ilMtKXxl8qZUrQ5j0CdgenFp/HFQmta6rfRyfEsTG69L6Wk+tWuNoHYHMx9E8tF2Slvdg1FuwDvAXdy1LQ=="],
 

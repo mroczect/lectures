@@ -22,7 +22,7 @@ Pilih topik di bawah ini untuk melihat detailnya.
 
 Daftar lengkap dosen pengampu beserta kontak, email, dan jam konsultasi.
 
-[Lihat Kontak Dosen →](/information/kontak-dosen)
+[Lihat Kontak Dosen →](/v1/information/kontak-dosen)
 
 ---
 
@@ -30,7 +30,7 @@ Daftar lengkap dosen pengampu beserta kontak, email, dan jam konsultasi.
 
 Jadwal kuliah mingguan, termasuk mata kuliah, ruangan, dan jam pelaksanaan.
 
-[Lihat Jadwal Kuliah →](/information/jadwal-kuliah)
+[Lihat Jadwal Kuliah →](/v1/information/jadwal-kuliah)
 
 ---
 
@@ -38,7 +38,7 @@ Jadwal kuliah mingguan, termasuk mata kuliah, ruangan, dan jam pelaksanaan.
 
 Informasi tentang pembagian tim, peran anggota, dan mekanisme kerja Project Based Learning.
 
-[Lihat Info Tim PBL →](/information/info-team-pbl)
+[Lihat Info Tim PBL →](/v1/information/info-team-pbl)
 
 ---
 
@@ -46,18 +46,18 @@ Informasi tentang pembagian tim, peran anggota, dan mekanisme kerja Project Base
 
 Daftar judul proyek PBL yang sedang dikerjakan beserta anggota timnya.
 
-[Lihat Judul dan Tim PBL →](/information/judul-dan-team-pbl)
+[Lihat Judul dan Tim PBL →](/v1/information/judul-dan-team-pbl)
 
 ---
 
 ## Ringkasan Cepat
 
-| Kategori        | Deskripsi                      | Link                                    |
-| --------------- | ------------------------------ | --------------------------------------- |
-| Kontak Dosen    | Email, telepon, jam konsultasi | [Buka](/information/kontak-dosen)       |
-| Jadwal Kuliah   | Hari, jam, ruangan             | [Buka](/information/jadwal-kuliah)      |
-| Info Tim PBL    | Struktur & peran tim           | [Buka](/information/info-team-pbl)      |
-| Judul & Tim PBL | Proyek & anggota               | [Buka](/information/judul-dan-team-pbl) |
+| Kategori        | Deskripsi                      | Link                                       |
+| --------------- | ------------------------------ | ------------------------------------------ |
+| Kontak Dosen    | Email, telepon, jam konsultasi | [Buka](/v1/information/kontak-dosen)       |
+| Jadwal Kuliah   | Hari, jam, ruangan             | [Buka](/v1/information/jadwal-kuliah)      |
+| Info Tim PBL    | Struktur & peran tim           | [Buka](/v1/information/info-team-pbl)      |
+| Judul & Tim PBL | Proyek & anggota               | [Buka](/v1/information/judul-dan-team-pbl) |
 
 ---
 

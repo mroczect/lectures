@@ -3,48 +3,54 @@ layout: home
 
 hero:
   name: Lectures
-  text: Lecture Documentation
-  tagline: Materials, assignments, notes, and all TRPL Politeknik Negeri Batam lecture resources — neatly organized, easy to search, and always updated.
-
+  text: Course Documentation
+  tagline: Structured lecture materials, assignments, and academic references for the Software Engineering Technology program at Politeknik Negeri Batam.
   actions:
     - theme: brand
-      text: Start Learning
-      link: /courses/
+      text: Browse v1
+      link: /v1/
     - theme: alt
-      text: View Tasks
-      link: /task/
+      text: Format Guide
+      link: /format
     - theme: alt
-      text: About Me
-      link: /about
+      text: GitHub
+      link: https://github.com/mroczect/lectures
 
 features:
-  - title: Courses
-    details: All lecture materials, slides, personal notes, and references for each course — from Religious Education, Algorithms, Discrete Mathematics, to Web Programming and Databases.
-    link: /courses/
-    linkText: View Courses
-
-  - title: Tasks
-    details: Complete list of individual and group assignments with deadlines, progress status, and grades. Tracked so nothing is missed.
-    link: /task/
-    linkText: View Tasks
-
-  - title: Information
-    details: Campus info, TRPL curriculum, lecturer list, class schedule, and academic calendar — everything you need to know about your studies.
-    link: /information/
-    linkText: View Information
-
-  - title: Notes
-    details: Notes from listening to lectures, material summaries, and key points summarized in your own words for easy review.
-    link: /courses/
-    linkText: Read Notes
-
-  - title: References
-    details: Books, journals, articles, and e-learning links used during lectures. Collected in one place so they don't get scattered.
-    link: /courses/
-    linkText: View References
-
-  - title: About Me
-    details: Personal data, academic history, learning targets, and career goals. Also serves as an introduction page if others open this documentation.
-    link: /about
-    linkText: Read More
+  - title: Course Materials
+    details: Semester-organized lecture notes, reading lists, and reference materials for each course in the curriculum.
+  - title: Academic Information
+    details: Class schedules, lecturer contacts, and Project-Based Learning team assignments maintained in one place.
+  - title: Assignments
+    details: Assignment briefs, submission requirements, and supporting resources organized by course and topic.
+  - title: Versioned Content
+    details: Each academic term is preserved under its own version path, ensuring previous materials remain accessible and citable.
+  - title: Searchable
+    details: Full-text search across all documentation, with support for filtering by course, topic, and version.
+  - title: Open Source
+    details: All content is publicly available under the MIT License and open to contributions from students and faculty.
 ---
+
+## Documentation Versions
+
+The documentation is organized into versions, each corresponding to an academic term. Previous versions remain accessible at their original paths to preserve citations and references.
+
+| Version | Status  | Description                                               | Documentation     |
+| ------- | ------- | --------------------------------------------------------- | ----------------- |
+| **v1**  | Current | Initial release. Course materials for the first semester. | [Open v1 →](/v1/) |
+| v2      | Planned | Scheduled for the upcoming academic term.                 | Not yet available |
+
+## Getting Started
+
+New to this documentation? Begin with the following resources:
+
+- [**Format & Documentation Rules**](/format) — conventions, file structure, and contribution guidelines.
+- [**Courses**](/v1/courses/) — complete list of courses with materials and assignments.
+- [**Information**](/v1/information/) — schedules, lecturer contacts, and PBL team assignments.
+- [**Tasks**](/v1/task/) — assignment briefs and submission details.
+
+## About
+
+This documentation is maintained by **Muhammad Riduwan Khafidi** as part of academic activities in the Software Engineering Technology program. Content is published under the MIT License and is open to contributions from students, lecturers, and the wider community.
+
+For questions, corrections, or contributions, please open an issue or pull request on [GitHub](https://github.com/mroczect/lectures).

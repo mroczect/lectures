@@ -93,5 +93,5 @@ Setiap tim terdiri atas **6 mahasiswa**. Nama yang tertera di bawah ini adalah a
   :::
 
 ::: tip Lihat Juga
-Untuk deskripsi lengkap setiap proyek PBL, lihat halaman [Info Tim PBL](/information/info-team-pbl).
+Untuk deskripsi lengkap setiap proyek PBL, lihat halaman [Info Tim PBL](/v1/information/info-team-pbl).
 :::

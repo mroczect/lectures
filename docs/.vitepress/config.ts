@@ -21,13 +21,22 @@ const AUTHOR = 'Muhammad Riduwan Khafidi';
 const REPO_URL = 'https://github.com/mroczect/lectures.git';
 const BASE_PATH = '/lectures/';
 
+type Version = {
+  key: string;
+  label: string;
+  link: string;
+  badge?: string;
+};
+
+const VERSIONS: Version[] = [{ key: 'v1', label: 'v1', link: '/v1/', badge: 'latest' }];
+
 export default withPwa(
   withMermaid(
     defineConfig({
       lang: 'en-US',
       title: SITE_NAME,
       base: BASE_PATH,
-      titleTemplate: ':title — Lecture Documentation',
+      titleTemplate: ':title - Lecture Documentation',
       description:
         'Complete documentation of lecture materials, assignments, and notes for students of Software Engineering Technology at Politeknik Negeri Batam.',
 
@@ -83,24 +92,11 @@ export default withPwa(
       },
 
       markdown: {
-        headers: {
-          level: [2, 3, 4],
-        },
-
-        theme: {
-          light: 'github-light',
-          dark: 'github-dark',
-        },
-
+        headers: { level: [2, 3, 4] },
+        theme: { light: 'github-light', dark: 'github-dark' },
         lineNumbers: true,
-
-        anchor: {
-          permalink: true,
-        },
-
-        toc: {
-          level: [2, 3],
-        },
+        anchor: { permalink: true },
+        toc: { level: [2, 3] },
 
         config: (md) => {
           md.use(footnote)
@@ -115,31 +111,15 @@ export default withPwa(
             .use(mathjax3);
         },
 
-        image: {
-          lazyLoading: true,
-        },
-
+        image: { lazyLoading: true },
         highlightLines: true,
-
-        attrs: {
-          leftDelimiter: '{',
-          rightDelimiter: '}',
-        },
+        attrs: { leftDelimiter: '{', rightDelimiter: '}' },
       },
 
       vite: {
-        server: {
-          port: 5173,
-          host: true,
-        },
-
-        build: {
-          chunkSizeWarningLimit: 1500,
-        },
-
-        ssr: {
-          noExternal: ['vitepress-plugin-pagefind'],
-        },
+        server: { port: 5173, host: true },
+        build: { chunkSizeWarningLimit: 1500 },
+        ssr: { noExternal: ['vitepress-plugin-pagefind'] },
 
         plugins: [
           pagefindPlugin({
@@ -179,7 +159,6 @@ export default withPwa(
           .replace(/index\.md$/, '')
           .replace(/\.md$/, '.html');
         const canonicalUrl = `${SITE_URL}/${relativePath}`;
-
         pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }]);
 
         return pageData;
@@ -191,10 +170,18 @@ export default withPwa(
 
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Courses', link: '/courses/' },
-          { text: 'Information', link: '/information/' },
-          { text: 'Tasks', link: '/task/' },
-          { text: 'About', link: '/about' },
+          { text: 'Courses', link: '/v1/courses/' },
+          { text: 'Information', link: '/v1/information/' },
+          { text: 'Tasks', link: '/v1/task/' },
+          { text: 'Format', link: '/format' },
+          { text: 'About', link: '/v1/about' },
+          {
+            text: 'Version',
+            items: VERSIONS.map((v) => ({
+              text: v.badge ? `${v.label} (${v.badge})` : v.label,
+              link: v.link,
+            })),
+          },
         ],
 
         sidebar,
@@ -213,21 +200,14 @@ export default withPwa(
 
         lastUpdated: {
           text: 'Last updated',
-          formatOptions: {
-            dateStyle: 'short',
-            timeStyle: 'medium',
-            forceLocale: true,
-          },
+          formatOptions: { dateStyle: 'short', timeStyle: 'medium', forceLocale: true },
         },
 
         search: {
           provider: 'local',
           options: {
             translations: {
-              button: {
-                buttonText: 'Search',
-                buttonAriaLabel: 'Search',
-              },
+              button: { buttonText: 'Search', buttonAriaLabel: 'Search' },
               modal: {
                 displayDetails: 'Display detailed list',
                 resetButtonTitle: 'Reset search',
@@ -255,15 +235,8 @@ export default withPwa(
           },
         },
 
-        docFooter: {
-          prev: 'Previous',
-          next: 'Next',
-        },
-
-        outline: {
-          level: [2, 3],
-          label: 'On this page',
-        },
+        docFooter: { prev: 'Previous', next: 'Next' },
+        outline: { level: [2, 3], label: 'On this page' },
 
         darkModeSwitchLabel: 'Appearance',
         lightModeSwitchTitle: 'Switch to light theme',
