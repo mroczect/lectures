@@ -40,7 +40,19 @@
   "/task/": [
     {
       "text": "Tasks",
-      "items": [{ "text": "All Tasks", "link": "/task/" }]
+      "items": [
+        { "text": "Overview", "link": "/task/" },
+        {
+          "text": "Matematika Diskrit",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "Teori Himpunan",
+              "link": "/task/tugas-matematika-diskrit-materi-himpunan"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
