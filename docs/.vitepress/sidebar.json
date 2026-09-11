@@ -43,11 +43,11 @@
       "items": [
         { "text": "Overview", "link": "/v1/task/" },
         {
-          "text": "Matematika Diskrit",
+          "text": "Discrete Mathematics",
           "collapsed": false,
           "items": [
             {
-              "text": "Teori Himpunan",
+              "text": "Set Theory",
               "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
             }
           ]
