@@ -1,10 +1,9 @@
 import { defineConfig } from 'vitepress';
-import { generateSidebar } from 'vitepress-sidebar';
 import { pagefindPlugin } from 'vitepress-plugin-pagefind';
 import { withMermaid } from 'vitepress-mermaid-plugin';
 import { withPwa } from '@vite-pwa/vitepress';
-import { llmstxt } from 'vitepress-plugin-llms';
-import { createSitemap } from 'vitepress-plugin-sitemap';
+import llmstxt from 'vitepress-plugin-llms';
+import sidebar from './sidebar.json' with { type: 'json' };
 import footnote from 'markdown-it-footnote';
 import taskLists from 'markdown-it-task-lists';
 import abbr from 'markdown-it-abbr';
@@ -15,26 +14,30 @@ import sub from 'markdown-it-sub';
 import sup from 'markdown-it-sup';
 import attrs from 'markdown-it-attrs';
 import mathjax3 from 'markdown-it-mathjax3';
-
-const SITE_URL = 'https://mroczect.biz.id/lectures';
+const SITE_URL = 'https://mroczect.github.io/lectures';
 const SITE_NAME = 'Lectures';
 const AUTHOR = 'Muhammad Riduwan Khafidi';
 const REPO_URL = 'https://github.com/mroczect/lectures.git';
-
+const BASE_PATH = '/lectures/';
 export default withPwa(
   withMermaid(
     defineConfig({
-      lang: 'en-US',
+      lang: 'id-ID',
       title: SITE_NAME,
-      titleTemplate: ':title - Complete Documentation',
+      base: BASE_PATH,
+      titleTemplate: ':title — Dokumentasi Kuliah',
       description:
-        'A comprehensive documentation site built with VitePress 2.0 — featuring Mermaid, PWA, i18n, Pagefind, OpenAPI, LLM, and much more.',
+        'Dokumentasi lengkap materi kuliah, tugas, dan catatan untuk mahasiswa TRPL Politeknik Negeri Batam.',
 
       head: [
-        // Icons
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-        ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
-        ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+        [
+          'link',
+          { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png?v=1', sizes: '96x96' },
+        ],
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg?v=1' }],
+        ['link', { rel: 'shortcut icon', href: '/favicon.ico?v=1' }],
+        ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=1' }],
+        ['link', { rel: 'manifest', href: '/site.webmanifest?v=1' }],
 
         // Fonts
         ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -53,14 +56,16 @@ export default withPwa(
             href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap',
           },
         ],
+
+        // Meta
         ['meta', { name: 'author', content: AUTHOR }],
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:site_name', content: SITE_NAME }],
         ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-        ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
       ],
+
       cleanUrls: true,
       srcDir: '.',
       srcExclude: ['**/README.md', '**/TODO.md', '**/node_modules/**', '**/.vitepress/**'],
@@ -72,6 +77,10 @@ export default withPwa(
 
       appearance: true,
       lastUpdated: true,
+
+      sitemap: {
+        hostname: SITE_URL,
+      },
 
       markdown: {
         headers: {
@@ -134,12 +143,12 @@ export default withPwa(
 
         plugins: [
           pagefindPlugin({
-            btnPlaceholder: 'Search',
-            placeholder: 'Search documentation...',
-            emptyText: 'No results found',
-            heading: 'Total: {{searchResult}} results',
+            btnPlaceholder: 'Cari',
+            placeholder: 'Cari dokumentasi...',
+            emptyText: 'Tidak ada hasil',
+            heading: 'Total: {{searchResult}} hasil',
             excludeSelector: ['img', 'a.header-anchor', '.vp-doc'],
-            forceLanguage: 'en',
+            forceLanguage: 'id',
             showEmpty: false,
             indexing: {
               start: 'docs',
@@ -148,19 +157,10 @@ export default withPwa(
           }),
 
           llmstxt({
-            domain: SITE_URL,
-            generateLLMsFullTxt: true,
             generateLLMsTxt: true,
+            generateLLMsFullTxt: true,
           }),
         ],
-      },
-
-      async buildEnd() {
-        await createSitemap({
-          hostname: SITE_URL,
-          exclude: ['/404', '/private'],
-        });
-        console.log('✅ Sitemap generated');
       },
 
       async transformHead(context) {
@@ -174,6 +174,7 @@ export default withPwa(
 
         pageData.frontmatter.head ??= [];
         pageData.frontmatter.head.push(['meta', { property: 'og:title', content: title }]);
+
         const relativePath = pageData.relativePath
           .replace(/index\.md$/, '')
           .replace(/\.md$/, '.html');
@@ -185,77 +186,33 @@ export default withPwa(
       },
 
       themeConfig: {
-        logo: '/logo.svg',
+        logo: '/favicon.svg',
         siteTitle: SITE_NAME,
 
         nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Guide', link: '/guide/' },
-          { text: 'Reference', link: '/reference/' },
-          {
-            text: 'Ecosystem',
-            items: [
-              { text: 'VitePress', link: 'https://vitepress.dev' },
-              { text: 'Vue', link: 'https://vuejs.org' },
-              { text: 'Vite', link: 'https://vitejs.dev' },
-            ],
-          },
-          {
-            text: 'v2.0.0-alpha',
-            items: [
-              {
-                text: 'Changelog',
-                link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md',
-              },
-              {
-                text: 'Contributing',
-                link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md',
-              },
-            ],
-          },
+          { text: 'Beranda', link: '/' },
+          { text: 'Mata Kuliah', link: '/courses/' },
+          { text: 'Informasi', link: '/information/' },
+          { text: 'Tugas', link: '/task/' },
+          { text: 'Tentang', link: '/about' },
         ],
 
-        sidebar: generateSidebar([
-          {
-            documentRootPath: '/docs',
-            scanStartPath: 'guide',
-            resolvePath: '/guide/',
-            collapsed: false,
-            capitalizeFirst: true,
-            useTitleFromFrontmatter: true,
-            useTitleFromFileHeading: true,
-            useFolderTitleFromIndexFile: true,
-            sortMenusByFrontmatterOrder: true,
-            manualSortFileNameByPriority: ['what-is-vitepress.md', 'getting-started.md'],
-          },
-          {
-            documentRootPath: '/docs',
-            scanStartPath: 'reference',
-            resolvePath: '/reference/',
-            collapsed: false,
-            capitalizeFirst: true,
-          },
-        ]),
+        sidebar,
 
-        socialLinks: [
-          { icon: 'github', link: REPO_URL },
-          { icon: 'twitter', link: 'https://twitter.com/username' },
-          { icon: 'discord', link: 'https://discord.gg/invite' },
-          { icon: 'youtube', link: 'https://youtube.com/@username' },
-        ],
+        socialLinks: [{ icon: 'github', link: REPO_URL }],
 
         footer: {
-          message: 'Released under the MIT License.',
+          message: 'Dirilis di bawah Lisensi MIT.',
           copyright: `Copyright © 2026-present ${AUTHOR}`,
         },
 
         editLink: {
           pattern: `${REPO_URL}/edit/main/docs/:path`,
-          text: 'Edit this page on GitHub',
+          text: 'Edit halaman ini di GitHub',
         },
 
         lastUpdated: {
-          text: 'Last updated',
+          text: 'Terakhir diperbarui',
           formatOptions: {
             dateStyle: 'short',
             timeStyle: 'medium',
@@ -268,22 +225,22 @@ export default withPwa(
           options: {
             translations: {
               button: {
-                buttonText: 'Search',
-                buttonAriaLabel: 'Search',
+                buttonText: 'Cari',
+                buttonAriaLabel: 'Cari',
               },
               modal: {
-                displayDetails: 'Display detailed list',
-                resetButtonTitle: 'Reset search',
-                backButtonTitle: 'Close search',
-                noResultsText: 'No results found',
+                displayDetails: 'Tampilkan daftar lengkap',
+                resetButtonTitle: 'Reset pencarian',
+                backButtonTitle: 'Tutup pencarian',
+                noResultsText: 'Tidak ada hasil',
                 footer: {
-                  selectText: 'Select',
+                  selectText: 'Pilih',
                   selectKeyAriaLabel: 'Enter',
-                  navigateText: 'Navigate',
-                  navigateUpKeyAriaLabel: 'Up arrow',
-                  navigateDownKeyAriaLabel: 'Down arrow',
-                  closeText: 'Close',
-                  closeKeyAriaLabel: 'Escape',
+                  navigateText: 'Navigasi',
+                  navigateUpKeyAriaLabel: 'Panah atas',
+                  navigateDownKeyAriaLabel: 'Panah bawah',
+                  closeText: 'Tutup',
+                  closeKeyAriaLabel: 'Esc',
                 },
               },
             },
@@ -299,30 +256,30 @@ export default withPwa(
         },
 
         docFooter: {
-          prev: 'Previous',
-          next: 'Next',
+          prev: 'Sebelumnya',
+          next: 'Berikutnya',
         },
 
         outline: {
           level: [2, 3],
-          label: 'On this page',
+          label: 'Di halaman ini',
         },
 
-        darkModeSwitchLabel: 'Appearance',
-        lightModeSwitchTitle: 'Switch to light theme',
-        darkModeSwitchTitle: 'Switch to dark theme',
+        darkModeSwitchLabel: 'Tema',
+        lightModeSwitchTitle: 'Ganti ke mode terang',
+        darkModeSwitchTitle: 'Ganti ke mode gelap',
 
         sidebarMenuLabel: 'Menu',
-        returnToTopLabel: 'Return to top',
-        langMenuLabel: 'Change language',
+        returnToTopLabel: 'Kembali ke atas',
+        langMenuLabel: 'Ganti bahasa',
         externalLinkIcon: true,
 
         notFound: {
-          title: 'Page Not Found',
+          title: 'Halaman Tidak Ditemukan',
           quote:
-            "But if you don't change direction, and continue to search, you may end up where you are headed.",
-          linkLabel: 'go to home',
-          linkText: 'Take me home',
+            'Tapi jika kamu tidak mengubah arah, dan terus mencari, kamu mungkin akan berakhir di tempat yang kamu tuju.',
+          linkLabel: 'ke beranda',
+          linkText: 'Bawa saya ke beranda',
         },
       },
     })
