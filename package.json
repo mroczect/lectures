@@ -2,6 +2,7 @@
   "name": "lectures",
   "module": "index.ts",
   "dependencies": {
+    "vite-plugin-sitemap": "^0.8.2",
     "vue": "^3.5.42"
   },
   "devDependencies": {
@@ -54,7 +55,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "clean": "rm -rf docs/.vitepress/cache docs/.vitepress/dist node_modules/.vite-temp"
   },
   "type": "module"
 }
