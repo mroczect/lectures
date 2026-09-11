@@ -1,58 +1,76 @@
 {
-  "/courses/": [
+  "/v1/courses/": [
     {
       "text": "Courses",
       "items": [
-        { "text": "Overview", "link": "/courses/" },
+        { "text": "Overview", "link": "/v1/courses/" },
         {
           "text": "Semester 1",
           "collapsed": false,
           "items": [
-            { "text": "Religious Education", "link": "/courses/pendidikan-agama" },
-            { "text": "Introduction to Software Engineering", "link": "/courses/pengantar-rpl" },
-            { "text": "Algorithms and Programming", "link": "/courses/algoritma-pemrograman" },
-            { "text": "Discrete Mathematics", "link": "/courses/matematika-diskrit" },
+            { "text": "Religious Education", "link": "/v1/courses/pendidikan-agama" },
+            { "text": "Introduction to Software Engineering", "link": "/v1/courses/pengantar-rpl" },
+            { "text": "Algorithms and Programming", "link": "/v1/courses/algoritma-pemrograman" },
+            { "text": "Discrete Mathematics", "link": "/v1/courses/matematika-diskrit" },
             {
               "text": "Requirements Analysis and Specification",
-              "link": "/courses/analisis-kebutuhan-pl"
+              "link": "/v1/courses/analisis-kebutuhan-pl"
             },
-            { "text": "Web Programming", "link": "/courses/pemrograman-web" },
-            { "text": "Introduction to Database", "link": "/courses/pengantar-basis-data" }
+            { "text": "Web Programming", "link": "/v1/courses/pemrograman-web" },
+            { "text": "Introduction to Database", "link": "/v1/courses/pengantar-basis-data" }
           ]
         }
       ]
     }
   ],
 
-  "/information/": [
+  "/v1/information/": [
     {
       "text": "Information",
       "items": [
-        { "text": "Overview", "link": "/information/" },
-        { "text": "Lecturer Contacts", "link": "/information/kontak-dosen" },
-        { "text": "Class Schedule", "link": "/information/jadwal-kuliah" },
-        { "text": "PBL Team Info", "link": "/information/info-team-pbl" },
-        { "text": "PBL Titles & Teams", "link": "/information/judul-dan-team-pbl" }
+        { "text": "Overview", "link": "/v1/information/" },
+        { "text": "Lecturer Contacts", "link": "/v1/information/kontak-dosen" },
+        { "text": "Class Schedule", "link": "/v1/information/jadwal-kuliah" },
+        { "text": "PBL Team Info", "link": "/v1/information/info-team-pbl" },
+        { "text": "PBL Titles & Teams", "link": "/v1/information/judul-dan-team-pbl" }
       ]
     }
   ],
 
-  "/task/": [
+  "/v1/task/": [
     {
       "text": "Tasks",
       "items": [
-        { "text": "Overview", "link": "/task/" },
+        { "text": "Overview", "link": "/v1/task/" },
         {
           "text": "Matematika Diskrit",
           "collapsed": false,
           "items": [
             {
               "text": "Teori Himpunan",
-              "link": "/task/tugas-matematika-diskrit-materi-himpunan"
+              "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
             }
           ]
         }
       ]
+    }
+  ],
+
+  "/v1/": [
+    {
+      "text": "Version 1",
+      "items": [
+        { "text": "Overview", "link": "/v1/" },
+        { "text": "About", "link": "/v1/about" },
+        { "text": "License", "link": "/v1/license" }
+      ]
+    }
+  ],
+
+  "/format": [
+    {
+      "text": "Panduan",
+      "items": [{ "text": "Format & Aturan", "link": "/format" }]
     }
   ]
 }
