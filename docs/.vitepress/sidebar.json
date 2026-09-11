@@ -1,20 +1,23 @@
 {
   "/courses/": [
     {
-      "text": "Mata Kuliah",
+      "text": "Courses",
       "items": [
         { "text": "Overview", "link": "/courses/" },
         {
           "text": "Semester 1",
           "collapsed": false,
           "items": [
-            { "text": "Pendidikan Agama", "link": "/courses/pendidikan-agama" },
-            { "text": "Pengantar RPL", "link": "/courses/pengantar-rpl" },
-            { "text": "Algoritma dan Pemrograman", "link": "/courses/algoritma-pemrograman" },
-            { "text": "Matematika Diskrit", "link": "/courses/matematika-diskrit" },
-            { "text": "Analisis Kebutuhan PL", "link": "/courses/analisis-kebutuhan-pl" },
-            { "text": "Pemrograman Web", "link": "/courses/pemrograman-web" },
-            { "text": "Pengantar Basis Data", "link": "/courses/pengantar-basis-data" }
+            { "text": "Religious Education", "link": "/courses/pendidikan-agama" },
+            { "text": "Introduction to Software Engineering", "link": "/courses/pengantar-rpl" },
+            { "text": "Algorithms and Programming", "link": "/courses/algoritma-pemrograman" },
+            { "text": "Discrete Mathematics", "link": "/courses/matematika-diskrit" },
+            {
+              "text": "Requirements Analysis and Specification",
+              "link": "/courses/analisis-kebutuhan-pl"
+            },
+            { "text": "Web Programming", "link": "/courses/pemrograman-web" },
+            { "text": "Introduction to Database", "link": "/courses/pengantar-basis-data" }
           ]
         }
       ]
@@ -23,20 +26,21 @@
 
   "/information/": [
     {
-      "text": "Informasi",
+      "text": "Information",
       "items": [
         { "text": "Overview", "link": "/information/" },
-        { "text": "Kontak Dosen", "link": "/information/kontak-dosen" },
-        { "text": "Jadwal Kuliah", "link": "/information/jadwal-kuliah" },
-        { "text": "Info Tim PBL", "link": "/information/info-team-pbl" },
-        { "text": "Judul & Tim PBL", "link": "/information/judul-dan-team-pbl" }
+        { "text": "Lecturer Contacts", "link": "/information/kontak-dosen" },
+        { "text": "Class Schedule", "link": "/information/jadwal-kuliah" },
+        { "text": "PBL Team Info", "link": "/information/info-team-pbl" },
+        { "text": "PBL Titles & Teams", "link": "/information/judul-dan-team-pbl" }
       ]
     }
   ],
+
   "/task/": [
     {
-      "text": "Tugas",
-      "items": [{ "text": "Semua Tugas", "link": "/task/" }]
+      "text": "Tasks",
+      "items": [{ "text": "All Tasks", "link": "/task/" }]
     }
   ]
 }
