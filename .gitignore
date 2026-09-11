@@ -241,3 +241,6 @@ __marimo__/
 tmp/
 commit.sh
 pull_request_body.md
+
+docs/.vitepress/cache
+docs/.vitepress/dist
