@@ -74,7 +74,14 @@ export default withPwa(
         ['meta', { property: 'og:site_name', content: SITE_NAME }],
         ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
       ],
-
+      pwa: {
+        registerType: 'autoUpdate',
+        workbox: {
+          cleanupOutdatedCaches: true,
+          clientsClaim: true,
+          skipWaiting: true,
+        },
+      },
       cleanUrls: true,
       srcDir: '.',
       srcExclude: ['**/README.md', '**/TODO.md', '**/node_modules/**', '**/.vitepress/**'],
