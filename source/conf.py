@@ -76,42 +76,21 @@ html_baseurl = ""
 
 html_css_files = []
 html_js_files = []
-
-# html_sidebars = {
-#     '**': [
-#         'navbar-logo.html',
-#         'icon-links.html',
-#         'search-button-field.html',
-#         'sbt-sidebar-nav.html',
-#         'sbt-sidebar-footer.html',
-#     ]
-# }
-
 html_show_sourcelink = True
-
 html_copy_source = True
-
 html_show_sphinx = True
-
 html_last_updated_fmt = "%b %d, %Y"
-
 html_css_files = ["custom.css"]
 latex_engine = "xelatex"
-
 latex_documents = [
     (root_doc, "lectures.tex", "Dokumentasi Kuliah", author, "manual"),
 ]
-
 latex_logo = ""
-
 latex_theme = "manual"
-
 latex_elements = {
     "papersize": "a4paper",
     "pointsize": "11pt",
 }
-
-
 man_pages = [(root_doc, "lectures", "Dokumentasi Kuliah", [author], 1)]
 
 
@@ -132,56 +111,32 @@ epub_title = project
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
-
-
 linkcheck_ignore = [r"http://localhost:\d+"]
 linkcheck_timeout = 10
 linkcheck_retries = 2
-
-
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "sphinx": ("https://www.sphinx-doc.org/en/master", None),
 }
-
-
 autodoc_member_order = "bysource"
 autodoc_typehints = "description"
-
-
 autosummary_generate = True
-
-
 autosectionlabel_prefix_document = True
-
-
 extlinks = {
     "issue": ("https://github.com/mroczect/lectures/issues/%s", "issue #%s"),
     "pr": ("https://github.com/mroczect/lectures/pull/%s", "PR #%s"),
 }
-
-
 graphviz_output_format = "svg"
-
-
 inheritance_graph_attrs = dict(rankdir="TB", size='"8.0, 12.0"', fontsize=14)
-
-
 todo_include_todos = True
-
-
 math_number_all = True
-
-
 nitpicky = True
 nitpick_ignore = [
     ("py:class", "optional"),
 ]
 
-
 smartquotes = True
 smartquotes_action = "qDe"
-
 
 def linkcode_resolve(domain, info):
     if domain != "py":
