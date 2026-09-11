@@ -1,0 +1,43 @@
+{
+  "/courses/": [
+    {
+      "text": "Mata Kuliah",
+      "items": [
+        { "text": "Overview", "link": "/courses/" },
+        {
+          "text": "Semester 1",
+          "collapsed": false,
+          "items": [
+            { "text": "Pendidikan Agama", "link": "/courses/pendidikan-agama" },
+            { "text": "Pengantar RPL", "link": "/courses/pengantar-rpl" },
+            { "text": "Algoritma dan Pemrograman", "link": "/courses/algoritma-pemrograman" },
+            { "text": "Matematika Diskrit", "link": "/courses/matematika-diskrit" },
+            { "text": "Analisis Kebutuhan PL", "link": "/courses/analisis-kebutuhan-pl" },
+            { "text": "Pemrograman Web", "link": "/courses/pemrograman-web" },
+            { "text": "Pengantar Basis Data", "link": "/courses/pengantar-basis-data" }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "/information/": [
+    {
+      "text": "Informasi",
+      "items": [
+        { "text": "Overview", "link": "/information/" },
+        { "text": "Kampus", "link": "/information/kampus" },
+        { "text": "Kurikulum", "link": "/information/kurikulum" },
+        { "text": "Dosen", "link": "/information/dosen" },
+        { "text": "Jadwal", "link": "/information/jadwal" }
+      ]
+    }
+  ],
+
+  "/task/": [
+    {
+      "text": "Tugas",
+      "items": [{ "text": "Semua Tugas", "link": "/task/" }]
+    }
+  ]
+}
