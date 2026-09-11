@@ -202,7 +202,7 @@ export default withPwa(
         },
 
         editLink: {
-          pattern: `${REPO_URL}/edit/main/docs/:path`,
+          pattern: `${REPO_URL}/edit/master/docs/:path`,
           text: 'Edit this page on GitHub',
         },
 
