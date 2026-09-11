@@ -1,25 +1,49 @@
 {
   "name": "lectures",
   "module": "index.ts",
-  "type": "module",
-  "private": true,
+  "dependencies": {
+    "vue": "^3.5.42"
+  },
   "devDependencies": {
+    "@iconify-json/logos": "^1.2.14",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.95",
     "@types/bun": "latest",
     "@typescript-eslint/eslint-plugin": "8.70.0",
     "@typescript-eslint/parser": "8.70.0",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "@vite-pwa/vitepress": "^1.1.0",
+    "dayjs": "^1.11.23",
     "eslint": "10.10.0",
     "eslint-config-prettier": "10.1.8",
     "husky": "9.1.7",
     "lint-staged": "17.5.1",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-attrs": "^5.0.1",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-deflist": "^4.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-ins": "^4.0.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-mathjax3": "^5.2.0",
+    "markdown-it-sub": "^2.0.0",
+    "markdown-it-sup": "^2.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "mermaid": "^12.0.0",
+    "pagefind": "^1.5.2",
     "prettier": "3.9.6",
-    "vitepress": "^2.0.0-alpha.20"
+    "typescript": "6.0.2",
+    "vitepress": "^2.0.0-alpha.20",
+    "vitepress-mermaid-plugin": "^3.0.0",
+    "vitepress-openapi": "^0.2.4",
+    "vitepress-plugin-llms": "^1.14.0",
+    "vitepress-plugin-pagefind": "^0.4.24",
+    "vitepress-sidebar": "^1.40.0"
   },
-  "peerDependencies": {
-    "typescript": "7.0.2"
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
   },
-  "dependencies": {
-    "vue": "^3.5.42"
-  },
+  "private": true,
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -32,7 +56,5 @@
     "typecheck": "tsc --noEmit",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
-  }
+  "type": "module"
 }
