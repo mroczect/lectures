@@ -26,14 +26,13 @@
       "text": "Informasi",
       "items": [
         { "text": "Overview", "link": "/information/" },
-        { "text": "Kampus", "link": "/information/kampus" },
-        { "text": "Kurikulum", "link": "/information/kurikulum" },
-        { "text": "Dosen", "link": "/information/dosen" },
-        { "text": "Jadwal", "link": "/information/jadwal" }
+        { "text": "Kontak Dosen", "link": "/information/kontak-dosen" },
+        { "text": "Jadwal Kuliah", "link": "/information/jadwal-kuliah" },
+        { "text": "Info Tim PBL", "link": "/information/info-team-pbl" },
+        { "text": "Judul & Tim PBL", "link": "/information/judul-dan-team-pbl" }
       ]
     }
   ],
-
   "/task/": [
     {
       "text": "Tugas",
