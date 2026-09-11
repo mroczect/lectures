@@ -1,20 +1,16 @@
 name: Deploy VitePress
-
-on:
+'on':
   push:
     branches:
       - master
-  workflow_dispatch:
-
+  workflow_dispatch: null
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,32 +19,33 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
+      - name: Cache Bun dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.bun/install/cache
+          key: '${{ runner.os }}-bun-${{ hashFiles(''bun.lock'') }}'
+          restore-keys: |
+            ${{ runner.os }}-bun-
       - name: Install dependencies
         run: bun install --frozen-lockfile
-
       - name: Build VitePress
-        run: bun run docs:build
-
+        run: 'bun run docs:build'
+        env:
+          NODE_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: '${{ steps.deployment.outputs.page_url }}'
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
