@@ -14,20 +14,22 @@ import sub from 'markdown-it-sub';
 import sup from 'markdown-it-sup';
 import attrs from 'markdown-it-attrs';
 import mathjax3 from 'markdown-it-mathjax3';
+
 const SITE_URL = 'https://mroczect.github.io/lectures';
 const SITE_NAME = 'Lectures';
 const AUTHOR = 'Muhammad Riduwan Khafidi';
 const REPO_URL = 'https://github.com/mroczect/lectures.git';
 const BASE_PATH = '/lectures/';
+
 export default withPwa(
   withMermaid(
     defineConfig({
-      lang: 'id-ID',
+      lang: 'en-US',
       title: SITE_NAME,
       base: BASE_PATH,
-      titleTemplate: ':title — Dokumentasi Kuliah',
+      titleTemplate: ':title — Lecture Documentation',
       description:
-        'Dokumentasi lengkap materi kuliah, tugas, dan catatan untuk mahasiswa TRPL Politeknik Negeri Batam.',
+        'Complete documentation of lecture materials, assignments, and notes for students of Software Engineering Technology at Politeknik Negeri Batam.',
 
       head: [
         [
@@ -39,7 +41,6 @@ export default withPwa(
         ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=1' }],
         ['link', { rel: 'manifest', href: '/site.webmanifest?v=1' }],
 
-        // Fonts
         ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
         [
           'link',
@@ -57,7 +58,6 @@ export default withPwa(
           },
         ],
 
-        // Meta
         ['meta', { name: 'author', content: AUTHOR }],
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1' }],
@@ -143,12 +143,12 @@ export default withPwa(
 
         plugins: [
           pagefindPlugin({
-            btnPlaceholder: 'Cari',
-            placeholder: 'Cari dokumentasi...',
-            emptyText: 'Tidak ada hasil',
-            heading: 'Total: {{searchResult}} hasil',
+            btnPlaceholder: 'Search',
+            placeholder: 'Search documentation...',
+            emptyText: 'No results found',
+            heading: 'Total: {{searchResult}} results',
             excludeSelector: ['img', 'a.header-anchor', '.vp-doc'],
-            forceLanguage: 'id',
+            forceLanguage: 'en',
             showEmpty: false,
             indexing: {
               start: 'docs',
@@ -190,11 +190,11 @@ export default withPwa(
         siteTitle: SITE_NAME,
 
         nav: [
-          { text: 'Beranda', link: '/' },
-          { text: 'Mata Kuliah', link: '/courses/' },
-          { text: 'Informasi', link: '/information/' },
-          { text: 'Tugas', link: '/task/' },
-          { text: 'Tentang', link: '/about' },
+          { text: 'Home', link: '/' },
+          { text: 'Courses', link: '/courses/' },
+          { text: 'Information', link: '/information/' },
+          { text: 'Tasks', link: '/task/' },
+          { text: 'About', link: '/about' },
         ],
 
         sidebar,
@@ -202,17 +202,17 @@ export default withPwa(
         socialLinks: [{ icon: 'github', link: REPO_URL }],
 
         footer: {
-          message: 'Dirilis di bawah Lisensi MIT.',
+          message: 'Released under the MIT License.',
           copyright: `Copyright © 2026-present ${AUTHOR}`,
         },
 
         editLink: {
           pattern: `${REPO_URL}/edit/main/docs/:path`,
-          text: 'Edit halaman ini di GitHub',
+          text: 'Edit this page on GitHub',
         },
 
         lastUpdated: {
-          text: 'Terakhir diperbarui',
+          text: 'Last updated',
           formatOptions: {
             dateStyle: 'short',
             timeStyle: 'medium',
@@ -225,22 +225,22 @@ export default withPwa(
           options: {
             translations: {
               button: {
-                buttonText: 'Cari',
-                buttonAriaLabel: 'Cari',
+                buttonText: 'Search',
+                buttonAriaLabel: 'Search',
               },
               modal: {
-                displayDetails: 'Tampilkan daftar lengkap',
-                resetButtonTitle: 'Reset pencarian',
-                backButtonTitle: 'Tutup pencarian',
-                noResultsText: 'Tidak ada hasil',
+                displayDetails: 'Display detailed list',
+                resetButtonTitle: 'Reset search',
+                backButtonTitle: 'Close search',
+                noResultsText: 'No results found',
                 footer: {
-                  selectText: 'Pilih',
+                  selectText: 'Select',
                   selectKeyAriaLabel: 'Enter',
-                  navigateText: 'Navigasi',
-                  navigateUpKeyAriaLabel: 'Panah atas',
-                  navigateDownKeyAriaLabel: 'Panah bawah',
-                  closeText: 'Tutup',
-                  closeKeyAriaLabel: 'Esc',
+                  navigateText: 'Navigate',
+                  navigateUpKeyAriaLabel: 'Up arrow',
+                  navigateDownKeyAriaLabel: 'Down arrow',
+                  closeText: 'Close',
+                  closeKeyAriaLabel: 'Escape',
                 },
               },
             },
@@ -256,30 +256,30 @@ export default withPwa(
         },
 
         docFooter: {
-          prev: 'Sebelumnya',
-          next: 'Berikutnya',
+          prev: 'Previous',
+          next: 'Next',
         },
 
         outline: {
           level: [2, 3],
-          label: 'Di halaman ini',
+          label: 'On this page',
         },
 
-        darkModeSwitchLabel: 'Tema',
-        lightModeSwitchTitle: 'Ganti ke mode terang',
-        darkModeSwitchTitle: 'Ganti ke mode gelap',
+        darkModeSwitchLabel: 'Appearance',
+        lightModeSwitchTitle: 'Switch to light theme',
+        darkModeSwitchTitle: 'Switch to dark theme',
 
         sidebarMenuLabel: 'Menu',
-        returnToTopLabel: 'Kembali ke atas',
-        langMenuLabel: 'Ganti bahasa',
+        returnToTopLabel: 'Return to top',
+        langMenuLabel: 'Change language',
         externalLinkIcon: true,
 
         notFound: {
-          title: 'Halaman Tidak Ditemukan',
+          title: 'Page Not Found',
           quote:
-            'Tapi jika kamu tidak mengubah arah, dan terus mencari, kamu mungkin akan berakhir di tempat yang kamu tuju.',
-          linkLabel: 'ke beranda',
-          linkText: 'Bawa saya ke beranda',
+            "But if you don't change direction, and continue to search, you may end up where you are headed.",
+          linkLabel: 'go to home',
+          linkText: 'Take me home',
         },
       },
     })
