@@ -1,3 +1,5 @@
+.. _himpunan-fuzzy:
+
 ===============
 Himpunan Fuzzy
 ===============
@@ -7,8 +9,10 @@ Logika Fuzzy
 
 * **Penerapan Utama:** Digunakan untuk menangani masalah dengan unsur ketidakpastian *(uncertainty)* melalui konsep kebenaran sebagian.
 * **Perbedaan dari Logika Klasik:**
+
   * **Logika Klasik:** Bernilai biner (0 atau 1, hitam atau putih, ya atau tidak).
   * **Logika Fuzzy:** Menggunakan rentang tingkat kebenaran (kontinu antara 0 dan 1).
+
 * **Fleksibilitas Nilai:** Mengakomodasi tingkat keabuan serta ekspresi linguistik (seperti "sedikit", "lumayan", "sangat").
 * **Dasar Teori:** Berhubungan dengan *fuzzy set* dan teori kemungkinan.
 * **Sejarah Singkat:** Diperkenalkan oleh Dr. Lotfi Zadeh (UC Berkeley) pada tahun 1965.
@@ -45,14 +49,22 @@ Pada himpunan tegas, suhu 70°F mungkin dikategorikan sebagai "Cold" (1) dan "Ho
 Aplikasi Himpunan Fuzzy dalam Software Engineering
 ==================================================
 
-1. **Sistem Rekomendasi Film / E-Commerce:**
-   * *Crisp:* "Suka" (1) / "Tidak Suka" (0).
-   * *Fuzzy:* Derajat Ketertarikan :math:`\mu_{\text{Suka}}(\text{Film A}) = 0.85` (Sangat Disukai).
-2. **Pendeteksi Email Spam / Malware Security:**
-   * *Crisp:* Flag Spam (1) atau Clean (0).
-   * *Fuzzy:* Spam Score Confidence Level :math:`\mu_{\text{Spam}}(\text{Email}) = 0.72` (Kategori Karantina/Suspicious).
-3. **Pengukur Kualitas Perangkat Lunak (Code Quality Index):**
-   * Mengklasifikasikan kompleksitas kode dari tingkat Low, Medium, hingga High Complexity berdasarkan rentang skor fuzzy.
+.. list-table::
+   :header-rows: 1
+   :widths: 30 70
+
+   * - Kasus
+     - Penerapan Fuzzy
+   * - Sistem Rekomendasi Film / E-Commerce
+     - *Crisp:* "Suka" (1) / "Tidak Suka" (0).
+
+       *Fuzzy:* Derajat Ketertarikan :math:`\mu_{\text{Suka}}(\text{Film A}) = 0.85` (Sangat Disukai).
+   * - Pendeteksi Email Spam / Malware Security
+     - *Crisp:* Flag Spam (1) atau Clean (0).
+
+       *Fuzzy:* Spam Score Confidence Level :math:`\mu_{\text{Spam}}(\text{Email}) = 0.72` (Kategori Karantina/Suspicious).
+   * - Pengukur Kualitas Perangkat Lunak (Code Quality Index)
+     - Mengklasifikasikan kompleksitas kode dari tingkat Low, Medium, hingga High Complexity berdasarkan rentang skor fuzzy.
 
 Contoh Penerapan Himpunan Fuzzy
 ==============================
@@ -76,3 +88,7 @@ Dan juga termasuk dalam himpunan PAROBAYA dengan derajat keanggotaan:
 .. math::
 
    \mu_{\text{PAROBAYA}}[40] = 0.5
+
+.. important::
+
+   Keunggulan utama himpunan fuzzy dalam RPL adalah kemampuannya untuk memodelkan ketidakpastian dan preferensi pengguna secara lebih natural, mendekati cara berpikir manusia, dibandingkan logika boolean yang kaku.

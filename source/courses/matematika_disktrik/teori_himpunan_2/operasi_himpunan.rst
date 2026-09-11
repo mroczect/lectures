@@ -1,3 +1,5 @@
+.. _operasi-himpunan:
+
 ================
 Operasi Himpunan
 ================
@@ -56,9 +58,13 @@ Dalam basis data relasional (SQL), operasi selisih ini setara dengan perintah ``
 
 .. code-block:: sql
 
-   A = {"Pengguna Aktif Bulan Ini"} = {"User1", "User2", "User3", "User5"}
-   B = {"Pengguna yang Sudah Membayar Tagihan"} = {"User2", "User5"}
-   Maka A - B = {"User1", "User3"} (Daftar pengguna aktif yang belum bayar tagihan)
+   -- A = Pengguna Aktif Bulan Ini
+   -- B = Pengguna yang Sudah Membayar Tagihan
+   SELECT user_id FROM active_users
+   EXCEPT
+   SELECT user_id FROM paid_users;
+
+   -- Hasil: Daftar pengguna aktif yang belum bayar tagihan
 
 5. Beda Simetris (Symmetric Difference)
 ======================================
@@ -82,10 +88,10 @@ Cartesian product dari himpunan A dan B adalah himpunan yang elemennya semua pas
 
    A \times B = \{(a, b) \mid a \in A \text{ dan } b \in B\}
 
-**Konteks Rekayasa Perangkat Lunak (RPL):**
+.. sidebar:: Konteks Rekayasa Perangkat Lunak (RPL)
 
-* **Database Query:** Identik dengan operasi ``CROSS JOIN`` antar dua tabel.
-* **Software Testing:** Digunakan untuk *Combinatorial Test Case Generation* (menguji seluruh kombinasi matriks masukan).
+   * **Database Query:** Identik dengan operasi ``CROSS JOIN`` antar dua tabel.
+   * **Software Testing:** Digunakan untuk *Combinatorial Test Case Generation* (menguji seluruh kombinasi matriks masukan).
 
 **Contoh Studi Kasus RPL:**
 
@@ -97,7 +103,11 @@ Maka:
 
 .. math::
 
-   A \times B = \{(\text{"Chrome"}, \text{"Windows"}), (\text{"Chrome"}, \text{"Linux"}), (\text{"Chrome"}, \text{"MacOS"}), \\
-   (\text{"Firefox"}, \text{"Windows"}), (\text{"Firefox"}, \text{"Linux"}), (\text{"Firefox"}, \text{"MacOS"})\}
+   A \times B = \{ &(\text{"Chrome"}, \text{"Windows"}), (\text{"Chrome"}, \text{"Linux"}), (\text{"Chrome"}, \text{"MacOS"}), \\
+   &(\text{"Firefox"}, \text{"Windows"}), (\text{"Firefox"}, \text{"Linux"}), (\text{"Firefox"}, \text{"MacOS"})\}
 
-(Total 6 kombinasi skenario pengujian aplikasi web)
+*(Total 6 kombinasi skenario pengujian aplikasi web)*
+
+.. seealso::
+
+   Materi mengenai prinsip perhitungan kombinasi dapat dilihat di :ref:`prinsip-inklusi-eksklusi`.

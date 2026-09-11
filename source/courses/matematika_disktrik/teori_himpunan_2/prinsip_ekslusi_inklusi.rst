@@ -1,3 +1,5 @@
+.. _prinsip-inklusi-eksklusi:
+
 ====================================
 Prinsip Inklusi-Eksklusi (Bagian 2)
 ====================================
@@ -25,3 +27,7 @@ Misalkan A dan B adalah himpunan berhingga, maka :math:`A \cup B` juga berhingga
 .. math::
 
    |A \cup B| = 3500 + 2100 - 800 = 4800 \text{ pengguna unik}
+
+.. tip::
+
+   Dalam SQL, operasi ini sering diimplementasikan menggunakan ``COUNT(DISTINCT user_id)`` atau dengan ``UNION`` yang otomatis menghilangkan duplikat. Namun, memahami matematika di baliknya penting untuk optimasi query dan *indexing* basis data.
