@@ -236,3 +236,7 @@ marimo/_lsp/
 __marimo__/
 
 .streamlit/secrets.toml
+.velodiff_dist.diff
+.snapcat.md
+tmp/
+commit.sh
