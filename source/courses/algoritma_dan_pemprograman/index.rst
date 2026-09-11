@@ -7,7 +7,7 @@
    :keywords: algoritma, pemrograman, python, RPL102, polibatam
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
    pertemuan-1
 

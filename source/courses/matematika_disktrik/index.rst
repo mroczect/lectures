@@ -11,10 +11,11 @@ Matematika Diskrit/RPL103
    :language: id
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
 
    teori_himpunan/index
+   teori_himpunan_2/index
    rencana_pembelajaran
 
 .. contents:: Daftar Isi

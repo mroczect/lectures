@@ -8,7 +8,7 @@ Pengantar Basis Data (RPL106)
 
 .. toctree::
    :glob:
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Materi
 
    pertemuan-*

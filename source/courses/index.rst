@@ -77,7 +77,7 @@ Setiap mata kuliah memiliki halamannya sendiri yang memuat **materi**,
 
 .. toctree::
    :glob:
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Mata Kuliah Semester 1
 
    algoritma_dan_pemprograman/index

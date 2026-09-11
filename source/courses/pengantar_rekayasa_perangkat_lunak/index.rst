@@ -8,7 +8,7 @@ Pengantar Rekayasa Perangkat Lunak (RPL101)
 
 .. toctree::
    :glob:
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Materi
 
    pertemuan-*

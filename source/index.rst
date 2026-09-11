@@ -28,25 +28,25 @@ mahasiswa dapat mengakses informasi dengan cepat.
 
 .. toctree::
    :glob:
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Mata Kuliah
 
    courses/index
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Informasi
 
    information/index
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Tugas
 
    task/index
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Lainnya
 
    license

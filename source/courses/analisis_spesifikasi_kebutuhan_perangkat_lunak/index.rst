@@ -8,7 +8,7 @@ Analisis dan Spesifikasi Kebutuhan Perangkat Lunak (RPL104)
 
 .. toctree::
    :glob:
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Materi
 
    pertemuan-*

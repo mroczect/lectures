@@ -7,7 +7,7 @@ Pemrograman Berbasis Web (RPL105)
    :keywords: pemrograman web, HTML, CSS, JavaScript, PHP, MySQL, RPL105, polibatam
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Materi
 
    pertemuan-1

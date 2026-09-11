@@ -16,8 +16,7 @@ tepat waktu.
    melalui e-learning IF Polibatam di https://learningif.polibatam.ac.id.
 
 .. toctree::
-   :glob:
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: Daftar Tugas
 
-   tugas-*
+   tugas_matematika_diskrit_materi_himpunan
