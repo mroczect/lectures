@@ -19,6 +19,7 @@ const SITE_URL = 'https://mroczect.github.io/lectures';
 const SITE_NAME = 'Lectures';
 const AUTHOR = 'Muhammad Riduwan Khafidi';
 const REPO_URL = 'https://github.com/mroczect/lectures.git';
+const BASE_PATH = '/lectures/';
 
 type Version = {
   key: string;
@@ -34,6 +35,7 @@ export default withPwa(
     defineConfig({
       lang: 'en-US',
       title: SITE_NAME,
+      base: BASE_PATH,
       titleTemplate: ':title - Lecture Documentation',
       description:
         'Complete documentation of lecture materials, assignments, and notes for students of Software Engineering Technology at Politeknik Negeri Batam.',
