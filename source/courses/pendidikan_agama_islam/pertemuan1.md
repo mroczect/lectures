@@ -8,4 +8,3 @@
 ## Tujuan Syariah Agama Islam
 
 ![alt text](image-3.png)
-
