@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+coverage
+
+# Generated files
+*.min.js
+*.d.ts
+bun.lockb
+bun.lock

@@ -4,9 +4,35 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "8.70.0",
+    "@typescript-eslint/parser": "8.70.0",
+    "eslint": "10.10.0",
+    "eslint-config-prettier": "10.1.8",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "prettier": "3.9.6",
+    "vitepress": "^2.0.0-alpha.20"
   },
   "peerDependencies": {
-    "typescript": "^7"
+    "typescript": "7.0.2"
+  },
+  "dependencies": {
+    "vue": "^3.5.42"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "format:src": "prettier src/ --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,md}": "prettier --write --ignore-unknown"
   }
 }
