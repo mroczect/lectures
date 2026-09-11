@@ -240,3 +240,4 @@ __marimo__/
 .snapcat.md
 tmp/
 commit.sh
+pull_request_body.md
