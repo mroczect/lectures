@@ -196,7 +196,8 @@ export default withPwa(
         socialLinks: [{ icon: 'github', link: REPO_URL }],
 
         footer: {
-          message: 'Released under the MIT License.',
+          message:
+            'Released under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> License.',
           copyright: `Copyright © 2026-present ${AUTHOR}`,
         },
 
