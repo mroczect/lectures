@@ -3,48 +3,48 @@ layout: home
 
 hero:
   name: Lectures
-  text: Dokumentasi Kuliah
-  tagline: Materi, tugas, catatan, dan seluruh resource perkuliahan TRPL Politeknik Negeri Batam — tersusun rapi, mudah dicari, dan selalu diperbarui.
+  text: Lecture Documentation
+  tagline: Materials, assignments, notes, and all TRPL Politeknik Negeri Batam lecture resources — neatly organized, easy to search, and always updated.
 
   actions:
     - theme: brand
-      text: Mulai Belajar
+      text: Start Learning
       link: /courses/
     - theme: alt
-      text: Lihat Tugas
+      text: View Tasks
       link: /task/
     - theme: alt
-      text: Tentang Saya
+      text: About Me
       link: /about
 
 features:
-  - title: Mata Kuliah
-    details: Semua materi kuliah, slide, catatan pribadi, dan referensi tiap mata kuliah — mulai dari Pendidikan Agama, Algoritma, Matematika Diskrit, sampai Pemrograman Web dan Basis Data.
+  - title: Courses
+    details: All lecture materials, slides, personal notes, and references for each course — from Religious Education, Algorithms, Discrete Mathematics, to Web Programming and Databases.
     link: /courses/
-    linkText: Lihat Mata Kuliah
+    linkText: View Courses
 
-  - title: Tugas
-    details: Daftar lengkap tugas individu dan kelompok beserta deadline, status pengerjaan, dan nilai. Dipantau supaya tidak ada yang terlewat.
+  - title: Tasks
+    details: Complete list of individual and group assignments with deadlines, progress status, and grades. Tracked so nothing is missed.
     link: /task/
-    linkText: Lihat Tugas
+    linkText: View Tasks
 
-  - title: Informasi
-    details: Info kampus, kurikulum TRPL, daftar dosen, jadwal kuliah, dan kalender akademik — semua yang perlu kamu tahu tentang perkuliahan.
+  - title: Information
+    details: Campus info, TRPL curriculum, lecturer list, class schedule, and academic calendar — everything you need to know about your studies.
     link: /information/
-    linkText: Lihat Informasi
+    linkText: View Information
 
-  - title: Catatan
-    details: Catatan hasil mendengarkan kuliah, resume materi, dan poin-poin penting yang dirangkum dengan bahasa sendiri agar mudah dipahami ulang.
+  - title: Notes
+    details: Notes from listening to lectures, material summaries, and key points summarized in your own words for easy review.
     link: /courses/
-    linkText: Baca Catatan
+    linkText: Read Notes
 
-  - title: Referensi
-    details: Buku, jurnal, artikel, dan link e-learning yang dipakai selama perkuliahan. Dikumpulkan dalam satu tempat supaya tidak tercerai-berai.
+  - title: References
+    details: Books, journals, articles, and e-learning links used during lectures. Collected in one place so they don't get scattered.
     link: /courses/
-    linkText: Lihat Referensi
+    linkText: View References
 
-  - title: Tentang Saya
-    details: Data diri, riwayat akademik, target belajar, dan tujuan karir. Sekaligus jadi halaman perkenalan kalau dokumentasi ini dibuka orang lain.
+  - title: About Me
+    details: Personal data, academic history, learning targets, and career goals. Also serves as an introduction page if others open this documentation.
     link: /about
-    linkText: Selengkapnya
+    linkText: Read More
 ---
