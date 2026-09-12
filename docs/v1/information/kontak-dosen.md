@@ -1,130 +1,69 @@
 ---
 title: Kontak Dosen
-description: Daftar kontak dosen Jurusan Teknik Informatika Politeknik Negeri Batam — lengkap dengan NIK, inisial, nama, dan nomor HP.
+description: Direktori 54 dosen Jurusan Teknik Informatika Politeknik Negeri Batam — NIK, inisial, nama, dan nomor HP.
 layout: home
 
 hero:
   name: Kontak Dosen
-  text: Direktori Dosen Jurusan Teknik Informatika
-  tagline: Lima puluh empat dosen, satu direktori — cari berdasarkan inisial, nama, atau NIK. Lengkap dengan nomor HP yang dapat dihubungi.
+  text: Direktori Dosen Jurusan TI
+  tagline: Lima puluh empat dosen, satu direktori — cari berdasarkan inisial, nama, atau NIK.
   actions:
     - theme: brand
-      text: Cari Dosen
-      link: '#cara-mencari-dosen'
-    - theme: alt
       text: Daftar Lengkap
       link: '#daftar-dosen'
+    - theme: alt
+      text: Cara Mencari
+      link: '#cara-mencari'
     - theme: alt
       text: E-Learning
       link: https://learningif.polibatam.ac.id
 
 features:
   - title: 54 Dosen
-    details: Direktori lengkap dosen Jurusan Teknik Informatika Politeknik Negeri Batam, diurutkan berdasarkan inisial nama.
+    details: Direktori dosen Jurusan Teknik Informatika, diurutkan berdasarkan inisial nama.
   - title: NIK & Inisial
-    details: Setiap dosen memiliki NIK unik dan inisial untuk referensi cepat di jadwal kuliah dan dokumen akademik.
-  - title: Kontak HP
-    details: Nomor HP yang dapat dihubungi untuk keperluan akademik — dengan catatan untuk tetap mengutamakan kanal resmi.
+    details: NIK unik dan inisial untuk referensi cepat di jadwal kuliah dan dokumen akademik.
   - title: Terurut Alfabetis
-    details: Diurutkan berdasarkan inisial nama (AA hingga RC) agar mudah ditemukan dalam daftar panjang.
-  - title: Terintegrasi dengan Jadwal
-    details: Inisial dosen ini muncul di halaman [Jadwal Kuliah](/v1/information/jadwal-kuliah) — memudahkan cross-reference.
-  - title: Verifikasi Berkala
-    details: Data dapat berubah sewaktu-waktu — selalu cek kanal resmi jurusan untuk informasi terbaru.
+    details: Diurutkan berdasarkan inisial (AA hingga RC) agar mudah ditemukan.
 ---
 
 ::: info Catatan Data
 
-- Tabel diurutkan berdasarkan **inisial nama** — dari `AA` (Amirul Mu'minin) hingga `RC` (Recy Harviani Zurwanty).
-- Nomor HP ditampilkan sesuai **data terakhir yang tersedia**.
-- Untuk keperluan **resmi** (surat menyurat, kerja sama, dll), hubungi **sekretariat Jurusan Teknik Informatika** melalui kanal resmi Politeknik Negeri Batam.
-  :::
+- Diurutkan berdasarkan **inisial nama** — dari `AA` hingga `RC`.
+- Nomor HP sesuai data terakhir yang tersedia.
+- Untuk keperluan **resmi**, hubungi **sekretariat Jurusan TI** melalui kanal resmi Polibatam.
 
-## Sekilas Direktori
+:::
 
-<div align="center">
+## Sekilas
 
-| **Total Dosen** | **Rentang Inisial** | **Jurusan** | **Institusi** |
-| :-------------: | :-----------------: | :---------: | :-----------: |
-|       54        |       AA — RC       |     TI      |   Polibatam   |
+| Total Dosen | Rentang Inisial | Jurusan | Institusi |
+| :---------: | :-------------: | :-----: | :-------: |
+|     54      |     AA — RC     |   TI    | Polibatam |
 
-</div>
+Direktori ini memuat **54 dosen** Jurusan Teknik Informatika. Setiap dosen punya **NIK**, **inisial** untuk referensi cepat, **nama lengkap dengan gelar**, dan **nomor HP**.
 
-Direktori ini memuat **54 dosen** Jurusan Teknik Informatika Politeknik Negeri Batam. Setiap dosen punya **NIK** (Nomor Induk Karyawan), **inisial** untuk referensi cepat, **nama lengkap dengan gelar**, dan **nomor HP**.
+::: tip Peran Inisial
+Inisial dosen (mis. `MS`, `AM`, `NR`) dipakai di:
 
-::: tip Peran Inisial dalam Dokumentasi
-Inisial dosen (misalnya `MS`, `AM`, `NR`) digunakan secara luas dalam dokumen akademik:
-
-- **Jadwal Kuliah** — inisial dosen pengampu muncul di kolom "Dosen".
+- **Jadwal Kuliah** — kolom "Dosen".
 - **RPS** — inisial koordinator mata kuliah.
-- **Pengumuman** — referensi cepat ke dosen tertentu.
+- **Pengumuman** — referensi cepat.
 
-Gunakan halaman ini sebagai **kamus inisial** ketika kamu menemukan inisial di dokumen lain.
+Gunakan halaman ini sebagai **kamus inisial**.
 :::
 
-## Cara Mencari Dosen
+## Cara Mencari
 
-Ada beberapa cara cepat untuk menemukan kontak dosen tertentu:
-
-```mermaid
-flowchart LR
-    START["Butuh kontak dosen?"]
-
-    START --> A["Tahu inisialnya?<br/>(mis. MS, AM)"]
-    START --> B["Tahu namanya?<br/>(mis. Metta)"]
-    START --> C["Tahu mata kuliahnya?<br/>(mis. Basis Data)"]
-
-    A --> A1["Cari inisial<br/>di kolom Inisial"]
-    B --> B1["Cari nama<br/>di kolom Nama"]
-    C --> C1["Buka Jadwal Kuliah<br/>lihat inisial dosen"]
-
-    A1 --> END["Dapatkan<br/>NIK + No. HP"]
-    B1 --> END
-    C1 --> END
-
-    style START fill:#3e63dd,color:#fff
-    style END fill:#2f6f4e,color:#fff
-```
-
-### Ringkasan Cara Mencari
-
-| Jika Kamu Tahu... | Langkah Cepat                                                                    |
-| ----------------- | -------------------------------------------------------------------------------- |
-| **Inisial dosen** | Cari di kolom **Inisial** pada tabel di bawah.                                   |
-| **Nama lengkap**  | Cari di kolom **Nama** — sudah diurutkan alfabetis.                              |
-| **NIK**           | Cari di kolom **NIK** — hanya dosen dengan NIK terdaftar.                        |
-| **Mata kuliah**   | Buka [Jadwal Kuliah](/v1/information/jadwal-kuliah) untuk melihat inisial dosen. |
-| **Proyek PBL**    | Buka [Info Tim PBL](/v1/information/info-team-pbl) untuk melihat Manpro.         |
-
-## Statistik Inisial
-
-Inisial dosen dikelompokkan berdasarkan huruf pertama. Berikut distribusinya:
-
-| Huruf Awal | Jumlah | Contoh Inisial                             |
-| :--------: | :----: | ------------------------------------------ |
-|   **A**    |   8    | AA, AD, AI, AM, AN, AO, AR, AT, AU, AW, AZ |
-|   **B**    |   2    | BR, BY                                     |
-|   **C**    |   4    | CA, CI, CM, CR, CY                         |
-|   **D**    |   4    | DE, DP, DW                                 |
-|   **E**    |   1    | EV                                         |
-|   **F**    |   5    | FB, FD, FR, FS, FW                         |
-|   **G**    |   2    | GD, GS                                     |
-|   **H**    |   4    | HA, HO, HT, HW                             |
-|   **I**    |   1    | ID                                         |
-|   **K**    |   1    | KW                                         |
-|   **L**    |   3    | LK, LM, LR                                 |
-|   **M**    |   4    | MA, MC, MD, MF, MI, MS                     |
-|   **N**    |   6    | NA, NC, ND, NH, NI, NR, NZ                 |
-|   **O**    |   1    | OG                                         |
-|   **R**    |   3    | RA, RC                                     |
-
-::: tip Variasi Inisial
-Perhatikan bahwa **tidak semua dosen punya inisial yang unik** — beberapa inisial berbeda bisa merujuk ke dosen berbeda, dan sebagian dosen mungkin punya inisial yang sama dengan inisial nama depan. Selalu verifikasi dengan **NIK** atau **nama lengkap** untuk memastikan.
-:::
+| Jika Kamu Tahu... | Langkah                                                                   |
+| ----------------- | ------------------------------------------------------------------------- |
+| **Inisial**       | Cari di kolom **Inisial** pada tabel.                                     |
+| **Nama**          | Cari di kolom **Nama** (sudah alfabetis).                                 |
+| **NIK**           | Cari di kolom **NIK**.                                                    |
+| **Mata kuliah**   | Buka [Jadwal Kuliah](/v1/information/jadwal-kuliah), lihat inisial dosen. |
+| **Proyek PBL**    | Buka [Info Tim PBL](/v1/information/info-team-pbl), lihat Manpro.         |
 
 ## Daftar Dosen
-
-Berikut daftar lengkap 54 dosen, diurutkan berdasarkan **inisial nama**.
 
 | NIK    | Inisial | Nama                                         | No. HP             |
 | ------ | :-----: | -------------------------------------------- | ------------------ |
@@ -183,155 +122,71 @@ Berikut daftar lengkap 54 dosen, diurutkan berdasarkan **inisial nama**.
 | 122256 | **RA**  | Rini Amadia, S.Sn., M.Sn                     | 85274147447        |
 | 125355 | **RC**  | Recy Harviani Zurwanty, S.Pd., M.Pd          | +62 812-6198-8149  |
 
-## Dosen di Mata Kuliah Semester Ini
+## Dosen Semester Ini
 
-Beberapa dosen mengampu mata kuliah di Semester Ganjil 2026/2027. Berikut pemetaannya berdasarkan data dari halaman mata kuliah:
+| Mata Kuliah                        | Inisial | Nama                   |
+| ---------------------------------- | :-----: | ---------------------- |
+| RPL101 — Pengantar RPL             | **MS**  | Metta Santiputri       |
+| RPL101 — Pengantar RPL             | **IQ**  | Iqbal Afif *           |
+| RPL102 — Algoritma dan Pemrograman | **NA**  | Alena Uperiati         |
+| RPL102 — Algoritma dan Pemrograman | **AW**  | Ari Wibowo             |
+| RPL102 — Algoritma dan Pemrograman | **AU**  | Agus Fatulloh *        |
+| RPL103 — Matematika Diskrit        |    —    | Supardianto *          |
+| RPL104 — Analisis dan Spesifikasi  |    —    | * (lihat jadwal)       |
+| RPL105 — Pemrograman Web           | **NR**  | Noper Ardi             |
+| RPL106 — Pengantar Basis Data      | **AM**  | Ahmadi Irmansyah Lubis |
 
-| Mata Kuliah                                    | Inisial | Nama Lengkap                               |
-| ---------------------------------------------- | :-----: | ------------------------------------------ |
-| RPL101 — Pengantar Rekayasa Perangkat Lunak    | **MS**  | Metta Santiputri, S.T., M.Sc, Ph.D         |
-| RPL101 — Pengantar Rekayasa Perangkat Lunak    | **IQ**  | Iqbal Afif _(lihat catatan)_               |
-| RPL102 — Algoritma dan Pemrograman             | **NA**  | Alena Uperiati, S.T, M.Cs                  |
-| RPL102 — Algoritma dan Pemrograman             | **AW**  | Ari Wibowo, ST., MT                        |
-| RPL102 — Algoritma dan Pemrograman             | **AU**  | Agus Fatulloh, S.T., M.T _(lihat catatan)_ |
-| RPL103 — Matematika Diskrit                    |    —    | Supardianto _(lihat catatan)_              |
-| RPL104 — Analisis dan Spesifikasi Kebutuhan PL |    —    | _(lihat catatan)_                          |
-| RPL105 — Pemrograman Berbasis Web              | **NR**  | Noper Ardi, S.Pd., M.Eng                   |
-| RPL106 — Pengantar Basis Data                  | **AM**  | Ahmadi Irmansyah Lubis, S.Kom., M.Kom.     |
-
-::: warning Catatan Penting
-Beberapa dosen yang muncul di jadwal atau mata kuliah **tidak ada di daftar tabel di atas** — misalnya **Iqbal Afif (IQ)**, **Supardianto**, **Kevin Riady (KV)**, **Banu Failasuf**, dan beberapa lainnya. Ini bisa disebabkan oleh:
-
-- Mereka dosen dari jurusan/prodi lain.
-- Data di tabel adalah snapshot yang belum mencakup seluruh dosen aktif.
-- Ada perbedaan antara database akademik dan direktori ini.
-
-Kalau kamu butuh kontak dosen yang tidak ada di daftar, hubungi **sekretariat Jurusan Teknik Informatika**.
-:::
+> **\*** Beberapa dosen (Iqbal Afif, Supardianto, Kevin Riady, Banu Failasuf) **tidak ada di tabel utama** — kemungkinan dari jurusan lain atau belum masuk snapshot data. Untuk kontak, hubungi **sekretariat Jurusan TI**.
 
 ## Etika Menghubungi Dosen
 
-::: tip Panduan Komunikasi Profesional
+::: tip Panduan Komunikasi
 
-- **Gunakan email resmi untuk hal akademik.** Email memberi jejak komunikasi yang jelas dan terdokumentasi.
-- **Sebutkan identitas lengkap** di awal pesan: nama, NIM, kelas, dan mata kuliah yang relevan.
-- **Gunakan bahasa yang sopan** dan formal — hindari singkatan tidak baku.
-- **Hormati jam kerja.** Hindari menghubungi di luar jam wajar (mis. setelah pukul 21.00) kecuali darurat.
-- **Beri waktu respons.** Dosen punya banyak tanggung jawab — tunggu 1–2 hari kerja sebelum menindaklanjuti.
-- **Jangan gunakan kanal pribadi untuk hal sensitif.** Untuk keluhan atau masalah pribadi, gunakan kanal resmi jurusan.
-  :::
+- **Gunakan email resmi** untuk hal akademik — ada jejak komunikasi.
+- **Sebutkan identitas lengkap**: nama, NIM, kelas, mata kuliah.
+- **Gunakan bahasa sopan** dan formal.
+- **Hormati jam kerja** — hindari di luar jam wajar (mis. setelah 21.00).
+- **Beri waktu respons** 1–2 hari kerja.
+- **Untuk hal sensitif**, gunakan kanal resmi jurusan.
 
-::: warning Hal yang Perlu Dihindari
+:::
 
-- **Jangan spam pesan.** Kirim satu pesan yang jelas daripada banyak pesan pendek.
-- **Jangan hubungi via HP di luar jam wajar** kecuali benar-benar darurat.
-- **Jangan mengirim pesan ke dosen yang bukan pengampu mata kuliahmu** untuk hal akademik — hubungi dosen yang tepat.
-- **Jangan menganggap nomor HP sebagai kanal utama.** Email resmi dan e-learning tetap jadi kanal utama.
-  :::
+::: warning Hindari
+
+- Spam pesan — kirim satu pesan yang jelas.
+- Hubungi via HP di luar jam wajar (kecuali darurat).
+- Hubungi dosen yang bukan pengampu mata kuliahmu.
+- Anggap nomor HP sebagai kanal utama — email/e-learning tetap utama.
+
+:::
+
+## FAQ
+
+::: details Mengapa sebagian dosen tidak ada di daftar?
+Beberapa dosen (mis. Iqbal Afif, Supardianto, Kevin Riady) mungkin dari **jurusan lain** atau belum terdaftar di snapshot ini. Hubungi **sekretariat Jurusan TI** untuk informasi resmi.
+:::
+
+::: details Boleh pakai nomor HP untuk konsultasi?
+Nomor HP = **kontak alternatif**. Untuk hal akademik, prioritaskan **email resmi** dan **e-learning**.
+:::
+
+::: details Apa itu NIK?
+**Nomor Induk Karyawan** — identitas unik dosen. Dipakai untuk surat menyurat resmi, formulir administrasi, dan verifikasi di sistem internal.
+:::
+
+::: details Mengapa inisial dosen berbeda panjang?
+Inisial diambil dari **dua huruf pertama nama**, tapi tidak selalu konsisten. Yang penting: inisial inilah yang dipakai di dokumen resmi.
+:::
+
+::: details Data di sini tidak akurat, harus bagaimana?
+Verifikasi lewat **situs resmi jurusan** atau **e-learning**. Konfirmasi ke **sekretariat jurusan**. Kalau kamu maintainer, langsung edit file dan commit.
+:::
 
 ## Halaman Terkait
 
-| Halaman                                                     | Deskripsi                                              |
-| ----------------------------------------------------------- | ------------------------------------------------------ |
-| [**Jadwal Kuliah**](/v1/information/jadwal-kuliah)          | Jadwal mingguan kelas malam TRPL dengan inisial dosen. |
-| [**Info Tim PBL**](/v1/information/info-team-pbl)           | Deskripsi proyek dan Manajer Proyek (Manpro).          |
-| [**Judul dan Tim PBL**](/v1/information/judul-dan-team-pbl) | Daftar tim PBL dan anggotanya.                         |
-| [**Mata Kuliah**](/v1/courses/)                             | Daftar mata kuliah semester ini dengan dosen pengampu. |
-
-## Pertanyaan yang Sering Diafakan
-
-::: details Mengapa sebagian dosen tidak ada di daftar?
-
-Beberapa dosen yang muncul di jadwal kuliah atau mata kuliah mungkin berasal dari **jurusan lain** atau **belum terdaftar** di snapshot data ini. Kalau kamu butuh kontak mereka:
-
-1. Cek halaman mata kuliah terkait — biasanya ada kontak pengampu.
-2. Hubungi **sekretariat Jurusan Teknik Informatika** untuk informasi resmi.
-3. Tanyakan ke ketua kelas atau dosen pengampu lain.
-
-:::
-
-::: details Apakah nomor HP bisa dipakai untuk konsultasi?
-
-Nomor HP ditampilkan sebagai **kontak darurat atau alternatif**. Untuk hal akademik, prioritaskan:
-
-- **Email resmi** dosen — alamat email biasanya berpola `nama@polibatam.ac.id`.
-- **E-learning** — untuk pertanyaan terkait tugas dan materi.
-- **Forum kelas** — untuk pertanyaan yang bisa dijawab bersama.
-
-Gunakan nomor HP hanya kalau memang diperlukan dan tetap sopan.
-
-:::
-
-::: details Apa arti NIK dan bagaimana cara menggunakannya?
-
-**NIK** adalah **Nomor Induk Karyawan** — identitas unik dosen di Politeknik Negeri Batam. Kamu mungkin perlu NIK untuk:
-
-- Surat menyurat resmi.
-- Formulir administrasi akademik.
-- Verifikasi identitas di sistem internal kampus.
-
-Kalau kamu hanya butuh kontak, **inisial atau nama** biasanya sudah cukup.
-
-:::
-
-::: details Mengapa inisial dosen berbeda-beda panjangnya?
-
-Inisial dosen umumnya diambil dari **dua huruf pertama nama**, tapi tidak selalu konsisten. Beberapa inisial diambil dari:
-
-- Nama depan + nama belakang (mis. **MS** = Metta Santiputri).
-- Nama tengah (mis. **NA** = Alena Uperiati — kemungkinan diambil dari panggilan atau nama lain).
-- Kode internal jurusan.
-
-Yang penting: **inisial ini yang dipakai di dokumen resmi** seperti jadwal dan RPS. Kalau ragu, cek NIK atau nama lengkapnya.
-
-:::
-
-::: details Apakah ada dosen yang bisa dihubungi untuk bimbingan PBL?
-
-**Ya.** Setiap proyek PBL punya **Manajer Proyek (Manpro)** yang membimbing langsung. Untuk semester ini:
-
-- **Iqbal Afif** — membimbing PBL-TRPL101 hingga 105.
-- **Kevin Riady** — membimbing PBL-TRPL106 hingga 110.
-- **Supardianto** — membimbing PBL-TRPL111 hingga 115.
-
-Lihat halaman [Info Tim PBL](/v1/information/info-team-pbl) untuk pemetaan lengkap proyek ke Manpro.
-
-:::
-
-::: details Bagaimana jika data di halaman ini tidak akurat?
-
-Data di halaman ini bersifat **living document** — bisa berubah sewaktu-waktu. Jika kamu menemukan ketidakakuratan:
-
-1. Verifikasi melalui **situs resmi jurusan** atau **e-learning**.
-2. Hubungi **sekretariat jurusan** untuk konfirmasi.
-3. Kalau kamu maintainer dokumentasi ini, langsung edit file dan commit.
-
-:::
-
-## Sumber Referensi Online
-
-### Platform Resmi
-
-| Sumber                      | Tautan                                       |
-| --------------------------- | -------------------------------------------- |
-| **Politeknik Negeri Batam** | [Buka →](https://www.polibatam.ac.id)        |
-| **E-Learning IF Polibatam** | [Buka →](https://learningif.polibatam.ac.id) |
-| **Sekretariat Jurusan TI**  | Hubungi melalui kanal resmi Polibatam        |
-
-### Halaman Terkait di Dokumentasi Ini
-
-| Halaman                                                     | Deskripsi                                     |
-| ----------------------------------------------------------- | --------------------------------------------- |
-| [**Jadwal Kuliah**](/v1/information/jadwal-kuliah)          | Jadwal kelas Malam TRPL dengan inisial dosen. |
-| [**Info Tim PBL**](/v1/information/info-team-pbl)           | Deskripsi proyek dan Manajer Proyek.          |
-| [**Judul dan Tim PBL**](/v1/information/judul-dan-team-pbl) | Tim PBL dan anggotanya.                       |
-
-::: info Tentang Halaman Ini
-Halaman ini memuat daftar kontak **54 dosen Jurusan Teknik Informatika Politeknik Negeri Batam**. Data dapat berubah sewaktu-waktu — mohon verifikasi melalui situs resmi jurusan atau kanal resmi kampus.
-
-**Catatan:** Beberapa dosen yang muncul di jadwal kuliah atau mata kuliah mungkin belum tercantum di daftar ini. Untuk informasi kontak mereka, silakan hubungi sekretariat jurusan.
-:::
-
-::: tip Butuh Update Cepat?
-Jika ada perubahan kontak, tambahan dosen, atau koreksi data, edit file `docs/v1/information/kontak-dosen.md` dan commit. Pastikan perubahan berdasarkan sumber resmi.
-:::
+| Halaman                                                 | Deskripsi                                 |
+| ------------------------------------------------------- | ----------------------------------------- |
+| [Jadwal Kuliah](/v1/information/jadwal-kuliah)          | Jadwal mingguan dengan inisial dosen.     |
+| [Info Tim PBL](/v1/information/info-team-pbl)           | Deskripsi proyek dan Manpro.              |
+| [Judul dan Tim PBL](/v1/information/judul-dan-team-pbl) | Tim PBL dan anggotanya.                   |
+| [Mata Kuliah](/v1/courses/)                             | Daftar mata kuliah dengan dosen pengampu. |

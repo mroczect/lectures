@@ -1,15 +1,15 @@
 ---
 title: Halaman Tugas
-description: Panduan membuat halaman tugas di dokumentasi Lectures — daftar tugas, ringkasan status, dan template instruksi.
+description: Panduan membuat halaman tugas — daftar tugas, ringkasan status, dan template instruksi.
 outline: deep
 ---
 
 # Panduan Halaman Tugas
 
-Halaman ini menjelaskan cara membuat **halaman tugas** — halaman yang menampilkan daftar tugas, instruksi, dan status pengumpulan.
+Cara membuat **halaman tugas** — daftar tugas, instruksi, dan status pengumpulan.
 
-::: info Kapan Pakai Panduan Ini?
-Gunakan panduan ini untuk halaman **task tracker** — seperti [Daftar Tugas](/v1/task/) atau halaman tugas individual seperti [Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan).
+::: info Kapan Pakai?
+Untuk halaman **task tracker** seperti [Daftar Tugas](/v1/task/) atau halaman tugas individual seperti [Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan).
 :::
 
 ## Dua Jenis Halaman Tugas
@@ -19,11 +19,11 @@ Gunakan panduan ini untuk halaman **task tracker** — seperti [Daftar Tugas](/v
 | **Index Tugas**  | Daftar semua tugas + ringkasan status | `/v1/task/`             |
 | **Detail Tugas** | Instruksi lengkap satu tugas          | `/v1/task/tugas-xxx.md` |
 
-## Struktur Index Tugas
+## Index Tugas
 
-Halaman index tugas menggunakan `layout: home` dengan struktur berikut:
+Gunakan `layout: home`.
 
-### Frontmatter Minimum
+### Frontmatter
 
 ```yaml
 ---
@@ -32,6 +32,8 @@ description: Kumpulan tugas mata kuliah — lengkap dengan deadline, status, dan
 layout: home
 ---
 ```
+
+CC BY-NC-SA 4.0
 
 ### Hero
 
@@ -54,33 +56,31 @@ hero:
 ```yaml
 features:
   - title: 7 Mata Kuliah
-    details: Semua tugas dari tujuh mata kuliah dikumpulkan dalam satu halaman.
+    details: Semua tugas dari tujuh mata kuliah dalam satu halaman.
   - title: Status Terkini
-    details: Setiap tugas punya status yang jelas — belum, sedang, sudah.
+    details: Setiap tugas punya status yang jelas.
   - title: Deadline Jelas
     details: Tenggat pengumpulan tercatat rapi.
-  - title: Tautan Pengumpulan
-    details: Langsung menuju halaman tugas di e-learning.
 ```
 
 ## Status Tugas
 
 Gunakan **teks status** (bukan emoji) untuk konsistensi:
 
-| Status                | Warna   | Kapan Dipakai                    |
-| --------------------- | ------- | -------------------------------- |
-| **Belum dikerjakan**  | Merah   | Belum ada progres                |
-| **Sedang dikerjakan** | Kuning  | Sudah mulai, belum selesai       |
-| **Sudah dikumpulkan** | Hijau   | Sudah submit sebelum deadline    |
-| **Terlewat**          | Abu-abu | Deadline lewat tanpa pengumpulan |
+| Status                | Warna   | Kapan Dipakai               |
+| --------------------- | ------- | --------------------------- |
+| **Belum dikerjakan**  | Merah   | Belum ada progres           |
+| **Sedang dikerjakan** | Kuning  | Sudah mulai, belum selesai  |
+| **Sudah dikumpulkan** | Hijau   | Submit sebelum deadline     |
+| **Terlewat**          | Abu-abu | Deadline lewat tanpa submit |
 
-::: warning Konsistensi Status
+::: warning Konsistensi
 Gunakan salah satu dari empat status di atas secara konsisten. Jangan mengarang status baru seperti "hampir selesai" atau "setengah jalan".
 :::
 
-## Struktur Detail Tugas
+## Detail Tugas
 
-Halaman detail tugas menggunakan **layout default** (bukan home):
+Gunakan layout default (bukan home).
 
 ### Frontmatter
 
@@ -94,8 +94,6 @@ outline: deep
 
 ### Section Wajib
 
-Setiap halaman detail tugas minimal berisi:
-
 1. **Petunjuk Tugas** — langkah pengerjaan
 2. **Daftar Soal** — 1 hingga N soal
 3. **Format Pengumpulan** — bentuk, panjang, deadline
@@ -103,8 +101,6 @@ Setiap halaman detail tugas minimal berisi:
 5. **Tips** — praktik baik
 
 ### Struktur Soal
-
-Setiap soal sebaiknya punya struktur konsisten:
 
 ```markdown
 ### Tugas 1: Judul Soal
@@ -114,11 +110,9 @@ Deskripsi situasi atau sistem yang menjadi latar soal.
 :::
 
 **Data soal:**
-
 [Data dalam bentuk tabel / kode / list]
 
 **Pertanyaan:**
-
 **a.** Pertanyaan pertama.
 **b.** Pertanyaan kedua.
 
@@ -128,8 +122,6 @@ Langkah atau hint tanpa membocorkan jawaban.
 ```
 
 ## Template Lengkap
-
-Berikut template lengkap untuk halaman **detail tugas**:
 
 ```markdown
 ---
@@ -143,14 +135,14 @@ outline: deep
 ## Petunjuk Tugas
 
 1. Baca materi tentang [topik] dari sumber bacaan.
-2. Diskusikan dalam kelompok kecil (2–3 orang) atau sesuai Tim PBL.
+2. Diskusikan dalam kelompok kecil (2–3 orang) atau Tim PBL.
 3. Siapkan ringkasan jawaban (1 halaman) dalam bentuk PPT atau PDF.
 
 ::: warning Format Pengumpulan
 
 - **Bentuk:** PPT atau PDF
 - **Panjang:** 1 halaman ringkasan
-- **Pengumpulan:** Melalui e-learning IF Polibatam
+- **Pengumpulan:** E-learning IF Polibatam
   :::
 
 ## Daftar Soal
@@ -172,14 +164,14 @@ outline: deep
 ## Ringkasan Soal
 
 | No. | Judul   | Konsep Utama | Tingkat Kesulitan |
-| --- | ------- | ------------ | :---------------: |
-| 1   | [Judul] | [Konsep]     |       Mudah       |
+| :-: | ------- | ------------ | :---------------: |
+|  1  | [Judul] | [Konsep]     |       Mudah       |
 
 ## Referensi
 
 | No. | Referensi        |
-| --- | ---------------- |
-| 1   | [Buku referensi] |
+| :-: | ---------------- |
+|  1  | [Buku referensi] |
 
 ## Format Pengumpulan
 
@@ -200,9 +192,9 @@ outline: deep
   :::
 ```
 
-## Checklist Halaman Tugas
+## Checklist
 
-### Untuk Index Tugas
+### Index Tugas
 
 - [ ] Frontmatter dengan `layout: home`
 - [ ] Hero dengan action ke daftar tugas
@@ -212,7 +204,7 @@ outline: deep
 - [ ] Section **Tugas per Mata Kuliah**
 - [ ] Section **Tips** dan **FAQ**
 
-### Untuk Detail Tugas
+### Detail Tugas
 
 - [ ] Frontmatter dengan `title`, `description`, `outline: deep`
 - [ ] Section **Petunjuk Tugas**
@@ -225,11 +217,12 @@ outline: deep
 
 ## Halaman Terkait
 
-| Halaman                                                                               | Deskripsi                       |
-| ------------------------------------------------------------------------------------- | ------------------------------- |
-| [**Format & Rules**](/format/page)                                                    | Landing page panduan format     |
-| [**Halaman Konten**](/format/page)                                                    | Panduan halaman konten standar  |
-| [**Halaman Homepage**](/format/homepage)                                              | Panduan layout `home`           |
-| [**Tugas Selesai**](/format/task-complite)                                            | Panduan menandai tugas selesai  |
-| [**Contoh: Daftar Tugas**](/v1/task/)                                                 | Implementasi nyata index tugas  |
-| [**Contoh: Tugas Teori Himpunan**](/v1/task/tugas-matematika-diskrit-materi-himpunan) | Implementasi nyata detail tugas |
+| Halaman                                                                           | Deskripsi                       |
+| --------------------------------------------------------------------------------- | ------------------------------- |
+| [Format & Rules](/format/page)                                                    | Landing page panduan format     |
+| [Halaman Konten](/format/page)                                                    | Panduan halaman konten standar  |
+| [Halaman Homepage](/format/homepage)                                              | Panduan layout `home`           |
+| [Tugas Selesai](/format/task-complite)                                            | Panduan menandai tugas selesai  |
+| [Contoh: Daftar Tugas](/v1/task/)                                                 | Implementasi nyata index tugas  |
+| [Contoh: Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan) | Implementasi nyata detail tugas |
+| CC BY-NC-SA 4.0                                                                   |

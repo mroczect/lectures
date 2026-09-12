@@ -1,298 +1,159 @@
 ---
-title: About
-description: Personal data, academic information, and contact details of Muhammad Riduwan Khafidi — student of D4 Software Engineering Technology at Politeknik Negeri Batam.
 layout: home
+title: Tentang
+description: Data pribadi, perjalanan akademik, dan cara menghubungi Muhammad Riduwan Khafidi — mahasiswa D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam.
 
 hero:
-  name: About
+  name: Tentang
   text: Muhammad Riduwan Khafidi
-  tagline: Student of D4 Software Engineering Technology at Politeknik Negeri Batam — Evening Class B, Batch 2026. Building this documentation one commit at a time.
+  tagline: Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam — Kelas Malam B, Angkatan 2026. Membangun dokumentasi ini satu commit setiap waktu.
   actions:
     - theme: brand
-      text: Personal Data
-      link: '#personal-data'
+      text: Data Pribadi
+      link: '#data-pribadi'
     - theme: alt
-      text: Academic Journey
-      link: '#academic-journey'
-    - theme: alt
-      text: Contact
-      link: '#contact'
+      text: Kontak
+      link: '#kontak'
 
 features:
-  - title: D4 Student
-    details: Software Engineering Technology, Evening Class B, Batch 2026, Semester 1 — Politeknik Negeri Batam.
-  - title: Documentation Maintainer
-    details: Maintains this Lectures documentation — from course pages to PBL team registries.
-  - title: Academic Advisor
-    details: Noper Ardi, M.Eng. — lecturer at the Department of Informatics Engineering.
-  - title: Open Source
-    details: All documentation is publicly available on GitHub under the MIT License.
-  - title: Reachable
-    details: Open to collaboration, feedback, and corrections through email or GitHub.
-  - title: Based in Batam
-    details: Lives in Tanjung Uncang, Batu Aji — commuting to Politeknik Negeri Batam.
+  - title: Mahasiswa D4
+    details: Teknologi Rekayasa Perangkat Lunak, Kelas Malam B, Angkatan 2026, Semester 1 — Politeknik Negeri Batam.
+  - title: Pengelola Dokumentasi
+    details: Mengelola dokumentasi Lectures — dari halaman mata kuliah sampai data tim PBL.
+  - title: Sumber Terbuka
+    details: Semua dokumentasi tersedia publik di GitHub dengan lisensi CC BY-NC-SA 4.0.
 ---
 
-::: tip Purpose of This Page
-This page introduces the person behind the **Lectures** documentation — his academic background, current focus, and how to reach him for questions, corrections, or collaboration.
+::: tip Tujuan Halaman Ini
+Halaman ini memperkenalkan sosok di balik dokumentasi **Lectures** — latar belakang akademik, fokus saat ini, dan cara menghubunginya untuk pertanyaan, koreksi, atau kolaborasi.
 :::
 
-## At a Glance
+## Sekilas
 
-<div align="center">
+|    NIM     | Program |  Kelas  | Angkatan | Semester |
+| :--------: | :-----: | :-----: | :------: | :------: |
+| 4342611034 | D4 TRPL | Malam B |   2026   |    1     |
 
-| **Student ID** | **Program** | **Class** | **Batch** | **Semester** |
-| :------------: | :---------: | :-------: | :-------: | :----------: |
-|   4342611034   |   D4 TRPL   | Evening B |   2026    |      1       |
+Seorang mahasiswa semester pertama yang sedang menempuh studi di bidang rekayasa perangkat lunak, sambil mengelola dokumentasi kuliah sebagai proyek pribadi.
 
-</div>
+## Perjalanan Akademik
 
-A snapshot of the author's current academic standing. This page is intentionally minimal, honest, and easy to keep up to date — no need for elaborate design when clarity matters more.
+- **2026** — Masuk Politeknik Negeri Batam, D4 TRPL Kelas Malam B.
+- **Semester 1** — Mengambil 7 mata kuliah (RPL101–RPL106 + Agama).
+- **Tim PBL** — PBL-TRPL106, proyek aplikasi Depot Air.
+- **Dokumentasi** — Mulai mengelola repo Lectures.
 
-## Academic Journey
+Perjalanan ini baru dimulai. Semester pertama jadi fondasi penting — di sinilah logika pemrograman, matematika dasar, dan cara berpikir sebagai calon software engineer dibentuk. Selain kuliah, penulis juga terlibat dalam proyek PBL yang menuntut kerja sama tim dan penerapan langsung teori ke praktik.
 
-The author's academic path so far — from entering Politeknik Negeri Batam to becoming the maintainer of this documentation.
+::: info Selanjutnya
+Menyelesaikan Semester 1 dengan fondasi yang kuat, melanjutkan proyek PBL menjadi aplikasi web yang berjalan, dan menjaga dokumentasi ini tetap relevan seiring berkembangnya kurikulum.
+:::
 
-```mermaid
-timeline
-    title Academic Journey — Muhammad Riduwan Khafidi
-    section 2026
-        Enrolled at Politeknik Negeri Batam : D4 Software Engineering Technology, Evening Class B
-        Started Semester 1 : Took 7 courses — RPL101 to RPL106, plus Religious Education
-        Assigned to PBL Team : PBL-TRPL106 — Depot Air application
-        Built this documentation : Started maintaining the Lectures repo
-    section Ongoing
-        Semester 1 in progress : Learning foundations, building projects, documenting everything
-```
+## Data Pribadi
 
-**What's next:**
+| Field             | Isi                                                                      |
+| ----------------- | ------------------------------------------------------------------------ |
+| **Nama Lengkap**  | Muhammad Riduwan Khafidi                                                 |
+| **NIM**           | 4342611034                                                               |
+| **Program Studi** | D4 Teknologi Rekayasa Perangkat Lunak (TRPL)                             |
+| **Kelas**         | Malam — B                                                                |
+| **Angkatan**      | 2026                                                                     |
+| **Semester**      | 1 (Ganjil 2026/2027)                                                     |
+| **Dosen Wali**    | Noper Ardi, M.Eng.                                                       |
+| **Email**         | [mriduwankhafidi@proton.me](mailto:mriduwankhafidi@proton.me)            |
+| **Telepon**       | 0895-1381-8455                                                           |
+| **Alamat**        | Perumahan Permata Laguna Blok A8 No. 11, Tanjung Uncang, Batu Aji, Batam |
+| **GitHub**        | [github.com/mroczect](https://github.com/mroczect)                       |
 
-- Complete Semester 1 with strong foundations in software engineering.
-- Continue developing the PBL project into a working web application.
-- Keep this documentation up to date as the curriculum evolves.
+## Kampus
 
-## Personal Data
-
-| Field                | Value                                                                     |
-| -------------------- | ------------------------------------------------------------------------- |
-| **Full Name**        | Muhammad Riduwan Khafidi                                                  |
-| **Student ID**       | 4342611034                                                                |
-| **Study Program**    | D4 Software Engineering Technology (TRPL)                                 |
-| **Class**            | Evening — B                                                               |
-| **Batch**            | 2026                                                                      |
-| **Semester**         | 1 (Odd 2026/2027)                                                         |
-| **Academic Advisor** | Noper Ardi, M.Eng.                                                        |
-| **Email**            | [mriduwankhafidi@proton.me](mailto:mriduwankhafidi@proton.me)             |
-| **Phone**            | 0895-1381-8455                                                            |
-| **Address**          | Perumahan Permata Laguna Block A8 No. 11, Tanjung Uncang, Batu Aji, Batam |
-| **GitHub**           | [github.com/mroczect](https://github.com/mroczect)                        |
-
-## Campus
-
-The author is enrolled at **Politeknik Negeri Batam** — a vocational higher education institution in Batam, Indonesia.
-
-| Field             | Value                                                            |
+| Field             | Isi                                                              |
 | ----------------- | ---------------------------------------------------------------- |
-| **Institution**   | Politeknik Negeri Batam                                          |
-| **Department**    | Department of Informatics Engineering (TI)                       |
-| **Study Program** | D4 Software Engineering Technology (TRPL)                        |
-| **Address**       | Jl. Ahmad Yani No. 1, Batam Center, Batam                        |
+| **Institusi**     | Politeknik Negeri Batam                                          |
+| **Jurusan**       | Teknik Informatika (TI)                                          |
+| **Program Studi** | D4 Teknologi Rekayasa Perangkat Lunak (TRPL)                     |
+| **Alamat**        | Jl. Ahmad Yani No. 1, Batam Center, Batam                        |
 | **Website**       | [polibatam.ac.id](https://www.polibatam.ac.id)                   |
 | **E-Learning**    | [learningif.polibatam.ac.id](https://learningif.polibatam.ac.id) |
 
-::: info About the Program
-**D4 Teknologi Rekayasa Perangkat Lunak (TRPL)** is a four-year applied bachelor program focused on practical software engineering. The curriculum emphasizes **Project-Based Learning (PBL)** — where students work in teams to build real applications that solve real problems.
+::: info Tentang Prodi
+**D4 TRPL** adalah program sarjana terapan 4 tahun yang fokus pada rekayasa perangkat lunak praktis. Kurikulumnya menekankan **Project-Based Learning (PBL)** — mahasiswa bekerja dalam tim membangun aplikasi nyata untuk masalah nyata.
+
+Berbeda dengan jalur sarjana akademik, D4 menekankan keseimbangan antara teori dan keterampilan praktis. Mahasiswa dibiasakan bekerja dengan standar industri sejak semester awal — mulai dari analisis kebutuhan, perancangan, implementasi, sampai pengujian.
 :::
 
-## Learning Focus
+## Fokus Belajar
 
-Current semester's focus — the seven courses currently being taken, organized by learning phase.
+| Fase             | Mata Kuliah              | Fokus                        |
+| ---------------- | ------------------------ | ---------------------------- |
+| **Fondasi**      | RPL102, RPL103, PK001RPL | Logika, matematika, karakter |
+| **Jembatan**     | RPL101, RPL104           | Proses RPL, kebutuhan        |
+| **Implementasi** | RPL105, RPL106           | Web, basis data              |
 
-```mermaid
-mindmap
-  root((Semester 1<br/>2026/2027))
-    Foundation
-      Algorithms & Programming
-        Python
-        Logic
-      Discrete Mathematics
-        Sets & Relations
-        Graphs
-      Religious Education
-        Character
-        Ethics
-    Bridge
-      Intro to Software Engineering
-        Lifecycle
-        Methodology
-      Requirements Analysis
-        Elicitation
-        SRS
-    Implementation
-      Web Programming
-        HTML & CSS
-        PHP & MySQL
-      Introduction to Database
-        ER Modeling
-        SQL
-```
+Pembagian fase ini bukan sekadar administratif — ada alasan pedagogis di baliknya. Fase **Fondasi** membangun cara berpikir: logika algoritmik dari RPL102 dan struktur matematis dari RPL103 menjadi bekal untuk memahami sistem yang lebih kompleks. Fase **Jembatan** memperkenalkan proses rekayasa perangkat lunak secara formal, termasuk bagaimana kebutuhan pengguna diterjemahkan menjadi dokumen spesifikasi (SRS). Fase **Implementasi** adalah tempat semua bekal itu dipakai — membangun aplikasi web dan merancang basis data untuk proyek nyata.
 
-| Phase              | Courses                  | Focus                                          |
-| ------------------ | ------------------------ | ---------------------------------------------- |
-| **Foundation**     | RPL102, RPL103, PK001RPL | Computational thinking, mathematics, character |
-| **Bridge**         | RPL101, RPL104           | Software engineering process, requirements     |
-| **Implementation** | RPL105, RPL106           | Web development, database design               |
+## Tentang Dokumentasi Ini
 
-::: tip Why This Order Matters
-The learning focus is intentionally structured as **Foundation → Bridge → Implementation**. Mathematical and algorithmic thinking first, then how to engineer and capture requirements, and finally how to build the actual product.
+Repo **Lectures** adalah proyek dokumentasi pribadi untuk materi kuliah, catatan tugas, dan data tim PBL — untuk penulis sendiri, teman sekelas, dan siapa pun yang ingin belajar.
+
+Dokumentasi ini lahir dari kebutuhan sederhana: materi kuliah sering tersebar di banyak tempat — e-learning, grup chat, slide dosen, catatan pribadi. Menyatukannya dalam satu tempat membuat belajar jadi lebih efisien, dan sekaligus memudahkan teman sekelas untuk menemukan hal yang sama.
+
+::: info Prinsip
+Terstruktur, jelas, mudah dirawat, dan terbuka (lisensi CC BY-NC-SA 4.0).
 :::
 
-## What This Documentation Is
+## Kontak
 
-The **Lectures** repository is a personal documentation project maintained by the author. It serves three purposes:
-
-```mermaid
-flowchart LR
-    A["📚 Course<br/>Materials"] --> D["Lectures<br/>Documentation"]
-    B["📝 Assignment<br/>Records"] --> D
-    C["👥 PBL Team<br/>Registry"] --> D
-
-    D --> E["For the Author<br/><i>Central knowledge base</i>"]
-    D --> F["For Classmates<br/><i>Shared reference</i>"]
-    D --> G["For the Wider<br/>Community<br/><i>Open learning</i>"]
-
-    style D fill:#3e63dd,color:#fff
-    style E fill:#6a6a71,color:#fff
-    style F fill:#6a6a71,color:#fff
-    style G fill:#6a6a71,color:#fff
-```
-
-### Guiding Principles
-
-| Principle          | Description                                                                                   |
-| ------------------ | --------------------------------------------------------------------------------------------- |
-| **Structure**      | Every page follows consistent format rules — file naming, frontmatter, layout.                |
-| **Clarity**        | Content written for both new and returning readers — no assumption of prior knowledge.        |
-| **Sustainability** | Easy to update without breaking other parts — sidebar, links, and search all stay consistent. |
-| **Openness**       | Published under the MIT License — free to use, adapt, and share with attribution.             |
-
-## Contact
-
-The author is reachable through the following channels. For corrections, questions, or collaboration — reach out on either platform.
-
-::: tip Primary Channels
-
-| Channel        | Detail                                                               |
+| Kanal          | Detail                                                               |
 | -------------- | -------------------------------------------------------------------- |
 | **Email**      | [mriduwankhafidi@proton.me](mailto:mriduwankhafidi@proton.me)        |
 | **GitHub**     | [github.com/mroczect](https://github.com/mroczect)                   |
-| **Repository** | [github.com/mroczect/lectures](https://github.com/mroczect/lectures) |
+| **Repositori** | [github.com/mroczect/lectures](https://github.com/mroczect/lectures) |
 
+::: warning Waktu Respons
+Penulis adalah mahasiswa penuh waktu — respons bisa memakan **1–3 hari**. Untuk isu mendesak, buka **issue GitHub** lebih cepat daripada email.
 :::
 
-::: warning Response Time
-The author is a full-time student — responses may take **1–3 days**. For urgent documentation issues, opening a **GitHub issue** is often faster than email.
-:::
+### Cara Berkontribusi
 
-### How to Contribute
+1. **Buka issue** di GitHub — jelaskan masalahnya.
+2. **Kirim pull request** — jika ingin memperbaiki sendiri.
+3. **Kirim email** — untuk hal yang tidak cocok lewat GitHub.
 
-If you spot an error, missing content, or have a suggestion:
-
-1. **Open an issue** on GitHub — describe the problem clearly.
-2. **Submit a pull request** — if you want to fix it yourself.
-3. **Send an email** — for anything that doesn't fit GitHub issues.
-
-All contributions — however small — are appreciated. This documentation improves through iteration.
+Semua kontribusi — sekecil apa pun — sangat dihargai. Dokumentasi ini tumbuh lewat iterasi, dan setiap koreksi membantu pembaca berikutnya.
 
 ## FAQ
 
-::: details Is this an official university documentation?
-
-**No.** This is a **personal documentation project** maintained by a student — not an official publication of Politeknik Negeri Batam or the TRPL program.
-
-While content is sourced from official materials (RPS documents, e-learning pages, and lecturer announcements), it is curated and organized by the author. For official matters, always refer to the university's own channels.
-
+::: details Apakah ini dokumentasi resmi kampus?
+**Tidak.** Ini proyek dokumentasi pribadi mahasiswa, bukan publikasi resmi Politeknik Negeri Batam. Konten bersumber dari materi resmi (dokumen RPS, halaman e-learning, pengumuman dosen), tetapi kurasi dan penyusunannya dilakukan oleh penulis. Untuk hal resmi, rujuk ke kanal universitas.
 :::
 
-::: details Can I use this documentation for my own study?
-
-**Yes.** All content is published under the **MIT License** — free to use, adapt, and share, as long as you provide attribution.
-
-If you're a student from another cohort or institution, feel free to fork the repository and adapt it to your needs. Credit is appreciated but not required for personal use.
-
+::: details Boleh saya pakai untuk belajar?
+**Boleh.** Semua konten berlisensi **CC BY-NC-SA 4.0** — bebas digunakan, diadaptasi, dan dibagikan dengan atribusi, selama tidak untuk tujuan komersial. Jika kamu mahasiswa dari angkatan atau institusi lain, silakan fork repo ini dan sesuaikan dengan kebutuhanmu.
 :::
 
-::: details Is the documentation always up to date?
-
-**Mostly, but not always.** Content is updated regularly by the author, but there may be delays — especially during exam periods.
-
-If you find outdated information, please open an issue or send an email. The author responds to corrections quickly.
-
+::: details Apakah selalu update?
+**Sebagian besar iya**, tapi bisa ada keterlambatan — terutama saat ujian. Update dilakukan mingguan saat semester berjalan, insidental untuk koreksi, dan antar semester untuk perubahan struktur. Jika menemukan info usang, buka issue atau kirim email.
 :::
 
-::: details Can I contribute content?
-
-**Yes, and it's welcome.** Contributions can take many forms:
-
-- Fixing typos or broken links.
-- Adding missing course materials.
-- Improving existing pages for clarity.
-- Reporting inaccuracies.
-
-The best way to contribute is through **GitHub pull requests**. If you're not familiar with Git, opening an **issue** with a detailed description also helps.
-
+::: details Boleh saya berkontribusi?
+**Boleh dan sangat diterima.** Perbaikan typo, tambahan materi, atau laporan ketidakakuratan — semua membantu. Cara terbaik lewat **pull request** GitHub. Kalau belum familiar dengan Git, buka **issue** dengan deskripsi detail juga sudah sangat membantu.
 :::
 
-::: details Why is the documentation versioned by academic term?
-
-Each academic term is stored in its own folder (e.g., `v1/`, `v2/`) — a deliberate design choice that:
-
-- Preserves previous materials for citation and reference.
-- Allows the curriculum to evolve without breaking old links.
-- Keeps context clear about which term a page belongs to.
-
-Past versions are **frozen** — only critical corrections (factual errors, broken links, security issues) are made.
-
+::: details Kenapa dokumentasi pakai versi per semester?
+Tiap semester punya folder sendiri (`v1/`, `v2/`) agar materi lama tetap bisa dikutip dan tautan lama tidak rusak. Versi lama **dibekukan** — hanya koreksi kritis (salah fakta, tautan rusak, masalah keamanan) yang dilakukan. Ini menjaga kutipan dan referensi yang dibuat selama semester aslinya tetap valid.
 :::
 
-::: details Who maintains this and how often?
-
-The documentation is maintained by **Muhammad Riduwan Khafidi** (the author of this page) as a personal project. Updates happen:
-
-- **Weekly** during the semester — for new materials and assignments.
-- **Ad hoc** — for corrections and improvements whenever discovered.
-- **Between semesters** — for structural updates and versioning.
-
-There is no formal schedule — updates are driven by need and available time.
-
+::: details Siapa yang mengelola dan seberapa sering?
+Dikelola oleh **Muhammad Riduwan Khafidi** sebagai proyek pribadi. Tidak ada jadwal formal — update didorong oleh kebutuhan dan waktu yang tersedia. Saat semester aktif, biasanya mingguan; saat ujian, bisa lebih lambat.
 :::
 
-::: details How do I report a factual error?
+## Halaman Terkait
 
-**Any of these work:**
-
-1. **GitHub Issue** — open one with the specific error and page link.
-2. **Email** — send to [mriduwankhafidi@proton.me](mailto:mriduwankhafidi@proton.me) with the subject "Documentation Error".
-3. **Pull Request** — submit a fix directly.
-
-For urgent errors (e.g., wrong schedule information before an exam), email is fastest.
-
-:::
-
-## Related Pages
-
-| Page                                | Description                                              |
-| ----------------------------------- | -------------------------------------------------------- |
-| [**Courses**](/v1/courses/)         | Course list with materials, assignments, and references. |
-| [**Information**](/v1/information/) | Schedules, lecturer contacts, and PBL team registries.   |
-| [**Tasks**](/v1/task/)              | Assignment briefs and submission details.                |
-| [**Format & Rules**](/format/page)  | Documentation conventions and contribution guidelines.   |
-| [**License**](/license)             | Terms of use for all content in this documentation.      |
-
-::: info About This Page
-This page is part of the **Lectures** documentation project — a personal academic reference maintained by Muhammad Riduwan Khafidi. For corrections or questions, use the contact channels above.
-:::
-
-::: tip Last Updated
-This page was last updated alongside the initial release of the Semester 1 (Odd 2026/2027) documentation. It will be refreshed as the author's academic journey progresses.
-:::
+| Halaman                         | Deskripsi                              |
+| ------------------------------- | -------------------------------------- |
+| [Mata Kuliah](/v1/courses/)     | Daftar mata kuliah, materi, dan tugas. |
+| [Informasi](/v1/information/)   | Jadwal, kontak dosen, dan tim PBL.     |
+| [Tugas](/v1/task/)              | Daftar tugas dan detail pengumpulan.   |
+| [Format & Aturan](/format/page) | Konvensi dan panduan kontribusi.       |
+| [Lisensi](/license)             | Ketentuan penggunaan konten.           |

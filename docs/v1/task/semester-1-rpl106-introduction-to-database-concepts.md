@@ -1,221 +1,118 @@
 ---
-title: Tugas RPL106 — Resume Video Pertemuan 1
-description: Tugas teori pertemuan 1 mata kuliah RPL106 Pengantar Basis Data — resume video pendek tentang Introduction to Database Concepts.
+title: Resume Video — Pertemuan 1
+description: Tugas RPL106 Pengantar Basis Data — resume video 60 detik tentang Introduction to Database Concepts.
 layout: home
 
 hero:
   name: Tugas RPL106
   text: Resume Video — Pertemuan 1
-  tagline: Satu video pendek, satu topik besar — rangkum Introduction to Database Concepts dalam 60 detik yang jelas, padat, dan berkesan.
+  tagline: Rangkum Introduction to Database Concepts dalam 60 detik — jelas, padat, dan menunjukkan pemahaman.
   actions:
     - theme: brand
-      text: Petunjuk Tugas
-      link: '#petunjuk-tugas'
+      text: Mulai
+      link: '#petunjuk'
     - theme: alt
-      text: Ketentuan Video
+      text: Ketentuan
       link: '#ketentuan-video'
     - theme: alt
-      text: Kembali ke Tugas
+      text: Kembali
       link: /v1/task/
 
 features:
-  - title: Video Resume
-    details: Tugas individu berupa video resume verbal tentang materi Pertemuan 1 — Introduction to Database Concepts.
-  - title: Maksimal 60 Detik
-    details: Durasi video pendek memaksa kamu memilih inti materi yang paling penting — bukan membaca ulang slide.
   - title: Selfie Video
-    details: Kamu tampil di depan kamera, merekam diri sendiri dengan gaya santai, nyaman, dan sopan.
-  - title: Platform Pilihan
-    details: Upload ke YouTube Shorts, TikTok, atau Reels IG/FB — pilih satu saja, jangan matikan kolom komentar.
-  - title: Pengumpulan PDF/TXT
-    details: File pengumpulan memuat identitas, kelas, kode dosen, dan link video aktif.
-  - title: Validasi Presensi
-    details: Presensi teori pertemuan 1 divalidasi hanya bagi mahasiswa yang sudah mengumpulkan tugas ini.
+    details: Kamu tampil di depan kamera — gaya santai, nyaman, dan sopan.
+  - title: Maksimal 60 Detik
+    details: Durasi pendek memaksa kamu memilih inti materi, bukan membaca ulang slide.
+  - title: Upload ke Sosmed
+    details: Pilih satu — YouTube Shorts, TikTok, atau Reels IG/FB. Jangan matikan komentar.
+  - title: Kumpulkan .txt / .pdf
+    details: Berisi identitas, kelas, kode dosen, dan link video aktif.
 ---
 
-::: tip Sebelum Mengerjakan
-Pastikan kamu sudah:
+::: tip Baca Dulu
+Pastikan kamu sudah **mengunduh modul**, **menonton video materi**, dan **membaca slide** Pertemuan 1 di e-learning.
 
-1. **Mengunduh modul Pertemuan 1** — "Introduction of Database Concepts" dari e-learning.
-2. **Menonton video materi perkuliahan** yang disediakan di e-learning.
-3. **Membaca slide presentasi** Pertemuan 1.
-
-Tugas ini bukan sekadar merekam video — tapi membuktikan bahwa kamu **memahami materi**, bukan sekadar membaca.
+Tugas ini bukan sekadar merekam video — tapi membuktikan kamu **memahami materi**.
 :::
 
-## Petunjuk Tugas
+## Petunjuk
 
-Ikuti alur berikut dari membaca materi hingga mengumpulkan tugas:
+1. Baca modul dan slide Pertemuan 1.
+2. Tonton video materi di e-learning — catat poin penting.
+3. Rangkum **3–5 poin inti** sebagai naskah.
+4. Rekam video selfie maksimal **60 detik**.
+5. Upload ke salah satu platform pilihan.
+6. Kumpulkan file **.txt** atau **.pdf** berisi identitas dan link video.
 
-```mermaid
-flowchart LR
-    A["1. Baca<br/>modul"] --> B["2. Tonton<br/>video materi"]
-    B --> C["3. Rangkum<br/>poin inti"]
-    C --> D["4. Rekam<br/>video"]
-    D --> E["5. Upload<br/>ke platform"]
-    E --> F["6. Kumpulkan<br/>file identitas"]
+## Materi
 
-    style A fill:#3e63dd,color:#fff
-    style B fill:#2f6f4e,color:#fff
-    style C fill:#4fbf8c,color:#fff
-    style D fill:#6a6a71,color:#fff
-    style E fill:#6bcfaa,color:#fff
-    style F fill:#7bdfba,color:#fff
-```
+Pilih **3–5 topik** dari daftar berikut yang paling kamu kuasai:
 
-### Langkah Detail
-
-1. **Baca modul dan slide** Pertemuan 1 tentang Introduction to Database Concepts.
-2. **Tonton video materi** yang tersedia di e-learning — catat poin-poin penting.
-3. **Rangkum 3–5 poin inti** yang paling kamu pahami — ini akan jadi naskah video.
-4. **Rekam video pendek** (maksimal 60 detik) dengan gaya santai, nyaman, dan sopan.
-5. **Upload video** ke platform pilihan (YouTube Shorts, TikTok, atau Reels IG/FB).
-6. **Kumpulkan file .txt atau .pdf** yang memuat identitas dan link video.
-
-## Materi yang Harus Dikuasai
-
-Video resume kamu harus mencakup setidaknya **beberapa** dari topik berikut. Pilih yang paling kamu kuasai:
-
-```mermaid
-mindmap
-  root((Introduction to<br/>Database<br/>Concepts))
-    Konsep Dasar
-      Data vs Datum
-      Informasi
-      Hierarki Data
-    Peran Basis Data
-      Aplikasi Nyata
-        Social Media
-        E-Commerce
-        Maps
-      Skala Industri
-    Spreadsheet vs Database
-      Keterbatasan Excel
-      Keunggulan RDBMS
-      Kapan Pakai Apa
-    Komponen Relasional
-      Entitas
-      Atribut
-      Tabel
-      Record
-      Primary Key
-      Foreign Key
-    DBMS
-      Fungsi Utama
-      Karir Terkait
-        Data Administrator
-        Data Scientist
-        Developer
-```
-
-### Tujuan Pembelajaran Pertemuan 1
-
-Setelah menyelesaikan tugas ini, kamu diharapkan mampu:
-
-| No. | Tujuan Pembelajaran                                                                                          |
-| :-: | ------------------------------------------------------------------------------------------------------------ |
-|  1  | **Memahami perbedaan** antara Data, Datum, dan Informasi dalam konteks sistem komputer.                      |
-|  2  | **Mengidentifikasi peran strategis** basis data dalam aplikasi dunia nyata (Social Media, E-Commerce, Maps). |
-|  3  | **Menganalisis keterbatasan** penggunaan Spreadsheet (Excel) dibandingkan Relational Database.               |
-|  4  | **Memahami konsep dasar** komponen relasional: Entitas, Atribut, Tabel, Record, Primary Key, Foreign Key.    |
-|  5  | **Mengenal fungsi utama** DBMS dan gambaran karir terkait (Data Administrator, Data Scientist, Developer).   |
+- **Konsep dasar** — Data, Datum, Informasi.
+- **Peran basis data** — Social Media, E-Commerce, Maps.
+- **Spreadsheet vs Database** — kapan pakai Excel, kapan pakai RDBMS.
+- **Komponen relasional** — Entitas, Atribut, Tabel, Record, Primary Key, Foreign Key.
+- **DBMS** — fungsi utama dan karir terkait (Data Administrator, Data Scientist, Developer).
 
 ## Ketentuan Video
 
-::: warning Ketentuan Wajib Video
+::: warning Wajib Dipatuhi
 
-| Aspek        | Ketentuan                                                   |
-| ------------ | ----------------------------------------------------------- |
-| **Jenis**    | Selfie Video — kamu tampil di depan kamera                  |
-| **Gaya**     | Santai, nyaman, dan sopan                                   |
-| **Editing**  | Boleh dengan editing, boleh video murni                     |
-| **Durasi**   | Maksimal **60 detik**                                       |
-| **Platform** | YouTube Shorts · TikTok · Reels IG/FB (pilih **satu** saja) |
-| **Komentar** | **Jangan matikan** kolom komentar                           |
-| **Bahasa**   | Indonesia (boleh campur istilah teknis Inggris)             |
+| Aspek        | Ketentuan                                             |
+| ------------ | ----------------------------------------------------- |
+| **Jenis**    | Selfie video — kamu tampil di kamera                  |
+| **Gaya**     | Santai, nyaman, sopan                                 |
+| **Editing**  | Boleh diedit, boleh video murni                       |
+| **Durasi**   | Maksimal **60 detik**                                 |
+| **Platform** | Pilih **satu**: YouTube Shorts · TikTok · Reels IG/FB |
+| **Komentar** | **Jangan dimatikan**                                  |
+| **Bahasa**   | Indonesia (boleh campur istilah teknis Inggris)       |
 
 :::
 
-### Kenapa 60 Detik?
-
-Durasi pendek bukan untuk mempersulit — justru memaksa kamu untuk:
-
-```mermaid
-flowchart LR
-    A["60 detik"] --> B["Pilih inti<br/>materi"]
-    B --> C["Buang<br/>detail sekunder"]
-    C --> D["Fokus pada<br/>pemahaman"]
-    D --> E["Komunikasi<br/>efektif"]
-
-    style A fill:#3e63dd,color:#fff
-    style E fill:#2f6f4e,color:#fff
-```
-
-- **Fokus.** Tidak ada waktu untuk bertele-tele.
-- **Komunikasi.** Melatih penyampaian ide secara ringkas.
-- **Pemahaman.** Kalau bisa dijelaskan dalam 60 detik, kamu benar-benar paham.
-
-### Platform Pilihan
-
-Pilih **salah satu** dari platform berikut. Jangan upload ke semua — cukup satu.
+### Platform
 
 ::: code-group
 
 ```text [YouTube Shorts]
-✅ Kelebihan:
-- Kualitas video lebih baik
-- Komentar lebih terstruktur
-- Link lebih stabil jangka panjang
-
-⚠️ Perhatian:
-- Pastikan video di-set "Public" atau "Unlisted"
-- Jangan matikan komentar
+ Kualitas bagus, link stabil
+ Set "Public" atau "Unlisted"
+ Jangan matikan komentar
 ```
 
 ```text [TikTok]
-✅ Kelebihan:
-- Upload cepat dari HP
-- Kompresi otomatis
-- Jangkauan luas
-
-⚠️ Perhatian:
-- Pastikan akun tidak private
-- Jangan matikan komentar
-- Perhatikan privasi — jangan bagikan info sensitif
+ Upload cepat, jangkauan luas
+ Akun jangan private
+ Jangan matikan komentar
 ```
 
 ```text [Reels IG/FB]
-✅ Kelebihan:
-- Terintegrasi dengan sosial media
-- Upload mudah dari aplikasi mobile
-
-⚠️ Perhatian:
-- Pastikan akun tidak private
-- Jangan matikan komentar
-- Durasi maksimal 60 detik sudah cocok
+ Terintegrasi sosmed, upload mudah
+ Akun jangan private
+ Jangan matikan komentar
 ```
 
 :::
 
 ## Format Pengumpulan
 
-::: warning Format Wajib Pengumpulan
+::: warning Format File
 
-Kumpulkan file dalam format **.txt** atau **.pdf** yang memuat informasi berikut:
+Kumpulkan file **.txt** atau **.pdf** dengan format:
 
 ```
 Nama       : [Nama Lengkap]
-NIM        : [Nomor Induk Mahasiswa]
-Kelas      : [Contoh: TRPL 1A Malam]
-Kode Dosen : [Contoh: AM atau NN]
-Link Video : [URL Video Aktif]
+NIM        : [NIM]
+Kelas      : [Contoh: TRPL 1B Malam]
+Kode Dosen : [Contoh: AM]
+Link Video : [URL Video]
 ```
 
-Pastikan **link video dapat diakses publik** dan **kolom komentar terbuka**.
+Pastikan link bisa diakses publik dan komentar terbuka.
 
 :::
 
-### Contoh Isi File Pengumpulan
+**Contoh:**
 
 ```text
 Nama       : Muhammad Riduwan Khafidi
@@ -225,246 +122,136 @@ Kode Dosen : AM
 Link Video : https://youtube.com/shorts/xxxxxxxxxxx
 ```
 
-::: tip Sebelum Submit
+## Konsep Kunci
 
-- [ ] Link video sudah dites di browser **incognito** — memastikan bisa diakses publik.
-- [ ] Kolom komentar **tidak dimatikan**.
-- [ ] File berformat .txt atau .pdf — **bukan** .docx atau .md.
-- [ ] Semua field terisi — tidak ada yang kosong.
-- [ ] Sudah di-upload sebelum **deadline** yang tertera di e-learning.
-      :::
+### Data, Datum, Informasi
 
-## Deadline dan Validasi Presensi
+- **Datum** — fakta tunggal (mis. "25").
+- **Data** — kumpulan fakta (mis. "25, 30, 28, 32").
+- **Informasi** — data yang sudah diberi makna (mis. "Suhu rata-rata 28°C").
 
-::: info Deadline
+### Spreadsheet vs Database
 
-- **Tenggat:** Tertera pada sistem pengumpulan di masing-masing kelas di e-learning.
-- **Presensi:** Presensi teori pertemuan 1 **hanya divalidasi** bagi mahasiswa yang sudah mengumpulkan tugas ini.
-- **Konsekuensi:** Jika tidak mengumpulkan, kamu dianggap **tidak hadir** di pertemuan 1 — meskipun secara fisik hadir.
-  :::
+| Aspek      | Excel    | Database |
+| ---------- | -------- | -------- |
+| Skala      | Kecil    | Besar    |
+| Multi-user | Terbatas | Ya       |
+| Integritas | Manual   | Otomatis |
+| Query      | Formula  | SQL      |
 
-## Konsep Kunci untuk Video
+### Komponen Relasional
 
-Beberapa konsep yang **wajib kamu pahami** sebelum merekam video. Pilih 3–5 konsep paling relevan untuk dibahas.
+| Komponen        | Arti                           |
+| --------------- | ------------------------------ |
+| **Entitas**     | Objek (Mahasiswa, Mata Kuliah) |
+| **Atribut**     | Karakteristik (nama, NIM)      |
+| **Tabel**       | Baris & kolom                  |
+| **Record**      | Satu baris data                |
+| **Primary Key** | ID unik tiap record            |
+| **Foreign Key** | Penghubung antar tabel         |
 
-### 1. Data, Datum, dan Informasi
+### DBMS
 
-```mermaid
-flowchart LR
-    A["Datum<br/><i>Fakta tunggal</i>"] --> B["Data<br/><i>Kumpulan fakta</i>"]
-    B --> C["Informasi<br/><i>Data yang bermakna</i>"]
+Fungsi: menyimpan, mengelola, mengamankan data, dan menyediakan query (SQL).
 
-    style A fill:#3e63dd,color:#fff
-    style C fill:#2f6f4e,color:#fff
-```
+Karir: Data Administrator, Data Scientist, Developer.
 
-- **Datum** — satu fakta mentah (misal: "25").
-- **Data** — kumpulan fakta (misal: "25, 30, 28, 32").
-- **Informasi** — data yang sudah diberi konteks dan makna (misal: "Suhu rata-rata minggu ini adalah 28°C").
+## Tips Rekam Video
 
-### 2. Spreadsheet vs Relational Database
+::: tip Lakukan
 
-| Aspek               | Spreadsheet (Excel)             | Relational Database     |
-| ------------------- | ------------------------------- | ----------------------- |
-| **Skala**           | Kecil–menengah                  | Menengah–besar          |
-| **Multi-user**      | Terbatas                        | Ya, dirancang untuk itu |
-| **Integritas Data** | Manual                          | Otomatis (constraint)   |
-| **Query**           | Formula                         | SQL                     |
-| **Concurrency**     | Rawan konflik                   | Terkelola               |
-| **Cocok untuk**     | Catatan pribadi, analisis kecil | Aplikasi produksi       |
+- Siapkan naskah **3–5 poin** — jangan baca teks lengkap.
+- Rekam di tempat tenang, pencahayaan dari depan.
+- Tatap kamera, bukan layar.
+- Bicara dengan tempo sedang dan intonasi bervariasi.
+- Durasi **45–55 detik** — sisakan buffer.
+- Cek audio sebelum upload.
 
-### 3. Komponen Relasional
-
-| Komponen        | Penjelasan                                                                  |
-| --------------- | --------------------------------------------------------------------------- |
-| **Entitas**     | Objek yang direpresentasikan dalam database (misal: Mahasiswa, Mata Kuliah) |
-| **Atribut**     | Karakteristik entitas (misal: nama, NIM, alamat)                            |
-| **Tabel**       | Representasi fisik entitas — baris dan kolom                                |
-| **Record**      | Satu baris dalam tabel — satu instance entitas                              |
-| **Primary Key** | Kolom unik yang mengidentifikasi setiap record                              |
-| **Foreign Key** | Kolom yang merujuk ke Primary Key tabel lain — membangun relasi             |
-
-### 4. DBMS (Database Management System)
-
-**Fungsi utama DBMS:**
-
-- Menyimpan dan mengelola data secara terstruktur.
-- Menjaga integritas dan konsistensi data.
-- Menyediakan mekanisme query (SQL).
-- Mengelola akses dan keamanan.
-- Menangani backup dan recovery.
-
-**Karir terkait:**
-
-- **Data Administrator** — mengelola infrastruktur database.
-- **Data Scientist** — menganalisis data untuk insight.
-- **Developer** — membangun aplikasi di atas database.
-
-## Tips Membuat Video yang Baik
-
-::: tip Tips Produksi Video
-
-- **Siapkan naskah singkat.** Tulis 3–5 poin utama, bukan naskah lengkap. Membaca naskah akan terlihat kaku.
-- **Rekam di tempat tenang.** Hindari kebisingan latar belakang.
-- **Pastikan pencahayaan cukup.** Wajah harus terlihat jelas — cahaya dari depan, bukan belakang.
-- **Posisi kamera stabil.** Gunakan tripod atau letakkan HP di tempat yang kokoh.
-- **Bicara dengan tempo sedang.** Tidak terlalu cepat, tidak terlalu lambat.
-- **Tatap kamera, bukan layar.** Kontak mata membangun koneksi dengan penonton.
-- **Gunakan intonasi.** Variasikan nada bicara agar tidak monoton.
-- **Cek audio sebelum upload.** Pastikan suara terdengar jelas — bukan hanya gambar.
-- **Durasi 45–55 detik.** Sisakan buffer — jangan terlalu mepet ke 60 detik.
-- **Jangan lupa buka komentar.** Ini ketentuan wajib.
-  :::
+:::
 
 ::: warning Hindari
 
-- **Membaca naskah dari kertas.** Terlihat tidak natural.
-- **Video lebih dari 60 detik.** Platform akan memotong otomatis — pesan bisa terpotong.
-- **Suara tidak jelas.** Audio buruk = penilaian buruk.
-- **Setting private.** Video harus bisa diakses publik.
-- **Komentar dimatikan.** Ini pelanggaran ketentuan.
-- **Lupa identitas di file pengumpulan.** File tanpa identitas tidak bisa dinilai.
-- **Mengumpulkan setelah deadline.** Presensi tidak akan tervalidasi.
-  :::
-
-## Contoh Naskah Video (60 Detik)
-
-Berikut kerangka naskah yang bisa kamu adaptasi:
-
-::: details Kerangka Naskah — 5 Poin dalam 55 Detik
-
-**0–5 detik — Pembuka**
-
-"Halo, saya [Nama] dari kelas [Kelas]. Hari ini saya akan merangkum materi Pertemuan 1 tentang Introduction to Database Concepts."
-
-**5–15 detik — Poin 1: Data vs Informasi**
-
-"Materi pertama membahas perbedaan data dan informasi. Data adalah kumpulan fakta mentah, sedangkan informasi adalah data yang sudah diberi konteks dan makna."
-
-**15–25 detik — Poin 2: Peran Basis Data**
-
-"Basis data memiliki peran strategis di aplikasi modern — dari social media, e-commerce, hingga maps. Semuanya mengandalkan database untuk menyimpan dan mengelola data dalam skala besar."
-
-**25–35 detik — Poin 3: Spreadsheet vs Database**
-
-"Berbeda dengan Excel yang cocok untuk skala kecil, relational database dirancang untuk data besar, multi-user, dan integritas tinggi."
-
-**35–45 detik — Poin 4: Komponen Relasional**
-
-"Komponen dasar database relasional meliputi entitas, atribut, tabel, record, primary key, dan foreign key."
-
-**45–55 detik — Penutup**
-
-"Fungsi utama DBMS adalah menyimpan, mengelola, dan mengamankan data. Itu rangkuman saya, terima kasih!"
+- Baca naskah dari kertas.
+- Video lebih dari 60 detik.
+- Suara tidak jelas.
+- Setting private atau komentar dimatikan.
+- Lupa identitas di file pengumpulan.
+- Submit setelah deadline.
 
 :::
 
-::: tip Sesuaikan dengan Gayamu
-Kerangka di atas hanya panduan. Sesuaikan dengan gaya bicaramu — santai, formal, atau campuran. Yang penting: **jelas, padat, dan menunjukkan pemahaman**.
+## Contoh Naskah
+
+::: details Kerangka 5 Poin — 55 Detik
+
+**0–5 dtk — Pembuka**
+"Halo, saya [Nama] dari kelas [Kelas]. Saya akan merangkum Pertemuan 1 tentang Introduction to Database Concepts."
+
+**5–15 dtk — Data vs Informasi**
+"Data adalah kumpulan fakta mentah, informasi adalah data yang sudah diberi makna."
+
+**15–25 dtk — Peran Basis Data**
+"Basis data dipakai di social media, e-commerce, hingga maps — untuk mengelola data skala besar."
+
+**25–35 dtk — Excel vs Database**
+"Excel cocok untuk skala kecil; relational database untuk data besar, multi-user, dan integritas tinggi."
+
+**35–45 dtk — Komponen Relasional**
+"Komponen dasarnya: entitas, atribut, tabel, record, primary key, foreign key."
+
+**45–55 dtk — Penutup**
+"DBMS berfungsi menyimpan, mengelola, dan mengamankan data. Terima kasih!"
+
 :::
 
-## Checklist Sebelum Submit
+## Checklist Submit
 
-- [ ] Modul Pertemuan 1 sudah dibaca
-- [ ] Video materi sudah ditonton
-- [ ] Naskah 3–5 poin sudah disiapkan
-- [ ] Video sudah direkam (maksimal 60 detik)
+- [ ] Modul dan video materi sudah dibaca/ditonton
+- [ ] Naskah 3–5 poin siap
+- [ ] Video direkam maksimal 60 detik
 - [ ] Audio dan gambar jelas
-- [ ] Video sudah di-upload ke salah satu platform
-- [ ] Video **tidak private** — bisa diakses publik
-- [ ] Kolom komentar **tidak dimatikan**
-- [ ] File .txt atau .pdf sudah dibuat
-- [ ] Semua field identitas terisi lengkap
-- [ ] Link video sudah dites di incognito
-- [ ] File di-upload sebelum deadline
-- [ ] Presensi pertemuan 1 tervalidasi
+- [ ] Video sudah di-upload (Public)
+- [ ] Komentar tidak dimatikan
+- [ ] File .txt / .pdf sudah dibuat
+- [ ] Semua identitas terisi
+- [ ] Link sudah dites di incognito
+- [ ] Submit sebelum deadline
 
-## Pertanyaan yang Sering Diajukan
+## FAQ
 
-::: details Apakah video harus dalam Bahasa Indonesia?
-
-**Ya, disarankan Bahasa Indonesia.** Boleh mencampur dengan istilah teknis Inggris (misal "primary key", "database", "relational"). Yang penting adalah penyampaian yang jelas dan mudah dipahami.
-
+::: details Harus Bahasa Indonesia?
+Disarankan. Boleh campur istilah teknis Inggris.
 :::
 
-::: details Bolehkah menggunakan template atau efek TikTok?
-
-**Boleh.** Ketentuan membolehkan editing maupun video murni. Gunakan efek yang mendukung penyampaian materi — bukan yang mengganggu.
-
+::: details Boleh pakai template TikTok?
+Boleh, selama mendukung penyampaian materi.
 :::
 
-::: details Bagaimana kalau saya tidak nyaman tampil di kamera?
-
-Tugas ini adalah **selfie video** — kamu memang harus tampil di depan kamera. Ini bagian dari latihan komunikasi publik. Kalau benar-benar tidak nyaman, hubungi dosen pengampu untuk diskusi opsi alternatif — tapi jangan berasumsi bisa diubah tanpa konfirmasi.
-
+::: details Tidak nyaman tampil di kamera?
+Tugas ini selfie video — tampil di kamera memang bagian dari tugas. Hubungi dosen kalau ada kendala serius.
 :::
 
-::: details Apakah video bisa diedit dengan subtitle?
-
-**Bisa, dan justru bagus.** Subtitle membantu penonton memahami materi, terutama jika audio kurang jelas. Tapi pastikan subtitle akurat dan tidak mengganggu visual.
-
+::: details Boleh pakai subtitle?
+Boleh, justru membantu.
 :::
 
-::: details Apa yang dimaksud dengan "jangan matikan kolom komentar"?
-
-Di platform seperti YouTube Shorts, TikTok, atau Reels, kamu bisa mengatur video agar komentar dinonaktifkan. **Jangan lakukan itu.** Ketentuan ini kemungkinan untuk memastikan video benar-benar publik dan bisa diverifikasi keaktifannya.
-
+::: details Kenapa komentar tidak boleh dimatikan?
+Untuk memastikan video benar-benar publik dan bisa diverifikasi.
 :::
 
-::: details Bagaimana kalau saya mengumpulkan terlambat?
-
-Deadline tertera di e-learning masing-masing kelas. Mengumpulkan terlambat biasanya **tidak akan memvalidasi presensi pertemuan 1**. Kalau ada kendala serius, hubungi dosen pengampu atau tim pengajar **sebelum** deadline — bukan sesudahnya.
-
+::: details Kalau telat submit?
+Presensi pertemuan 1 biasanya tidak tervalidasi. Hubungi dosen **sebelum** deadline kalau ada kendala.
 :::
 
-::: details Apakah video harus di-upload ke YouTube?
-
-**Tidak.** Kamu bisa memilih salah satu dari: YouTube Shorts, TikTok, atau Reels IG/FB. Pilih yang paling nyaman untukmu — yang penting video bisa diakses publik dan kolom komentar terbuka.
-
+::: details Harus YouTube?
+Tidak. Pilih salah satu: YouTube Shorts, TikTok, atau Reels IG/FB.
 :::
 
-::: details Berapa nilai tugas ini terhadap nilai akhir?
-
-Bobot detail tugas ini terhadap nilai akhir biasanya tercantum di RPS. Secara umum, tugas teori seperti ini masuk ke komponen **"Kognitif Tugas"** atau **"Aktivitas Partisipatif"**. Cek RPS mata kuliah untuk bobot pastinya.
-
+::: details Berapa bobot nilainya?
+Cek RPS mata kuliah. Biasanya masuk komponen "Kognitif Tugas" atau "Aktivitas Partisipatif".
 :::
 
-## Contoh Pengumpulan
-
-Berikut contoh isi file pengumpulan yang benar:
-
-```text
-===========================================
-TUGAS TEORI PERTEMUAN 1
-RPL106 - Pengantar Basis Data
-===========================================
-
-Nama       : Muhammad Riduwan Khafidi
-NIM        : 4342611034
-Kelas      : TRPL 1B Malam
-Kode Dosen : AM
-
-Link Video : https://youtube.com/shorts/abcdefg12345
-
-===========================================
-Catatan:
-- Video berdurasi 58 detik
-- Kolom komentar terbuka
-- Video dapat diakses publik
-===========================================
-```
-
-## Halaman Terkait
-
-| Halaman                                                              | Deskripsi                                        |
-| -------------------------------------------------------------------- | ------------------------------------------------ |
-| [**Daftar Tugas**](/v1/task/)                                        | Semua tugas mata kuliah semester ini             |
-| [**Pengantar Basis Data**](/v1/courses/rpl106-pengantar-basis-data/) | Halaman mata kuliah RPL106 dengan materi lengkap |
-| [**Kontak Dosen**](/v1/information/kontak-dosen)                     | Kontak dosen pengampu RPL106                     |
-| [**Format & Aturan**](/format/page)                                  | Konvensi dokumentasi dan panduan kontribusi      |
-
-::: info Tentang Halaman Ini
-Halaman ini memuat **Tugas Teori Pertemuan 1** untuk mata kuliah RPL106 — Pengantar Basis Data. Tugas ini berupa **resume video pendek** tentang materi Introduction to Database Concepts.
+## Info Tugas
 
 | Field                 | Value                             |
 | --------------------- | --------------------------------- |
@@ -473,20 +260,17 @@ Halaman ini memuat **Tugas Teori Pertemuan 1** untuk mata kuliah RPL106 — Peng
 | **Tim Pengajar**      | Muhammad Sahrul Nizan (NN)        |
 | **Pertemuan**         | 1                                 |
 | **Topik**             | Introduction to Database Concepts |
-| **Tipe Tugas**        | Individu — Selfie Video Resume    |
+| **Tipe**              | Individu — Selfie Video Resume    |
 | **Durasi**            | Maksimal 60 detik                 |
-| :::                   |
 
-::: tip Butuh Bantuan?
-Jika ada bagian tugas yang kurang jelas:
-
-1. **Cek pengumuman di e-learning** — biasanya ada klarifikasi dari tim pengajar.
-2. **Tanyakan di grup WhatsApp kelas** — teman sekelas mungkin punya jawaban.
-3. **Hubungi dosen pengampu** — melalui e-learning atau WhatsApp resmi.
-
-Jangan menunda — pahami instruksinya sebelum mulai merekam.
+::: warning Pengingat
+Presensi pertemuan 1 **hanya divalidasi** bagi yang mengumpulkan tugas ini. Screenshot bukti submit sebagai backup.
 :::
 
-::: warning Pengingat Penting
-**Presensi pertemuan 1 hanya divalidasi bagi yang mengumpulkan tugas ini.** Jadi jangan hanya hadir secara fisik — pastikan tugasmu benar-benar terkirim sebelum deadline. Screenshot bukti submit sebagai backup.
-:::
+## Halaman Terkait
+
+| Halaman                                                        | Deskripsi                |
+| -------------------------------------------------------------- | ------------------------ |
+| [Daftar Tugas](/v1/task/)                                      | Semua tugas semester ini |
+| [Mata Kuliah RPL106](/v1/courses/rpl106-pengantar-basis-data/) | Materi lengkap RPL106    |
+| [Kontak Dosen](/v1/information/kontak-dosen)                   | Kontak dosen pengampu    |
