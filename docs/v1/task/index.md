@@ -1,40 +1,40 @@
 ---
-title: Tugas
-description: Kumpulan tugas mata kuliah Program Studi Teknologi Rekayasa Perangkat Lunak Polibatam.
+title: Assignments
+description: Collection of course assignments for the Software Engineering Technology program at Politeknik Negeri Batam.
 layout: home
 
 hero:
-  name: Tugas
-  text: Kumpulan Tugas Mata Kuliah
-  tagline: Program Studi Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam
+  name: Assignments
+  text: Course Assignment Collection
+  tagline: Software Engineering Technology Program, Politeknik Negeri Batam
   actions:
     - theme: brand
-      text: Lihat Daftar Tugas
-      link: '#daftar-tugas'
+      text: View Assignment List
+      link: '#assignment-list'
     - theme: alt
-      text: E-Learning IF Polibatam
+      text: IF Polibatam E-Learning
       link: https://learningif.polibatam.ac.id
 
 features:
-  - title: Matematika Diskrit
-    details: Tugas Teori Himpunan
+  - title: Discrete Mathematics
+    details: Set Theory Assignment
     link: /v1/task/tugas-matematika-diskrit-materi-himpunan
 ---
 
-## Daftar Tugas
+## Assignment List
 
-### Matematika Diskrit
+### Discrete Mathematics
 
-- [Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan)
+- [Set Theory Assignment](/v1/task/tugas-matematika-diskrit-materi-himpunan)
 
-## Ringkasan Status
+## Status Summary
 
-| Mata Kuliah        | Tugas          | Deadline | Status                |
-| ------------------ | -------------- | -------- | --------------------- |
-| Matematika Diskrit | Teori Himpunan | —        | - [ ]Belum dikerjakan |
+| Course               | Assignment | Deadline | Status      |
+| -------------------- | ---------- | -------- | ----------- |
+| Discrete Mathematics | Set Theory | —        | Not started |
 
-> Update tabel ini setiap kali ada tugas baru atau perubahan status.
+> Update this table whenever a new assignment is added or its status changes.
 
-::: info Catatan
-Pastikan setiap tugas dikumpulkan sesuai batas waktu yang ditentukan melalui e-learning IF Polibatam di [learningif.polibatam.ac.id](https://learningif.polibatam.ac.id).
+::: info Note
+Make sure every assignment is submitted before its deadline through the IF Polibatam e-learning platform at [learningif.polibatam.ac.id](https://learningif.polibatam.ac.id).
 :::
