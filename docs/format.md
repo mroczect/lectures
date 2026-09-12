@@ -1,10 +1,34 @@
 ---
 title: Documentation Format & Rules
 description: A complete guide to writing format, file naming conventions, and contribution rules for all documentation in the Lectures project.
-outline: deep
----
+layout: home
 
-# Documentation Format & Rules
+hero:
+  name: Format & Rules
+  text: Documentation Format & Rules
+  tagline: A complete guide to writing format, file naming conventions, and contribution rules for every page in the Lectures project
+  actions:
+    - theme: brand
+      text: Core Principles
+      link: '#core-principles'
+    - theme: alt
+      text: Pre-Commit Checklist
+      link: '#pre-commit-checklist'
+
+features:
+  - title: Order
+    details: Folder structure, file names, and page format must be consistent throughout the project.
+  - title: Readability
+    details: Content must be easy to understand for both new and returning readers.
+  - title: Sustainability
+    details: Documentation must be easy to update without breaking other parts.
+  - title: Markdown Format
+    details: Headings, paragraphs, emphasis, lists, links, tables, code blocks, admonitions, and more.
+  - title: Naming Conventions
+    details: Lowercase, kebab-case file names with descriptive and concise wording.
+  - title: Versioning
+    details: Every academic term is stored in its own version folder, with frozen past versions.
+---
 
 This page describes the writing format, file naming conventions, and contribution rules that apply to every piece of documentation in the Lectures project.
 
@@ -559,7 +583,7 @@ Tidy documentation reflects quality and excellence. An adaptive structure reflec
 
 Mission:
 
-> To be active in the process of creating, disseminating, and applying science and technology in software engineering through vocational higher education services and applied research that are qualified, open, relevant, and closely collaborative with society and industry.
+> To be active in the process of creating, disseminating, and applying science and technology in software engineering through vocational higher education services and applied research that is qualified, open, relevant, and closely collaborative with society and industry.
 
 Open and relevant documentation helps spread knowledge to fellow students and the wider community.
 
