@@ -21,6 +21,8 @@ const AUTHOR = 'Muhammad Riduwan Khafidi';
 const REPO_URL = 'https://github.com/mroczect/lectures.git';
 const BASE_PATH = '/lectures/';
 
+const withBase = (path: string) => `${BASE_PATH}${path.replace(/^\/+/, '')}`;
+
 type Version = {
   key: string;
   label: string;
@@ -43,22 +45,27 @@ export default withPwa(
       head: [
         [
           'link',
-          { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png?v=1', sizes: '96x96' },
+          {
+            rel: 'icon',
+            type: 'image/png',
+            href: withBase('favicon-96x96.png?v=1'),
+            sizes: '96x96',
+          },
         ],
-        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-        ['link', { rel: 'shortcut icon', href: '/favicon.ico?v=1' }],
-        ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png?v=1' }],
-        ['link', { rel: 'manifest', href: '/site.webmanifest?v=1' }],
-
-        ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: withBase('favicon.svg') }],
+        ['link', { rel: 'shortcut icon', href: withBase('favicon.ico?v=1') }],
         [
           'link',
           {
-            rel: 'preconnect',
-            href: 'https://fonts.gstatic.com',
-            crossorigin: '',
+            rel: 'apple-touch-icon',
+            sizes: '180x180',
+            href: withBase('apple-touch-icon.png?v=1'),
           },
         ],
+        ['link', { rel: 'manifest', href: withBase('site.webmanifest?v=1') }],
+
+        ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+        ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
         [
           'link',
           {
@@ -74,6 +81,7 @@ export default withPwa(
         ['meta', { property: 'og:site_name', content: SITE_NAME }],
         ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
       ],
+
       pwa: {
         registerType: 'autoUpdate',
         workbox: {
@@ -82,6 +90,7 @@ export default withPwa(
           skipWaiting: true,
         },
       },
+
       cleanUrls: true,
       srcDir: '.',
       srcExclude: ['**/README.md', '**/TODO.md', '**/node_modules/**', '**/.vitepress/**'],
@@ -94,9 +103,7 @@ export default withPwa(
       appearance: true,
       lastUpdated: true,
 
-      sitemap: {
-        hostname: SITE_URL,
-      },
+      sitemap: { hostname: SITE_URL },
 
       markdown: {
         headers: { level: [2, 3, 4] },
@@ -104,7 +111,6 @@ export default withPwa(
         lineNumbers: true,
         anchor: { permalink: true },
         toc: { level: [2, 3] },
-
         config: (md) => {
           md.use(footnote)
             .use(taskLists, { enabled: true, label: true })
@@ -117,7 +123,6 @@ export default withPwa(
             .use(attrs)
             .use(mathjax3);
         },
-
         image: { lazyLoading: true },
         highlightLines: true,
         attrs: { leftDelimiter: '{', rightDelimiter: '}' },
@@ -127,7 +132,6 @@ export default withPwa(
         server: { port: 5173, host: true },
         build: { chunkSizeWarningLimit: 1500 },
         ssr: { noExternal: ['vitepress-plugin-pagefind'] },
-
         plugins: [
           pagefindPlugin({
             btnPlaceholder: 'Search',
@@ -137,16 +141,9 @@ export default withPwa(
             excludeSelector: ['img', 'a.header-anchor', '.vp-doc'],
             forceLanguage: 'en',
             showEmpty: false,
-            indexing: {
-              start: 'docs',
-              glob: '**/*.{md,html}',
-            },
+            indexing: { start: 'docs', glob: '**/*.{md,html}' },
           }),
-
-          llmstxt({
-            generateLLMsTxt: true,
-            generateLLMsFullTxt: true,
-          }),
+          llmstxt({ generateLLMsTxt: true, generateLLMsFullTxt: true }),
         ],
       },
 
@@ -172,7 +169,7 @@ export default withPwa(
       },
 
       themeConfig: {
-        logo: '/favicon.svg',
+        logo: withBase('favicon.svg'),
         siteTitle: SITE_NAME,
 
         nav: [
