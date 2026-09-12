@@ -6,17 +6,17 @@ layout: home
 hero:
   name: RPL101
   text: Pengantar Rekayasa Perangkat Lunak
-  tagline: Materi, jadwal, proyek PBL, dan referensi lengkap untuk mata kuliah Pengantar Rekayasa Perangkat Lunak, Semester Ganjil 2026/2027
+  tagline: Fondasi berpikir sebagai perekayasa perangkat lunak — dari etika profesi, analisis, perancangan, hingga proyek PBL nyata bersama tim.
   actions:
     - theme: brand
-      text: Informasi Umum
-      link: '#informasi-umum'
+      text: Mulai dari Sini
+      link: '#peta-mata-kuliah'
     - theme: alt
       text: Proyek PBL
       link: '#proyek-pengembangan-perangkat-lunak-pbl'
     - theme: alt
-      text: Jadwal Kuliah
-      link: '#jadwal-kuliah'
+      text: E-Learning
+      link: https://learning-if.polibatam.ac.id/course/view.php?id=119
 
 features:
   - title: 3 SKS
@@ -29,19 +29,67 @@ features:
     details: Dua kali presentasi besar — Asesmen Tengah Semester (ATS) dan Asesmen Akhir Semester (AAS).
   - title: Referensi Modern
     details: Menggunakan pustaka terbaru, termasuk Jalote (2025) dan pembahasan Large Language Model untuk rekayasa perangkat lunak.
-  - title: Dokumentasi Lengkap
-    details: Template laporan dan Rencana Pelaksanaan Proyek (RPP) tersedia untuk diunduh di halaman ini.
+  - title: E-Learning Terintegrasi
+    details: Semua materi, tugas, dan sumber belajar terhubung langsung ke e-learning Jurusan Teknik Informatika Politeknik Negeri Batam.
 ---
+
+::: tip Halaman Resmi E-Learning
+Seluruh materi, penugasan, dan aktivitas mata kuliah ini terpusat di e-learning Jurusan Teknik Informatika Politeknik Negeri Batam.
+
+[**Buka Halaman Mata Kuliah RPL101 di E-Learning →**](https://learning-if.polibatam.ac.id/course/view.php?id=119)
+:::
+
+## Peta Mata Kuliah
+
+Perjalanan belajar RPL101 mengikuti alur **siklus hidup pengembangan perangkat lunak** — dari memahami profesi, menganalisis kebutuhan, merancang, mengimplementasi, menguji, hingga mengevolusi perangkat lunak.
+
+```mermaid
+flowchart TB
+    P1["PERTEMUAN 1<br/>Pendahuluan & Etika<br/>Peran Perekayasa · SWEBOK"]
+    P2["PERTEMUAN 2<br/>Analisis<br/>Kebutuhan Fungsional & Nonfungsional"]
+    P34["PERTEMUAN 3–4<br/>Perancangan<br/>Arsitektur · Komponen · Antarmuka"]
+    P5["PERTEMUAN 5<br/>Implementasi<br/>Design Pattern · Reuse"]
+    P6["PERTEMUAN 6<br/>Pengujian<br/>Komponen · Sistem · Use Case"]
+    P7["PERTEMUAN 7<br/>Deployment<br/>Instalasi & Aktivasi"]
+    P8["PERTEMUAN 8<br/>Manajemen Proyek<br/>Risiko · Tim · Perencanaan"]
+    P910["PERTEMUAN 9–10<br/>Model Proses<br/>Waterfall · Iteratif · Agile"]
+    P11["PERTEMUAN 11<br/>Agile — Scrum<br/>Sprint · Backlog · Retrospective"]
+    P12["PERTEMUAN 12<br/>DevOps<br/>CI/CD · Automation"]
+    P13["PERTEMUAN 13<br/>Evolusi<br/>Maintenance · Reuse"]
+    PX["PERTEMUAN TAMBAHAN<br/>LLM / GenAI<br/>Software Engineering with LLM"]
+
+    P1 --> P2 --> P34 --> P5 --> P6 --> P7 --> P8
+    P8 --> P910 --> P11 --> P12 --> P13 --> PX
+
+    style P1 fill:#3e63dd,color:#fff
+    style P2 fill:#2f6f4e,color:#fff
+    style P34 fill:#47bd8a,color:#fff
+    style P5 fill:#4cc292,color:#fff
+    style P6 fill:#51c79a,color:#fff
+    style P7 fill:#56cca2,color:#fff
+    style P8 fill:#5bd1aa,color:#fff
+    style P910 fill:#60d6b2,color:#fff
+    style P11 fill:#65dbba,color:#fff
+    style P12 fill:#6ae0c2,color:#fff
+    style P13 fill:#6fe5ca,color:#fff
+    style PX fill:#74ead2,color:#fff
+```
+
+**Benang merah:** Setiap pertemuan memperkuat satu tahap dalam siklus hidup perangkat lunak, dan seluruh tahap tersebut **langsung diterapkan** dalam proyek PBL yang berjalan paralel sepanjang semester.
 
 ## Informasi Umum
 
+<div align="center">
+
+| **Kode** | **SKS** |   **Semester**   | **Status** |
+| :------: | :-----: | :--------------: | :--------: |
+|  RPL101  |    3    | Ganjil 2026/2027 |   Wajib    |
+
+</div>
+
 | Bidang               | Keterangan                                                             |
 | -------------------- | ---------------------------------------------------------------------- |
-| **Kode Mata Kuliah** | RPL101                                                                 |
 | **Nama Mata Kuliah** | Pengantar Rekayasa Perangkat Lunak                                     |
-| **SKS**              | 3                                                                      |
-| **Semester**         | Ganjil 2026/2027                                                       |
-| **Status**           | Wajib                                                                  |
 | **Prasyarat**        | Tidak ada                                                              |
 | **Program Studi**    | Teknologi Rekayasa Perangkat Lunak (D4)                                |
 | **Pengajar**         | Metta Santiputri (koordinator), Iqbal Afif, Kevin Riady, Banu Failasuf |
@@ -51,16 +99,39 @@ features:
 
 Pengenalan yang berisi tentang pengertian perangkat lunak, rekayasa perangkat lunak, aktivitas pengembangan perangkat lunak, manajemen pengembangan perangkat lunak, serta dokumentasi dan standar. Selain itu diperkenalkan pula beberapa model proses dan paradigma pengembangan perangkat lunak serta peran dalam pengembangan perangkat lunak.
 
+### Berkas Pendukung
+
+| Dokumen                             | Tautan                                                                                    |
+| ----------------------------------- | ----------------------------------------------------------------------------------------- |
+| Rencana Pembelajaran Semester (RPS) | [Buka di E-Learning →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1691) |
+
+::: info Cara Membaca Halaman Ini
+Halaman ini disusun sebagai **satu perjalanan belajar**. Setiap pertemuan punya tujuan, pokok bahasan, dan kaitan dengan proyek PBL. Gunakan navigasi di kanan (outline) untuk melompat ke bagian tertentu, atau baca dari atas ke bawah sebagai satu cerita.
+:::
+
 ## Tujuan Pembelajaran
 
 Setelah menyelesaikan mata kuliah ini, mahasiswa mampu:
 
-1. **Menjelaskan peran** seorang perekayasa perangkat lunak dalam masyarakat, mengklasifikasikan cabang-cabang RPL, fungsi seorang perekayasa, serta industri tempat bekerja, dengan ketepatan klasifikasi minimal **80%** sesuai kriteria rubrik penilaian.
-2. **Memformulasikan dan menjustifikasi** pemecahan masalah dalam tim, dengan minimal **80%** argumen relevan sesuai rubrik penilaian.
-3. **Mendesain aplikasi sederhana** berdasarkan solusi yang telah diformulasi, dengan prototipe memenuhi **≥85%** kriteria fungsional yang ditetapkan.
-4. **Menuliskan dokumentasi teknis** proyek perangkat lunak, dengan kelengkapan dan kerapihan minimal **80%** sesuai standar dokumentasi.
-5. **Bekerja sama secara efektif** dalam tim, ditunjukkan dengan kontribusi **≥80%** pada indikator kerjasama tim (kehadiran, komunikasi, tugas).
-6. **Mempresentasikan hasil kerja** proyek dalam Bahasa Inggris, dengan kejelasan isi dan bahasa minimal **75%** sesuai rubrik presentasi.
+| No. | Tujuan Pembelajaran <Badge type="tip" text="6 TP" />                                                                                                                                                                     |
+| :-: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  1  | **Menjelaskan peran** seorang perekayasa perangkat lunak dalam masyarakat, mengklasifikasikan cabang-cabang RPL, fungsi seorang perekayasa, serta industri tempat bekerja, dengan ketepatan klasifikasi minimal **80%**. |
+|  2  | **Memformulasikan dan menjustifikasi** pemecahan masalah dalam tim, dengan minimal **80%** argumen relevan.                                                                                                              |
+|  3  | **Mendesain aplikasi sederhana** berdasarkan solusi yang telah diformulasi, dengan prototipe memenuhi **≥85%** kriteria fungsional.                                                                                      |
+|  4  | **Menuliskan dokumentasi teknis** proyek perangkat lunak, dengan kelengkapan dan kerapihan minimal **80%**.                                                                                                              |
+|  5  | **Bekerja sama secara efektif** dalam tim, ditunjukkan dengan kontribusi **≥80%** pada indikator kerjasama tim.                                                                                                          |
+|  6  | **Mempresentasikan hasil kerja** proyek dalam Bahasa Inggris, dengan kejelasan isi dan bahasa minimal **75%**.                                                                                                           |
+
+### Indikator Capaian per Tujuan
+
+|  #  | Indikator                                                                     | Target | Progres               |
+| :-: | ----------------------------------------------------------------------------- | :----: | --------------------- |
+|  1  | Ketepatan klasifikasi cabang, fungsi, dan industri perekayasa perangkat lunak |  80%   | `████████████████░░░` |
+|  2  | Argumen pemecahan masalah tim yang relevan                                    |  80%   | `████████████████░░░` |
+|  3  | Prototipe memenuhi kriteria fungsional                                        |  85%   | `█████████████████░░` |
+|  4  | Kelengkapan dan kerapihan dokumentasi teknis                                  |  80%   | `████████████████░░░` |
+|  5  | Kontribusi pada indikator kerjasama tim (kehadiran, komunikasi, tugas)        |  80%   | `████████████████░░░` |
+|  6  | Kejelasan isi dan bahasa saat presentasi                                      |  75%   | `███████████████░░░░` |
 
 ## Jadwal Kuliah
 
@@ -73,11 +144,13 @@ Setelah menyelesaikan mata kuliah ini, mahasiswa mampu:
 | Malam A, Malam B | Senin  | 18.50 – 19.40 WIB |
 | Malam C          | Selasa | 18.00 – 18.50 WIB |
 
-**Link kuliah teori daring:** [https://zoom.us/j/95981903274](https://zoom.us/j/95981903274?pwd=5ubGdbfbPKHyW8KlexEwiwpiQXxaGj.1)
+::: info Link Kuliah Teori Daring
 
+- **Zoom:** [https://zoom.us/j/95981903274](https://zoom.us/j/95981903274?pwd=5ubGdbfbPKHyW8KlexEwiwpiQXxaGj.1)
 - **Meeting ID:** 959 8190 3274
 - **Passcode:** 542212
 - **Format penamaan Zoom:** `Kelas_NIM_Nama` — contoh: `A_43425010xx_Budi Berbudi`
+  :::
 
 ### Kuliah Praktikum (Luring)
 
@@ -100,23 +173,40 @@ _Project-based learning_ (PBL) atau pembelajaran berbasis proyek merupakan model
 
 ### Alur PBL
 
-1. **Driving question** — identifikasi masalah yang akan diselesaikan.
-2. **Brainstorming** — masing-masing mahasiswa dalam kelompok menyamakan persepsi masalah.
-3. **Pengumpulan referensi** — setiap anggota kelompok mengumpulkan acuan penyelesaian masalah.
-4. **Penyelidikan dan observasi** — menghasilkan sebuah hasil.
-5. **Presentasi** — mempresentasikan hasil pengerjaan proyek dan menampung masukan sebagai bahan evaluasi.
+```mermaid
+flowchart LR
+    A["1. Driving Question<br/>Identifikasi masalah"] --> B["2. Brainstorming<br/>Samakan persepsi"]
+    B --> C["3. Kumpulkan Referensi<br/>Acuan solusi"]
+    C --> D["4. Investigasi & Observasi<br/>Hasilkan solusi"]
+    D --> E["5. Presentasi<br/>Tampung masukan"]
+
+    style A fill:#3e63dd,color:#fff
+    style B fill:#4cbf8a,color:#fff
+    style C fill:#5ccf9a,color:#fff
+    style D fill:#6cdfaa,color:#fff
+    style E fill:#7cefba,color:#fff
+```
 
 ### Panduan dan Pembagian Tim
 
-PBL di Prodi TRPL Semester Ganjil 2026/2027 dilaksanakan berdasarkan **Panduan Project-Based Learning Semester 1 Ganjil 2026/2027 Prodi TRPL**. Pembagian judul proyek dan kelompok dapat dilihat pada tautan berikut:
-
-- [Panduan PBL Semester 1 Ganjil 2026/2027](https://learning-if.polibatam.ac.id/pluginfile.php/36673/mod_label/intro/Panduan%20PBL%20Sem%201%202026-2027.pdf)
-- [Pembagian Judul dan Tim PBL](https://polibatam.id/tim-pbl-sem1-trpl-2026)
+| Dokumen                                                    | Tautan                                                                                                                                             |
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Panduan Project-Based Learning Semester 1 Ganjil 2026/2027 | [Unduh PDF →](https://learning-if.polibatam.ac.id/pluginfile.php/36673/mod_label/intro/Panduan%20PBL%20Sem%201%202026-2027.pdf?time=1788786165970) |
+| Pembagian Judul dan Tim PBL                                | [Buka Halaman →](https://polibatam.id/tim-pbl-sem1-trpl-2026)                                                                                      |
 
 ### Target Luaran Proyek
 
-- **Asesmen Tengah Semester (ATS):** identifikasi kebutuhan, prototype (frontend UI), dan skema data.
-- **Asesmen Akhir Semester (AAS):** produk jadi, kasus uji dan hasil uji, dan dokumentasi lengkap.
+::: info ATS — Asesmen Tengah Semester
+**Bentuk:** Presentasi progres PBL
+
+**Materi:** identifikasi kebutuhan, prototype (frontend UI), dan skema data
+:::
+
+::: info AAS — Asesmen Akhir Semester
+**Bentuk:** Presentasi progres PBL
+
+**Materi:** produk jadi, kasus uji dan hasil uji, dan dokumentasi lengkap
+:::
 
 ::: warning Perhatian
 Sesi praktikum mata kuliah Pengantar RPL digunakan oleh dosen pengajar untuk melakukan **monitoring pengerjaan proyek** dengan target mingguan yang harus dicapai. Tiap kelompok harus melakukan presentasi progres pengerjaan proyek pada sesi praktikum tersebut.
@@ -126,10 +216,10 @@ Pastikan proyek pengembangan perangkat lunak ini dikerjakan sebaik-baiknya, kare
 
 ### Format Dokumen Proyek
 
-| Dokumen                                     | Keterangan                                                                               |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Format Laporan**                          | Template dokumen pembangunan perangkat lunak yang dikumpulkan lengkap di akhir semester. |
-| **Format Rencana Pelaksanaan Proyek (RPP)** | Template RPP yang disusun oleh tim proyek bersama dengan dosen pengajar (format DOCX).   |
+| Dokumen                                     | Keterangan                                                                               | Tautan                                                                                    |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **Format Laporan**                          | Template dokumen pembangunan perangkat lunak yang dikumpulkan lengkap di akhir semester. | [Buka di E-Learning →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1707) |
+| **Format Rencana Pelaksanaan Proyek (RPP)** | Template RPP yang disusun oleh tim proyek bersama dengan dosen pengajar (format DOCX).   | [Buka di E-Learning →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1708) |
 
 ### Keterkaitan Proyek dengan Mata Kuliah Lain
 
@@ -142,28 +232,74 @@ Pastikan proyek pengembangan perangkat lunak ini dikerjakan sebaik-baiknya, kare
 | RPL105 | Pemrograman Berbasis Web                           | Pengkodean aplikasi berdasarkan requirement dengan menggunakan bahasa pemrograman berbasis web.             | Langsung        |
 | RPL106 | Pengantar Basis Data                               | Men-create basis data berdasarkan requirement yang didukung dengan ERD atau EERD.                           | Langsung        |
 
-### Target Mingguan Proyek
+## Target Mingguan Proyek
 
-| Minggu | Deskripsi                                                              | Aktivitas Tugas (tugas tim) | Refleksi Diri (per mahasiswa) |
-| ------ | ---------------------------------------------------------------------- | --------------------------- | ----------------------------- |
-| 1      | Penjelasan mengenai project                                            | —                           | —                             |
-| 2      | Mengidentifikasi permasalahan project                                  | Lembar Aktivitas Tugas #1   | Ya                            |
-| 3      | Memodelkan Kebutuhan Perangkat Lunak                                   | Lembar Aktivitas Tugas #2   | —                             |
-| 4      | Memodelkan Data dan Antarmuka Perangkat Lunak                          | Lembar Aktivitas Tugas #3   | —                             |
-| 5      | Mengimplementasikan Antarmuka Perangkat Lunak                          | Lembar Aktivitas Tugas #4   | —                             |
-| 6      | Melengkapi Laporan                                                     | Lembar Aktivitas Tugas #5   | —                             |
-| 7      | Melengkapi Berkas ATS                                                  | Lembar Aktivitas Tugas #6   | —                             |
-| 8      | Mengimplementasikan Perangkat Lunak                                    | Lembar Aktivitas Tugas #7   | —                             |
-| 9      | Mengimplementasikan Perangkat Lunak                                    | Lembar Aktivitas Tugas #8   | —                             |
-| 10     | Mengimplementasikan Perangkat Lunak                                    | Lembar Aktivitas Tugas #9   | —                             |
-| 11     | Mengimplementasikan Perangkat Lunak                                    | Lembar Aktivitas Tugas #10  | —                             |
-| 12     | Menguji Perangkat Lunak                                                | Lembar Aktivitas Tugas #11  | —                             |
-| 13     | Menguji Perangkat Lunak                                                | Lembar Aktivitas Tugas #12  | —                             |
-| 14     | Memeriksa kesesuaian seluruh perangkat lunak dan melengkapi Berkas AAS | Lembar Aktivitas Tugas #13  | —                             |
+Setiap minggu, tim mengerjakan **Lembar Aktivitas Tugas** yang dapat diunduh langsung dari e-learning. Berikut ringkasan perjalanan proyek dari minggu ke minggu.
+
+```mermaid
+gantt
+    title Timeline Proyek PBL — 14 Minggu
+    dateFormat X
+    axisFormat %s
+    section Identifikasi
+    Penjelasan project                       :a1, 0, 1
+    Identifikasi masalah                     :a2, 1, 1
+    section Desain
+    Model kebutuhan perangkat lunak          :b1, 2, 1
+    Model data & antarmuka                   :b2, 3, 1
+    section Prototipe
+    Implementasi antarmuka                   :c1, 4, 1
+    Melengkapi laporan                       :c2, 5, 1
+    Berkas ATS                               :crit, c3, 6, 1
+    section Implementasi
+    Implementasi perangkat lunak (4 minggu)  :d1, 7, 4
+    section Pengujian
+    Menguji perangkat lunak                  :e1, 11, 2
+    section Finalisasi
+    Verifikasi akhir & berkas AAS            :crit, f1, 13, 1
+```
+
+### Detail Lembar Aktivitas per Minggu
+
+| Minggu | Deskripsi                                                              | Aktivitas Tugas (tugas tim)                                                                                                                                    | Refleksi Diri                                                                      |
+| ------ | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 1      | Penjelasan mengenai project                                            | —                                                                                                                                                              | —                                                                                  |
+| 2      | Mengidentifikasi permasalahan project                                  | [Lembar Aktivitas Tugas #1](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%201.docx)                      | [Isi Refleksi Diri](https://learning-if.polibatam.ac.id/mod/quiz/view.php?id=1713) |
+| 3      | Memodelkan Kebutuhan Perangkat Lunak                                   | [Lembar Aktivitas Tugas #2](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%202.docx?time=1757490313408)   | —                                                                                  |
+| 4      | Memodelkan Data dan Antarmuka Perangkat Lunak                          | [Lembar Aktivitas Tugas #3](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%203.docx)                      | —                                                                                  |
+| 5      | Mengimplementasikan Antarmuka Perangkat Lunak                          | [Lembar Aktivitas Tugas #4](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%204.docx)                      | —                                                                                  |
+| 6      | Melengkapi Laporan                                                     | [Lembar Aktivitas Tugas #5](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%205.docx)                      | —                                                                                  |
+| 7      | Melengkapi Berkas ATS                                                  | [Lembar Aktivitas Tugas #6](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%206.docx)                      | —                                                                                  |
+| 8      | Mengimplementasikan Perangkat Lunak                                    | [Lembar Aktivitas Tugas #7](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%207.docx)                      | —                                                                                  |
+| 9      | Mengimplementasikan Perangkat Lunak                                    | [Lembar Aktivitas Tugas #8](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%208.docx)                      | —                                                                                  |
+| 10     | Mengimplementasikan Perangkat Lunak                                    | [Lembar Aktivitas Tugas #9](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%209.docx)                      | —                                                                                  |
+| 11     | Mengimplementasikan Perangkat Lunak                                    | [Lembar Aktivitas Tugas #10](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%2010.docx)                    | —                                                                                  |
+| 12     | Menguji Perangkat Lunak                                                | [Lembar Aktivitas Tugas #11](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%2011.docx)                    | —                                                                                  |
+| 13     | Menguji Perangkat Lunak                                                | [Lembar Aktivitas Tugas #12](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%2012.docx)                    | —                                                                                  |
+| 14     | Memeriksa kesesuaian seluruh perangkat lunak dan melengkapi Berkas AAS | [Lembar Aktivitas Tugas #13](https://learning-if.polibatam.ac.id/pluginfile.php/36678/mod_label/intro/Lembar%20Aktivitas%20Tugas%2013.docx?time=1788767339494) | —                                                                                  |
+
+### Pengumpulan Tugas
+
+| Aktivitas                      | Peran          | Tenggat                             | Tautan                                                                                       |
+| ------------------------------ | -------------- | ----------------------------------- | -------------------------------------------------------------------------------------------- |
+| Pengumpulan Aktivitas Tugas #1 | Ketua tim saja | Jumat, 18 September 2026, 23.59 WIB | [Kumpulkan di E-Learning →](https://learning-if.polibatam.ac.id/mod/assign/view.php?id=1712) |
+| Refleksi Diri Minggu 2         | Per mahasiswa  | Senin, 21 September 2026, 00.00 WIB | [Isi di E-Learning →](https://learning-if.polibatam.ac.id/mod/quiz/view.php?id=1713)         |
 
 ## Materi Perkuliahan
 
+Semua materi perkuliahan dapat diakses melalui e-learning RPL101:
+
+[**Buka Folder Materi RPL101 di E-Learning →**](https://learning-if.polibatam.ac.id/course/view.php?id=119)
+
+::: tip Kaitan dengan PBL
+Setiap pertemuan memperkuat satu tahap dalam siklus hidup perangkat lunak. Materi yang kamu pelajari di kelas **langsung dipraktikkan** di proyek PBL. Jangan lewatkan satu pun.
+:::
+
 ### Pertemuan 1: Pendahuluan
+
+| Materi                                                                                 |
+| -------------------------------------------------------------------------------------- |
+| [**1-Pendahuluan**](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1740) |
 
 **Pokok bahasan:**
 
@@ -173,12 +309,23 @@ Pastikan proyek pengembangan perangkat lunak ini dikerjakan sebaik-baiknya, kare
 - SWEBOK
 - Etika
 
-**Studi kasus:** Dua contoh kegagalan perangkat lunak yang disebabkan kesalahan dalam proses pembangunan perangkat lunak sehingga menyebabkan kerugian waktu, biaya, bahkan nyawa manusia.
+::: details Studi Kasus — Kegagalan Perangkat Lunak
 
-- **Ariane 5** — [tonton video](https://youtu.be/5tJPXYA0Nec)
-- **Therac-25** — [tonton video](https://youtu.be/Ap0orGCiou8)
+Berikut adalah dua contoh kegagalan perangkat lunak yang disebabkan kesalahan dalam proses pembangunan perangkat lunak sehingga menyebabkan kerugian waktu, biaya, bahkan nyawa manusia.
+
+| Kasus         | Video                                               |
+| ------------- | --------------------------------------------------- |
+| **Ariane 5**  | [Tonton di YouTube →](https://youtu.be/5tJPXYA0Nec) |
+| **Therac-25** | [Tonton di YouTube →](https://youtu.be/Ap0orGCiou8) |
+
+Selain kedua contoh tersebut, masih banyak contoh-contoh kegagalan perangkat lunak lain. Silakan Anda cari lebih banyak contoh yang lain.
+:::
 
 ### Pertemuan 2: Analisis / Analysis
+
+| Materi                                                                              |
+| ----------------------------------------------------------------------------------- |
+| [**2-Analisis**](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1744) |
 
 **Pokok bahasan:**
 
@@ -187,15 +334,28 @@ Pastikan proyek pengembangan perangkat lunak ini dikerjakan sebaik-baiknya, kare
 - Pemodelan use case
 - Proses analisis kebutuhan
 
-**Contoh SRS/SKPL:**
+::: details Contoh SRS/SKPL
 
-- SRS for SAFARR application
-- SRS for Brain Tumor Classification using Vision Transformer
-- SRS for AI-Powered Cataloguing System
-- SRS for Point of Sale (POS) system for XYZ Company (menggunakan user stories)
-- SKPL untuk Sistem Informasi Student Advisory Center (ITS)
-- SKPL untuk Sistem Informasi Kalibrasi Alat (ITS)
-- SKPL untuk Pengembangan Pangkalan Data Pendidikan Tinggi (Dikti)
+| Dokumen                                                                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [SRS for SAFARR application](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/software-requirements-specifications-safarr-version-7-0.pdf)                           |
+| [SRS for Brain Tumor Classification using Vision Transformer](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/srs-software-requirements-specification-document.pdf) |
+| [SRS for AI-Powered Cataloguing System](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/software-requirements-specification.pdf)                                    |
+| [SRS for Point of Sale (POS) system for XYZ Company](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/pos-srs-document.pdf) (menggunakan user stories)               |
+| [SKPL untuk Sistem Informasi Student Advisory Center (ITS)](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/SKPL_SISAC.pdf?time=1757590416788)                      |
+| [SKPL untuk Sistem Informasi Kalibrasi Alat (ITS)](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/SKPL_SISKAL%20%282%29.pdf)                                       |
+| [SKPL untuk Pengembangan Pangkalan Data Pendidikan Tinggi (Dikti)](https://learning-if.polibatam.ac.id/pluginfile.php/36713/mod_label/intro/SKPL_PDPT_Dikti%20%281%29.pdf)                   |
+
+:::
+
+::: details Video Referensi Tambahan
+
+| Video                                                             |
+| ----------------------------------------------------------------- |
+| [Requirements Analysis — Video 1 →](https://youtu.be/lX1RuDnEKEI) |
+| [Requirements Analysis — Video 2 →](https://youtu.be/3fgfUHKITts) |
+
+:::
 
 ::: tip Catatan
 Lebih dalam mengenai tahapan analisis ini dipelajari dalam mata kuliah **Analisis dan Spesifikasi Kebutuhan**.
@@ -310,13 +470,27 @@ Deskripsi metode evaluasi:
 
 ### Komponen Penilaian
 
-| Komponen               | Bobot |
-| ---------------------- | ----- |
-| Kognitif Tugas         | 5%    |
-| Hasil Proyek           | 60%   |
-| Kognitif ATS           | 5%    |
-| Kognitif AAS           | 10%   |
-| Aktivitas Partisipatif | 20%   |
+```mermaid
+pie showData
+    title Bobot Komponen Penilaian RPL101
+    "Hasil Proyek" : 60
+    "Aktivitas Partisipatif" : 20
+    "Kognitif AAS" : 10
+    "Kognitif Tugas" : 5
+    "Kognitif ATS" : 5
+```
+
+| Komponen               | Bobot | Visual               |
+| ---------------------- | ----- | -------------------- |
+| Hasil Proyek           | 60%   | `████████████░░░░░░` |
+| Aktivitas Partisipatif | 20%   | `████░░░░░░░░░░░░░░` |
+| Kognitif AAS           | 10%   | `██░░░░░░░░░░░░░░░░` |
+| Kognitif Tugas         | 5%    | `█░░░░░░░░░░░░░░░░░` |
+| Kognitif ATS           | 5%    | `█░░░░░░░░░░░░░░░░░` |
+
+::: info Catatan
+**Hasil Proyek mendominasi 60%** dari total nilai. Ini menegaskan bahwa **proyek PBL adalah inti dari mata kuliah ini** — semua teori bermuara pada kemampuan membangun perangkat lunak secara nyata.
+:::
 
 ### Kriteria Penilaian
 
@@ -336,6 +510,8 @@ Deskripsi metode evaluasi:
 
 ## Kesepakatan Pelaksanaan Perkuliahan
 
+Pelaksanaan perkuliahan RPL101 mengacu pada kesepakatan berikut:
+
 1. Mahasiswa wajib mengikuti seluruh kegiatan perkuliahan yang sudah ditentukan sesuai jadwal.
 2. Semua penugasan mata kuliah dikumpulkan melalui e-learning Jurusan Teknik Informatika Politeknik Negeri Batam di [https://learning-if.polibatam.ac.id](https://learning-if.polibatam.ac.id), kecuali diinstruksikan berbeda.
 3. Semua penugasan mata kuliah wajib dikumpulkan sesuai batas akhir yang ditetapkan dosen pengampu.
@@ -344,9 +520,11 @@ Deskripsi metode evaluasi:
 
 ## Pustaka
 
-1. Jalote, Pankaj. _A Concise Introduction to Software Engineering_. 2nd edition. Springer, 2025.
-2. Roger, S. Pressman, and R. Maxin Bruce. _Software Engineering: A Practitioner's Approach_. 9th edition, international student edition. McGraw-Hill Education, 2020.
-3. Sommerville, Ian. _Software Engineering_. 10th edition. Pearson, 2020.
+| No. | Referensi                                                                                                                                                           |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Jalote, Pankaj. _A Concise Introduction to Software Engineering_. 2nd edition. Springer, 2025.                                                                      |
+| 2   | Roger, S. Pressman, and R. Maxin Bruce. _Software Engineering: A Practitioner's Approach_. 9th edition, international student edition. McGraw-Hill Education, 2020. |
+| 3   | Sommerville, Ian. _Software Engineering_. 10th edition. Pearson, 2020.                                                                                              |
 
 ## Informasi Tambahan
 
@@ -363,23 +541,44 @@ Proyek yang dikerjakan mahasiswa pada semester ini merupakan salah satu _corners
 | 3   | Visio/software lain sejenis (offline/online) | 1             |
 | 4   | Internet                                     | 1             |
 
-## Asesmen
-
-### ATS (Asesmen Tengah Semester)
-
-- **Bentuk:** Presentasi progres PBL
-- **Materi:** identifikasi kebutuhan, prototype (frontend UI), dan skema data
-
-### AAS (Asesmen Akhir Semester)
-
-- **Bentuk:** Presentasi progres PBL
-- **Materi:** produk jadi, kasus uji dan hasil uji, dan dokumentasi lengkap
-
 ## Sumber Referensi Online
 
-- [E-Learning Jurusan Teknik Informatika](https://learning-if.polibatam.ac.id)
-- [Panduan PBL Semester 1 Ganjil 2026/2027](https://learning-if.polibatam.ac.id/pluginfile.php/36673/mod_label/intro/Panduan%20PBL%20Sem%201%202026-2027.pdf)
-- [Pembagian Judul dan Tim PBL](https://polibatam.id/tim-pbl-sem1-trpl-2026)
+### E-Learning RPL101
+
+| Sumber                                  | Tautan                                                                      |
+| --------------------------------------- | --------------------------------------------------------------------------- |
+| Halaman Utama Mata Kuliah RPL101        | [Buka →](https://learning-if.polibatam.ac.id/course/view.php?id=119)        |
+| Rencana Pembelajaran Semester (RPS)     | [Buka →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1691) |
+| Format Laporan PBL                      | [Buka →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1707) |
+| Format Rencana Pelaksanaan Proyek (RPP) | [Buka →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1708) |
+
+### Aktivitas PBL
+
+| Aktivitas                      | Tautan                                                                    |
+| ------------------------------ | ------------------------------------------------------------------------- |
+| Pengumpulan Aktivitas Tugas #1 | [Buka →](https://learning-if.polibatam.ac.id/mod/assign/view.php?id=1712) |
+| Refleksi Diri Minggu 2         | [Buka →](https://learning-if.polibatam.ac.id/mod/quiz/view.php?id=1713)   |
+
+### Materi Kuliah
+
+| Materi        | Tautan                                                                      |
+| ------------- | --------------------------------------------------------------------------- |
+| 1-Pendahuluan | [Buka →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1740) |
+| 2-Analisis    | [Buka →](https://learning-if.polibatam.ac.id/mod/resource/view.php?id=1744) |
+
+### Panduan & Pembagian Tim
+
+| Dokumen                                 | Tautan                                                                                                                                             |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Panduan PBL Semester 1 Ganjil 2026/2027 | [Unduh PDF →](https://learning-if.polibatam.ac.id/pluginfile.php/36673/mod_label/intro/Panduan%20PBL%20Sem%201%202026-2027.pdf?time=1788786165970) |
+| Pembagian Judul dan Tim PBL             | [Buka Halaman →](https://polibatam.id/tim-pbl-sem1-trpl-2026)                                                                                      |
+
+### Platform Umum
+
+| Platform                              | Tautan                                        |
+| ------------------------------------- | --------------------------------------------- |
+| E-Learning Jurusan Teknik Informatika | [Buka →](https://learning-if.polibatam.ac.id) |
+| Politeknik Negeri Batam               | [Buka →](https://www.polibatam.ac.id)         |
 
 ::: info Tentang Halaman Ini
 Halaman ini disusun berdasarkan Rencana Pembelajaran Semester (RPS) RPL101 dan konten e-learning Jurusan Teknik Informatika Politeknik Negeri Batam untuk Semester Ganjil 2026/2027. Informasi dapat berubah sewaktu-waktu mengikuti perkembangan perkuliahan.
