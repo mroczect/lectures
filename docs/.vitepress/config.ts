@@ -75,7 +75,7 @@ export default withPwa(
         ],
 
         ['meta', { name: 'author', content: AUTHOR }],
-        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        ['meta', { name: 'theme-color', content: '#3e63dd' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { property: 'og:site_name', content: SITE_NAME }],
@@ -174,11 +174,66 @@ export default withPwa(
 
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Courses', link: '/v1/courses/' },
-          { text: 'Information', link: '/v1/information/' },
-          { text: 'Tasks', link: '/v1/task/' },
+          {
+            text: 'Courses',
+            items: [
+              { text: 'Overview', link: '/v1/courses/' },
+              {
+                text: 'Semester 1',
+                items: [
+                  {
+                    text: 'RPL101 — Introduction to Software Engineering',
+                    link: '/v1/courses/rpl101-pengantar-rpl/',
+                  },
+                  {
+                    text: 'RPL102 — Algorithms and Programming',
+                    link: '/v1/courses/rpl102-algoritma-pemrograman/',
+                  },
+                  {
+                    text: 'RPL103 — Discrete Mathematics',
+                    link: '/v1/courses/rpl103-matematika-diskrit/',
+                  },
+                  {
+                    text: 'RPL104 — Requirements Analysis and Specification',
+                    link: '/v1/courses/rpl104-analisis-kebutuhan-pl/',
+                  },
+                  { text: 'RPL105 — Web Programming', link: '/v1/courses/rpl105-pemrograman-web/' },
+                  {
+                    text: 'RPL106 — Introduction to Database',
+                    link: '/v1/courses/rpl106-pengantar-basis-data/',
+                  },
+                  {
+                    text: 'PK001RPL — Religious Education',
+                    link: '/v1/courses/pk001-pendidikan-agama/',
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: 'Information',
+            items: [
+              { text: 'Overview', link: '/v1/information/' },
+              { text: 'Lecturer Contacts', link: '/v1/information/kontak-dosen' },
+              { text: 'Class Schedule', link: '/v1/information/jadwal-kuliah' },
+              { text: 'PBL Team Info', link: '/v1/information/info-team-pbl' },
+              { text: 'PBL Titles & Teams', link: '/v1/information/judul-dan-team-pbl' },
+            ],
+          },
+          {
+            text: 'Tasks',
+            items: [
+              { text: 'Overview', link: '/v1/task/' },
+              {
+                text: 'RPL103 — Discrete Mathematics',
+                items: [
+                  { text: 'Set Theory', link: '/v1/task/tugas-matematika-diskrit-materi-himpunan' },
+                ],
+              },
+            ],
+          },
           { text: 'Format', link: '/format' },
-          { text: 'License', link: '/license' }, // ← tambah ini
+          { text: 'License', link: '/license' },
           { text: 'About', link: '/v1/about' },
           {
             text: 'Version',
