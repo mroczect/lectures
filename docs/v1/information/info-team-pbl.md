@@ -1,6 +1,6 @@
 ---
-title: Informasi Tim PBL
-description: Daftar tim dan judul proyek Project-Based Learning (PBL) Semester Ganjil 2026/2027 — Program Studi Teknologi Rekayasa Perangkat Lunak Polibatam.
+title: PBL Team Information
+description: List of Project-Based Learning (PBL) teams and project titles for Odd Semester 2026/2027 — Software Engineering Technology Program, Politeknik Negeri Batam.
 outline: deep
 ---
 
