@@ -45,7 +45,7 @@ Pastikan setiap tugas dikumpulkan sebelum tenggat melalui e-learning IF Polibata
 
 | **Total Tugas** | **Mata Kuliah** | **Tipe** |   **Semester**   |
 | :-------------: | :-------------: | :------: | :--------------: |
-|        1        |        1        | Individu | Ganjil 2026/2027 |
+|        2        |        2        | Individu | Ganjil 2026/2027 |
 
 </div>
 
@@ -110,24 +110,38 @@ Pilih tugas di bawah ini untuk melihat detail, instruksi, dan tautan pengumpulan
 [**Lihat Detail Tugas →**](/v1/task/tugas-matematika-diskrit-materi-himpunan)
 :::
 
+### Pengantar Basis Data — RPL106
+
+::: info Tugas Resume Video Pertemuan 1 <Badge type="warning" text="Individu" />
+**Mata Kuliah:** RPL106 — Pengantar Basis Data
+**Topik:** Introduction to Database Concepts
+**Tipe:** Tugas individu — video resume
+**Status:** Belum dikerjakan
+
+**Deskripsi:** Tugas ini menuntut mahasiswa membuat video resume verbal tentang materi Pertemuan 1 — Introduction to Database Concepts. Video berdurasi maksimal 60 detik, diunggah ke YouTube Shorts, TikTok, atau Reels IG/FB.
+
+[**Lihat Detail Tugas →**](/v1/task/semester-1-rpl106-introduction-to-database-concepts)
+:::
+
 ::: tip Belum Ada Tugas Lain?
-Saat ini hanya tugas **Teori Himpunan** yang tercatat. Begitu ada tugas baru dari mata kuliah lain, halaman ini akan diperbarui. Pantau e-learning dan grup kelas untuk pengumuman tugas terbaru.
+Saat ini hanya dua tugas yang tercatat. Begitu ada tugas baru dari mata kuliah lain, halaman ini akan diperbarui. Pantau e-learning dan grup kelas untuk pengumuman tugas terbaru.
 :::
 
 ## Ringkasan Status
 
 Ringkasan cepat semua tugas dalam satu tabel. Diperbarui setiap kali ada perubahan status.
 
-| Mata Kuliah                 | Tugas          | Tipe     | Deadline | Status           |
-| --------------------------- | -------------- | -------- | -------- | ---------------- |
-| RPL103 — Matematika Diskrit | Teori Himpunan | Individu | —        | Belum dikerjakan |
+| Mata Kuliah                   | Tugas                    | Tipe     | Deadline | Status           |
+| ----------------------------- | ------------------------ | -------- | -------- | ---------------- |
+| RPL103 — Matematika Diskrit   | Teori Himpunan           | Individu | —        | Belum dikerjakan |
+| RPL106 — Pengantar Basis Data | Resume Video Pertemuan 1 | Individu | —        | Belum dikerjakan |
 
 ### Distribusi Status
 
 ```mermaid
 pie showData
     title Distribusi Status Tugas
-    "Belum dikerjakan" : 1
+    "Belum dikerjakan" : 2
     "Sedang dikerjakan" : 0
     "Sudah dikumpulkan" : 0
 ```
@@ -153,7 +167,7 @@ Ringkasan tugas yang terkelompok per mata kuliah — memudahkan melihat beban tu
 | RPL103   | Matematika Diskrit                                 |  3  |      1       | Aktif       |
 | RPL104   | Analisis dan Spesifikasi Kebutuhan Perangkat Lunak |  3  |      0       | —           |
 | RPL105   | Pemrograman Berbasis Web                           |  4  |      0       | —           |
-| RPL106   | Pengantar Basis Data                               |  3  |      0       | —           |
+| RPL106   | Pengantar Basis Data                               |  3  |      1       | Aktif       |
 | PK001RPL | Pendidikan Agama                                   |  2  |      0       | —           |
 
 ::: info Tugas Akan Ditambahkan
@@ -166,12 +180,13 @@ Beberapa tugas dikerjakan **sendiri**, tapi sebagian lagi dikerjakan **bersama t
 
 ```mermaid
 mindmap
-  root((Tugas<br/>RPL103))
+  root((Jenis<br/>Tugas))
     Tugas Individu
       Dikerjakan sendiri
       Deadline ketat
       Nilai individual
       Contoh: Teori Himpunan
+      Contoh: Resume Video RPL106
     Tugas Tim
       Dikerjakan bersama tim PBL
       Deadline tim
@@ -226,7 +241,8 @@ gantt
     axisFormat %d %b
 
     section Tugas Aktif
-    Tugas Teori Himpunan (RPL103)  :active, t1, 2026-09-12, 14d
+    Tugas Teori Himpunan (RPL103)       :active, t1, 2026-09-12, 14d
+    Resume Video RPL106 Pertemuan 1     :active, t2, 2026-09-13, 7d
 ```
 
 ::: info Interpretasi Timeline

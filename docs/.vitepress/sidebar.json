@@ -69,6 +69,16 @@
               "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
             }
           ]
+        },
+        {
+          "text": "RPL106 — Introduction to Database",
+          "collapsed": false,
+          "items": [
+            {
+              "text": "Resume Video — Pertemuan 1",
+              "link": "/v1/task/semester-1-rpl106-introduction-to-database-concepts"
+            }
+          ]
         }
       ]
     }
