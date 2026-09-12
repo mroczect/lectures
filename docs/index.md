@@ -50,6 +50,7 @@ New to this documentation? Begin with the following resources:
 - [**Courses**](/v1/courses/) — complete list of courses with materials and assignments.
 - [**Information**](/v1/information/) — schedules, lecturer contacts, and PBL team assignments.
 - [**Tasks**](/v1/task/) — assignment briefs and submission details.
+- [**License**](/license) — licensing terms for the content in this project.
 
 ## About
 
