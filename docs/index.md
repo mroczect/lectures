@@ -1,4 +1,6 @@
 ---
+title: Lectures
+description: Structured lecture materials, assignments, and academic references for the Software Engineering Technology program at Politeknik Negeri Batam.
 layout: home
 
 hero:

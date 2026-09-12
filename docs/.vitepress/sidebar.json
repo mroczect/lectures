@@ -8,16 +8,31 @@
           "text": "Semester 1",
           "collapsed": false,
           "items": [
-            { "text": "Religious Education", "link": "/v1/courses/pendidikan-agama" },
-            { "text": "Introduction to Software Engineering", "link": "/v1/courses/pengantar-rpl" },
-            { "text": "Algorithms and Programming", "link": "/v1/courses/algoritma-pemrograman" },
-            { "text": "Discrete Mathematics", "link": "/v1/courses/matematika-diskrit" },
             {
-              "text": "Requirements Analysis and Specification",
-              "link": "/v1/courses/analisis-kebutuhan-pl"
+              "text": "RPL101 — Pengantar Rekayasa Perangkat Lunak",
+              "link": "/v1/courses/rpl101-pengantar-rpl/"
             },
-            { "text": "Web Programming", "link": "/v1/courses/pemrograman-web" },
-            { "text": "Introduction to Database", "link": "/v1/courses/pengantar-basis-data" }
+            {
+              "text": "RPL102 — Algoritma dan Pemrograman",
+              "link": "/v1/courses/rpl102-algoritma-pemrograman/"
+            },
+            {
+              "text": "RPL103 — Matematika Diskrit",
+              "link": "/v1/courses/rpl103-matematika-diskrit/"
+            },
+            {
+              "text": "RPL104 — Analisis dan Spesifikasi Kebutuhan Perangkat Lunak",
+              "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/"
+            },
+            {
+              "text": "RPL105 — Pemrograman Berbasis Web",
+              "link": "/v1/courses/rpl105-pemrograman-web/"
+            },
+            {
+              "text": "RPL106 — Pengantar Basis Data",
+              "link": "/v1/courses/rpl106-pengantar-basis-data/"
+            },
+            { "text": "PK001RPL — Pendidikan Agama", "link": "/v1/courses/pk001-pendidikan-agama/" }
           ]
         }
       ]
@@ -43,11 +58,11 @@
       "items": [
         { "text": "Overview", "link": "/v1/task/" },
         {
-          "text": "Discrete Mathematics",
+          "text": "RPL103 — Matematika Diskrit",
           "collapsed": false,
           "items": [
             {
-              "text": "Set Theory",
+              "text": "Teori Himpunan",
               "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
             }
           ]
