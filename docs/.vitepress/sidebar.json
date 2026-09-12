@@ -84,11 +84,24 @@
     }
   ],
 
+  "/format/": [
+    {
+      "text": "Format & Rules",
+      "items": [
+        { "text": "Overview", "link": "/format/" },
+        { "text": "Halaman Konten", "link": "/format/page" },
+        { "text": "Halaman Homepage", "link": "/format/homepage" },
+        { "text": "Halaman Tugas", "link": "/format/task" },
+        { "text": "Tugas Selesai", "link": "/format/task-complite" }
+      ]
+    }
+  ],
+
   "/": [
     {
       "text": "Guide",
       "items": [
-        { "text": "Format & Rules", "link": "/format" },
+        { "text": "Format & Rules", "link": "/format/" },
         { "text": "License", "link": "/license" }
       ]
     }

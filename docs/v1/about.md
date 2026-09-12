@@ -286,7 +286,7 @@ For urgent errors (e.g., wrong schedule information before an exam), email is fa
 | [**Courses**](/v1/courses/)         | Course list with materials, assignments, and references. |
 | [**Information**](/v1/information/) | Schedules, lecturer contacts, and PBL team registries.   |
 | [**Tasks**](/v1/task/)              | Assignment briefs and submission details.                |
-| [**Format & Rules**](/format)       | Documentation conventions and contribution guidelines.   |
+| [**Format & Rules**](/format/page)  | Documentation conventions and contribution guidelines.   |
 | [**License**](/license)             | Terms of use for all content in this documentation.      |
 
 ::: info About This Page

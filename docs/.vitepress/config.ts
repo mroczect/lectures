@@ -232,7 +232,16 @@ export default withPwa(
               },
             ],
           },
-          { text: 'Format', link: '/format' },
+          {
+            text: 'Format',
+            items: [
+              { text: 'Overview', link: '/format/' },
+              { text: 'Halaman Konten', link: '/format/page' },
+              { text: 'Halaman Homepage', link: '/format/homepage' },
+              { text: 'Halaman Tugas', link: '/format/task' },
+              { text: 'Tugas Selesai', link: '/format/task-complite' },
+            ],
+          },
           { text: 'License', link: '/license' },
           { text: 'About', link: '/v1/about' },
           {

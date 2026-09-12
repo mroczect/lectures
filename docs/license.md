@@ -596,7 +596,7 @@ If a change ever happens, it will be clearly documented on this page and in the 
 | Page                                                          | Description                                           |
 | ------------------------------------------------------------- | ----------------------------------------------------- |
 | [**Root Home**](/)                                            | Project home — versions, getting started              |
-| [**Format & Rules**](/format)                                 | Documentation conventions and contribution guidelines |
+| [**Format & Rules**](/format/page)                            | Documentation conventions and contribution guidelines |
 | [**About**](/v1/about)                                        | About this project and its maintainer                 |
 | [**Version 1**](/v1/)                                         | First semester documentation                          |
 | [**GitHub Repository**](https://github.com/mroczect/lectures) | Source repository — includes full LICENSE file        |

@@ -269,7 +269,7 @@ Selama RPS dan informasi dosen belum dipublikasikan, berikut beberapa langkah pr
 | [**Informasi Perkuliahan**](/v1/information/) | Jadwal, kontak dosen, dan pembagian tim PBL. |
 | [**Mata Kuliah**](/v1/courses/)               | Daftar lengkap mata kuliah semester ini.     |
 | [**Tugas**](/v1/task/)                        | Daftar tugas dan detail pengumpulannya.      |
-| [**Format & Aturan**](/format)                | Konvensi dokumentasi dan panduan kontribusi. |
+| [**Format & Aturan**](/format/page)           | Konvensi dokumentasi dan panduan kontribusi. |
 
 ## Pertanyaan yang Sering Diajukan
 

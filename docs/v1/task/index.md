@@ -240,7 +240,7 @@ Timeline di atas akan diperbarui setiap kali ada tugas baru dengan deadline spes
 | [**Mata Kuliah**](/v1/courses/)                             | Daftar mata kuliah dengan materi, jadwal, dan referensi. |
 | [**Informasi Perkuliahan**](/v1/information/)               | Jadwal, kontak dosen, dan info tim PBL.                  |
 | [**Judul dan Tim PBL**](/v1/information/judul-dan-team-pbl) | Daftar tim PBL dan proyek yang dikerjakan.               |
-| [**Format & Aturan**](/format)                              | Konvensi dokumentasi dan panduan kontribusi.             |
+| [**Format & Aturan**](/format/page)                         | Konvensi dokumentasi dan panduan kontribusi.             |
 
 ## Pertanyaan yang Sering Diajukan
 

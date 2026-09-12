@@ -136,13 +136,13 @@ flowchart LR
     style E fill:#6bcfaa,color:#fff
 ```
 
-| Step  | Page                                        | Why It Matters                                                                                           |
-| :---: | ------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **1** | [**Format & Documentation Rules**](/format) | Understand the conventions, file structure, and contribution guidelines that keep everything consistent. |
-| **2** | [**Courses**](/v1/courses/)                 | Browse the seven first-semester courses with materials, assignments, and references.                     |
-| **3** | [**Information**](/v1/information/)         | Find schedules, lecturer contacts, and PBL team assignments.                                             |
-| **4** | [**Assignments**](/v1/task/)                | Track your coursework, deadlines, and submission links.                                                  |
-| **5** | [**License**](/license)                     | Review the CC BY-NC-SA 4.0 terms that apply to all content.                                              |
+| Step  | Page                                             | Why It Matters                                                                                           |
+| :---: | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| **1** | [**Format & Documentation Rules**](/format/page) | Understand the conventions, file structure, and contribution guidelines that keep everything consistent. |
+| **2** | [**Courses**](/v1/courses/)                      | Browse the seven first-semester courses with materials, assignments, and references.                     |
+| **3** | [**Information**](/v1/information/)              | Find schedules, lecturer contacts, and PBL team assignments.                                             |
+| **4** | [**Assignments**](/v1/task/)                     | Track your coursework, deadlines, and submission links.                                                  |
+| **5** | [**License**](/license)                          | Review the CC BY-NC-SA 4.0 terms that apply to all content.                                              |
 
 ::: tip First Time Here?
 Start with the [**Version 1 landing page**](/v1/) — it provides a full overview of what's inside the first semester, including the semester map, learning journey, and FAQ.
@@ -262,7 +262,7 @@ Contributions are welcome — from students, lecturers, and the wider community.
 | **Share feedback**       | Email the maintainer directly                                                               |
 
 ::: tip Before You Contribute
-Read the [**Format & Documentation Rules**](/format) first — it explains naming conventions, frontmatter requirements, and the pre-commit checklist that keeps every contribution consistent.
+Read the [**Format & Documentation Rules**](/format/page) first — it explains naming conventions, frontmatter requirements, and the pre-commit checklist that keeps every contribution consistent.
 :::
 
 ## FAQ
@@ -344,7 +344,7 @@ The author responds to corrections quickly — but as a full-time student, there
 
 | Page                                                          | Description                                           |
 | ------------------------------------------------------------- | ----------------------------------------------------- |
-| [**Format & Rules**](/format)                                 | Documentation conventions and contribution guidelines |
+| [**Format & Rules**](/format/page)                            | Documentation conventions and contribution guidelines |
 | [**License**](/license)                                       | CC BY-NC-SA 4.0 licensing terms                       |
 | [**Version 1**](/v1/)                                         | First semester documentation                          |
 | [**About**](/v1/about)                                        | About the maintainer and this project                 |

@@ -192,7 +192,7 @@ The most frequently accessed pages, ordered by priority.
 | [**Class Schedule**](/v1/information/jadwal-kuliah) | Weekly schedule of evening classes.                     |
 | [**PBL Teams**](/v1/information/judul-dan-team-pbl) | Find your PBL team and project.                         |
 | [**About**](/v1/about)                              | About this documentation and its maintainer.            |
-| [**Format & Rules**](/format)                       | Documentation conventions and contribution guidelines.  |
+| [**Format & Rules**](/format/page)                  | Documentation conventions and contribution guidelines.  |
 | [**License**](/license)                             | Terms of use for all content in this documentation.     |
 
 ## Version Notes
@@ -310,12 +310,12 @@ Content is sourced from official materials (RPS documents, e-learning pages, lec
 
 ## Related Pages
 
-| Page                          | Description                                                     |
-| ----------------------------- | --------------------------------------------------------------- |
-| [**Root Home**](/)            | Project home — all versions, format rules, and getting started. |
-| [**Format & Rules**](/format) | Documentation conventions and contribution guidelines.          |
-| [**License**](/license)       | Licensing terms for all content.                                |
-| [**About**](/v1/about)        | About this documentation and its maintainer.                    |
+| Page                               | Description                                                     |
+| ---------------------------------- | --------------------------------------------------------------- |
+| [**Root Home**](/)                 | Project home — all versions, format rules, and getting started. |
+| [**Format & Rules**](/format/page) | Documentation conventions and contribution guidelines.          |
+| [**License**](/license)            | Licensing terms for all content.                                |
+| [**About**](/v1/about)             | About this documentation and its maintainer.                    |
 
 ::: tip Starting Fresh?
 If you're new to this project, start from the [**root documentation**](/) — it lists all versions, explains the documentation system, and provides a broader introduction.

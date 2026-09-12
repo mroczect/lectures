@@ -204,12 +204,12 @@ flowchart LR
 
 ## Halaman Terkait
 
-| Halaman                         | Deskripsi                                                      |
-| ------------------------------- | -------------------------------------------------------------- |
-| [**Mata Kuliah**](/v1/courses/) | Daftar lengkap mata kuliah semester ini dengan materi & tugas. |
-| [**Tugas**](/v1/task/)          | Daftar tugas dan detail pengumpulannya.                        |
-| [**Tentang**](/v1/about)        | Informasi akademik pribadi dari pemelihara dokumentasi.        |
-| [**Format & Aturan**](/format)  | Konvensi dokumentasi dan panduan kontribusi.                   |
+| Halaman                             | Deskripsi                                                      |
+| ----------------------------------- | -------------------------------------------------------------- |
+| [**Mata Kuliah**](/v1/courses/)     | Daftar lengkap mata kuliah semester ini dengan materi & tugas. |
+| [**Tugas**](/v1/task/)              | Daftar tugas dan detail pengumpulannya.                        |
+| [**Tentang**](/v1/about)            | Informasi akademik pribadi dari pemelihara dokumentasi.        |
+| [**Format & Aturan**](/format/page) | Konvensi dokumentasi dan panduan kontribusi.                   |
 
 ## Pertanyaan yang Sering Diajukan
 

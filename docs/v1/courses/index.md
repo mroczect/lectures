@@ -354,7 +354,7 @@ Topik proyek PBL biasanya sudah ditentukan oleh dosen pengampu di awal semester.
 | [**Informasi Perkuliahan**](/v1/information/) | Jadwal, kontak dosen, dan pembagian tim PBL.            |
 | [**Tugas**](/v1/task/)                        | Daftar tugas dan detail pengumpulannya.                 |
 | [**Tentang**](/v1/about)                      | Informasi akademik pribadi dari pemelihara dokumentasi. |
-| [**Format & Aturan**](/format)                | Konvensi dokumentasi dan panduan kontribusi.            |
+| [**Format & Aturan**](/format/page)           | Konvensi dokumentasi dan panduan kontribusi.            |
 
 ::: info Tentang Halaman Ini
 Setiap halaman mata kuliah memuat minimal informasi kode mata kuliah, SKS, dosen pengampu, jadwal, materi, tugas, dan referensi sesuai aturan format dokumentasi.

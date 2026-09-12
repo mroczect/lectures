@@ -425,7 +425,7 @@ $$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |
 | ---------------------------------------------------------------- | ------------------------------------------------- |
 | [**Daftar Tugas**](/v1/task/)                                    | Semua tugas mata kuliah semester ini.             |
 | [**Matematika Diskrit**](/v1/courses/rpl103-matematika-diskrit/) | Halaman mata kuliah RPL103 dengan materi lengkap. |
-| [**Format & Aturan**](/format)                                   | Konvensi dokumentasi dan panduan kontribusi.      |
+| [**Format & Aturan**](/format/page)                              | Konvensi dokumentasi dan panduan kontribusi.      |
 
 ::: info Tentang Halaman Ini
 Halaman ini memuat **Tugas Matematika Diskrit — Teori Himpunan** untuk mata kuliah RPL103. Tugas ini terdiri dari 5 soal dengan konteks penerapan pada sistem perangkat lunak nyata.
