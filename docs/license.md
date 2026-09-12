@@ -1,7 +1,33 @@
 ---
 title: License
 description: Licensing information for the Lectures project — CC BY-NC-SA 4.0
-outline: deep
+layout: home
+
+hero:
+  name: License
+  text: CC BY-NC-SA 4.0
+  tagline: The Lectures project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International license
+  actions:
+    - theme: brand
+      text: Read Summary
+      link: '#summary'
+    - theme: alt
+      text: Full License Text
+      link: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt
+
+features:
+  - title: Share
+    details: Copy and redistribute the material in any format or medium.
+  - title: Adapt
+    details: Remix, modify, and build upon the material for any non-commercial purpose.
+  - title: Attribution Required
+    details: You must give appropriate credit to the original creator.
+  - title: NonCommercial
+    details: You may not use the material for commercial purposes or for sale.
+  - title: ShareAlike
+    details: Derivative works must be licensed under the same terms.
+  - title: Third-Party Excluded
+    details: Lecturer materials, slides, and e-learning resources are not covered by this license.
 ---
 
 # License

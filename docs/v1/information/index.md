@@ -1,80 +1,80 @@
 ---
-title: Informasi Perkuliahan
-description: Kumpulan informasi penting seputar perkuliahan TRPL Polibatam — kontak dosen, jadwal kuliah, dan detail PBL.
+title: Course Information
+description: Essential information about TRPL Polibatam courses — lecturer contacts, class schedules, and PBL details.
 layout: home
 
 hero:
-  name: Informasi Perkuliahan
-  text: Kumpulan Informasi Penting Seputar Perkuliahan
-  tagline: Program Studi Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam
+  name: Course Information
+  text: Essential Information About Your Courses
+  tagline: Software Engineering Technology Program, Politeknik Negeri Batam
   actions:
     - theme: brand
-      text: Lihat Daftar Informasi
-      link: '#daftar-informasi'
+      text: View Information List
+      link: '#information-list'
     - theme: alt
-      text: Kontak Dosen
+      text: Lecturer Contacts
       link: /v1/information/kontak-dosen
 
 features:
-  - title: Kontak Dosen
-    details: Daftar lengkap dosen pengampu beserta kontak, email, dan jam konsultasi.
+  - title: Lecturer Contacts
+    details: Complete list of lecturers with contact details, emails, and consultation hours.
     link: /v1/information/kontak-dosen
-  - title: Jadwal Kuliah
-    details: Jadwal kuliah mingguan, termasuk mata kuliah, ruangan, dan jam pelaksanaan.
+  - title: Class Schedule
+    details: Weekly class schedule, including courses, rooms, and session times.
     link: /v1/information/jadwal-kuliah
-  - title: Info Tim PBL
-    details: Informasi tentang pembagian tim, peran anggota, dan mekanisme kerja Project Based Learning.
+  - title: PBL Team Info
+    details: Information about team assignments, member roles, and Project-Based Learning workflow.
     link: /v1/information/info-team-pbl
-  - title: Judul dan Tim PBL
-    details: Daftar judul proyek PBL yang sedang dikerjakan beserta anggota timnya.
+  - title: PBL Titles and Teams
+    details: List of ongoing PBL project titles along with their team members.
     link: /v1/information/judul-dan-team-pbl
 ---
 
-## Daftar Informasi
+## Information List
 
-Pilih topik di bawah ini untuk melihat detailnya.
+Select a topic below to view its details.
 
-### Kontak Dosen
+### Lecturer Contacts
 
-Daftar lengkap dosen pengampu beserta kontak, email, dan jam konsultasi.
+Complete list of lecturers with contact details, emails, and consultation hours.
 
-[Lihat Kontak Dosen →](/v1/information/kontak-dosen)
+[View Lecturer Contacts →](/v1/information/kontak-dosen)
 
-### Jadwal Kuliah
+### Class Schedule
 
-Jadwal kuliah mingguan, termasuk mata kuliah, ruangan, dan jam pelaksanaan.
+Weekly class schedule, including courses, rooms, and session times.
 
-[Lihat Jadwal Kuliah →](/v1/information/jadwal-kuliah)
+[View Class Schedule →](/v1/information/jadwal-kuliah)
 
-### Info Tim PBL
+### PBL Team Info
 
-Informasi tentang pembagian tim, peran anggota, dan mekanisme kerja Project Based Learning.
+Information about team assignments, member roles, and Project-Based Learning workflow.
 
-[Lihat Info Tim PBL →](/v1/information/info-team-pbl)
+[View PBL Team Info →](/v1/information/info-team-pbl)
 
-### Judul dan Tim PBL
+### PBL Titles and Teams
 
-Daftar judul proyek PBL yang sedang dikerjakan beserta anggota timnya.
+List of ongoing PBL project titles along with their team members.
 
-[Lihat Judul dan Tim PBL →](/v1/information/judul-dan-team-pbl)
+[View PBL Titles and Teams →](/v1/information/judul-dan-team-pbl)
 
-## Ringkasan Cepat
+## Quick Summary
 
-| Kategori        | Deskripsi                      | Link                                       |
-| --------------- | ------------------------------ | ------------------------------------------ |
-| Kontak Dosen    | Email, telepon, jam konsultasi | [Buka](/v1/information/kontak-dosen)       |
-| Jadwal Kuliah   | Hari, jam, ruangan             | [Buka](/v1/information/jadwal-kuliah)      |
-| Info Tim PBL    | Struktur & peran tim           | [Buka](/v1/information/info-team-pbl)      |
-| Judul & Tim PBL | Proyek & anggota               | [Buka](/v1/information/judul-dan-team-pbl) |
+| Category           | Description                | Link                                       |
+| ------------------ | -------------------------- | ------------------------------------------ |
+| Lecturer Contacts  | Email, phone, consultation | [Open](/v1/information/kontak-dosen)       |
+| Class Schedule     | Days, times, rooms         | [Open](/v1/information/jadwal-kuliah)      |
+| PBL Team Info      | Team structure & roles     | [Open](/v1/information/info-team-pbl)      |
+| PBL Titles & Teams | Projects & members         | [Open](/v1/information/judul-dan-team-pbl) |
 
-::: info Tentang Halaman Ini
-Semua informasi di sini bersifat **living document** — artinya bisa berubah kapan saja mengikuti perkembangan perkuliahan. Cek halaman ini secara berkala ya.
+::: info About This Page
+All information on this page is a **living document** — it may change at any time following the progress of the semester. Check back regularly.
 :::
 
-::: tip Butuh Update Cepat?
-Kalau ada informasi yang berubah (jadwal diundur, dosen ganti jam konsultasi, dll), langsung edit file yang bersangkutan dan commit. Jangan biarkan informasi basi menumpuk.
+::: tip Need a Quick Update?
+If something changes (a class is postponed, a lecturer shifts consultation hours, etc.), edit the relevant file and commit right away. Don't let stale information pile up.
 :::
 
-::: warning Catatan
-Semua link di halaman ini mengarah ke file Markdown di folder `docs/information/`. Kalau link-nya merah (404), berarti file belum dibuat.
+::: warning Note
+All links on this page point to Markdown files in the `docs/information/` folder. If a link appears red (404), the file has not been created yet.
 :::

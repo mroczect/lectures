@@ -9,30 +9,33 @@
           "collapsed": false,
           "items": [
             {
-              "text": "RPL101 — Pengantar Rekayasa Perangkat Lunak",
+              "text": "RPL101 — Introduction to Software Engineering",
               "link": "/v1/courses/rpl101-pengantar-rpl/"
             },
             {
-              "text": "RPL102 — Algoritma dan Pemrograman",
+              "text": "RPL102 — Algorithms and Programming",
               "link": "/v1/courses/rpl102-algoritma-pemrograman/"
             },
             {
-              "text": "RPL103 — Matematika Diskrit",
+              "text": "RPL103 — Discrete Mathematics",
               "link": "/v1/courses/rpl103-matematika-diskrit/"
             },
             {
-              "text": "RPL104 — Analisis dan Spesifikasi Kebutuhan Perangkat Lunak",
+              "text": "RPL104 — Requirements Analysis and Specification",
               "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/"
             },
             {
-              "text": "RPL105 — Pemrograman Berbasis Web",
+              "text": "RPL105 — Web Programming",
               "link": "/v1/courses/rpl105-pemrograman-web/"
             },
             {
-              "text": "RPL106 — Pengantar Basis Data",
+              "text": "RPL106 — Introduction to Database",
               "link": "/v1/courses/rpl106-pengantar-basis-data/"
             },
-            { "text": "PK001RPL — Pendidikan Agama", "link": "/v1/courses/pk001-pendidikan-agama/" }
+            {
+              "text": "PK001RPL — Religious Education",
+              "link": "/v1/courses/pk001-pendidikan-agama/"
+            }
           ]
         }
       ]
@@ -58,11 +61,11 @@
       "items": [
         { "text": "Overview", "link": "/v1/task/" },
         {
-          "text": "RPL103 — Matematika Diskrit",
+          "text": "RPL103 — Discrete Mathematics",
           "collapsed": false,
           "items": [
             {
-              "text": "Teori Himpunan",
+              "text": "Set Theory",
               "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
             }
           ]
@@ -76,16 +79,18 @@
       "text": "Version 1",
       "items": [
         { "text": "Overview", "link": "/v1/" },
-        { "text": "About", "link": "/v1/about" },
-        { "text": "License", "link": "/v1/license" }
+        { "text": "About", "link": "/v1/about" }
       ]
     }
   ],
 
-  "/format": [
+  "/": [
     {
-      "text": "Panduan",
-      "items": [{ "text": "Format & Aturan", "link": "/format" }]
+      "text": "Guide",
+      "items": [
+        { "text": "Format & Rules", "link": "/format" },
+        { "text": "License", "link": "/license" }
+      ]
     }
   ]
 }

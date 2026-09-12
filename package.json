@@ -57,7 +57,8 @@
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "clean": "rm -rf docs/.vitepress/cache docs/.vitepress/dist node_modules/.vite-temp"
+    "clean": "rm -rf docs/.vitepress/cache docs/.vitepress/dist node_modules/.vite-temp",
+    "rebuild": "bun run clean && bun run format && bun run docs:build --debug && bun run docs:preview"
   },
   "type": "module"
 }

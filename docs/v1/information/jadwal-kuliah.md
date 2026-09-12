@@ -1,6 +1,6 @@
 ---
-title: Jadwal Kuliah Malam — TRPL Malam B
-description: Jadwal kuliah mingguan TRPL Malam B, Program Studi Teknologi Rekayasa Perangkat Lunak Polibatam.
+title: Evening Class Schedule — TRPL Malam B
+description: Weekly evening class schedule for TRPL Malam B, Software Engineering Technology Program, Politeknik Negeri Batam.
 outline: deep
 ---
 

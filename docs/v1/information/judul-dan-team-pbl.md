@@ -1,6 +1,6 @@
 ---
-title: Judul dan Tim PBL
-description: Daftar judul proyek dan anggota tim PBL Semester Ganjil 2026/2027 — Program Studi Teknologi Rekayasa Perangkat Lunak Polibatam.
+title: PBL Titles and Teams
+description: List of PBL project titles and team members for Odd Semester 2026/2027 — Software Engineering Technology Program, Politeknik Negeri Batam.
 outline: deep
 ---
 

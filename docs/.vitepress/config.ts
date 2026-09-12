@@ -169,7 +169,7 @@ export default withPwa(
       },
 
       themeConfig: {
-        logo: withBase('favicon.svg'),
+        logo: '/favicon.svg',
         siteTitle: SITE_NAME,
 
         nav: [
@@ -178,6 +178,7 @@ export default withPwa(
           { text: 'Information', link: '/v1/information/' },
           { text: 'Tasks', link: '/v1/task/' },
           { text: 'Format', link: '/format' },
+          { text: 'License', link: '/license' }, // ← tambah ini
           { text: 'About', link: '/v1/about' },
           {
             text: 'Version',

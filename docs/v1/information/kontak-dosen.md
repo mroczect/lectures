@@ -1,6 +1,6 @@
 ---
-title: Kontak Dosen
-description: Daftar kontak dosen Jurusan Teknik Informatika Politeknik Negeri Batam — lengkap dengan NIK, inisial, nama, dan nomor HP.
+title: Lecturer Contacts
+description: Contact list of lecturers at the Informatics Engineering Department, Politeknik Negeri Batam — including staff ID, initials, name, and phone number.
 outline: deep
 ---
 
