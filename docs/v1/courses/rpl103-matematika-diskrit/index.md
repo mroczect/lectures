@@ -1,31 +1,12 @@
 ---
 title: Matematika Diskrit
 description: Materi, jadwal, proyek, dan referensi mata kuliah RPL103 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: RPL103
-  text: Matematika Diskrit
-  tagline: Fondasi matematis untuk RPL — dari himpunan, logika, dan kombinatorik hingga teori graf dan kriptografi sederhana.
-  actions:
-    - theme: brand
-      text: Rencana Belajar
-      link: '#rencana-pembelajaran'
-    - theme: alt
-      text: Capaian
-      link: '#capaian-pembelajaran'
-    - theme: alt
-      text: E-Learning
-      link: https://learning-if.polibatam.ac.id
-
-features:
-  - title: 3 SKS
-    details: Mata kuliah wajib Semester 1 (Ganjil 2026/2027), tanpa prasyarat.
-  - title: 3 CPMK · 9 Sub CPMK
-    details: Tiga capaian besar dipecah menjadi sembilan sub-capaian terukur.
-  - title: 16 Pertemuan
-    details: 14 materi + ATS + AAS, sepenuhnya daring.
+outline: deep
 ---
+
+# RPL103 — Matematika Diskrit
+
+Fondasi matematis untuk RPL — dari himpunan, logika, dan kombinatorik hingga teori graf dan kriptografi sederhana.
 
 ::: tip E-Learning
 [**Buka E-Learning →**](https://learning-if.polibatam.ac.id)

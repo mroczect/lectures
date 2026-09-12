@@ -1,33 +1,12 @@
 ---
 title: Resume Video — Pertemuan 1
 description: Tugas RPL106 Pengantar Basis Data — resume video 60 detik tentang Introduction to Database Concepts.
-layout: home
-
-hero:
-  name: Tugas RPL106
-  text: Resume Video — Pertemuan 1
-  tagline: Rangkum Introduction to Database Concepts dalam 60 detik — jelas, padat, dan menunjukkan pemahaman.
-  actions:
-    - theme: brand
-      text: Mulai
-      link: '#petunjuk'
-    - theme: alt
-      text: Ketentuan
-      link: '#ketentuan-video'
-    - theme: alt
-      text: Kembali
-      link: /v1/task/
-
-features:
-  - title: Selfie Video
-    details: Kamu tampil di depan kamera — gaya santai, nyaman, dan sopan.
-  - title: Maksimal 60 Detik
-    details: Durasi pendek memaksa kamu memilih inti materi, bukan membaca ulang slide.
-  - title: Upload ke Sosmed
-    details: Pilih satu — YouTube Shorts, TikTok, atau Reels IG/FB. Jangan matikan komentar.
-  - title: Kumpulkan .txt / .pdf
-    details: Berisi identitas, kelas, kode dosen, dan link video aktif.
+outline: deep
 ---
+
+# Resume Video — Pertemuan 1
+
+Tugas RPL106 Pengantar Basis Data — rangkum **Introduction to Database Concepts** dalam 60 detik: jelas, padat, dan menunjukkan pemahaman.
 
 ::: tip Baca Dulu
 Pastikan kamu sudah **mengunduh modul**, **menonton video materi**, dan **membaca slide** Pertemuan 1 di e-learning.
@@ -75,21 +54,21 @@ Pilih **3–5 topik** dari daftar berikut yang paling kamu kuasai:
 ::: code-group
 
 ```text [YouTube Shorts]
- Kualitas bagus, link stabil
- Set "Public" atau "Unlisted"
- Jangan matikan komentar
+✅ Kualitas bagus, link stabil
+⚠️ Set "Public" atau "Unlisted"
+⚠️ Jangan matikan komentar
 ```
 
 ```text [TikTok]
- Upload cepat, jangkauan luas
- Akun jangan private
- Jangan matikan komentar
+✅ Upload cepat, jangkauan luas
+⚠️ Akun jangan private
+⚠️ Jangan matikan komentar
 ```
 
 ```text [Reels IG/FB]
- Terintegrasi sosmed, upload mudah
- Akun jangan private
- Jangan matikan komentar
+✅ Terintegrasi sosmed, upload mudah
+⚠️ Akun jangan private
+⚠️ Jangan matikan komentar
 ```
 
 :::

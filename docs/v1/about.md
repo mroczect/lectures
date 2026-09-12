@@ -1,28 +1,12 @@
 ---
-layout: home
 title: Tentang
 description: Data pribadi, perjalanan akademik, dan cara menghubungi Muhammad Riduwan Khafidi — mahasiswa D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam.
-
-hero:
-  name: Tentang
-  text: Muhammad Riduwan Khafidi
-  tagline: Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam — Kelas Malam B, Angkatan 2026. Membangun dokumentasi ini satu commit setiap waktu.
-  actions:
-    - theme: brand
-      text: Data Pribadi
-      link: '#data-pribadi'
-    - theme: alt
-      text: Kontak
-      link: '#kontak'
-
-features:
-  - title: Mahasiswa D4
-    details: Teknologi Rekayasa Perangkat Lunak, Kelas Malam B, Angkatan 2026, Semester 1 — Politeknik Negeri Batam.
-  - title: Pengelola Dokumentasi
-    details: Mengelola dokumentasi Lectures — dari halaman mata kuliah sampai data tim PBL.
-  - title: Sumber Terbuka
-    details: Semua dokumentasi tersedia publik di GitHub dengan lisensi CC BY-NC-SA 4.0.
+outline: deep
 ---
+
+# Tentang — Muhammad Riduwan Khafidi
+
+Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak, Politeknik Negeri Batam — Kelas Malam B, Angkatan 2026. Membangun dokumentasi ini satu commit setiap waktu.
 
 ::: tip Tujuan Halaman Ini
 Halaman ini memperkenalkan sosok di balik dokumentasi **Lectures** — latar belakang akademik, fokus saat ini, dan cara menghubunginya untuk pertanyaan, koreksi, atau kolaborasi.
@@ -150,10 +134,10 @@ Dikelola oleh **Muhammad Riduwan Khafidi** sebagai proyek pribadi. Tidak ada jad
 
 ## Halaman Terkait
 
-| Halaman                         | Deskripsi                              |
-| ------------------------------- | -------------------------------------- |
-| [Mata Kuliah](/v1/courses/)     | Daftar mata kuliah, materi, dan tugas. |
-| [Informasi](/v1/information/)   | Jadwal, kontak dosen, dan tim PBL.     |
-| [Tugas](/v1/task/)              | Daftar tugas dan detail pengumpulan.   |
-| [Format & Aturan](/format/page) | Konvensi dan panduan kontribusi.       |
-| [Lisensi](/license)             | Ketentuan penggunaan konten.           |
+| Halaman                         | Deskripsi                            |
+| ------------------------------- | ------------------------------------ |
+| [Mata Kuliah](/v1/courses/)     | Daftar mata kuliah semester ini.     |
+| [Informasi](/v1/information/)   | Jadwal, kontak dosen, dan tim PBL.   |
+| [Tugas](/v1/task/)              | Daftar tugas dan detail pengumpulan. |
+| [Format & Aturan](/format/page) | Konvensi dan panduan kontribusi.     |
+| [Lisensi](/license)             | Ketentuan penggunaan konten.         |

@@ -1,31 +1,12 @@
 ---
 title: Algoritma dan Pemrograman
 description: Materi, praktikum, dan referensi mata kuliah RPL102 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: RPL102
-  text: Algoritma dan Pemrograman
-  tagline: Dari logika algoritma hingga aplikasi Python yang berjalan — 14 pertemuan, 11 tujuan pembelajaran, satu proyek akhir nyata.
-  actions:
-    - theme: brand
-      text: Roadmap
-      link: '#roadmap-14-pertemuan'
-    - theme: alt
-      text: Tujuan
-      link: '#tujuan-pembelajaran'
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-
-features:
-  - title: 3 SKS
-    details: Mata kuliah wajib Semester 1 (Ganjil 2026/2027), tanpa prasyarat.
-  - title: Case-Study Learning
-    details: Praktikum mingguan + proyek akhir aplikasi sederhana.
-  - title: 11 Tujuan Pembelajaran
-    details: Dari menulis algoritma hingga membuat program utuh dalam Python.
+outline: deep
 ---
+
+# RPL102 — Algoritma dan Pemrograman
+
+Dari logika algoritma hingga aplikasi Python yang berjalan — 14 pertemuan, 11 tujuan pembelajaran, satu proyek akhir nyata.
 
 ::: tip E-Learning
 [**Buka E-Learning →**](https://learningif.polibatam.ac.id)

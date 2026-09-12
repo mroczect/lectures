@@ -1,28 +1,12 @@
 ---
 title: Tugas RPL103 — Teori Himpunan
 description: Tugas Matematika Diskrit tentang operasi himpunan, inklusi-eksklusi, dan fuzzy set — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: Tugas RPL103
-  text: Teori Himpunan
-  tagline: Lima soal penerapan teori himpunan pada sistem nyata — e-commerce, analitik web, login multi-platform, rekomendasi produk, dan penilaian kinerja.
-  actions:
-    - theme: brand
-      text: Daftar Soal
-      link: '#daftar-soal'
-    - theme: alt
-      text: Kembali
-      link: /v1/task/
-
-features:
-  - title: 5 Soal
-    details: Soal dengan konteks sistem nyata, bukan abstrak.
-  - title: Kerja Kelompok
-    details: Dikerjakan 2–3 orang atau sesuai Tim PBL.
-  - title: Luaran PPT / PDF
-    details: Ringkasan 1 halaman untuk dipresentasikan.
+outline: deep
 ---
+
+# Tugas RPL103 — Teori Himpunan
+
+Lima soal penerapan teori himpunan pada sistem nyata — e-commerce, analitik web, login multi-platform, rekomendasi produk, dan penilaian kinerja.
 
 ::: tip Sebelum Mengerjakan
 Baca materi: operasi himpunan, kardinalitas, inklusi-eksklusi, dan fuzzy set.

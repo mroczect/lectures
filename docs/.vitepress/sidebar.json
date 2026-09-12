@@ -1,119 +1,70 @@
-{
-  "/v1/courses/": [
-    {
-      "text": "Courses",
-      "items": [
-        { "text": "Overview", "link": "/v1/courses/" },
-        {
-          "text": "Semester 1",
-          "collapsed": false,
-          "items": [
-            {
-              "text": "RPL101 — Introduction to Software Engineering",
-              "link": "/v1/courses/rpl101-pengantar-rpl/"
-            },
-            {
-              "text": "RPL102 — Algorithms and Programming",
-              "link": "/v1/courses/rpl102-algoritma-pemrograman/"
-            },
-            {
-              "text": "RPL103 — Discrete Mathematics",
-              "link": "/v1/courses/rpl103-matematika-diskrit/"
-            },
-            {
-              "text": "RPL104 — Requirements Analysis and Specification",
-              "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/"
-            },
-            {
-              "text": "RPL105 — Web Programming",
-              "link": "/v1/courses/rpl105-pemrograman-web/"
-            },
-            {
-              "text": "RPL106 — Introduction to Database",
-              "link": "/v1/courses/rpl106-pengantar-basis-data/"
-            },
-            {
-              "text": "PK001RPL — Religious Education",
-              "link": "/v1/courses/pk001-pendidikan-agama/"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-
-  "/v1/information/": [
-    {
-      "text": "Information",
-      "items": [
-        { "text": "Overview", "link": "/v1/information/" },
-        { "text": "Lecturer Contacts", "link": "/v1/information/kontak-dosen" },
-        { "text": "Class Schedule", "link": "/v1/information/jadwal-kuliah" },
-        { "text": "PBL Team Info", "link": "/v1/information/info-team-pbl" },
-        { "text": "PBL Titles & Teams", "link": "/v1/information/judul-dan-team-pbl" }
-      ]
-    }
-  ],
-
-  "/v1/task/": [
-    {
-      "text": "Tasks",
-      "items": [
-        { "text": "Overview", "link": "/v1/task/" },
-        {
-          "text": "RPL103 — Discrete Mathematics",
-          "collapsed": false,
-          "items": [
-            {
-              "text": "Set Theory",
-              "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
-            }
-          ]
-        },
-        {
-          "text": "RPL106 — Introduction to Database",
-          "collapsed": false,
-          "items": [
-            {
-              "text": "Resume Video — Pertemuan 1",
-              "link": "/v1/task/semester-1-rpl106-introduction-to-database-concepts"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-
-  "/v1/": [
-    {
-      "text": "Version 1",
-      "items": [
-        { "text": "Overview", "link": "/v1/" },
-        { "text": "About", "link": "/v1/about" }
-      ]
-    }
-  ],
-
-  "/format/": [
-    {
-      "text": "Format & Rules",
-      "items": [
-        { "text": "Overview", "link": "/format/" },
-        { "text": "Halaman Konten", "link": "/format/page" },
-        { "text": "Halaman Homepage", "link": "/format/homepage" },
-        { "text": "Halaman Tugas", "link": "/format/task" },
-        { "text": "Tugas Selesai", "link": "/format/task-complite" }
-      ]
-    }
-  ],
-
-  "/": [
-    {
-      "text": "Guide",
-      "items": [
-        { "text": "Format & Rules", "link": "/format/" },
-        { "text": "License", "link": "/license" }
-      ]
-    }
-  ]
-}
+[
+  {
+    "text": "Mata Kuliah",
+    "collapsed": false,
+    "items": [
+      { "text": "Ringkasan", "link": "/v1/courses/" },
+      { "text": "RPL101 — Pengantar RPL", "link": "/v1/courses/rpl101-pengantar-rpl/" },
+      {
+        "text": "RPL102 — Algoritma dan Pemrograman",
+        "link": "/v1/courses/rpl102-algoritma-pemrograman/"
+      },
+      { "text": "RPL103 — Matematika Diskrit", "link": "/v1/courses/rpl103-matematika-diskrit/" },
+      {
+        "text": "RPL104 — Analisis Kebutuhan PL",
+        "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/"
+      },
+      { "text": "RPL105 — Pemrograman Web", "link": "/v1/courses/rpl105-pemrograman-web/" },
+      {
+        "text": "RPL106 — Pengantar Basis Data",
+        "link": "/v1/courses/rpl106-pengantar-basis-data/"
+      },
+      { "text": "PK001RPL — Pendidikan Agama", "link": "/v1/courses/pk001-pendidikan-agama/" }
+    ]
+  },
+  {
+    "text": "Informasi",
+    "collapsed": true,
+    "items": [
+      { "text": "Ringkasan", "link": "/v1/information/" },
+      { "text": "Kontak Dosen", "link": "/v1/information/kontak-dosen" },
+      { "text": "Jadwal Kuliah", "link": "/v1/information/jadwal-kuliah" },
+      { "text": "Info Tim PBL", "link": "/v1/information/info-team-pbl" },
+      { "text": "Judul & Tim PBL", "link": "/v1/information/judul-dan-team-pbl" }
+    ]
+  },
+  {
+    "text": "Tugas",
+    "collapsed": true,
+    "items": [
+      { "text": "Ringkasan", "link": "/v1/task/" },
+      {
+        "text": "RPL103 — Teori Himpunan",
+        "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
+      },
+      {
+        "text": "RPL106 — Resume Video",
+        "link": "/v1/task/semester-1-rpl106-introduction-to-database-concepts"
+      }
+    ]
+  },
+  {
+    "text": "Panduan",
+    "collapsed": true,
+    "items": [
+      { "text": "Format & Aturan", "link": "/format/" },
+      { "text": "Halaman Konten", "link": "/format/page" },
+      { "text": "Halaman Homepage", "link": "/format/homepage" },
+      { "text": "Halaman Tugas", "link": "/format/task" },
+      { "text": "Tugas Selesai", "link": "/format/task-complite" }
+    ]
+  },
+  {
+    "text": "Tentang",
+    "collapsed": true,
+    "items": [
+      { "text": "Tentang Proyek", "link": "/v1/about" },
+      { "text": "Lisensi", "link": "/license" }
+    ]
+  }
+]

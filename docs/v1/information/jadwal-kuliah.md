@@ -1,31 +1,12 @@
 ---
 title: Jadwal Kuliah Malam — TRPL Malam B
 description: Jadwal kuliah mingguan TRPL Malam B, periode 07–11 September 2026 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: Jadwal Kuliah
-  text: TRPL Malam B — Ganjil 2026/2027
-  tagline: Lima hari kuliah, tujuh mata kuliah, 24 slot waktu — Senin hingga Jumat, 18.00–23.00 WIB.
-  actions:
-    - theme: brand
-      text: Detail Per Hari
-      link: '#detail-per-hari'
-    - theme: alt
-      text: Ringkasan Mata Kuliah
-      link: '#ringkasan-mata-kuliah'
-    - theme: alt
-      text: Kontak Dosen
-      link: /v1/information/kontak-dosen
-
-features:
-  - title: Periode 07–11 September 2026
-    details: Jadwal mingguan kelas TRPL Malam B pada minggu pertama perkuliahan.
-  - title: 7 Mata Kuliah
-    details: Tiga praktikum, empat teori — semua dalam satu minggu.
-  - title: Daring & Luring
-    details: Teori daring via Zoom, praktikum luring di laboratorium.
+outline: deep
 ---
+
+# Jadwal Kuliah — TRPL Malam B
+
+Ganjil 2026/2027 — lima hari kuliah, tujuh mata kuliah, 24 slot waktu, Senin hingga Jumat 18.00–23.00 WIB.
 
 ::: tip Sinkronisasi Jadwal
 Jadwal bisa berubah sewaktu-waktu. Cek pengumuman resmi sebelum berangkat ke kampus.

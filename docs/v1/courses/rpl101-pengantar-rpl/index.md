@@ -1,31 +1,12 @@
 ---
 title: Pengantar Rekayasa Perangkat Lunak
 description: Materi, PBL, dan referensi mata kuliah RPL101 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: RPL101
-  text: Pengantar Rekayasa Perangkat Lunak
-  tagline: Fondasi berpikir sebagai perekayasa perangkat lunak — dari etika profesi, analisis, perancangan, hingga proyek PBL nyata bersama tim.
-  actions:
-    - theme: brand
-      text: Peta Materi
-      link: '#peta-mata-kuliah'
-    - theme: alt
-      text: Proyek PBL
-      link: '#proyek-pbl'
-    - theme: alt
-      text: E-Learning
-      link: https://learning-if.polibatam.ac.id/course/view.php?id=119
-
-features:
-  - title: 3 SKS
-    details: Mata kuliah wajib Semester Ganjil, tanpa prasyarat.
-  - title: Project-Based Learning
-    details: Seluruh materi diintegrasikan ke satu proyek pengembangan perangkat lunak berkelompok.
-  - title: 6 Tujuan Pembelajaran
-    details: Dari menjelaskan peran perekayasa hingga presentasi hasil proyek dalam Bahasa Inggris.
+outline: deep
 ---
+
+# RPL101 — Pengantar Rekayasa Perangkat Lunak
+
+Fondasi berpikir sebagai perekayasa perangkat lunak — dari etika profesi, analisis, perancangan, hingga proyek PBL nyata bersama tim.
 
 ::: tip E-Learning Resmi
 [**Buka Halaman RPL101 →**](https://learning-if.polibatam.ac.id/course/view.php?id=119)

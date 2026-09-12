@@ -1,31 +1,12 @@
 ---
 title: Info Tim PBL — Deskripsi Proyek
 description: Deskripsi lengkap 15 proyek PBL beserta fitur utama dan Manajer Proyek — Semester Ganjil 2026/2027, TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: Info Tim PBL
-  text: Deskripsi 15 Proyek PBL
-  tagline: Lima belas proyek nyata, tiga Manpro, satu tujuan — membangun aplikasi web yang menjawab masalah sehari-hari.
-  actions:
-    - theme: brand
-      text: Daftar Proyek
-      link: '#daftar-proyek'
-    - theme: alt
-      text: Tim PBL
-      link: /v1/information/judul-dan-team-pbl
-    - theme: alt
-      text: Panduan PBL
-      link: https://polibatam.id/tim-pbl-sem1-trpl-2026
-
-features:
-  - title: 15 Proyek
-    details: Lima belas aplikasi web nyata yang dikerjakan berkelompok sepanjang semester.
-  - title: 3 Manpro
-    details: Setiap proyek dibimbing oleh Manpro — Iqbal Afif, Kevin Riady, atau Supardianto.
-  - title: Berorientasi Masalah Nyata
-    details: Setiap proyek lahir dari masalah sehari-hari, bukan tugas akademik abstrak.
+outline: deep
 ---
+
+# Info Tim PBL — Deskripsi Proyek
+
+Lima belas proyek nyata, tiga Manpro, satu tujuan — membangun aplikasi web yang menjawab masalah sehari-hari.
 
 ::: tip Panduan Resmi
 [**Panduan PBL Semester 1 Ganjil 2026/2027 (PDF) →**](https://learning-if.polibatam.ac.id/pluginfile.php/36673/mod_label/intro/Panduan%20PBL%20Sem%201%202026-2027.pdf) · [**Pembagian Tim →**](https://polibatam.id/tim-pbl-sem1-trpl-2026)

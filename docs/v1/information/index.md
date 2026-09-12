@@ -1,34 +1,12 @@
 ---
 title: Informasi Perkuliahan
 description: Kontak dosen, jadwal kuliah, info tim PBL, dan judul proyek PBL — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: Informasi Perkuliahan
-  text: Informasi Penting Seputar Perkuliahan
-  tagline: Kontak dosen, jadwal kuliah, tim PBL, dan judul proyek — semua yang kamu butuhkan untuk menjalani semester ini.
-  actions:
-    - theme: brand
-      text: Jelajahi
-      link: '#daftar-informasi'
-    - theme: alt
-      text: Kontak Dosen
-      link: /v1/information/kontak-dosen
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-
-features:
-  - title: Kontak Dosen
-    details: NIK, inisial, nama, email, dan nomor HP dosen pengampu.
-    link: /v1/information/kontak-dosen
-  - title: Jadwal Kuliah
-    details: Jadwal mingguan kelas malam TRPL — mata kuliah, dosen, ruangan, dan jam.
-    link: /v1/information/jadwal-kuliah
-  - title: Judul & Tim PBL
-    details: Deskripsi proyek PBL dan daftar anggota timnya.
-    link: /v1/information/judul-dan-team-pbl
+outline: deep
 ---
+
+# Informasi Perkuliahan
+
+Kontak dosen, jadwal kuliah, tim PBL, dan judul proyek — semua yang kamu butuhkan untuk menjalani semester ini.
 
 ::: tip Portal E-Learning Resmi
 Semua informasi resmi juga terpusat di e-learning Jurusan Teknik Informatika.
@@ -89,7 +67,7 @@ Daftar anggota tim PBL per kelas — 30 tim, 180 mahasiswa.
 
 - **Simpan nomor dosen** penting di kontak ponsel sejak awal semester.
 - **Screenshot jadwal kuliah** untuk akses cepat tanpa internet.
-- **Kenali ketua tim PBL** — dia yang mengoordinasi pengumpulan tugas.
+- **Kenali ketua tim PBL** — dia yang mengoordinasikan pengumpulan tugas.
 - **Cek halaman ini tiap minggu** untuk memastikan tidak ada perubahan.
 
 :::

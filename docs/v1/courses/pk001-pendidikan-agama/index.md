@@ -1,28 +1,12 @@
 ---
 title: Pendidikan Agama
 description: Mata kuliah PK001RPL Pendidikan Agama — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: PK001RPL
-  text: Pendidikan Agama
-  tagline: Membangun karakter, etika, dan integritas sebagai fondasi perekayasa perangkat lunak profesional.
-  actions:
-    - theme: brand
-      text: Mulai
-      link: '#informasi-umum'
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-
-features:
-  - title: 2 SKS
-    details: Mata kuliah wajib Semester 1 (Ganjil 2026/2027), tanpa prasyarat.
-  - title: Pembentukan Karakter
-    details: Fokus pada nilai, etika, dan integritas sebagai calon profesional teknologi.
-  - title: Paralel dengan PBL
-    details: Memperkuat sisi manusiawi kerja tim — bukan terhubung teknis.
+outline: deep
 ---
+
+# PK001RPL — Pendidikan Agama
+
+Membangun karakter, etika, dan integritas sebagai fondasi perekayasa perangkat lunak profesional.
 
 ::: warning Informasi Belum Dipublikasikan
 **RPS** dan **dosen pengampu** untuk mata kuliah ini belum dipublikasikan program studi. Halaman akan diperbarui begitu dokumen resmi tersedia.

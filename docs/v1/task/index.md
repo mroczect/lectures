@@ -1,31 +1,12 @@
 ---
 title: Tugas
-description: Kumpulan tugas mata kuliah Program Studi Teknologi Rekayasa Perangkat Lunak — Politeknik Negeri Batam. Lengkap dengan deadline, status, dan tautan pengumpulan.
-layout: home
-
-hero:
-  name: Tugas
-  text: Kumpulan Tugas Mata Kuliah
-  tagline: Semua tugas dari tujuh mata kuliah, satu halaman — lengkap dengan deadline, status pengerjaan, dan tautan pengumpulan.
-  actions:
-    - theme: brand
-      text: Lihat Daftar Tugas
-      link: '#daftar-tugas'
-    - theme: alt
-      text: Ringkasan Status
-      link: '#ringkasan-status'
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-
-features:
-  - title: Semua Tugas Satu Halaman
-    details: Tugas dari tujuh mata kuliah dikumpulkan di satu tempat — mudah dilacak dan tidak terlewat.
-  - title: Status dan Deadline Jelas
-    details: Setiap tugas punya status dan tenggat yang tercatat rapi, diperbarui setiap ada perubahan.
-  - title: Terintegrasi PBL
-    details: Sebagian tugas terhubung ke proyek PBL semester ini — dikerjakan bersama tim, bukan individu.
+description: Kumpulan tugas mata kuliah TRPL Politeknik Negeri Batam — lengkap dengan deadline, status, dan tautan pengumpulan.
+outline: deep
 ---
+
+# Tugas — Kumpulan Tugas Mata Kuliah
+
+Semua tugas dari tujuh mata kuliah, satu halaman — lengkap dengan deadline, status pengerjaan, dan tautan pengumpulan.
 
 ::: tip Portal E-Learning Resmi
 Pastikan setiap tugas dikumpulkan sebelum tenggat melalui e-learning IF Polibatam.
@@ -44,8 +25,6 @@ Halaman ini adalah **pusat pelacakan tugas** untuk semua mata kuliah semester in
 Tujuannya sederhana: satu halaman yang bisa dibuka kapan saja untuk tahu tugas apa yang sedang aktif, mana yang sudah selesai, dan mana yang perlu segera dikerjakan.
 
 ## Cara Membaca Status
-
-Setiap tugas punya status yang bisa berubah seiring waktu. Berikut artinya:
 
 | Status                | Keterangan                              |
 | --------------------- | --------------------------------------- |
@@ -121,8 +100,6 @@ Tabel ini bersifat **living document** — perbarui setiap kali ada tugas baru, 
 
 ## Tugas per Mata Kuliah
 
-Ringkasan tugas yang dikelompokkan per mata kuliah — memudahkan melihat beban tugas di setiap mata kuliah.
-
 | Kode     | Mata Kuliah                                        | SKS | Jumlah Tugas | Status |
 | -------- | -------------------------------------------------- | :-: | :----------: | ------ |
 | RPL101   | Pengantar Rekayasa Perangkat Lunak                 |  3  |      0       | —      |
@@ -136,8 +113,6 @@ Ringkasan tugas yang dikelompokkan per mata kuliah — memudahkan melihat beban 
 Tabel ini akan terus bertambah seiring berjalannya semester. Setiap mata kuliah umumnya memberikan minimal **2–4 tugas** sepanjang 14 pertemuan — jadi jangan heran kalau daftarnya bertambah cepat di pertengahan semester.
 
 ## Tugas Individu vs Tim
-
-Beberapa tugas dikerjakan **sendiri**, tapi sebagian dikerjakan **bersama tim PBL**. Penting untuk tahu perbedaannya, karena aturan pengumpulannya juga berbeda.
 
 | Jenis Tugas       | Dikerjakan Oleh          | Pengumpulan                    |
 | ----------------- | ------------------------ | ------------------------------ |
@@ -162,7 +137,8 @@ Kesalahan umum: semua anggota ikut submit berkas yang sama — ini membuat dosen
 - **Cek kelengkapan** sebelum submit — file, format, nama, dan lampiran.
 - **Screenshot bukti submit** sebagai jaring pengaman jika ada kendala teknis.
 - **Untuk tugas tim, dokumentasikan kontribusi** masing-masing anggota.
-  :::
+
+:::
 
 ::: warning Hal yang Perlu Dihindari
 
@@ -171,7 +147,8 @@ Kesalahan umum: semua anggota ikut submit berkas yang sama — ini membuat dosen
 - **Jangan copy-paste tanpa paham** — plagiarisme akademik ditindak serius.
 - **Jangan mengandalkan teman** untuk tugas individu — ini merugikan diri sendiri.
 - **Jangan abaikan verifikasi** — setelah submit, cek bahwa berkas benar-benar terkirim.
-  :::
+
+:::
 
 ## FAQ
 

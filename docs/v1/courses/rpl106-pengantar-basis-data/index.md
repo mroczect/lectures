@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: E-Learning
       link: https://learningif.polibatam.ac.id
+    - theme: alt
+      text: Penjelasan Pertemuan 1 07/09/2026
+      link: /v1/courses/rpl106-pengantar-basis-data/penjelasan_pertemua_1
 
 features:
   - title: 3 SKS

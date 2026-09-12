@@ -1,28 +1,12 @@
 ---
 title: Mata Kuliah
 description: Daftar mata kuliah TRPL Polibatam — lengkap dengan materi, tugas, dan referensi.
-layout: home
-
-hero:
-  name: Mata Kuliah
-  text: Daftar Mata Kuliah TRPL
-  tagline: Tujuh mata kuliah, satu kurikulum terhubung — dari fondasi algoritma hingga aplikasi web dan basis data.
-  actions:
-    - theme: brand
-      text: Jelajahi
-      link: '#daftar-mata-kuliah'
-    - theme: alt
-      text: Informasi
-      link: /v1/information/
-
-features:
-  - title: 7 Mata Kuliah
-    details: Enam mata kuliah inti TRPL plus Pendidikan Agama, dalam satu semester terpadu.
-  - title: Total 21 SKS
-    details: Beban seimbang antara teori, praktik, dan pengembangan karakter.
-  - title: Project-Based Learning
-    details: Lima mata kuliah terhubung ke satu proyek PBL bersama.
+outline: deep
 ---
+
+# Mata Kuliah — Daftar Mata Kuliah TRPL
+
+Tujuh mata kuliah, satu kurikulum terhubung — dari fondasi algoritma hingga aplikasi web dan basis data.
 
 ::: tip Portal E-Learning
 Semua materi dan tugas terpusat di e-learning IF Polibatam.

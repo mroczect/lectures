@@ -1,31 +1,12 @@
 ---
 title: Kontak Dosen
 description: Direktori 54 dosen Jurusan Teknik Informatika Politeknik Negeri Batam — NIK, inisial, nama, dan nomor HP.
-layout: home
-
-hero:
-  name: Kontak Dosen
-  text: Direktori Dosen Jurusan TI
-  tagline: Lima puluh empat dosen, satu direktori — cari berdasarkan inisial, nama, atau NIK.
-  actions:
-    - theme: brand
-      text: Daftar Lengkap
-      link: '#daftar-dosen'
-    - theme: alt
-      text: Cara Mencari
-      link: '#cara-mencari'
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-
-features:
-  - title: 54 Dosen
-    details: Direktori dosen Jurusan Teknik Informatika, diurutkan berdasarkan inisial nama.
-  - title: NIK & Inisial
-    details: NIK unik dan inisial untuk referensi cepat di jadwal kuliah dan dokumen akademik.
-  - title: Terurut Alfabetis
-    details: Diurutkan berdasarkan inisial (AA hingga RC) agar mudah ditemukan.
+outline: deep
 ---
+
+# Kontak Dosen — Direktori Jurusan TI
+
+Lima puluh empat dosen Jurusan Teknik Informatika, satu direktori — cari berdasarkan inisial, nama, atau NIK.
 
 ::: info Catatan Data
 

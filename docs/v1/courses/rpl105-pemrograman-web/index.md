@@ -1,31 +1,12 @@
 ---
 title: Pemrograman Berbasis Web
 description: Materi, praktikum, dan referensi mata kuliah RPL105 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: RPL105
-  text: Pemrograman Berbasis Web
-  tagline: Dari HTML, CSS, dan JavaScript di klien hingga PHP, MySQL, session, dan autentikasi di server — bangun aplikasi web utuh dari nol.
-  actions:
-    - theme: brand
-      text: Rencana Belajar
-      link: '#rencana-pembelajaran'
-    - theme: alt
-      text: Tujuan
-      link: '#tujuan-pembelajaran'
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-
-features:
-  - title: 4 SKS
-    details: Mata kuliah wajib Semester 1 — SKS tertinggi semester ini.
-  - title: Client + Server
-    details: Cakupan lengkap dari HTML/CSS/JS hingga PHP, MySQL, session, autentikasi.
-  - title: CRUD & Autentikasi
-    details: Implementasi nyata Create, Read, Update, Delete dengan session & hashing password.
+outline: deep
 ---
+
+# RPL105 — Pemrograman Berbasis Web
+
+Dari HTML, CSS, dan JavaScript di klien hingga PHP, MySQL, session, dan autentikasi di server — bangun aplikasi web utuh dari nol.
 
 ::: tip E-Learning
 [**Buka E-Learning →**](https://learningif.polibatam.ac.id)

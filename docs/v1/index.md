@@ -1,34 +1,12 @@
 ---
-layout: home
 title: Versi 1
 description: Materi, tugas, jadwal, dan kontak dosen semester 1 TRPL Politeknik Negeri Batam.
-
-hero:
-  name: Versi 1
-  text: Semester 1
-  tagline: Tujuh mata kuliah, satu perjalanan terpadu. Semua yang kamu butuh dari silabus sampai pengumpulan tugas.
-  actions:
-    - theme: brand
-      text: Mulai
-      link: /v1/courses/
-    - theme: alt
-      text: Tentang
-      link: /v1/about
-
-features:
-  - title: Mata Kuliah
-    details: Tujuh mata kuliah lengkap dengan materi, jadwal, dan referensi.
-    link: /v1/courses/
-    linkText: Lihat
-  - title: Tugas
-    details: Daftar tugas beserta tenggat, status, dan tautan pengumpulan.
-    link: /v1/task/
-    linkText: Lihat
-  - title: Informasi
-    details: Kontak dosen, jadwal kuliah, dan data tim PBL.
-    link: /v1/information/
-    linkText: Lihat
+outline: deep
 ---
+
+# Versi 1 — Semester 1
+
+Tujuh mata kuliah, satu perjalanan terpadu. Semua yang kamu butuh dari silabus sampai pengumpulan tugas.
 
 ::: info Semester Ganjil 2026/2027
 Versi ini mencakup semester pertama Prodi Teknologi Rekayasa Perangkat Lunak.
@@ -46,20 +24,11 @@ Semester 1 dirancang sebagai satu perjalanan terpadu — fondasi matematika dan 
 
 ## Fase Belajar
 
-```mermaid
-flowchart LR
-    F1["Fondasi<br/>RPL102 · RPL103 · PK001RPL"] ==> F2["Jembatan<br/>RPL101 · RPL104"] ==> F3["Implementasi<br/>RPL105 · RPL106"]
-
-    style F1 fill:#3e63dd,color:#fff
-    style F2 fill:#2f6f4e,color:#fff
-    style F3 fill:#4fbf8c,color:#fff
-```
-
-| Fase         | Fokus                        | Mata Kuliah              |
-| ------------ | ---------------------------- | ------------------------ |
-| Fondasi      | Logika, matematika, karakter | RPL102, RPL103, PK001RPL |
-| Jembatan     | Proses RPL, kebutuhan        | RPL101, RPL104           |
-| Implementasi | Web, basis data              | RPL105, RPL106           |
+| Fase             | Fokus                        | Mata Kuliah              |
+| ---------------- | ---------------------------- | ------------------------ |
+| **Fondasi**      | Logika, matematika, karakter | RPL102, RPL103, PK001RPL |
+| **Jembatan**     | Proses RPL, kebutuhan        | RPL101, RPL104           |
+| **Implementasi** | Web, basis data              | RPL105, RPL106           |
 
 ::: tip Benang merah
 RPL104 menghasilkan dokumen SRS yang jadi dasar implementasi di RPL105 dan RPL106.
@@ -77,7 +46,7 @@ RPL104 menghasilkan dokumen SRS yang jadi dasar implementasi di RPL105 dan RPL10
 | RPL106   | Pengantar Basis Data               |  3  |
 | PK001RPL | Pendidikan Agama                   |  2  |
 
-[Lihat semua →](/v1/courses/)
+[Lihat semua mata kuliah →](/v1/courses/)
 
 ## Informasi
 
@@ -88,7 +57,7 @@ RPL104 menghasilkan dokumen SRS yang jadi dasar implementasi di RPL105 dan RPL10
 | [Info Tim PBL](/v1/information/info-team-pbl)         | Deskripsi proyek   |
 | [Judul & Tim PBL](/v1/information/judul-dan-team-pbl) | Data anggota tim   |
 
-[Lihat semua →](/v1/information/)
+[Lihat semua informasi →](/v1/information/)
 
 ## Tugas
 
@@ -97,7 +66,7 @@ RPL104 menghasilkan dokumen SRS yang jadi dasar implementasi di RPL105 dan RPL10
 | RPL103      | Teori Himpunan | Belum  |
 | Lainnya     |    Menunggu    | —      |
 
-[Lihat semua →](/v1/task/)
+[Lihat semua tugas →](/v1/task/)
 
 ## Catatan Versi
 

@@ -1,31 +1,12 @@
 ---
 title: Lisensi
 description: Ketentuan lisensi proyek Lectures — CC BY-NC-SA 4.0.
-layout: home
-
-hero:
-  name: Lisensi
-  text: CC BY-NC-SA 4.0
-  tagline: Bebas dibagikan, diadaptasi, dan dipelajari — selama memberi kredit, tidak komersial, dan meneruskan kebebasan yang sama.
-  actions:
-    - theme: brand
-      text: Ringkasan
-      link: '#ringkasan'
-    - theme: alt
-      text: Bolehkah Saya?
-      link: '#bolehkah-saya'
-    - theme: alt
-      text: Teks Lengkap
-      link: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt
-
-features:
-  - title: Bebas Dibagikan
-    details: Salin dan sebarkan materi dalam format apa pun — tanpa izin.
-  - title: Bebas Diadaptasi
-    details: Remix, ubah, dan kembangkan untuk keperluan non-komersial.
-  - title: Wajib Atribusi
-    details: Sertakan kredit ke kreator asli — Muhammad Riduwan Khafidi.
+outline: deep
 ---
+
+# Lisensi — CC BY-NC-SA 4.0
+
+Bebas dibagikan, diadaptasi, dan dipelajari — selama memberi kredit, tidak komersial, dan meneruskan kebebasan yang sama.
 
 ::: info Tentang Lisensi Ini
 Proyek **Lectures** dilisensikan di bawah [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0).

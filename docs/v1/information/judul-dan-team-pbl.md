@@ -1,31 +1,12 @@
 ---
 title: Tim PBL — Anggota per Kelas
 description: Daftar anggota 30 tim PBL semester Ganjil 2026/2027 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: Tim PBL
-  text: Anggota Tim per Kelas
-  tagline: 30 tim, 180 mahasiswa, 6 kelas — temukan timmu, kenali anggotanya, dan mulai berkolaborasi.
-  actions:
-    - theme: brand
-      text: Cari Tim Saya
-      link: '#navigasi-kelas'
-    - theme: alt
-      text: Deskripsi Proyek
-      link: /v1/information/info-team-pbl
-    - theme: alt
-      text: Aturan Tim
-      link: '#aturan-tim'
-
-features:
-  - title: 30 Tim
-    details: Enam kelas (Pagi & Malam), masing-masing 5 tim — total 30 tim.
-  - title: 180 Mahasiswa
-    details: Setiap tim terdiri dari 6 mahasiswa — 30 × 6 = 180 mahasiswa.
-  - title: 15 Judul Proyek
-    details: Lima belas judul unik, masing-masing dikerjakan dua tim (Pagi & Malam).
+outline: deep
 ---
+
+# Tim PBL — Anggota per Kelas
+
+30 tim, 180 mahasiswa, 6 kelas — temukan timmu, kenali anggotanya, dan mulai berkolaborasi.
 
 ::: tip Halaman Terkait
 
@@ -39,7 +20,7 @@ features:
 | :-------: | :-------------: | :---: | :-----------: |
 |    30     |       180       |   6   |       5       |
 
-Setiap tim terdiri dari **6 mahasiswa** dengan satu **ketua tim** yang mengoordinasi pengerjaan proyek.
+Setiap tim terdiri dari **6 mahasiswa** dengan satu **ketua tim** yang mengoordinasikan pengerjaan proyek.
 
 ::: info Catatan
 Nama yang tertera adalah anggota resmi tim. Perubahan anggota hanya bisa dilakukan dengan persetujuan dosen pengampu (Manpro).
@@ -426,7 +407,7 @@ Nama yang tertera adalah anggota resmi tim. Perubahan anggota hanya bisa dilakuk
 |  1  | 4342611083 | Muhammad Borneo Yusuf Pramana |
 |  2  | 4342611088 | Ridho Mardiansyah             |
 |  3  | 4342611089 | Jasson Lee                    |
-|  4  | 4342611084 | Kuni Nadhifah Salsabila       |
+|  4  | 4342611084 | Kunai Nadhifah Salsabila      |
 |  5  | 4342611085 | Nanda Nabila                  |
 | ::: |
 

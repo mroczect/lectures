@@ -1,31 +1,12 @@
 ---
 title: Analisis dan Spesifikasi Kebutuhan Perangkat Lunak
 description: Materi, PBL, dan referensi mata kuliah RPL104 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: RPL104
-  text: Analisis & Spesifikasi Kebutuhan PL
-  tagline: Menjembatani keinginan stakeholder dengan dokumen kebutuhan terstruktur — dari elicitation hingga SRS siap pakai.
-  actions:
-    - theme: brand
-      text: Rencana Belajar
-      link: '#rencana-pembelajaran'
-    - theme: alt
-      text: Tujuan
-      link: '#tujuan-pembelajaran'
-    - theme: alt
-      text: E-Learning
-      link: https://learning-if.polibatam.ac.id
-
-features:
-  - title: 3 SKS
-    details: Mata kuliah wajib Semester 1 (Ganjil 2026/2027), tanpa prasyarat.
-  - title: 8 Tujuan Pembelajaran
-    details: Dari memahami dasar analisis hingga menyajikan dokumentasi SRS formal.
-  - title: Fokus pada SRS
-    details: Luaran utama adalah Software Requirements Specification lengkap.
+outline: deep
 ---
+
+# RPL104 — Analisis & Spesifikasi Kebutuhan PL
+
+Menjembatani keinginan stakeholder dengan dokumen kebutuhan terstruktur — dari elicitation hingga SRS siap pakai.
 
 ::: tip E-Learning
 [**Buka E-Learning →**](https://learning-if.polibatam.ac.id)
