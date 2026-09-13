@@ -5,81 +5,62 @@ OUT="docs/changelog.md"
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 cd "$REPO_ROOT"
 
-# Header + frontmatter
-cat > "$OUT" <<EOF
+cat > "$OUT" <<'EOF'
 ---
 title: Changelog
-description: Riwayat perubahan dokumentasi — auto-generated dari git log.
+description: Riwayat perubahan dokumentasi.
 outline: deep
 order: 99
 ---
 
 # Changelog
 
-> File ini **auto-generated**. Jangan edit manual.
-> Jalankan \`bun run changelog\` untuk regenerate.
+> Auto-generated dari `git log`. Jangan edit manual.
 
 EOF
 
-# Ambil commit, group by tanggal + tipe (conventional commits)
-# Format: <tanggal>|<tipe>|<subject>|<hash>
+TMP="$(mktemp)"
+
 git log --no-merges \
   --pretty=format:'%ad|%s|%h' \
   --date=short \
+  | grep -v -E '\|(chore|docs): (update|generate) changelog' \
+  | grep -v -E '\|(initial|init)( |$)' \
   | awk -F'|' '
   {
-    date = $1
-    subject = $2
-    hash = $3
+    date = $1; subject = $2; hash = $3
 
-    # Extract type dari conventional commit
     if (match(subject, /^(feat|fix|docs|chore|refactor|style|test|perf|ci|build|revert)(\(.+\))?:/)) {
       type = substr(subject, RSTART, RLENGTH)
-      sub(/:$/, "", type)
-      sub(/\(.+\)/, "", type)
-      sub(/^[^:]+:/, "", subject)
-      sub(/^ /, "", subject)
+      sub(/:$/, "", type); sub(/\(.+\)/, "", type)
+      sub(/^[^:]+:/, "", subject); sub(/^ /, "", subject)
     } else {
       type = "other"
-      # Keep subject as-is
     }
 
     print date "|" type "|" subject "|" hash
   }
   ' \
-  | sort -t'|' -k1,1r -k2,2 \
-  | awk -F'|' '
+  | sort -t'|' -k1,1r -k2,2 -k3,3 \
+  > "$TMP"
+
+awk -F'|' '
   {
-    date = $1
-    type = $2
-    subject = $3
-    hash = $4
-
-    # New date header
-    if (date != last_date) {
+    if ($1 != last_date) {
       if (last_date != "") print ""
-      printf "## %s\n\n", date
-      last_date = date
-      last_type = ""
+      printf "## %s\n\n", $1
+      last_date = $1
     }
-
-    # New type subheader
-    if (type != last_type) {
-      printf "### %s\n\n", type
-      last_type = type
-    }
-
-    printf "- %s (`%s`)\n", subject, hash
+    printf "- **%s**: %s (%s)\n", $2, $3, $4
   }
-  ' >> "$OUT"
+' "$TMP" >> "$OUT"
 
-# Footer
 cat >> "$OUT" <<EOF
 
 ---
 
-_Generated from git log on $(date +%Y-%m-%d)._
+Terakhir diperbarui: $(date +%Y-%m-%d).
 EOF
 
-echo "✓ Changelog generated: $OUT"
-echo "  $(wc -l < "$OUT") lines"
+rm -f "$TMP"
+echo "✓ $OUT"
