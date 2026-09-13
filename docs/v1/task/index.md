@@ -22,14 +22,16 @@ Setiap mata kuliah punya halaman indeks tugasnya masing-masing di dalam folder `
 
 |   Status    | Deskripsi                                  | Jumlah |
 | :---------: | ------------------------------------------ | :----: |
-|  **Aktif**  | Belum dikumpulkan atau sedang dikerjakan   |   1    |
+|  **Aktif**  | Belum dikumpulkan atau sedang dikerjakan   |   3    |
 | **Selesai** | Sudah dikumpulkan (menunggu/sudah dinilai) |   1    |
 
 ## Tugas Aktif
 
-| Mata Kuliah                                                               | Tugas                                                                                       | Deadline     | Status |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------ | :----: |
-| [RPL103 — Matematika Diskrit](/v1/task/undone/rpl103-matematika-diskrit/) | [Teori Himpunan](/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan) | Sesuai kelas |   ⏳   |
+| Mata Kuliah                                                                   | Tugas                                                                                                                        | Deadline     | Status |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------ | :----: |
+| [RPL103 — Matematika Diskrit](/v1/task/undone/rpl103-matematika-diskrit/)     | [Teori Himpunan](/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan)                                  | Sesuai kelas |   ⏳   |
+| [RPL106 — Pengantar Basis Data](/v1/task/undone/rpl106-pengantar-basis-data/) | [Tugas Teori Pertemuan 2 — Resume Video ERD](/v1/task/undone/rpl106-pengantar-basis-data/13-09-2026-tugas-teori-pertemuan-2) | Sesuai kelas |   ⏳   |
+| [RPL106 — Pengantar Basis Data](/v1/task/undone/rpl106-pengantar-basis-data/) | [Tugas Praktikum Pertemuan 2 — ERD](/v1/task/undone/rpl106-pengantar-basis-data/13-09-2026-tugas-praktikum-pertemuan-2)      | Akhir sesi   |   ⏳   |
 
 ## Tugas Selesai
 
