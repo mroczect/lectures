@@ -2,6 +2,9 @@
 title: Tugas RPL103 — Teori Himpunan
 description: Tugas Matematika Diskrit tentang operasi himpunan, inklusi-eksklusi, dan fuzzy set — TRPL Politeknik Negeri Batam.
 outline: deep
+order: 1
+status: Undone
+grade: Pending
 ---
 
 # Tugas RPL103 — Teori Himpunan

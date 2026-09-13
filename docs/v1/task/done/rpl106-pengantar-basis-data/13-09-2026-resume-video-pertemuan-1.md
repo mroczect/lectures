@@ -2,6 +2,9 @@
 title: Resume Video — Pertemuan 1
 description: Tugas RPL106 Pengantar Basis Data — resume video 60 detik tentang Introduction to Database Concepts.
 outline: deep
+order: 1
+status: Submitted
+grade: Pending
 ---
 
 # Resume Video — Pertemuan 1

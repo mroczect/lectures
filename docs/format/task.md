@@ -9,7 +9,7 @@ outline: deep
 Cara membuat **halaman tugas** — daftar tugas, instruksi, dan status pengumpulan.
 
 ::: info Kapan Pakai?
-Untuk halaman **task tracker** seperti [Daftar Tugas](/v1/task/) atau halaman tugas individual seperti [Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan).
+Untuk halaman **task tracker** seperti [Daftar Tugas](/v1/task/) atau halaman tugas individual seperti [Tugas Teori Himpunan](/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan).
 :::
 
 ## Dua Jenis Halaman Tugas
@@ -217,12 +217,12 @@ outline: deep
 
 ## Halaman Terkait
 
-| Halaman                                                                           | Deskripsi                       |
-| --------------------------------------------------------------------------------- | ------------------------------- |
-| [Format & Rules](/format/page)                                                    | Landing page panduan format     |
-| [Halaman Konten](/format/page)                                                    | Panduan halaman konten standar  |
-| [Halaman Homepage](/format/homepage)                                              | Panduan layout `home`           |
-| [Tugas Selesai](/format/task-complite)                                            | Panduan menandai tugas selesai  |
-| [Contoh: Daftar Tugas](/v1/task/)                                                 | Implementasi nyata index tugas  |
-| [Contoh: Tugas Teori Himpunan](/v1/task/tugas-matematika-diskrit-materi-himpunan) | Implementasi nyata detail tugas |
-| CC BY-NC-SA 4.0                                                                   |
+| Halaman                                                                                                   | Deskripsi                       |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [Format & Rules](/format/page)                                                                            | Landing page panduan format     |
+| [Halaman Konten](/format/page)                                                                            | Panduan halaman konten standar  |
+| [Halaman Homepage](/format/homepage)                                                                      | Panduan layout `home`           |
+| [Tugas Selesai](/format/task-complite)                                                                    | Panduan menandai tugas selesai  |
+| [Contoh: Daftar Tugas](/v1/task/)                                                                         | Implementasi nyata index tugas  |
+| [Contoh: Tugas Teori Himpunan](/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan) | Implementasi nyata detail tugas |
+| CC BY-NC-SA 4.0                                                                                           |

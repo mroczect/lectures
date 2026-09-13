@@ -1,38 +1,35 @@
 ---
 title: Pengantar Basis Data
 description: Materi, praktikum, dan referensi mata kuliah RPL106 — TRPL Politeknik Negeri Batam.
-layout: home
-
-hero:
-  name: RPL106
-  text: Pengantar Basis Data
-  tagline: Dari konsep data hingga query SQL kompleks — rancang, bangun, dan kelola basis data relasional sebagai solusi nyata.
-  actions:
-    - theme: brand
-      text: Rencana Belajar
-      link: '#rencana-pembelajaran'
-    - theme: alt
-      text: Tujuan
-      link: '#tujuan-pembelajaran'
-    - theme: alt
-      text: E-Learning
-      link: https://learningif.polibatam.ac.id
-    - theme: alt
-      text: Penjelasan Pertemuan 1 07/09/2026
-      link: /v1/courses/rpl106-pengantar-basis-data/penjelasan_pertemua_1
-
-features:
-  - title: 3 SKS
-    details: Mata kuliah wajib Semester 1 (Ganjil 2026/2027), tanpa prasyarat.
-  - title: ERD, EERD & SQL
-    details: Cakupan lengkap pemodelan data, pemetaan relasional, dan SQL (DDL, DML, DCL).
-  - title: Mini Project PBL
-    details: Proyek cornerstone — dari ERD hingga query SQL untuk aplikasi nyata.
+outline: deep
+order: 6
 ---
+
+# RPL106 — Pengantar Basis Data
+
+**Kode:** RPL106 · **SKS:** 3 · **Semester:** Ganjil 2026/2027 · **Status:** Wajib  
+**Dosen:** Ahmadi Irmansyah Lubis (Koord.), Muhamad Sahrul Nizan  
+**Email / HP:** ahmadi@polibatam.ac.id / 082273083850
+
+> **Tagline:** Dari konsep data hingga query SQL kompleks — rancang, bangun, dan kelola basis data relasional sebagai solusi nyata.
 
 ::: tip E-Learning
 [**Buka E-Learning →**](https://learningif.polibatam.ac.id)
 :::
+
+## Navigasi Cepat
+
+- [Peta Mata Kuliah](#peta-mata-kuliah)
+- [Informasi Umum](#informasi-umum)
+- [Tujuan Pembelajaran](#tujuan-pembelajaran)
+- [Rencana Pembelajaran](#rencana-pembelajaran)
+- [Proyek PBL](#proyek-pbl)
+- [Metode Evaluasi](#metode-evaluasi)
+- [Sarana & Prasarana](#sarana--prasarana)
+- [Kesepakatan](#kesepakatan)
+- [Pustaka](#pustaka)
+
+---
 
 ## Peta Mata Kuliah
 
@@ -44,6 +41,8 @@ features:
 | **Lanjutan**  |   11–14   | Multimedia database, mini project PBL |
 
 **Benang merah:** Memahami (Konsep) → Merancang (Pemodelan) → Membangun & mengelola (SQL) → Menerapkan (Lanjutan + Mini Project).
+
+---
 
 ## Informasi Umum
 
@@ -62,6 +61,8 @@ features:
 
 Membangun pemahaman konsep dasar basis data dan kemampuan membangun basis data sebagai solusi. Meliputi: pengenalan basis data, konsep relational table, pemodelan data (ERD, EERD), pemetaan ke skema relasional, dan SQL (DDL, DML, DCL).
 
+---
+
 ## Tujuan Pembelajaran
 
 | No. | Tujuan                                                           |
@@ -73,6 +74,8 @@ Membangun pemahaman konsep dasar basis data dan kemampuan membangun basis data s
 |  5  | Menjelaskan, mengoperasikan, menerapkan konsep query             |
 |  6  | Mengimplementasikan query untuk membangun & mengelola basis data |
 |  7  | Menganalisis permasalahan untuk memilih solusi basis data tepat  |
+
+---
 
 ## Rencana Pembelajaran
 
@@ -93,18 +96,18 @@ Membangun pemahaman konsep dasar basis data dan kemampuan membangun basis data s
 
 ### Detail Per Pertemuan
 
-| Pertemuan | Topik                  | Sub Topik                                             |
-| :-------: | ---------------------- | ----------------------------------------------------- |
-|     1     | Pengenalan Basis Data  | Konsep dasar, basis data relasional                   |
-|     2     | Pemodelan Data (ER)    | Kategorisasi, model ER, komponen, studi kasus         |
-|     3     | Pemodelan Lanjut (EER) | Enhanced ER, inheritance, specialization, aggregation |
-|    4–5    | Pemodelan Relasional   | Model relasional, pemetaan ER/EER ke skema            |
-|     6     | SQL — DDL              | CREATE, ALTER, DROP                                   |
-|     7     | SQL — DML Dasar        | INSERT, UPDATE, DELETE                                |
-|    8–9    | SQL — DML Lanjut       | SELECT, JOIN, GROUP BY, HAVING, subquery, CASE        |
-|    10     | SQL — DCL              | VIEW, GRANT, REVOKE                                   |
-|   11–12   | Multimedia Database    | Manage type data file (BLOB/path)                     |
-|   13–14   | Mini Project PBL       | Finalisasi & presentasi                               |
+| Pertemuan | Topik                  | Sub Topik                                             | Materi                                                                                     |
+| :-------: | ---------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+|     1     | Pengenalan Basis Data  | Konsep dasar, basis data relasional                   | [Materi](/v1/courses/rpl106-pengantar-basis-data/materi-01-introduction-database-concepts) |
+|     2     | Pemodelan Data (ER)    | Kategorisasi, model ER, komponen, studi kasus         | _Segera hadir_                                                                             |
+|     3     | Pemodelan Lanjut (EER) | Enhanced ER, inheritance, specialization, aggregation | _Segera hadir_                                                                             |
+|    4–5    | Pemodelan Relasional   | Model relasional, pemetaan ER/EER ke skema            | _Segera hadir_                                                                             |
+|     6     | SQL — DDL              | CREATE, ALTER, DROP                                   | _Segera hadir_                                                                             |
+|     7     | SQL — DML Dasar        | INSERT, UPDATE, DELETE                                | _Segera hadir_                                                                             |
+|    8–9    | SQL — DML Lanjut       | SELECT, JOIN, GROUP BY, HAVING, subquery, CASE        | _Segera hadir_                                                                             |
+|    10     | SQL — DCL              | VIEW, GRANT, REVOKE                                   | _Segera hadir_                                                                             |
+|   11–12   | Multimedia Database    | Manage type data file (BLOB/path)                     | _Segera hadir_                                                                             |
+|   13–14   | Mini Project PBL       | Finalisasi & presentasi                               | _Segera hadir_                                                                             |
 
 ::: details Contoh Kode — Pemetaan ER ke Skema Relasional
 
@@ -179,6 +182,8 @@ REVOKE INSERT ON akademik.mahasiswa FROM 'asisten'@'localhost';
 
 :::
 
+---
+
 ## Proyek PBL
 
 **Metode:** PBL + CDIO. Semester 1 fokus pada tahap **Implement** & **Operate**.
@@ -201,6 +206,8 @@ REVOKE INSERT ON akademik.mahasiswa FROM 'asisten'@'localhost';
 ::: warning
 Mini Project **wajib menyertakan script SQL yang dapat dijalankan ulang dari nol** — memastikan database dapat direproduksi.
 :::
+
+---
 
 ## Metode Evaluasi
 
@@ -246,6 +253,8 @@ Jangan mengosongkan komponen apa pun — termasuk partisipasi, tugas, kuis, ATS,
 | 65–69 |  B-   | 40–44 |   D   |
 |       |       |  <40  |   E   |
 
+---
+
 ## Sarana & Prasarana
 
 | No. | Sarana                       |   Jumlah   |
@@ -257,7 +266,7 @@ Jangan mengosongkan komponen apa pun — termasuk partisipasi, tugas, kuis, ATS,
 |  5  | draw.io (untuk ERD/EERD)     | 1 (online) |
 |  6  | Koneksi Internet             |     1      |
 
-## Tools
+### Tools
 
 | Tool                                                         | Fungsi                         |
 | ------------------------------------------------------------ | ------------------------------ |
@@ -266,6 +275,8 @@ Jangan mengosongkan komponen apa pun — termasuk partisipasi, tugas, kuis, ATS,
 | [draw.io](https://app.diagrams.net/)                         | Diagramming & ERD              |
 | [MySQL Workbench](https://www.mysql.com/products/workbench/) | GUI MySQL (opsional)           |
 | [DBeaver](https://dbeaver.io/)                               | Universal DB Client (opsional) |
+
+---
 
 ## Kesepakatan
 
@@ -283,6 +294,8 @@ Jangan mengosongkan komponen apa pun — termasuk partisipasi, tugas, kuis, ATS,
 
 :::
 
+---
+
 ## Pustaka
 
 ### Utama
@@ -299,6 +312,8 @@ Jangan mengosongkan komponen apa pun — termasuk partisipasi, tugas, kuis, ATS,
 - Widodo, A. W. & Kurnianingtyas, D. _Sistem Basis Data_. UB Press, 2017.
 - Taylor, A. G. _SQL for Dummies_. Wiley, 2018.
 - Sianipar, R. H. _Pemrograman Database Menggunakan MySQL_. ANDI, 2016.
+
+---
 
 ## Sumber Online
 
@@ -331,11 +346,15 @@ Jangan mengosongkan komponen apa pun — termasuk partisipasi, tugas, kuis, ATS,
 - **Use The Index, Luke!** — panduan index & performa SQL.
 - **Vertabelo Academy** — kursus desain database.
 
+---
+
 ## Halaman Terkait
 
-| Halaman                                                                      | Deskripsi                        |
-| ---------------------------------------------------------------------------- | -------------------------------- |
-| [Mata Kuliah](/v1/courses/)                                                  | Daftar mata kuliah semester ini. |
-| [Tugas RPL106](/v1/task/semester-1-rpl106-introduction-to-database-concepts) | Tugas Resume Video Pertemuan 1.  |
-| [Info Tim PBL](/v1/information/info-team-pbl)                                | Deskripsi proyek PBL.            |
-| [Jadwal Kuliah](/v1/information/jadwal-kuliah)                               | Jadwal mingguan.                 |
+| Halaman                                                                                                                             | Deskripsi                        |
+| ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| [Pertemuan 1 — Introduction to Database Concepts](/v1/courses/rpl106-pengantar-basis-data/materi-01-introduction-database-concepts) | Materi pertemuan pertama.        |
+| [Tugas RPL106](/v1/task/done/rpl106-pengantar-basis-data/13-09-2026-resume-video-pertemuan-1)                                       | Tugas Resume Video Pertemuan 1.  |
+| [Mata Kuliah](/v1/courses/)                                                                                                         | Daftar mata kuliah semester ini. |
+| [Info Tim PBL](/v1/information/info-team-pbl)                                                                                       | Deskripsi proyek PBL.            |
+| [Jadwal Kuliah](/v1/information/jadwal-kuliah)                                                                                      | Jadwal mingguan.                 |
+| [Format Halaman Konten](/format/page)                                                                                               | Panduan penulisan halaman.       |

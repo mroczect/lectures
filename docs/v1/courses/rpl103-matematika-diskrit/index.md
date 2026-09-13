@@ -325,9 +325,9 @@ Mata kuliah ini **sepenuhnya daring** — tidak ada sesi praktikum luring.
 
 ## Halaman Terkait
 
-| Halaman                                                                       | Deskripsi                        |
-| ----------------------------------------------------------------------------- | -------------------------------- |
-| [Mata Kuliah](/v1/courses/)                                                   | Daftar mata kuliah semester ini. |
-| [Tugas Matematika Diskrit](/v1/task/tugas-matematika-diskrit-materi-himpunan) | Tugas Teori Himpunan.            |
-| [Jadwal Kuliah](/v1/information/jadwal-kuliah)                                | Jadwal mingguan.                 |
-| [Info Tim PBL](/v1/information/info-team-pbl)                                 | Deskripsi proyek PBL.            |
+| Halaman                                                                                               | Deskripsi                        |
+| ----------------------------------------------------------------------------------------------------- | -------------------------------- |
+| [Mata Kuliah](/v1/courses/)                                                                           | Daftar mata kuliah semester ini. |
+| [Tugas Matematika Diskrit](/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan) | Tugas Teori Himpunan.            |
+| [Jadwal Kuliah](/v1/information/jadwal-kuliah)                                                        | Jadwal mingguan.                 |
+| [Info Tim PBL](/v1/information/info-team-pbl)                                                         | Deskripsi proyek PBL.            |

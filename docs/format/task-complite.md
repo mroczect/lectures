@@ -38,7 +38,7 @@ Jangan mengarang status baru seperti "hampir selesai" atau "revisi".
 
 ## Update di Index Tugas
 
-Ubah **status** di `/v1/task/index.md`.
+Ubah **status** di `/v1/task/.md`.
 
 **Sebelum:**
 
@@ -269,13 +269,13 @@ Tambahkan sebelum **Halaman Terkait**:
 
 ## Halaman Terkait
 
-| Halaman                                                                  | Deskripsi                      |
-| ------------------------------------------------------------------------ | ------------------------------ |
-| [Panduan Format](/format/page)                                           | Panduan halaman konten standar |
-| [Halaman Homepage](/format/homepage)                                     | Panduan layout `home`          |
-| [Halaman Tugas](/format/task)                                            | Panduan membuat halaman tugas  |
-| [Daftar Tugas](/v1/task/)                                                | Index tugas aktif              |
-| [Contoh Detail Tugas](/v1/task/tugas-matematika-diskrit-materi-himpunan) | Implementasi nyata             |
+| Halaman                                                                                          | Deskripsi                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------ |
+| [Panduan Format](/format/page)                                                                   | Panduan halaman konten standar |
+| [Halaman Homepage](/format/homepage)                                                             | Panduan layout `home`          |
+| [Halaman Tugas](/format/task)                                                                    | Panduan membuat halaman tugas  |
+| [Daftar Tugas](/v1/task/)                                                                        | Index tugas aktif              |
+| [Contoh Detail Tugas](/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan) | Implementasi nyata             |
 
 ::: tip Update Sekali, Berguna Selamanya
 Luangkan **5 menit** untuk update setelah submit — kamu akan berterima kasih pada dirimu sendiri di akhir semester.

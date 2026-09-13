@@ -17,9 +17,20 @@
       { "text": "RPL105 — Pemrograman Web", "link": "/v1/courses/rpl105-pemrograman-web/" },
       {
         "text": "RPL106 — Pengantar Basis Data",
-        "link": "/v1/courses/rpl106-pengantar-basis-data/"
+        "collapsed": true,
+        "items": [
+          { "text": "Ringkasan", "link": "/v1/courses/rpl106-pengantar-basis-data/" },
+          {
+            "text": "Pertemuan 1 — Introduction to Database Concepts",
+            "link": "/v1/courses/rpl106-pengantar-basis-data/materi-01-introduction-database-concepts"
+          },
+          {
+            "text": "Pertemuan 2 — Data Modelling: ER-Diagram",
+            "link": "/v1/courses/rpl106-pengantar-basis-data/materi-02-er-diagram"
+          }
+        ]
       },
-      { "text": "PK001RPL — Pendidikan Agama", "link": "/v1/courses/pk001-pendidikan-agama/" }
+      { "text": "PK001 — Pendidikan Agama", "link": "/v1/courses/pk001-pendidikan-agama/" }
     ]
   },
   {
@@ -39,12 +50,57 @@
     "items": [
       { "text": "Ringkasan", "link": "/v1/task/" },
       {
-        "text": "RPL103 — Teori Himpunan",
-        "link": "/v1/task/tugas-matematika-diskrit-materi-himpunan"
+        "text": "Aktif",
+        "collapsed": true,
+        "items": [
+          { "text": "Ringkasan", "link": "/v1/task/undone/" },
+          {
+            "text": "RPL103 — Matematika Diskrit",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Ringkasan",
+                "link": "/v1/task/undone/rpl103-matematika-diskrit/"
+              },
+              {
+                "text": "Teori Himpunan",
+                "link": "/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan"
+              }
+            ]
+          },
+          {
+            "text": "RPL106 — Pengantar Basis Data",
+            "collapsed": true,
+            "items": [
+              {
+                "text": "Ringkasan",
+                "link": "/v1/task/undone/rpl106-pengantar-basis-data/"
+              },
+              {
+                "text": "Tugas Teori Pertemuan 2 — Resume Video ERD",
+                "link": "/v1/task/undone/rpl106-pengantar-basis-data/13-09-2026-tugas-teori-pertemuan-2"
+              }
+            ]
+          }
+        ]
       },
       {
-        "text": "RPL106 — Resume Video",
-        "link": "/v1/task/semester-1-rpl106-introduction-to-database-concepts"
+        "text": "Selesai",
+        "collapsed": true,
+        "items": [
+          { "text": "Ringkasan", "link": "/v1/task/done/" },
+          {
+            "text": "RPL106 — Pengantar Basis Data",
+            "collapsed": true,
+            "items": [
+              { "text": "Ringkasan", "link": "/v1/task/done/rpl106-pengantar-basis-data/" },
+              {
+                "text": "Resume Video — Pertemuan 1",
+                "link": "/v1/task/done/rpl106-pengantar-basis-data/13-09-2026-resume-video-pertemuan-1"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
