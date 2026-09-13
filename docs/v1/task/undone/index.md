@@ -23,7 +23,7 @@ Folder `undone/` berisi tugas yang **belum dikumpulkan** atau **belum dinilai**.
 | RPL103 | [Matematika Diskrit](/v1/task/undone/rpl103-matematika-diskrit/)           |      1      |
 | RPL104 | [Analisis Kebutuhan PL](/v1/task/undone/rpl104-analisis-kebutuhan-pl/)     |      0      |
 | RPL105 | [Pemrograman Web](/v1/task/undone/rpl105-pemrograman-web/)                 |      0      |
-| RPL106 | [Pengantar Basis Data](/v1/task/undone/rpl106-pengantar-basis-data/)       |      0      |
+| RPL106 | [Pengantar Basis Data](/v1/task/undone/rpl106-pengantar-basis-data/)       |      2      |
 
 ## Halaman Terkait
 
