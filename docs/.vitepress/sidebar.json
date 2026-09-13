@@ -124,6 +124,7 @@
     "collapsed": true,
     "items": [
       { "text": "Tentang Proyek", "link": "/v1/about" },
+      { "text": "Changelog", "link": "/changelog" },
       { "text": "Lisensi", "link": "/license" }
     ]
   }
