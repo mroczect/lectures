@@ -158,14 +158,12 @@ export default withPwa(
         logo: '/favicon.svg',
         siteTitle: SITE_NAME,
 
-        // Nav minimal — hanya 3 item yang benar-benar penting
         nav: [
           { text: 'Home', link: '/' },
+          { text: 'Blog', link: '/blog/' },
           { text: 'Versi 1', link: '/v1/' },
           { text: 'GitHub', link: REPO_URL },
         ],
-
-        // Sidebar komprehensif — semua navigasi utama ada di sini
         sidebar,
 
         socialLinks: [{ icon: 'github', link: REPO_URL }],

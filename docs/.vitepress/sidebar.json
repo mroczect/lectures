@@ -127,5 +127,14 @@
       { "text": "Changelog", "link": "/changelog" },
       { "text": "Lisensi", "link": "/license" }
     ]
+  },
+  {
+    "text": "Blog",
+    "collapsed": true,
+    "items": [
+      { "text": "Ringkasan", "link": "/blog/index" },
+      { "text": "D2 Full Cheat Sheet", "link": "/blog/15-09-2026-d2lang-cheatsheet" },
+      { "text": "D2 Command Line Interface", "link": "/blog/15-09-2026-d2-cli-cheatsheet" }
+    ]
   }
 ]
