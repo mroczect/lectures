@@ -49,7 +49,7 @@ gabungan Kategori A dan B, hitung nilai kardinalitasnya!
 
 Jawaban :
 
-![gambar](image_1.png)
+![gambar](<[image_1.png](https://raw.githubusercontent.com/mroczect/lectures/refs/heads/master/task/matematika_disktrik/image_1.png)>)
 
 - "U" union atau gabungan
 
@@ -192,7 +192,7 @@ Jadi Prinsip inklusi - eksklusi dibuat biar jumlah pelangan itu bener bener nunj
 
 Soal :
 
-![soalno5](image.png)
+![soalno5](<[image.png](https://raw.githubusercontent.com/mroczect/lectures/refs/heads/master/task/matematika_disktrik/image.png)>)
 
 Jawaban :
 
