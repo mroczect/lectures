@@ -4,7 +4,21 @@
     "collapsed": false,
     "items": [
       { "text": "Ringkasan", "link": "/v1/courses/" },
-      { "text": "RPL101 — Pengantar RPL", "link": "/v1/courses/rpl101-pengantar-rpl/" },
+      {
+        "text": "RPL101 — Pengantar RPL",
+        "collapsed": true,
+        "items": [
+          { "text": "Ringkasan", "link": "/v1/courses/rpl101-pengantar-rpl/" },
+          {
+            "text": "Pertemuan 1 — Pengenalan dan Planning",
+            "link": "/v1/courses/rpl101-pengantar-rpl/materi-01-pengenalan-dan-planing"
+          },
+          {
+            "text": "Pertemuan 2 — Analisis",
+            "link": "/v1/courses/rpl101-pengantar-rpl/materi-02-analisy"
+          }
+        ]
+      },
       {
         "text": "RPL102 — Algoritma dan Pemrograman",
         "link": "/v1/courses/rpl102-algoritma-pemrograman/"
@@ -12,7 +26,14 @@
       { "text": "RPL103 — Matematika Diskrit", "link": "/v1/courses/rpl103-matematika-diskrit/" },
       {
         "text": "RPL104 — Analisis Kebutuhan PL",
-        "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/"
+        "collapsed": true,
+        "items": [
+          { "text": "Ringkasan", "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/" },
+          {
+            "text": "Pertemuan 1 — Intro Requirement Engineering",
+            "link": "/v1/courses/rpl104-analisis-kebutuhan-pl/15-09-2026-rpl104-intro-requirement-engineering"
+          }
+        ]
       },
       { "text": "RPL105 — Pemrograman Web", "link": "/v1/courses/rpl105-pemrograman-web/" },
       {
@@ -58,10 +79,7 @@
             "text": "RPL103 — Matematika Diskrit",
             "collapsed": true,
             "items": [
-              {
-                "text": "Ringkasan",
-                "link": "/v1/task/undone/rpl103-matematika-diskrit/"
-              },
+              { "text": "Ringkasan", "link": "/v1/task/undone/rpl103-matematika-diskrit/" },
               {
                 "text": "Teori Himpunan",
                 "link": "/v1/task/undone/rpl103-matematika-diskrit/13-09-2026-tugas-teori-himpunan"
@@ -72,10 +90,7 @@
             "text": "RPL106 — Pengantar Basis Data",
             "collapsed": true,
             "items": [
-              {
-                "text": "Ringkasan",
-                "link": "/v1/task/undone/rpl106-pengantar-basis-data/"
-              },
+              { "text": "Ringkasan", "link": "/v1/task/undone/rpl106-pengantar-basis-data/" },
               {
                 "text": "Tugas Teori Pertemuan 2 — Resume Video ERD",
                 "link": "/v1/task/undone/rpl106-pengantar-basis-data/13-09-2026-tugas-teori-pertemuan-2"
@@ -109,6 +124,21 @@
     ]
   },
   {
+    "text": "Blog",
+    "collapsed": true,
+    "items": [
+      { "text": "Ringkasan", "link": "/blog/" },
+      {
+        "text": "D2 Full Cheat Sheet",
+        "link": "/blog/15-09-2026-d2lang-cheatsheet"
+      },
+      {
+        "text": "D2 Command Line Interface",
+        "link": "/blog/15-09-2026-d2-cli-cheatsheet"
+      }
+    ]
+  },
+  {
     "text": "Panduan",
     "collapsed": true,
     "items": [
@@ -126,15 +156,6 @@
       { "text": "Tentang Proyek", "link": "/v1/about" },
       { "text": "Changelog", "link": "/changelog" },
       { "text": "Lisensi", "link": "/license" }
-    ]
-  },
-  {
-    "text": "Blog",
-    "collapsed": true,
-    "items": [
-      { "text": "Ringkasan", "link": "/blog/index" },
-      { "text": "D2 Full Cheat Sheet", "link": "/blog/15-09-2026-d2lang-cheatsheet" },
-      { "text": "D2 Command Line Interface", "link": "/blog/15-09-2026-d2-cli-cheatsheet" }
     ]
   }
 ]
