@@ -9,6 +9,10 @@ order: 99
 
 > Auto-generated dari `git log`. Jangan edit manual.
 
+## 2026-09-15
+
+- **docs**: add D2 cheat sheets and VitePress documentation guide (#25) (a694005)
+
 ## 2026-09-14
 
 - **chore**: add auto changelog add clean temp files (4819ac6)
@@ -16,6 +20,7 @@ order: 99
 - **docs**: new strukture and docs (f18780d)
 - **feat**: add RPL106 practical task 2 ERD (5e3e3de)
 - **other**: add changelog (6c93d64)
+- **other**: Update changelog.md (21c6737)
 - **other**: Update index.md (c2d20d5)
 
 ## 2026-09-13
@@ -81,4 +86,4 @@ order: 99
 
 ---
 
-Terakhir diperbarui: 2026-09-14.
+Terakhir diperbarui: 2026-09-15.
