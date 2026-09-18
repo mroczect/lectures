@@ -18,19 +18,19 @@ Setiap aplikasi yang kamu gunakan hari ini — media sosial, e-commerce, maps, h
 
 ## Navigasi Cepat
 
-- [Tujuan Pembelajaran](#tujuan-pembelajaran)
-- [1. Database is Everywhere](#1-database-is-everywhere)
-- [2. Apa Itu Data?](#2-apa-itu-data)
-- [3. Apa Itu Database?](#3-apa-itu-database)
-- [4. Tujuan Database](#4-tujuan-database)
-- [5. Tahapan Desain Database](#5-tahapan-desain-database)
-- [6. Studi Kasus: Data Mahasiswa Politeknik](#6-studi-kasus-data-mahasiswa-politeknik)
-- [7. Relational Database (RDB)](#7-relational-database-rdb)
-- [8. Database Management System (DBMS)](#8-database-management-system-dbms)
-- [9. Mengapa Kita Mempelajari Basis Data?](#9-mengapa-kita-mempelajari-basis-data)
-- [10. Penerapan Database di Dunia Nyata](#10-penerapan-database-di-dunia-nyata)
-- [11. Istilah Penting](#11-istilah-penting)
-- [12. Ringkasan](#12-ringkasan)
+-   [Tujuan Pembelajaran](#tujuan-pembelajaran)
+-   [1. Database is Everywhere](#1-database-is-everywhere)
+-   [2. Apa Itu Data?](#2-apa-itu-data)
+-   [3. Apa Itu Database?](#3-apa-itu-database)
+-   [4. Tujuan Database](#4-tujuan-database)
+-   [5. Tahapan Desain Database](#5-tahapan-desain-database)
+-   [6. Studi Kasus: Data Mahasiswa Politeknik](#6-studi-kasus-data-mahasiswa-politeknik)
+-   [7. Relational Database (RDB)](#7-relational-database-rdb)
+-   [8. Database Management System (DBMS)](#8-database-management-system-dbms)
+-   [9. Mengapa Kita Mempelajari Basis Data?](#9-mengapa-kita-mempelajari-basis-data)
+-   [10. Penerapan Database di Dunia Nyata](#10-penerapan-database-di-dunia-nyata)
+-   [11. Istilah Penting](#11-istilah-penting)
+-   [12. Ringkasan](#12-ringkasan)
 
 ---
 
@@ -38,13 +38,13 @@ Setiap aplikasi yang kamu gunakan hari ini — media sosial, e-commerce, maps, h
 
 Setelah mempelajari materi ini, mahasiswa diharapkan mampu:
 
-- Menjelaskan definisi **data**, **datum**, dan **database**.
-- Membedakan **datum** dan **data** beserta contohnya.
-- Menyebutkan **tujuan database** dan alasan mengapa database dibutuhkan.
-- Menjelaskan **tahapan desain database** dari analisis kebutuhan hingga DBMS.
-- Memahami konsep **Relational Database** dan perbedaannya dengan penyimpanan sederhana seperti Excel.
-- Menyebutkan contoh **DBMS** populer dan fungsinya.
-- Menjelaskan mengapa bidang basis data penting bagi karier di ilmu komputer.
+-   Menjelaskan definisi **data**, **datum**, dan **database**.
+-   Membedakan **datum** dan **data** beserta contohnya.
+-   Menyebutkan **tujuan database** dan alasan mengapa database dibutuhkan.
+-   Menjelaskan **tahapan desain database** dari analisis kebutuhan hingga DBMS.
+-   Memahami konsep **Relational Database** dan perbedaannya dengan penyimpanan sederhana seperti Excel.
+-   Menyebutkan contoh **DBMS** populer dan fungsinya.
+-   Menjelaskan mengapa bidang basis data penting bagi karier di ilmu komputer.
 
 ---
 
@@ -52,9 +52,9 @@ Setelah mempelajari materi ini, mahasiswa diharapkan mampu:
 
 Database ada di mana-mana — istilah kerennya **ubiquitous**. Coba bayangkan:
 
-- Berapa besar **data center Facebook**?
-- Berapa banyak data yang disimpan **Google** setiap detik?
-- Berapa banyak foto yang diunggah ke **Instagram** per menit?
+-   Berapa besar **data center Facebook**?
+-   Berapa banyak data yang disimpan **Google** setiap detik?
+-   Berapa banyak foto yang diunggah ke **Instagram** per menit?
 
 Semua layanan modern tersebut tidak mungkin berjalan tanpa database.
 
@@ -89,10 +89,10 @@ Bahkan klub sepak bola **Liverpool** menggunakan _data science_ secara intensif 
 
 Secara etimologis:
 
-- **Data** berasal dari bahasa Latin, bentuk jamak dari kata **"datum"**.
-- **Datum** = satu fakta tunggal, satu entitas tunggal, satu titik informasi.
-- **Data** = kumpulan fakta yang direkam dalam berbagai format (angka, teks, gambar, dll).
-- **Data tidak bermakna sampai ditafsirkan.**
+-   **Data** berasal dari bahasa Latin, bentuk jamak dari kata **"datum"**.
+-   **Datum** = satu fakta tunggal, satu entitas tunggal, satu titik informasi.
+-   **Data** = kumpulan fakta yang direkam dalam berbagai format (angka, teks, gambar, dll).
+-   **Data tidak bermakna sampai ditafsirkan.**
 
 ### Datum vs Data
 
@@ -106,14 +106,14 @@ Perhatikan tabel berikut:
 | D            |          300 | Baik            |
 | E            |          175 | Baik            |
 
-- Satu sel, misalnya **"100"**, adalah sebuah **datum**.
-- Keseluruhan tabel berisi kumpulan datum yang membentuk sebuah **data**.
+-   Satu sel, misalnya **"100"**, adalah sebuah **datum**.
+-   Keseluruhan tabel berisi kumpulan datum yang membentuk sebuah **data**.
 
 :::info[Intinya]
 
-- **Datum** → fakta tunggal.
-- **Data** → kumpulan fakta.
-- **Informasi** → data yang sudah ditafsirkan dan bermakna.
+-   **Datum** → fakta tunggal.
+-   **Data** → kumpulan fakta.
+-   **Informasi** → data yang sudah ditafsirkan dan bermakna.
 
 :::
 
@@ -155,10 +155,10 @@ Database memodelkan dua hal utama dari dunia nyata:
 
 Database yang baik memiliki beberapa karakteristik berikut:
 
-- **Terintegrasi** — data dari berbagai bagian saling terhubung, tidak terisolasi.
-- **Terstruktur** — ada skema/tatanan yang jelas, bukan tumpukan file acak.
-- **Memodelkan dunia nyata** — merepresentasikan entitas dan relasi yang sesungguhnya.
-- **Dapat di-query** — pengguna bisa mengambil informasi secara cepat dan terarah.
+-   **Terintegrasi** — data dari berbagai bagian saling terhubung, tidak terisolasi.
+-   **Terstruktur** — ada skema/tatanan yang jelas, bukan tumpukan file acak.
+-   **Memodelkan dunia nyata** — merepresentasikan entitas dan relasi yang sesungguhnya.
+-   **Dapat di-query** — pengguna bisa mengambil informasi secara cepat dan terarah.
 
 ---
 
@@ -201,9 +201,9 @@ Need Analysis → Data Model (ER) → Relational Schema → DBMS + Query
 
 Setiap tahap membangun fondasi untuk tahap berikutnya:
 
-- Salah di **Need Analysis** → model data salah → skema salah → implementasi salah.
-- Melewati **ER Model** → langsung ke skema → tabel berantakan, sulit dikembangkan.
-- Tidak paham **Relational Schema** → query SQL akan ngawur dan rawan bug.
+-   Salah di **Need Analysis** → model data salah → skema salah → implementasi salah.
+-   Melewati **ER Model** → langsung ke skema → tabel berantakan, sulit dikembangkan.
+-   Tidak paham **Relational Schema** → query SQL akan ngawur dan rawan bug.
 
 Karena itu, **jangan langsung menulis SQL**. Rancang dulu di tingkat konseptual.
 
@@ -213,9 +213,9 @@ Karena itu, **jangan langsung menulis SQL**. Rancang dulu di tingkat konseptual.
 
 Bayangkan Politeknik memiliki:
 
-- **Ribuan data mahasiswa**
-- **Data mata kuliah**
-- **Data dosen, kelas, dan nilai**
+-   **Ribuan data mahasiswa**
+-   **Data mata kuliah**
+-   **Data dosen, kelas, dan nilai**
 
 Bagaimana cara mengelolanya?
 
@@ -223,21 +223,21 @@ Bagaimana cara mengelolanya?
 
 **Kelebihan Excel:**
 
-- Sederhana dan mudah dipakai.
-- Mudah dibagikan.
-- Mudah untuk insert, edit, dan delete data.
-- Ada fitur **Find** untuk mencari data.
-- Mudah di-backup (print, copy, dsb).
+-   Sederhana dan mudah dipakai.
+-   Mudah dibagikan.
+-   Mudah untuk insert, edit, dan delete data.
+-   Ada fitur **Find** untuk mencari data.
+-   Mudah di-backup (print, copy, dsb).
 
 **Kelemahan Excel:**
 
-- **File size** → semakin besar file, semakin lambat pemrosesan.
-- **Data redundancy** → data yang sama bisa tersimpan berulang.
-- **Relasi data sulit** → misal: _"Mahasiswa mana saja yang mengambil mata kuliah Basis Data?"_ → sulit dijawab.
-- **Penambahan informasi** (kolom baru) menyulitkan struktur.
-- **Analisis data** sulit → misal: _"Berapa mahasiswa yang tinggal di Batam Center?"_
-- **Data version** → jika satu orang mengubah data, orang lain belum tentu ter-update.
-- **Data security** → nilai mahasiswa hanya boleh diedit oleh dosen tertentu, sulit diatur di Excel.
+-   **File size** → semakin besar file, semakin lambat pemrosesan.
+-   **Data redundancy** → data yang sama bisa tersimpan berulang.
+-   **Relasi data sulit** → misal: _"Mahasiswa mana saja yang mengambil mata kuliah Basis Data?"_ → sulit dijawab.
+-   **Penambahan informasi** (kolom baru) menyulitkan struktur.
+-   **Analisis data** sulit → misal: _"Berapa mahasiswa yang tinggal di Batam Center?"_
+-   **Data version** → jika satu orang mengubah data, orang lain belum tentu ter-update.
+-   **Data security** → nilai mahasiswa hanya boleh diedit oleh dosen tertentu, sulit diatur di Excel.
 
 :::warning[Kesimpulan]
 Excel bagus untuk data kecil dan sederhana, tetapi **tidak cocok untuk data berskala besar** yang membutuhkan relasi, keamanan, dan konsistensi. Di sinilah **database** berperan.
@@ -269,10 +269,10 @@ Database relasional mengatasi semua kelemahan Excel di atas:
 
 Karakteristik utama:
 
-- Tabel saling **berkomunikasi dan berbagi informasi**.
-- Memudahkan **pencarian, pengorganisasian, dan pelaporan** data.
-- Menggunakan **Structured Query Language (SQL)**.
-- Berasal dari konsep **fungsi matematis** tentang pemetaan himpunan data.
+-   Tabel saling **berkomunikasi dan berbagi informasi**.
+-   Memudahkan **pencarian, pengorganisasian, dan pelaporan** data.
+-   Menggunakan **Structured Query Language (SQL)**.
+-   Berasal dari konsep **fungsi matematis** tentang pemetaan himpunan data.
 
 ### Komponen Relational Database
 
@@ -350,9 +350,9 @@ Ini yang tidak bisa dilakukan Excel dengan mudah.
 
 Fungsi DBMS:
 
-- Mengelola data yang masuk.
-- Mengorganisir data.
-- Menyediakan cara agar data dapat **dimodifikasi** atau **diekstraksi** oleh pengguna atau program lain.
+-   Mengelola data yang masuk.
+-   Mengorganisir data.
+-   Menyediakan cara agar data dapat **dimodifikasi** atau **diekstraksi** oleh pengguna atau program lain.
 
 ### Contoh DBMS Populer
 
@@ -393,10 +393,10 @@ Sebuah sistem database umumnya terdiri dari:
 
 Bidang database memberi banyak kontribusi pada ilmu komputer:
 
-- Konsep database dapat diterapkan di **berbagai bidang masalah**.
-- **DBMS adalah teknologi perangkat lunak yang sangat sukses** (Oracle, DB2, MS SQL, dll).
-- Bidang pengembangan sangat luas: **Data Mining, Big Data, Business Intelligence**, dll.
-- Karier bergengsi: **Data Scientist**, **Database Administrator**, **Backend Engineer**.
+-   Konsep database dapat diterapkan di **berbagai bidang masalah**.
+-   **DBMS adalah teknologi perangkat lunak yang sangat sukses** (Oracle, DB2, MS SQL, dll).
+-   Bidang pengembangan sangat luas: **Data Mining, Big Data, Business Intelligence**, dll.
+-   Karier bergengsi: **Data Scientist**, **Database Administrator**, **Backend Engineer**.
 
 :::info[Analogi]
 
@@ -469,14 +469,14 @@ Seperti minyak, data harus **dicari, diekstraksi, dimurnikan, didistribusikan, d
 
 ## 12. Ringkasan
 
-- **Database ada di mana-mana** dan menjadi fondasi aplikasi modern.
-- **Datum** adalah fakta tunggal; **data** adalah kumpulan fakta; **informasi** adalah data yang bermakna.
-- **Database** memodelkan **entity** dan **relationship** dari dunia nyata.
-- Tujuan database: **cepat, hemat ruang, akurat, tersedia, lengkap, aman, dan bisa dibagi**.
-- Desain database melalui tahapan: **Need Analysis → ER → Relational Schema → DBMS + Query**.
-- **Excel** tidak cocok untuk data besar; **Relational Database** hadir sebagai solusinya.
-- **DBMS** seperti MySQL, PostgreSQL, dan Oracle adalah perangkat lunak yang mengelola database.
-- Bidang database membuka karier luas: **Data Scientist, DBA, Backend Engineer**.
+-   **Database ada di mana-mana** dan menjadi fondasi aplikasi modern.
+-   **Datum** adalah fakta tunggal; **data** adalah kumpulan fakta; **informasi** adalah data yang bermakna.
+-   **Database** memodelkan **entity** dan **relationship** dari dunia nyata.
+-   Tujuan database: **cepat, hemat ruang, akurat, tersedia, lengkap, aman, dan bisa dibagi**.
+-   Desain database melalui tahapan: **Need Analysis → ER → Relational Schema → DBMS + Query**.
+-   **Excel** tidak cocok untuk data besar; **Relational Database** hadir sebagai solusinya.
+-   **DBMS** seperti MySQL, PostgreSQL, dan Oracle adalah perangkat lunak yang mengelola database.
+-   Bidang database membuka karier luas: **Data Scientist, DBA, Backend Engineer**.
 
 ### Peta Konsep
 

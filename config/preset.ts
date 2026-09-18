@@ -8,13 +8,13 @@ export const presets: Config['presets'] = [
         {
             docs: {
                 sidebarPath: './sidebars.ts',
-                editUrl: `${REPO_URL}/tree/main/`,
+                editUrl: `${REPO_URL}/tree/master/`,
                 showLastUpdateTime: true,
                 breadcrumbs: true,
             },
             blog: {
                 showReadingTime: true,
-                editUrl: `${REPO_URL}/tree/main/`,
+                editUrl: `${REPO_URL}/tree/master/`,
                 feedOptions: {
                     type: ['rss', 'atom'],
                     xslt: true,
@@ -29,3 +29,5 @@ export const presets: Config['presets'] = [
         },
     ],
 ];
+
+export const themes: Config['themes'] = ['@docusaurus/theme-mermaid'];

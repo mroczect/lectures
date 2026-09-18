@@ -31,6 +31,7 @@ export const site: SiteConfig = {
         },
     ],
     markdown: {
+        mermaid: true,
         hooks: {
             onBrokenMarkdownLinks: 'warn',
         },
