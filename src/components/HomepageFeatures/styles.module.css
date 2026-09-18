@@ -47,9 +47,7 @@
     background: var(--bg-1);
     padding: 1.5rem;
     overflow: hidden;
-    transition:
-        border-color var(--t) var(--ease),
-        background var(--t) var(--ease);
+    transition: border-color var(--t) var(--ease), background var(--t) var(--ease);
     isolation: isolate;
 }
 
