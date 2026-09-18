@@ -24,7 +24,7 @@ const sidebars: SidebarsConfig = {
             label: 'Versi 1 (Semester 1)',
             collapsed: false,
             items: [
-                'v1/index', // Halaman utama v1
+                'v1/index',
                 {
                     type: 'category',
                     label: 'Mata Kuliah',
