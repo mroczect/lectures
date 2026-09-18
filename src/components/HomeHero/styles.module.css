@@ -7,12 +7,10 @@
     isolation: isolate;
 }
 
-/* Vercel Grid Background */
 .heroGrid {
     position: absolute;
     inset: 0;
-    background-image:
-        linear-gradient(to right, var(--border) 1px, transparent 1px),
+    background-image: linear-gradient(to right, var(--border) 1px, transparent 1px),
         linear-gradient(to bottom, var(--border) 1px, transparent 1px);
     background-size: 64px 64px;
     mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, #000 70%, transparent 100%);
@@ -21,7 +19,6 @@
     pointer-events: none;
 }
 
-/* Main Glow behind text */
 .heroGlow {
     position: absolute;
     top: -10%;
@@ -35,7 +32,6 @@
     pointer-events: none;
 }
 
-/* Floating Orb (Blue/Cyan accent like Vercel) */
 .heroOrb {
     position: absolute;
     top: 20%;
@@ -58,7 +54,6 @@
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* Interactive Badge (Vercel Style) */
 .heroBadge {
     display: inline-flex;
     align-items: center;
@@ -98,7 +93,6 @@
     transform: translateX(2px);
 }
 
-/* Typography */
 .heroTitle {
     font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 700;
@@ -136,7 +130,6 @@
     flex-wrap: wrap;
 }
 
-/* Terminal Preview Wrapper */
 .previewWrapper {
     position: relative;
     margin-top: 4rem;
@@ -157,15 +150,12 @@
     z-index: -1;
 }
 
-/* Terminal Frame */
 .preview {
     text-align: left;
     border: 1px solid var(--border);
     border-radius: var(--r-lg);
     background: var(--bg-1);
-    box-shadow:
-        0 0 0 1px rgba(255, 255, 255, 0.05),
-        0 20px 50px rgba(0, 0, 0, 0.5),
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 20px 50px rgba(0, 0, 0, 0.5),
         0 0 80px rgba(0, 112, 243, 0.05);
     overflow: hidden;
     transform: rotateX(2deg);
@@ -178,7 +168,6 @@
     transform: rotateX(0deg);
 }
 
-/* Terminal Top Bar */
 .previewBar {
     display: flex;
     align-items: center;
@@ -226,7 +215,6 @@
     background: var(--bg-2);
 }
 
-/* Terminal Body */
 .previewBody {
     margin: 0;
     padding: 1.5rem;
@@ -272,7 +260,6 @@
     animation: blink 1.2s steps(1) infinite;
 }
 
-/* Animations */
 @keyframes blink {
     50% {
         opacity: 0;
