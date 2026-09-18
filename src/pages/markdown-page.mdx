@@ -1,7 +1,54 @@
 ---
-title: Markdown page example
+title: Contoh Halaman Markdown
+description: Demonstrasi rendering Markdown & MDX di Snapcat Docs.
 ---
 
-# Markdown page example
+# Contoh Halaman Markdown
 
-You don't need React to write simple standalone pages.
+Halaman ini ditulis sebagai file **MDX** dan dirender langsung oleh Docusaurus tanpa memerlukan komponen React tambahan.
+
+## Sintaks Markdown Standar
+
+Docusaurus mendukung penuh sintaks Markdown:
+
+- **Tebal** dengan `**teks**`
+- _Miring_ dengan `*teks*`
+- `inline code` dengan backtick
+- [Tautan internal](/docs/intro) ke dokumentasi
+- [Tautan eksternal](https://docusaurus.io) ke situs lain
+
+### Blockquote
+
+> Dokumentasi yang baik adalah dokumentasi yang bisa dibaca
+> oleh orang yang baru pertama kali membukanya.
+
+### Blok Kode
+
+```ts title="contoh.ts"
+type User = { id: number; name: string };
+
+export function greet(user: User): string {
+	return `Halo, ${user.name}!`;
+}
+```
+
+### Tabel
+
+| Field     | Tipe       | Deskripsi                       |
+| --------- | ---------- | ------------------------------- |
+| `id`      | `number`   | Identitas unik mahasiswa        |
+| `name`    | `string`   | Nama lengkap                    |
+| `courses` | `string[]` | Daftar mata kuliah yang diambil |
+
+:::tip Tips
+Gunakan `:::tip`, `:::info`, `:::warning`, atau `:::danger` untuk membuat callout.
+:::
+
+:::info Catatan
+Setiap halaman baru cukup ditambahkan sebagai file `.md` atau `.mdx`
+di dalam folder `src/pages`.
+:::
+
+### Keyboard Shortcut
+
+Tekan <kbd>⌘</kbd> + <kbd>K</kbd> untuk membuka pencarian.
