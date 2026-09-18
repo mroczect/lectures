@@ -1,0 +1,39 @@
+facebook:
+    label: Facebook
+    permalink: /facebook
+    description: Facebook tag description
+
+hello:
+    label: Hello
+    permalink: /hello
+    description: Hello tag description
+
+docusaurus:
+    label: Docusaurus
+    permalink: /docusaurus
+    description: Docusaurus tag description
+
+hola:
+    label: Hola
+    permalink: /hola
+    description: Hola tag description
+
+tools:
+    label: Tools
+    permalink: /tools
+    description: Tools dan utilitas yang dipakai sehari-hari.
+
+diagram:
+    label: Diagram
+    permalink: /diagram
+    description: Diagram as code, visualisasi, dan dokumentasi visual.
+
+d2:
+    label: D2
+    permalink: /d2
+    description: D2 — Declarative Diagramming.
+
+cheatsheet:
+    label: Cheatsheet
+    permalink: /cheatsheet
+    description: Cheat sheet padat untuk referensi cepat.

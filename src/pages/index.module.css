@@ -1,0 +1,25 @@
+.pageContent {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+}
+
+.pageContent > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.pageContent table {
+    margin: 1.25rem 0;
+}
+
+.pageContent > hr {
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 996px) {
+    .pageContent {
+        padding: 2.5rem 1rem 4rem;
+    }
+}
