@@ -12,7 +12,7 @@ sidebar_position: 2
 **Pertemuan:** 2
 **Topik:** Pemodelan Data Konseptual & Perancangan Entity Relationship Diagram
 
-:::info Ringkasan Singkat
+:::info[Ringkasan Singkat]
 Setelah memahami konsep dasar basis data di Pertemuan 1, sekarang kita masuk ke tahap **pemodelan data**. Di sini kita belajar bagaimana menerjemahkan kebutuhan dunia nyata menjadi **Entity Relationship Diagram (ERD)** — blueprint konseptual sebelum basis data benar-benar dibangun. ERD adalah **fondasi** dari seluruh proses perancangan basis data. Salah di sini, salah semuanya.
 :::
 
@@ -65,7 +65,7 @@ Pada skala tertentu, perancang database **dapat langsung memutuskan** rancangan 
 - Perancang **harus berinteraksi dengan customer** untuk memahami kebutuhan.
 - Dibutuhkan **model data** yang menerjemahkan kebutuhan menjadi **skema konseptual**.
 
-:::tip Insight
+:::tip[Insight]
 ERD menjawab pertanyaan: **"Data apa yang perlu kita simpan, dan bagaimana hubungan antar data tersebut?"** — sebelum menyentuh DBMS.
 :::
 
@@ -129,7 +129,7 @@ Di pertemuan ini, kita **berfokus pada tahap kedua** — **Data Model (ER)**.
 | **Bersifat grafis**     | Mudah dibaca dan dikomunikasikan.        |
 | **Menjadi dasar**       | Acuan pembuatan skema relasional.        |
 
-:::info Kenapa ERD?
+:::info[Kenapa ERD?]
 Bayangkan membangun rumah tanpa denah. ERD adalah **denah** dari basis data — tanpa itu, tabel akan berantakan, sulit dikembangkan, dan penuh redundansi.
 :::
 
@@ -273,7 +273,7 @@ Kita **tidak memiliki data** dalam conceptual design, tapi **membayangkan data a
 | D101    | 222-33-4444  |  2005 |
 | D102    | 999-777-5555 |  1999 |
 
-:::tip Insight
+:::tip[Insight]
 ERD = **cetak biru** bangunan.
 Data di atas = **perabot** yang nanti diletakkan di dalamnya.
 Desain dulu cetak birunya, baru isi perabotnya.
@@ -310,7 +310,7 @@ flowchart TD
 | **Candidate Key** | Superkey paling minimal.                         | `{NIM}`, `{Email}`                      |
 | **Primary Key**   | Candidate key yang dipilih.                      | `{NIM}`                                 |
 
-:::warning Kesalahan Umum
+:::warning[Kesalahan Umum]
 `{NIM, Nama}` adalah **superkey**, tapi **bukan** candidate key — karena `{NIM}` saja sudah cukup. Candidate key harus **minimal**.
 :::
 
@@ -368,7 +368,7 @@ erDiagram
 bertggjwb_pada(supervisor_ssn, bawahan_ssn)
 ```
 
-:::info Insight
+:::info[Insight]
 Relasi **rekursif** (unary) sering muncul di dunia nyata: **karyawan–atasan**, **mahasiswa–mentor**, **kategori–subkategori**.
 :::
 
@@ -416,7 +416,7 @@ erDiagram
 
 **Implementasi:** Dibutuhkan **tabel jembatan** (junction table).
 
-:::warning Catatan Penting
+:::warning[Catatan Penting]
 Relasi **Many-to-Many** **tidak bisa** diimplementasikan langsung menjadi dua tabel saja. Harus ada **tabel ketiga** sebagai penghubung. Ini kesalahan paling umum pemula.
 :::
 
@@ -463,7 +463,7 @@ flowchart LR
 | **(b)** | Panah ke arah **pinjaman** → setiap nasabah memiliki **paling banyak satu** pinjaman.                                                   |
 | **(c)** | Panah **dua arah** → setiap nasabah punya **paling banyak satu** pinjaman, dan setiap pinjaman dimiliki **paling banyak satu** nasabah. |
 
-:::tip Cara Membaca
+:::tip[Cara Membaca]
 Panah selalu menunjuk ke sisi **"paling banyak satu"**.
 Kalau tidak ada panah, berarti **"banyak"** (many).
 :::
@@ -503,7 +503,7 @@ erDiagram
 | **Total**   | Garis ganda `══`  | **Wajib** terlibat.    |
 | **Partial** | Garis tunggal `─` | **Opsional** terlibat. |
 
-:::tip Cara Mengingat
+:::tip[Cara Mengingat]
 
 - **Total** → **wajib** → garis **double** (═).
 - **Partial** → **opsional** → garis **single** (─).
@@ -529,7 +529,7 @@ erDiagram
     PEGAWAI ||--|| DEPARTEMEN : "Mengelola (total)"
 ```
 
-:::danger Konsekuensi Referential Integrity
+:::danger[Konsekuensi Referential Integrity]
 **Proses penghapusan seorang pegawai yang mengelola sebuah departemen DILARANG!**
 
 Karena kalau pegawai tersebut dihapus, departemen akan kehilangan manager-nya — melanggar participation constraint (total participation).
@@ -586,7 +586,7 @@ erDiagram
 | **Notasi**      | Persegi panjang tunggal | Persegi panjang dobel         |
 | **Contoh**      | Mahasiswa, Dosen        | Pembayaran, Tanggungan        |
 
-:::info Insight
+:::info[Insight]
 Setiap entity set **memerlukan key**. Kalau weak entity tidak punya cukup atribut untuk membentuk key, maka **harus mengimpor atribut dari strong entity**.
 :::
 
@@ -710,7 +710,7 @@ CREATE TABLE krs (
 );
 ```
 
-:::tip Kunci Transformasi
+:::tip[Kunci Transformasi]
 
 - **Entitas** → **Tabel**.
 - **Atribut** → **Kolom**.
@@ -835,7 +835,7 @@ CREATE TABLE detail_peminjaman (
 | **How to Draw ER Diagram using Draw.io (From Scratch)**   | Shape menu, atribut kunci, pengelompokan objek.          |
 | **ERD Toko Buku Online, CDM, & PDM (Draw.io)**            | ERD → CDM → PDM untuk toko buku online.                  |
 
-:::tip Petunjuk Belajar
+:::tip[Petunjuk Belajar]
 Simak video referensi di atas untuk memahami **teknik dasar penggunaan elemen ERD** dan cara pengoperasian **Draw.io** dari tingkat dasar hingga implementasi studi kasus kompleks.
 :::
 
@@ -920,7 +920,7 @@ mindmap
 - **Transformasi**: entitas → tabel, atribut → kolom, M:N → tabel baru.
 - **Draw.io** adalah tools gratis untuk ERD.
 
-:::tip Pesan Kunci
+:::tip[Pesan Kunci]
 Jangan langsung menulis SQL. **Rancang dulu ERD-nya.** Waktu yang dihabiskan di tahap pemodelan akan menghemat berjam-jam debugging di tahap implementasi.
 :::
 
