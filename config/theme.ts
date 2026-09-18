@@ -6,16 +6,15 @@ import { metadata } from './metadata';
 
 export const themeConfig: Preset.ThemeConfig = {
     image: 'img/docusaurus-social-card.jpg',
-
     metadata,
     navbar,
     footer,
     prism,
 
     colorMode: {
-        defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
     },
 
     docs: {

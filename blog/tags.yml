@@ -19,21 +19,21 @@ hola:
     description: Hola tag description
 
 tools:
-  label: Tools
-  permalink: /tools
-  description: Tools dan utilitas yang dipakai sehari-hari.
+    label: Tools
+    permalink: /tools
+    description: Tools dan utilitas yang dipakai sehari-hari.
 
 diagram:
-  label: Diagram
-  permalink: /diagram
-  description: Diagram as code, visualisasi, dan dokumentasi visual.
+    label: Diagram
+    permalink: /diagram
+    description: Diagram as code, visualisasi, dan dokumentasi visual.
 
 d2:
-  label: D2
-  permalink: /d2
-  description: D2 — Declarative Diagramming.
+    label: D2
+    permalink: /d2
+    description: D2 — Declarative Diagramming.
 
 cheatsheet:
-  label: Cheatsheet
-  permalink: /cheatsheet
-  description: Cheat sheet padat untuk referensi cepat.
+    label: Cheatsheet
+    permalink: /cheatsheet
+    description: Cheat sheet padat untuk referensi cepat.
