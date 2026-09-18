@@ -18,26 +18,26 @@ Setelah memahami konsep dasar basis data di Pertemuan 1, sekarang kita masuk ke 
 
 ## Navigasi Cepat
 
-- [Tujuan Pembelajaran](#tujuan-pembelajaran)
-- [1. Mengapa ER Diagram?](#1-mengapa-er-diagram)
-- [2. Review: Database Design](#2-review-database-design)
-- [3. Conceptual Design](#3-conceptual-design)
-- [4. Entity Relationship Diagram (ERD)](#4-entity-relationship-diagram-erd)
-- [5. Komponen Utama ERD](#5-komponen-utama-erd)
-- [6. Instance dari ER Diagram](#6-instance-dari-er-diagram)
-- [7. Keys](#7-keys)
-- [8. Peran dalam Relationship](#8-peran-dalam-relationship)
-- [9. Derajat Relasi](#9-derajat-relasi)
-- [10. Arti dari Tanda Panah](#10-arti-dari-tanda-panah)
-- [11. Participation Constraint](#11-participation-constraint)
-- [12. Referential Integrity](#12-referential-integrity)
-- [13. Weak Entity Set](#13-weak-entity-set)
-- [14. Notasi ERD Lengkap](#14-notasi-erd-lengkap)
-- [15. Transformasi ERD ke Skema Relasional](#15-transformasi-erd-ke-skema-relasional)
-- [16. Studi Kasus: Perpustakaan](#16-studi-kasus-perpustakaan)
-- [17. Panduan Draw.io](#17-panduan-drawio)
-- [18. Istilah Penting](#18-istilah-penting)
-- [19. Ringkasan](#19-ringkasan)
+-   [Tujuan Pembelajaran](#tujuan-pembelajaran)
+-   [1. Mengapa ER Diagram?](#1-mengapa-er-diagram)
+-   [2. Review: Database Design](#2-review-database-design)
+-   [3. Conceptual Design](#3-conceptual-design)
+-   [4. Entity Relationship Diagram (ERD)](#4-entity-relationship-diagram-erd)
+-   [5. Komponen Utama ERD](#5-komponen-utama-erd)
+-   [6. Instance dari ER Diagram](#6-instance-dari-er-diagram)
+-   [7. Keys](#7-keys)
+-   [8. Peran dalam Relationship](#8-peran-dalam-relationship)
+-   [9. Derajat Relasi](#9-derajat-relasi)
+-   [10. Arti dari Tanda Panah](#10-arti-dari-tanda-panah)
+-   [11. Participation Constraint](#11-participation-constraint)
+-   [12. Referential Integrity](#12-referential-integrity)
+-   [13. Weak Entity Set](#13-weak-entity-set)
+-   [14. Notasi ERD Lengkap](#14-notasi-erd-lengkap)
+-   [15. Transformasi ERD ke Skema Relasional](#15-transformasi-erd-ke-skema-relasional)
+-   [16. Studi Kasus: Perpustakaan](#16-studi-kasus-perpustakaan)
+-   [17. Panduan Draw.io](#17-panduan-drawio)
+-   [18. Istilah Penting](#18-istilah-penting)
+-   [19. Ringkasan](#19-ringkasan)
 
 ---
 
@@ -45,12 +45,12 @@ Setelah memahami konsep dasar basis data di Pertemuan 1, sekarang kita masuk ke 
 
 Setelah mempelajari materi ini, mahasiswa diharapkan mampu:
 
-- Memahami konsep dasar dan peran penting **Pemodelan Data** dalam siklus pengembangan sistem basis data.
-- Mengidentifikasi komponen utama **ERD**: **Entitas**, **Atribut**, dan **Tipe Relasi**.
-- Menganalisis **Derajat Relasi** (_Cardinality Ratio_): One-to-One, One-to-Many, Many-to-Many.
-- Memahami **Participation Constraint**, **atribut turunan**, dan **atribut komposit**.
-- Mengenali **Weak Entity**, **Role in Relationship**, dan **Referential Integrity**.
-- Mampu **mentransformasikan** ERD ke **skema relasional**.
+-   Memahami konsep dasar dan peran penting **Pemodelan Data** dalam siklus pengembangan sistem basis data.
+-   Mengidentifikasi komponen utama **ERD**: **Entitas**, **Atribut**, dan **Tipe Relasi**.
+-   Menganalisis **Derajat Relasi** (_Cardinality Ratio_): One-to-One, One-to-Many, Many-to-Many.
+-   Memahami **Participation Constraint**, **atribut turunan**, dan **atribut komposit**.
+-   Mengenali **Weak Entity**, **Role in Relationship**, dan **Referential Integrity**.
+-   Mampu **mentransformasikan** ERD ke **skema relasional**.
 
 ---
 
@@ -60,10 +60,10 @@ Pada skala tertentu, perancang database **dapat langsung memutuskan** rancangan 
 
 **Namun**, dalam prakteknya:
 
-- Rancangan basis data **seringkali kompleks** — sulit langsung menentukan atribut, relasi, dan lainnya.
-- Seringkali **tak seorang pun** memahami secara menyeluruh kebutuhan data.
-- Perancang **harus berinteraksi dengan customer** untuk memahami kebutuhan.
-- Dibutuhkan **model data** yang menerjemahkan kebutuhan menjadi **skema konseptual**.
+-   Rancangan basis data **seringkali kompleks** — sulit langsung menentukan atribut, relasi, dan lainnya.
+-   Seringkali **tak seorang pun** memahami secara menyeluruh kebutuhan data.
+-   Perancang **harus berinteraksi dengan customer** untuk memahami kebutuhan.
+-   Dibutuhkan **model data** yang menerjemahkan kebutuhan menjadi **skema konseptual**.
 
 :::tip[Insight]
 ERD menjawab pertanyaan: **"Data apa yang perlu kita simpan, dan bagaimana hubungan antar data tersebut?"** — sebelum menyentuh DBMS.
@@ -116,9 +116,9 @@ Di pertemuan ini, kita **berfokus pada tahap kedua** — **Data Model (ER)**.
 
 **ERD** adalah **model konseptual** yang menggambarkan:
 
-- **Entitas** (objek/kejadian) yang ingin disimpan datanya.
-- **Atribut** (properti) dari setiap entitas.
-- **Hubungan** (relationship) antar entitas.
+-   **Entitas** (objek/kejadian) yang ingin disimpan datanya.
+-   **Atribut** (properti) dari setiap entitas.
+-   **Hubungan** (relationship) antar entitas.
 
 ### Karakteristik ERD
 
@@ -155,15 +155,15 @@ flowchart LR
 
 **Entitas** adalah objek dalam dunia nyata yang **dapat dibedakan** dari objek lain.
 
-- Contoh: seseorang, sebuah perusahaan, sebuah event.
-- Dideskripsikan menggunakan **kumpulan atribut**.
+-   Contoh: seseorang, sebuah perusahaan, sebuah event.
+-   Dideskripsikan menggunakan **kumpulan atribut**.
 
 **Himpunan Entitas (Entity Set):** himpunan entitas-entitas serupa yang punya properti sama.
 
 **Aturan Penting:**
 
-- Semua entitas dalam satu entity set punya **atribut yang sama**.
-- Setiap entity set **memiliki key**.
+-   Semua entitas dalam satu entity set punya **atribut yang sama**.
+-   Setiap entity set **memiliki key**.
 
 **Jenis Entitas:**
 
@@ -178,7 +178,7 @@ flowchart LR
 
 **Domain:** himpunan nilai yang boleh dimiliki atribut.
 
-- Contoh: `18 < umur < 65` untuk atribut umur pegawai.
+-   Contoh: `18 < umur < 65` untuk atribut umur pegawai.
 
 **Tipe Atribut:**
 
@@ -214,18 +214,18 @@ flowchart TD
 
 **Keterangan:**
 
-- `nopeg` — **primary key** (garis bawah)
-- `notelp` — **multivalued attribute** (oval dobel)
-- `umur` — **derived attribute** (oval putus-putus)
-- `nama` → `namadpn`, `namablkg` — **composite attribute**
+-   `nopeg` — **primary key** (garis bawah)
+-   `notelp` — **multivalued attribute** (oval dobel)
+-   `umur` — **derived attribute** (oval putus-putus)
+-   `nama` → `namadpn`, `namablkg` — **composite attribute**
 
 ### 5.3 Relasi (Relationship)
 
 **Relasi** adalah hubungan bermakna antar entitas.
 
-- Contoh: **pegawai Budi bekerja di departemen Farmasi**.
-- Untuk sebuah relationship, harus ditentukan **pegawai mana** dan **departemen mana** yang berhubungan.
-- Diperlukan nilai **key** dari masing-masing entitas, disimpan bersama-sama.
+-   Contoh: **pegawai Budi bekerja di departemen Farmasi**.
+-   Untuk sebuah relationship, harus ditentukan **pegawai mana** dan **departemen mana** yang berhubungan.
+-   Diperlukan nilai **key** dari masing-masing entitas, disimpan bersama-sama.
 
 **Contoh Relasi:**
 
@@ -400,8 +400,8 @@ erDiagram
 
 **Sudut Pandang:**
 
-- **Pegawai → Departemen** = One-to-Many
-- **Departemen → Pegawai** = Many-to-One
+-   **Pegawai → Departemen** = One-to-Many
+-   **Departemen → Pegawai** = Many-to-One
 
 **Implementasi:** Foreign key di sisi **Many**.
 
@@ -505,9 +505,9 @@ erDiagram
 
 :::tip[Cara Mengingat]
 
-- **Total** → **wajib** → garis **double** (═).
-- **Partial** → **opsional** → garis **single** (─).
-  :::
+-   **Total** → **wajib** → garis **double** (═).
+-   **Partial** → **opsional** → garis **single** (─).
+    :::
 
 ---
 
@@ -519,8 +519,8 @@ erDiagram
 
 Pada relasi **many-to-one** `Mengelola`:
 
-- Sebuah departemen memiliki **paling banyak satu** manager.
-- Jadi departemen **mungkin tidak memiliki** manager.
+-   Sebuah departemen memiliki **paling banyak satu** manager.
+-   Jadi departemen **mungkin tidak memiliki** manager.
 
 **Jika dikombinasikan dengan partisipasi total**, maka **dipastikan hanya satu nilai yang ada** — departemen **wajib** punya manager, dan manager-nya **tepat satu**.
 
@@ -543,10 +543,10 @@ Karena kalau pegawai tersebut dihapus, departemen akan kehilangan manager-nya �
 
 ### Karakteristik
 
-- Keberadaan weak entity **tergantung** pada entitas lain (**identifying entity set**).
-- Weak entity **harus** berhubungan dengan entitas lain melalui **total, one-to-many relationship**.
-- **Discriminator** (partial key) — atribut yang membedakan antar entitas dalam weak entity set.
-- **Primary key weak entity** = primary key entitas kuat **+ discriminator**.
+-   Keberadaan weak entity **tergantung** pada entitas lain (**identifying entity set**).
+-   Weak entity **harus** berhubungan dengan entitas lain melalui **total, one-to-many relationship**.
+-   **Discriminator** (partial key) — atribut yang membedakan antar entitas dalam weak entity set.
+-   **Primary key weak entity** = primary key entitas kuat **+ discriminator**.
 
 ### Notasi
 
@@ -573,9 +573,9 @@ erDiagram
     }
 ```
 
-- `Pembayaran` adalah **weak entity** — tidak punya key sendiri.
-- `no_byr` adalah **discriminator**.
-- **Primary key untuk Pembayaran:** `(no_pinjam, no_byr)`.
+-   `Pembayaran` adalah **weak entity** — tidak punya key sendiri.
+-   `no_byr` adalah **discriminator**.
+-   **Primary key untuk Pembayaran:** `(no_pinjam, no_byr)`.
 
 ### Strong vs Weak Entity
 
@@ -712,12 +712,12 @@ CREATE TABLE krs (
 
 :::tip[Kunci Transformasi]
 
-- **Entitas** → **Tabel**.
-- **Atribut** → **Kolom**.
-- **Primary Key** → **PRIMARY KEY**.
-- **Relasi M:N** → **Tabel baru**.
-- **Foreign Key** → **FOREIGN KEY**.
-  :::
+-   **Entitas** → **Tabel**.
+-   **Atribut** → **Kolom**.
+-   **Primary Key** → **PRIMARY KEY**.
+-   **Relasi M:N** → **Tabel baru**.
+-   **Foreign Key** → **FOREIGN KEY**.
+    :::
 
 ---
 
@@ -907,18 +907,18 @@ mindmap
 
 **Poin-poin kunci:**
 
-- **Mengapa ERD?** — karena rancangan kompleks butuh model yang menjembatani bisnis & skema database.
-- **4 tahap desain**: Need Analysis → **Data Model (ER)** → Relational Schema → DBMS + Query.
-- **ERD** = Entitas + Atribut + Relasi.
-- **Keys** bertingkat: Superkey → Candidate Key → Primary Key.
-- **Entitas bisa punya peran berbeda** (contoh: supervisor ↔ bawahan).
-- **Cardinality**: 1:1, 1:N, N:1, M:N.
-- **Tanda panah** = "paling banyak satu".
-- **Participation**: total (wajib) vs partial (opsional).
-- **Referential Integrity** melindungi konsistensi relasi.
-- **Weak Entity** tidak punya key sendiri — impor dari strong entity.
-- **Transformasi**: entitas → tabel, atribut → kolom, M:N → tabel baru.
-- **Draw.io** adalah tools gratis untuk ERD.
+-   **Mengapa ERD?** — karena rancangan kompleks butuh model yang menjembatani bisnis & skema database.
+-   **4 tahap desain**: Need Analysis → **Data Model (ER)** → Relational Schema → DBMS + Query.
+-   **ERD** = Entitas + Atribut + Relasi.
+-   **Keys** bertingkat: Superkey → Candidate Key → Primary Key.
+-   **Entitas bisa punya peran berbeda** (contoh: supervisor ↔ bawahan).
+-   **Cardinality**: 1:1, 1:N, N:1, M:N.
+-   **Tanda panah** = "paling banyak satu".
+-   **Participation**: total (wajib) vs partial (opsional).
+-   **Referential Integrity** melindungi konsistensi relasi.
+-   **Weak Entity** tidak punya key sendiri — impor dari strong entity.
+-   **Transformasi**: entitas → tabel, atribut → kolom, M:N → tabel baru.
+-   **Draw.io** adalah tools gratis untuk ERD.
 
 :::tip[Pesan Kunci]
 Jangan langsung menulis SQL. **Rancang dulu ERD-nya.** Waktu yang dihabiskan di tahap pemodelan akan menghemat berjam-jam debugging di tahap implementasi.
