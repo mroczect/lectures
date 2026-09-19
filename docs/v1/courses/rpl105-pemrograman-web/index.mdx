@@ -7,107 +7,43 @@ sidebar_position: 60
 
 # RPL105 — Pemrograman Berbasis Web
 
-**Kode:** RPL105 · **SKS:** 4 · **Semester:** Ganjil 2026/2027 · **Status:** Wajib
-**Dosen:** Noper Ardi (Koord.), Gilang Bagus Ramadhan
-**Email:** noperardi@polibatam.ac.id
+|          |                                            |
+| -------- | ------------------------------------------ |
+| Kode     | RPL105                                     |
+| SKS      | 4                                          |
+| Semester | Ganjil 2026/2027                           |
+| Status   | Wajib                                      |
+| Dosen    | Noper Ardi (Koord.), Gilang Bagus Ramadhan |
+| Email    | noperardi@polibatam.ac.id                  |
 
-> **Tagline:** Dari HTML, CSS, dan JavaScript di klien hingga PHP, MySQL, session, dan autentikasi di server — bangun aplikasi web utuh dari nol.
+## Deskripsi
 
-:::tip[E-Learning]
-[**Buka E-Learning →**](https://learningif.polibatam.ac.id)
-:::
+Konsep dasar web dengan **client side** (HTML, CSS, JavaScript, responsif) dan **server side** (PHP, MySQL). Mahasiswa membangun aplikasi web dari halaman statis hingga sistem autentikasi lengkap dengan database.
 
-## Navigasi Cepat
+SKS terbesar di semester 1. Beban praktikum paling padat.
 
--   [Peta Mata Kuliah](#peta-mata-kuliah)
--   [Informasi Umum](#informasi-umum)
--   [Tujuan Pembelajaran](#tujuan-pembelajaran)
--   [Rencana Pembelajaran](#rencana-pembelajaran)
--   [Proyek PBL](#proyek-pbl)
--   [Metode Evaluasi](#metode-evaluasi)
--   [Sarana & Prasarana](#sarana--prasarana)
--   [Kesepakatan](#kesepakatan)
--   [Pustaka](#pustaka)
--   [Sumber Online](#sumber-online)
+## Client-side vs Server-side
 
----
-
-## Peta Mata Kuliah
-
-Dua dunia pemrograman web yang saling melengkapi:
-
-| Sisi       | Pertemuan | Fokus                                       |
-| ---------- | :-------: | ------------------------------------------- |
-| **Klien**  |    1–7    | HTML, CSS, JavaScript, Bootstrap, responsif |
-| **Server** |   8–14    | PHP, MySQL, CRUD, session, autentikasi      |
-
-**Benang merah:** Sisi klien = antarmuka yang dilihat pengguna. Sisi server = logika, data, dan keamanan di belakangnya. Di akhir semester keduanya bertemu dalam satu aplikasi web utuh dengan CRUD, autentikasi, dan otorisasi.
-
-### Perbandingan Client-side vs Server-side
-
-| Aspek               | Client-side                  | Server-side                      |
-| ------------------- | ---------------------------- | -------------------------------- |
-| **Lokasi eksekusi** | Browser pengguna             | Server web (Apache/Nginx)        |
-| **Bahasa**          | HTML, CSS, JavaScript        | PHP, Python, Node.js, Ruby, Java |
-| **Akses database**  | Tidak (langsung)             | Ya                               |
-| **Keamanan**        | Kode terlihat user           | Kode tersembunyi dari user       |
-| **Beban**           | CPU user                     | CPU server                       |
-| **Contoh**          | Validasi form, animasi, AJAX | Login, olah data, kirim email    |
-
----
-
-## Informasi Umum
-
-|  Kode  | SKS |     Semester     | Status |
-| :----: | :-: | :--------------: | :----: |
-| RPL105 |  4  | Ganjil 2026/2027 | Wajib  |
-
-| Bidang        | Keterangan                                 |
-| ------------- | ------------------------------------------ |
-| **Nama**      | Pemrograman Berbasis Web                   |
-| **Prasyarat** | Tidak ada                                  |
-| **Dosen**     | Noper Ardi (Koord.), Gilang Bagus Ramadhan |
-| **Email**     | noperardi@polibatam.ac.id                  |
-
-### Deskripsi
-
-Konsep dasar web dengan **client side** (HTML, CSS, JavaScript, responsif) dan **server side** (PHP, MySQL) programming.
-
-RPL105 adalah mata kuliah dengan **SKS terbesar** di semester 1 (4 SKS). Beban praktikumnya paling padat — kamu akan membangun aplikasi web dari nol, mulai dari halaman statis hingga sistem autentikasi lengkap dengan database.
-
----
+| Aspek           | Client-side                  | Server-side                      |
+| --------------- | ---------------------------- | -------------------------------- |
+| Lokasi eksekusi | Browser pengguna             | Server web (Apache/Nginx)        |
+| Bahasa          | HTML, CSS, JavaScript        | PHP, Python, Node.js, Ruby, Java |
+| Akses database  | Tidak (langsung)             | Ya                               |
+| Keamanan        | Kode terlihat user           | Kode tersembunyi dari user       |
+| Beban           | CPU user                     | CPU server                       |
+| Contoh          | Validasi form, animasi, AJAX | Login, olah data, kirim email    |
 
 ## Tujuan Pembelajaran
 
-| No. | Tujuan                                                                       |
-| :-: | ---------------------------------------------------------------------------- |
-|  1  | Menjelaskan teknologi web & membedakan client-side vs server-side            |
-|  2  | Mengimplementasikan HTML, CSS, JS untuk antarmuka interaktif                 |
-|  3  | Menerapkan standar coding (deskripsi file, penamaan, dll)                    |
-|  4  | Menggunakan framework front-end untuk web responsif                          |
-|  5  | Menggunakan bahasa pemrograman untuk mengolah & memvalidasi data             |
-|  6  | Mengimplementasikan CRUD dengan bahasa pemrograman web & basis data          |
-|  7  | Mengimplementasikan pengolahan file, autentikasi, otorisasi (session/cookie) |
+1. Menjelaskan teknologi web & membedakan client-side vs server-side.
+2. Mengimplementasikan HTML, CSS, JS untuk antarmuka interaktif.
+3. Menerapkan standar coding (deskripsi file, penamaan).
+4. Menggunakan framework front-end untuk web responsif.
+5. Menggunakan bahasa pemrograman untuk mengolah & memvalidasi data.
+6. Mengimplementasikan CRUD dengan basis data.
+7. Mengimplementasikan pengolahan file, autentikasi, otorisasi (session/cookie).
 
----
-
-## Rencana Pembelajaran
-
-### Timeline 14 Pertemuan
-
-|    Sisi    | Pertemuan | Materi                              |
-| :--------: | :-------: | ----------------------------------- |
-| **Klien**  |     1     | Pengenalan Pemrograman Web          |
-|            |     2     | HTML Fundamental & Form             |
-|            |    3–4    | CSS Fundamental & Layout            |
-|            |     5     | JavaScript Fundamental              |
-|            |    6–7    | Framework Front-End & Web Responsif |
-| **Server** |     8     | Dasar PHP & Method Form             |
-|            |   9–10    | PHP MySQL: Koneksi & CRUD           |
-|            |   11–12   | Session, Cookie & Pengolahan File   |
-|            |   13–14   | Enkripsi, Autentikasi & Otorisasi   |
-
-### Detail Per Pertemuan
+## Materi
 
 | Pertemuan | Topik                 | Sub Topik                                                                  |
 | :-------: | --------------------- | -------------------------------------------------------------------------- |
@@ -121,22 +57,9 @@ RPL105 adalah mata kuliah dengan **SKS terbesar** di semester 1 (4 SKS). Beban p
 |   11–12   | Session & File        | Session/cookie, perbedaan, upload/download file                            |
 |   13–14   | Auth & Otorisasi      | Konsep, implementasi PHP, hashing password                                 |
 
-### Ringkasan Per Fase
+## Contoh Kode
 
-| Fase       | Pertemuan | Fokus Utama              | Luaran                       |
-| ---------- | :-------: | ------------------------ | ---------------------------- |
-| **Fase 1** |    1–2    | Struktur & konten        | Halaman HTML statis          |
-| **Fase 2** |    3–4    | Tampilan & layout        | Halaman HTML + CSS           |
-| **Fase 3** |    5–7    | Interaksi & responsif    | Halaman interaktif Bootstrap |
-| **Fase 4** |   8–10    | Server & database        | Aplikasi CRUD PHP + MySQL    |
-| **Fase 5** |   11–14   | Auth, file, dan keamanan | Aplikasi web utuh            |
-
----
-
-### Contoh Kode
-
-<details>
-<summary>HTML Form — Input dasar dan proses submit</summary>
+### HTML Form
 
 ```html
 <form action="proses.php" method="POST">
@@ -150,18 +73,13 @@ RPL105 adalah mata kuliah dengan **SKS terbesar** di semester 1 (4 SKS). Beban p
 </form>
 ```
 
-**Penjelasan:**
+-   `action` — file PHP yang memproses data.
+-   `method="POST"` — kirim via body request, bukan URL.
+-   `id` — untuk `label for` (aksesibilitas).
+-   `name` — nama field yang dikirim ke server.
+-   `required` — validasi HTML5 client-side.
 
--   `action` = file PHP yang akan memproses data
--   `method="POST"` = kirim data via body request (bukan URL)
--   `id` = untuk `label for` (aksesibilitas)
--   `name` = nama field yang dikirim ke server
--   `required` = HTML5 validation client-side
-
-</details>
-
-<details>
-<summary>CRUD PHP + MySQL — Insert, Read, Update, Delete dengan prepared statement</summary>
+### CRUD PHP + MySQL dengan Prepared Statement
 
 ```php
 <?php
@@ -188,24 +106,18 @@ $stmt->execute();
 ?>
 ```
 
-**Kenapa Prepared Statement?**
+Prepared statement mencegah SQL injection — parameter di-bind aman, bukan di-concat string. Statement juga bisa di-`execute()` berkali-kali dengan parameter berbeda.
 
--   **Cegah SQL Injection** — parameter tidak di-escape manual, tapi di-bind aman.
--   **Reusable** — statement bisa di-`execute()` berkali-kali dengan parameter beda.
--   **Performa** — database bisa cache query plan.
+Kode tipe di `bind_param`:
 
-`bind_param("ss", ...)` — arti `s`/`i`/`d`/`b`:
-| Kode | Tipe |
-| ---- | ------------- |
-| `s` | String |
-| `i` | Integer |
-| `d` | Double (float)|
-| `b` | Blob (binary) |
+| Kode | Tipe           |
+| :--: | -------------- |
+| `s`  | String         |
+| `i`  | Integer        |
+| `d`  | Double (float) |
+| `b`  | Blob (binary)  |
 
-</details>
-
-<details>
-<summary>Login dengan Password Hashing — Registrasi & autentikasi aman</summary>
+### Login dengan Password Hashing
 
 ```php
 <?php
@@ -230,19 +142,14 @@ if ($user && password_verify($_POST['password'], $user['password_hash'])) {
 ?>
 ```
 
-**Poin Keamanan Kritis:**
+Poin keamanan:
 
--   **Jangan simpan password plaintext** — selalu hash dengan `password_hash()`.
--   **`PASSWORD_BCRYPT`** — algoritma standar, salt otomatis, adaptive cost.
--   **`password_verify()`** — bandingkan input user dengan hash tersimpan.
--   **`session_start()`** — mulai session untuk tracking user yang login.
--   **`header('Location: ...')`** — redirect; wajib diikuti `exit`.
--   **`exit`** — stop eksekusi agar kode di bawah tidak jalan.
+-   Jangan simpan password plaintext — hash dengan `password_hash()`.
+-   `PASSWORD_BCRYPT` — salt otomatis, adaptive cost.
+-   `password_verify()` — bandingkan input user dengan hash tersimpan.
+-   `header('Location: ...')` wajib diikuti `exit` — kalau tidak, kode di bawahnya tetap jalan.
 
-</details>
-
-<details>
-<summary>Validasi Server-side — Cek input sebelum diproses</summary>
+### Validasi Server-side
 
 ```php
 <?php
@@ -262,22 +169,13 @@ if (strlen($_POST['password']) < 8) {
 
 if (empty($errors)) {
     // lanjut proses simpan
-} else {
-    // tampilkan $errors ke user
 }
 ?>
 ```
 
-**Kenapa validasi di server?**
+Validasi HTML5 (`required`, `type="email"`) bisa dilewati dengan disable JS atau tool. Validasi server-side adalah satu-satunya validasi yang bisa dipercaya. Validasi client-side hanya untuk UX.
 
--   Validasi HTML5 (`required`, `type="email"`) bisa **dilewati** dengan disable JS atau tool.
--   Validasi server-side adalah **satu-satunya** validasi yang benar-benar dipercaya.
--   Validasi client-side hanya untuk UX, bukan security.
-
-</details>
-
-<details>
-<summary>Upload File — Validasi MIME, size, dan simpan aman</summary>
+### Upload File
 
 ```php
 <?php
@@ -306,255 +204,100 @@ if (move_uploaded_file($_FILES['foto']['tmp_name'], $dest)) {
 ?>
 ```
 
-**Risiko upload file:**
-
--   **Arbitrary file upload** — user upload `.php` lalu eksekusi.
--   **XSS via SVG** — SVG bisa berisi script.
--   **Path traversal** — filename `../../etc/passwd`.
--   **DoS** — upload file raksasa.
-
-Mitigasi: whitelist MIME, batasi size, rename file dengan nama acak, simpan di luar webroot.
-
-</details>
-
----
+Risiko upload file: arbitrary file upload (user upload `.php`), XSS via SVG, path traversal (`../../etc/passwd`), DoS dari file raksasa. Mitigasi: whitelist MIME, batasi size, rename dengan nama acak, simpan di luar webroot.
 
 ## Proyek PBL
 
-**Metode:** PBL + CDIO. Proyek semester 1 = _cornerstone project_.
-
-**Kontribusi:** **Motor implementasi** — mengubah SRS dari RPL104 menjadi kode berjalan. Semua yang kamu pelajari di sini langsung dipakai di proyek PBL.
-
-### Posisi RPL105 dalam Rantai PBL
-
-```text
-RPL104 (SRS)
-    │
-    │ Dokumen kebutuhan
-    ▼
-RPL106 (Basis Data)  ────►  RPL105 (Web)
-    │                          │
-    │ Skema + Query            │ Implementasi
-    ▼                          ▼
-                            Aplikasi Web
-                            Berjalan
-```
-
-RPL105 adalah **titik temu** semua mata kuliah lain:
-
--   **RPL104** → memberikan requirement (apa yang harus dibuat).
--   **RPL106** → memberikan skema database (data disimpan di mana).
--   **RPL102** → memberikan logika algoritma.
--   **RPL103** → memberikan dasar matematis (index, hashing).
--   **RPL101** → memberikan metodologi (agile, scrum, testing).
+Kontribusi: mengubah SRS dari RPL104 menjadi kode berjalan. RPL105 adalah titik temu semua mata kuliah lain — RPL104 memberi requirement, RPL106 memberi skema database, RPL102 memberi logika algoritma, RPL103 memberi dasar matematis (index, hashing), RPL101 memberi metodologi.
 
 ### Luaran
 
 | Luaran                 | Deskripsi                                |
 | ---------------------- | ---------------------------------------- |
-| Halaman Web Statis     | HTML & CSS responsif                     |
-| Halaman Web Interaktif | + JavaScript                             |
-| Framework Front-End    | Bootstrap                                |
+| Halaman web statis     | HTML & CSS responsif                     |
+| Halaman web interaktif | + JavaScript                             |
+| Framework front-end    | Bootstrap                                |
 | Aplikasi CRUD          | PHP + MySQL (form, validasi, pagination) |
-| Sistem Autentikasi     | Login/logout, session, password hashing  |
-| Pengolahan File        | Upload/download dengan validasi MIME     |
+| Sistem autentikasi     | Login/logout, session, password hashing  |
+| Pengolahan file        | Upload/download dengan validasi MIME     |
 
-:::warning[Perhatian]
-**Praktikum disertai aset wajib dikompres ZIP** dengan format nama: `NIM_NamaLengkap.zip`.
-:::
+Praktikum disertai aset wajib di-ZIP dengan format `NIM_NamaLengkap.zip`.
 
 ### Checklist Luaran Minimum
 
 -   [ ] Halaman landing dengan navigasi
 -   [ ] Minimal 1 form dengan validasi client + server
 -   [ ] Koneksi database dengan mysqli/PDO
--   [ ] CRUD lengkap minimal 1 entitas (Create, Read, Update, Delete)
+-   [ ] CRUD lengkap minimal 1 entitas
 -   [ ] Pencarian & pagination
 -   [ ] Login/logout dengan session
 -   [ ] Password di-hash (bcrypt)
 -   [ ] Minimal 1 fitur upload file
 -   [ ] Responsif di mobile
--   [ ] Kode terstruktur (folder terpisah: `config/`, `controllers/`, `views/`, `public/`)
+-   [ ] Kode terstruktur (`config/`, `controllers/`, `views/`, `public/`)
 
----
+## Penilaian
 
-## Metode Evaluasi
+| Aktivitas                | Bobot |
+| ------------------------ | :---: |
+| Observasi Praktikum      |  40%  |
+| Tugas Tertulis           |  25%  |
+| Ujian Lisan (presentasi) |  25%  |
+| Kuis                     |  10%  |
 
-| Komponen                   | Keterangan              |
-| -------------------------- | ----------------------- |
-| Tugas Tertulis             | Minimal 2 per semester  |
-| Ujian Lisan (Presentasi)   | 2 sesi (tengah & akhir) |
-| Observasi Praktikum/Proyek | 4 sesi di laboratorium  |
-| Kuis                       | Kuis 1 & 2              |
+Kriteria nilai: A ≥85 · A- 80–84 · B+ 75–79 · B 70–74 · B- 65–69 · C+ 60–64 · C 55–59 · C- 50–54 · D+ 45–49 · D 40–44 · E `<40`.
 
-### Bobot Nilai
+Beberapa mata kuliah di TRPL menerapkan kebijakan nilai 0 pada komponen apapun = nilai akhir E. Cek kebijakan dosen pengampu di pertemuan pertama.
 
-| Aktivitas           | Bobot |
-| ------------------- | :---: |
-| Observasi Praktikum |  40%  |
-| Tugas Tertulis      |  25%  |
-| Ujian Lisan         |  25%  |
-| Kuis                |  10%  |
+## Sarana & Tools
 
-:::info[Catatan]
-RPL105 menekankan **praktik langsung** — 4 sesi observasi praktikum adalah momen penilaian utama.
-:::
+Komputer/PC 30 unit, laboratorium 1, VS Code, XAMPP/Laragon, MySQL, koneksi internet.
 
-### Kriteria Nilai
-
-| Angka | Huruf | Angka | Huruf |
-| :---: | :---: | :---: | :---: |
-|  ≥85  |   A   | 60–64 |  C+   |
-| 80–84 |  A-   | 55–59 |   C   |
-| 75–79 |  B+   | 50–54 |  C-   |
-| 70–74 |   B   | 45–49 |  D+   |
-| 65–69 |  B-   | 40–44 |   D   |
-|       |       | `<40` |   E   |
-
-:::danger[Kebijakan Umum]
-Beberapa mata kuliah di TRPL menerapkan kebijakan: **nilai 0 pada komponen apapun = nilai akhir E**. Cek kebijakan dosen pengampu di pertemuan pertama.
-:::
-
----
-
-## Sarana & Prasarana
-
-| No. | Sarana               | Jumlah |
-| :-: | -------------------- | :----: |
-|  1  | Komputer/PC          |   30   |
-|  2  | Laboratorium         |   1    |
-|  3  | VS Code / editor web |   30   |
-|  4  | XAMPP / Laragon      |   30   |
-|  5  | MySQL                |   30   |
-|  6  | Koneksi Internet     |   1    |
-
-### Tools yang Dipakai
-
-| Tool                 | Fungsi                              |
-| -------------------- | ----------------------------------- |
-| **VS Code**          | Editor kode                         |
-| **XAMPP/Laragon**    | Web server + PHP + MySQL satu paket |
-| **Browser DevTools** | Debug HTML/CSS/JS (F12)             |
-| **Postman/Insomnia** | Test API (opsional)                 |
-| **Git**              | Version control                     |
-
----
+| Tool               | Fungsi                              |
+| ------------------ | ----------------------------------- |
+| VS Code            | Editor kode                         |
+| XAMPP / Laragon    | Web server + PHP + MySQL satu paket |
+| Browser DevTools   | Debug HTML/CSS/JS (F12)             |
+| Postman / Insomnia | Test API (opsional)                 |
+| Git                | Version control                     |
 
 ## Kesepakatan
 
-1. Wajib ikut semua kegiatan (toleransi keterlambatan maks **15 menit**).
+1. Ikut semua kegiatan (toleransi keterlambatan maks 15 menit).
 2. Tugas dikumpulkan via e-learning.
-3. **Praktikum disertai aset wajib di-ZIP** dengan nama `NIM_NamaLengkap.zip`.
-4. Jaga etika moral & akademik.
-
----
+3. Praktikum disertai aset wajib di-ZIP dengan nama `NIM_NamaLengkap.zip`.
+4. Jaga etika akademik.
 
 ## Pustaka
 
-### Utama
+**Utama:**
 
 1. Supono & Putratama, V. _Pemrograman Web dengan PHP dan Framework Codeigniter_. Deepublish, 2016.
-2. _Responsive Web Design dengan PHP dan Bootstrap_. 2013.
-3. Sianipar. _HTML 5 & CSS 3: Belajar dari Kasus_. Informatika, 2015.
-4. Sunyoto, A. _AJAX: Membangun Web dengan Teknologi Asynchronous JavaScript and XML_. ANDI, 2007.
-5. Sibero, A. F. K. _Kitab Suci Web Programming_. Mediakom, 2011.
-6. Silver, A. H. _WordPress 3 Complete_. Packt, 2011.
-7. Jubilee Enterprise. _Buku Pintar HTML5 dan CSS3_. Elex, 2012.
-8. Pavlopoulos, D. _Practical Progressive Web Apps_. Packt, 2018.
+2. Sianipar. _HTML 5 & CSS 3: Belajar dari Kasus_. Informatika, 2015.
+3. Sunyoto, A. _AJAX: Membangun Web dengan Teknologi Asynchronous JavaScript and XML_. ANDI, 2007.
+4. Sibero, A. F. K. _Kitab Suci Web Programming_. Mediakom, 2011.
+5. Jubilee Enterprise. _Buku Pintar HTML5 dan CSS3_. Elex, 2012.
+6. Pavlopoulos, D. _Practical Progressive Web Apps_. Packt, 2018.
 
-### Bacaan Pendukung
+**Referensi online:**
 
--   **MDN Web Docs** — referensi HTML/CSS/JS
--   **PHP Manual** — dokumentasi resmi PHP
--   **MySQL Documentation**
--   **Bootstrap Documentation**
+-   [MDN Web Docs](https://developer.mozilla.org) — HTML/CSS/JS
+-   [PHP Manual](https://www.php.net/manual)
+-   [MySQL Documentation](https://dev.mysql.com/doc)
+-   [Bootstrap Documentation](https://getbootstrap.com)
+-   [W3Schools](https://www.w3schools.com)
 
----
+**Tools:**
 
-## Info Tambahan
+-   [VS Code](https://code.visualstudio.com)
+-   [XAMPP](https://www.apachefriends.org)
+-   [Laragon](https://laragon.org)
+-   [Composer](https://getcomposer.org)
 
-Menggunakan **PBL** dengan framework **CDIO**. Proyek semester 1 = _cornerstone project_. Kontribusi utama: memberikan kemampuan dasar pemrograman berbasis web untuk proyek perangkat lunak.
+**Bacaan tambahan:**
 
-### Apa Itu CDIO?
+-   [FreeCodeCamp — Responsive Web Design](https://www.freecodecamp.org) — kursus gratis terstruktur.
+-   [The Odin Project](https://www.theodinproject.com) — kurikulum full-stack open source.
+-   [PHP The Right Way](https://phptherightway.com) — praktik terbaik PHP modern.
 
-**CDIO** = **C**onceive, **D**esign, **I**mplement, **O**perate — framework pendidikan engineering yang menekankan siklus hidup produk nyata.
-
-| Fase          | Aktivitas                        | Mata Kuliah Terkait |
-| ------------- | -------------------------------- | ------------------- |
-| **Conceive**  | Memahami masalah, requirement    | RPL101, RPL104      |
-| **Design**    | Merancang solusi, skema          | RPL104, RPL106      |
-| **Implement** | Menulis kode, membangun aplikasi | **RPL105**, RPL102  |
-| **Operate**   | Menjalankan, menguji, memelihara | RPL106, semua       |
-
-RPL105 ada di fase **Implement** — mengubah design menjadi kode yang berjalan.
-
----
-
-## Sumber Online
-
-### Dokumentasi Resmi
-
-| Sumber       | Tautan                                  |
-| ------------ | --------------------------------------- |
-| MDN Web Docs | [Buka →](https://developer.mozilla.org) |
-| PHP Manual   | [Buka →](https://www.php.net/manual)    |
-| MySQL Docs   | [Buka →](https://dev.mysql.com/doc)     |
-| Bootstrap    | [Buka →](https://getbootstrap.com)      |
-| W3Schools    | [Buka →](https://www.w3schools.com)     |
-
-### Tools
-
-| Tools        | Tautan                                  |
-| ------------ | --------------------------------------- |
-| VS Code      | [Buka →](https://code.visualstudio.com) |
-| XAMPP        | [Buka →](https://www.apachefriends.org) |
-| Laragon      | [Buka →](https://laragon.org)           |
-| Composer     | [Buka →](https://getcomposer.org)       |
-| Google Fonts | [Buka →](https://fonts.google.com)      |
-
-### Bacaan Tambahan
-
--   **FreeCodeCamp — Responsive Web Design** — kursus gratis HTML/CSS terstruktur.
--   **The Odin Project** — kurikulum full-stack open source.
--   **Laracasts** — video pembelajaran web development.
--   **PHP The Right Way** — panduan praktik terbaik PHP modern.
-
----
-
-## Tips Praktis
-
-:::tip[Strategi Belajar RPL105]
-
--   **Ketik ulang, jangan copy-paste** — muscle memory penting untuk HTML/CSS/JS.
--   **Buka DevTools setiap saat** — inspect element, console, network adalah teman.
--   **Commit Git tiap pertemuan** — version control dari awal, bukan akhir.
--   **Uji di banyak browser** — Chrome, Firefox, Safari punya quirks berbeda.
--   **Mulai dari struktur** — HTML dulu, CSS kedua, JS ketiga.
--   **Server-side butuh sabar** — debugging PHP tanpa error messages jelas butuh latihan.
--   **Amankan sejak awal** — prepared statement, password_hash, validasi server.
-
-:::
-
-:::warning[Jebakan Umum]
-
--   **Lupa `exit` setelah `header('Location: ...')`** → kode tetap jalan.
--   **SQL injection** karena query manual dengan concat string.
--   **Simpan password plaintext** — fatal.
--   **Tidak validasi input server-side** — percaya validasi HTML5.
--   **Copy-paste kode tanpa paham** — debugging jadi mimpi buruk.
--   **Tidak pakai version control** — kehilangan kode saat laptop rusak.
--   **Hapus database production** tanpa backup.
-
-:::
-
----
-
-## Halaman Terkait
-
-| Halaman                                             | Deskripsi                        |
-| --------------------------------------------------- | -------------------------------- |
-| [Mata Kuliah](/docs/v1/courses/)                    | Daftar mata kuliah semester ini. |
-| [Tugas](/docs/v1/task/)                             | Daftar tugas.                    |
-| [Jadwal Kuliah](/docs/v1/information/jadwal-kuliah) | Jadwal mingguan.                 |
-| [Info Tim PBL](/docs/v1/information/info-team-pbl)  | Deskripsi proyek PBL.            |
-| [Format Halaman Konten](/docs/format/page)          | Panduan penulisan halaman.       |
+E-learning: [learningif.polibatam.ac.id](https://learningif.polibatam.ac.id)

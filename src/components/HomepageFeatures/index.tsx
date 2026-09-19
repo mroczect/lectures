@@ -1,147 +1,135 @@
-import type { ReactNode, MouseEvent } from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-type IconKey = 'course' | 'info' | 'task' | 'version' | 'search' | 'format' | 'open';
+type IconKey = 'book' | 'clipboard' | 'check' | 'tag' | 'file' | 'globe';
 
-export type FeatureItem = {
-    icon?: IconKey;
+type FeatureItem = {
     title: string;
     description: string;
-    link?: string;
-    linkText?: string;
-    span?: 'narrow' | 'wide';
+    icon: IconKey;
+    link: string;
 };
 
-export type HomepageFeaturesProps = {
-    eyebrow?: string;
-    title: string;
-    subtitle?: string;
-    items: FeatureItem[];
-};
-
-const iconProps: React.SVGProps<SVGSVGElement> = {
+const iconProps = {
+    width: 20,
+    height: 20,
     viewBox: '0 0 24 24',
     fill: 'none',
     stroke: 'currentColor',
-    strokeWidth: 1.5,
-    strokeLinecap: 'round',
-    strokeLinejoin: 'round',
-    'aria-hidden': 'true',
+    strokeWidth: 1.75,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+    'aria-hidden': true,
 };
 
-const icons: Record<IconKey, (props: React.ComponentProps<'svg'>) => ReactNode> = {
-    course: (props) => (
-        <svg {...iconProps} {...props}>
+const icons: Record<IconKey, ReactNode> = {
+    book: (
+        <svg {...iconProps}>
             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
         </svg>
     ),
-    info: (props) => (
-        <svg {...iconProps} {...props}>
-            <circle cx="12" cy="12" r="10" />
-            <line x1="12" y1="16" x2="12" y2="12" />
-            <line x1="12" y1="8" x2="12.01" y2="8" />
+    clipboard: (
+        <svg {...iconProps}>
+            <rect x="8" y="2" width="8" height="4" rx="1" />
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+            <path d="M9 12h6M9 16h4" />
         </svg>
     ),
-    task: (props) => (
-        <svg {...iconProps} {...props}>
+    check: (
+        <svg {...iconProps}>
             <path d="M9 11l3 3L22 4" />
             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
         </svg>
     ),
-    version: (props) => (
-        <svg {...iconProps} {...props}>
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
+    tag: (
+        <svg {...iconProps}>
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+            <circle cx="7" cy="7" r="1.5" />
         </svg>
     ),
-    search: (props) => (
-        <svg {...iconProps} {...props}>
-            <circle cx="11" cy="11" r="8" />
-            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        </svg>
-    ),
-    format: (props) => (
-        <svg {...iconProps} {...props}>
+    file: (
+        <svg {...iconProps}>
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
             <polyline points="14 2 14 8 20 8" />
-            <line x1="9" y1="13" x2="15" y2="13" />
-            <line x1="9" y1="17" x2="13" y2="17" />
+            <path d="M9 13h6M9 17h4" />
         </svg>
     ),
-    open: (props) => (
-        <svg {...iconProps} {...props}>
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+    globe: (
+        <svg {...iconProps}>
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20" />
+            <path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z" />
         </svg>
     ),
 };
 
-function Feature({
-    icon = 'course',
-    title,
-    description,
-    link,
-    linkText,
-    span = 'narrow',
-}: FeatureItem) {
-    const Icon = icons[icon];
+const FeatureList: FeatureItem[] = [
+    {
+        title: 'Materi Kuliah',
+        description: 'Catatan, bacaan, dan referensi per mata kuliah, tersusun per semester.',
+        icon: 'book',
+        link: '/docs/v1/courses/',
+    },
+    {
+        title: 'Informasi Akademik',
+        description: 'Jadwal kelas, kontak dosen, dan data tim PBL dalam satu tempat.',
+        icon: 'clipboard',
+        link: '/docs/v1/information/',
+    },
+    {
+        title: 'Tugas',
+        description: 'Daftar tugas, syarat pengumpulan, dan sumber pendukung per mata kuliah.',
+        icon: 'check',
+        link: '/docs/v1/task/',
+    },
+    {
+        title: 'Konten Berversi',
+        description: 'Tiap semester punya jalur versinya sendiri — materi lama tetap bisa diakses.',
+        icon: 'tag',
+        link: '/docs/v1/',
+    },
+    {
+        title: 'Format & Aturan',
+        description: 'Konvensi penulisan, penamaan file, dan panduan kontribusi.',
+        icon: 'file',
+        link: '/docs/format/page',
+    },
+    {
+        title: 'Sumber Terbuka',
+        description: 'Diterbitkan dengan lisensi CC BY-NC-SA 4.0 untuk penggunaan non-komersial.',
+        icon: 'globe',
+        link: '/docs/license',
+    },
+];
 
-    const handleMouseMove = (e: MouseEvent<HTMLElement>) => {
-        const card = e.currentTarget;
-        const rect = card.getBoundingClientRect();
-
-        requestAnimationFrame(() => {
-            card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
-            card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
-        });
-    };
-
+function Feature({ title, description, icon, link }: FeatureItem) {
     return (
-        <div className={clsx('col', span === 'wide' ? 'col--8' : 'col--4', 'col--6')}>
-            <article className={styles.featureCard} onMouseMove={handleMouseMove}>
-                <div className={styles.featureCardSpotlight} aria-hidden="true" />
-                <div className={styles.featureIcon}>
-                    <Icon className={styles.featureSvg} />
-                </div>
-                <div className={styles.featureContent}>
-                    <Heading as="h3" className={styles.featureTitle}>
-                        {title}
-                    </Heading>
-                    <p className={styles.featureDescription}>{description}</p>
-                    {link && linkText && (
-                        <Link to={link} className={styles.featureLink}>
-                            {linkText}
-                            <span aria-hidden="true" className={styles.featureLinkArrow}>
-                                →
-                            </span>
-                        </Link>
-                    )}
-                </div>
-            </article>
+        <div className={clsx('col col--4')}>
+            <Link to={link} className={styles.featureCard}>
+                <span className={styles.featureIcon}>{icons[icon]}</span>
+                <Heading as="h3" className={styles.featureTitle}>
+                    {title}
+                </Heading>
+                <p className={styles.featureDescription}>{description}</p>
+                <span className={styles.featureArrow} aria-hidden="true">
+                    →
+                </span>
+            </Link>
         </div>
     );
 }
 
-export default function HomepageFeatures({
-    eyebrow,
-    title,
-    subtitle,
-    items,
-}: HomepageFeaturesProps): ReactNode {
+export default function HomepageFeatures(): ReactNode {
     return (
         <section className={styles.features}>
             <div className="container">
-                <div className={styles.sectionHeader}>
-                    {eyebrow && <span className={styles.sectionEyebrow}>{eyebrow}</span>}
-                    <h2 className={styles.sectionTitle}>{title}</h2>
-                    {subtitle && <p className={styles.sectionSubtitle}>{subtitle}</p>}
-                </div>
                 <div className="row">
-                    {items.map((item) => (
-                        <Feature key={item.title} {...item} />
+                    {FeatureList.map((item, idx) => (
+                        <Feature key={idx} {...item} />
                     ))}
                 </div>
             </div>
