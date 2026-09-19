@@ -1,72 +1,71 @@
-.pageContent {
-    max-width: 860px;
+.heroBanner {
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.quickLinks {
+    padding: 3rem 0 5rem;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
     margin: 0 auto;
-    padding: clamp(2rem, 5vw, 4rem) var(--gutter, 1.5rem) clamp(3rem, 8vw, 6rem);
-    width: 100%;
-    min-width: 0;
+    max-width: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
 }
 
-.pageContent > h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
+.linkList li {
+    margin: 0;
 }
 
-.pageContent table {
-    margin: clamp(1rem, 2.5vw, 1.25rem) 0;
+.linkList a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--ifm-font-color-base);
+    transition: border-color 0.15s ease;
 }
 
-.pageContent > hr {
-    margin: clamp(2rem, 5vw, 3rem) 0;
-}
-
-@media screen and (max-width: 996px) {
-    .pageContent {
-        max-width: 100%;
-        padding: clamp(2rem, 5vw, 2.5rem) var(--gutter, 1rem) clamp(3rem, 7vw, 4rem);
-    }
+.linkList a:hover {
+    border-color: var(--ifm-color-primary);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-    .pageContent {
-        padding: 1.75rem 1rem 3rem;
+    .heroBanner {
+        padding: 3rem 1rem;
     }
 
-    .pageContent table {
-        margin: 1rem 0;
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .pageContent > hr {
-        margin: 2rem 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .pageContent {
-        padding: 1.5rem 0.875rem 2.5rem;
+    .buttons > * {
+        width: 100%;
     }
 
-    .pageContent > hr {
-        margin: 1.5rem 0;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .pageContent {
-        padding: 1.25rem 0.75rem 2rem;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .pageContent {
-        max-width: 880px;
-        padding: 4.5rem 1.5rem 6.5rem;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .pageContent {
-        max-width: 900px;
-        padding: 5rem 1.5rem 7rem;
+    .linkList {
+        grid-template-columns: 1fr;
     }
 }
