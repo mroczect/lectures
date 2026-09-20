@@ -1,46 +1,126 @@
-name: Deploy Zola to GitHub Pages
+name: Deploy Zola Site
 
 on:
   push:
-    branches: ["master"]
+    branches: [master]
+    paths-ignore:
+      - "content/changelog.md"
+      - "**.md"
+      - ".github/workflows/changelog.yml"
   workflow_dispatch:
+    inputs:
+      skip_changelog:
+        description: "Skip changelog generation"
+        type: boolean
+        default: false
 
+# Batasi permission — least privilege
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Cancel build lama kalau ada push baru
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages
+  cancel-in-progress: true
 
 jobs:
+  # ============================================
+  # Build & Deploy
+  # ============================================
   build:
+    name: Build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: Checkout
+      - name: Checkout (with submodules)
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
       - name: Install Zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.23.4 
+          tool: zola@0.23.4
+
+      - name: Cache Zola build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/zola
+          key: zola-${{ runner.os }}-${{ hashFiles('zola.toml') }}
+          restore-keys: |
+            zola-${{ runner.os }}-
+
+      - name: Generate changelog
+        if: ${{ !inputs.skip_changelog }}
+        run: |
+          if [[ -x scripts/gen_changelog.py ]]; then
+            python3 scripts/gen_changelog.py --limit 1000
+          elif [[ -x scripts/gen-changelog.sh ]]; then
+            ./scripts/gen-changelog.sh --limit 1000
+          else
+            echo "No changelog script found, skipping."
+          fi
+
+      - name: Validate config
+        run: |
+          test -f zola.toml || (echo "zola.toml missing" && exit 1)
+          test -d themes/archie-zola || (echo "theme dir missing" && exit 1)
+          test -f themes/archie-zola/theme.toml || (echo "theme.toml missing" && exit 1)
 
       - name: Build site
         run: zola build
+
+      - name: Check links
+        run: zola check
+        continue-on-error: true   # jangan block deploy karena link luar rusak
+
+      - name: Verify build output
+        run: |
+          test -f public/index.html || (echo "index.html missing" && exit 1)
+          echo "Build size: $(du -sh public | cut -f1)"
+          echo "Pages: $(find public -name '*.html' | wc -l)"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+          retention-days: 7
 
+  # ============================================
+  # Deploy
+  # ============================================
   deploy:
+    name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    timeout-minutes: 5
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Summary
+        run: |
+          echo "## Deployment successful :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**URL:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Ref:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
