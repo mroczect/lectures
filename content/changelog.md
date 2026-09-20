@@ -1,7 +1,7 @@
 +++
 title = "Changelog"
-date = 2026-09-21
-updated = 2026-09-21
+date = 2026-09-20
+updated = 2026-09-20
 description = "All notable changes to this project, generated from git history."
 [taxonomies]
 tags = ["changelog", "reference"]
@@ -10,11 +10,13 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **69 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-20 · **70 commits**.
 
 ## September 2026
 
 ### Monday, Sep 21, 2026
+
+- **feat** `site` [add changelog workflow and dark theme CSS (#37)](https://github.com/mroczect/lectures/commit/d3d4ebd55ce0b4459fbd2d01f5dc71e833cbf7bb) ([#37](https://github.com/mroczect/lectures/pull/37)) — @mroczect
 
 - **feat** `scripts` [add Python changelog and deploy workflow (#36)](https://github.com/mroczect/lectures/commit/b228dae521b87b702bfc22481ecd3b4b6efdc8ed) ([#36](https://github.com/mroczect/lectures/pull/36)) — @mroczect
 
