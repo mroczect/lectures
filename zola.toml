@@ -28,11 +28,7 @@ mode = "toggle"
 useCDN = false
 favicon = "/icon/favicon.png"
 copyright = "mroczect"
-custom_css = [
-    "css/dark.css",
-    "css/main.css",
-    "css/custom.css",
-]
+custom_css = ["css/custom.css"]
 github_repo = "mroczect/lectures"
 github_branch = "master"
 
