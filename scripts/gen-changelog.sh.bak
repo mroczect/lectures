@@ -1,0 +1,204 @@
+#!/usr/bin/env bash
+#
+# Generate content/changelog.md from git history.
+# Outputs rich changelog with links, authors, PRs, and stats.
+#
+# Usage: ./scripts/gen-changelog.sh [--since YYYY-MM-DD] [--limit N]
+
+set -euo pipefail
+
+# ---------- Config ----------
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+OUTPUT="$REPO_ROOT/content/changelog.md"
+LIMIT=500
+SINCE=""
+
+GITHUB_REPO="$(grep -E '^\s*github_repo\s*=' "$REPO_ROOT/zola.toml" 2>/dev/null | head -1 | sed -E 's/.*"(.*)".*/\1/')"
+GITHUB_BRANCH="$(grep -E '^\s*github_branch\s*=' "$REPO_ROOT/zola.toml" 2>/dev/null | head -1 | sed -E 's/.*"(.*)".*/\1/')"
+GITHUB_REPO="${GITHUB_REPO:-mroczect/lectures}"
+GITHUB_BRANCH="${GITHUB_BRANCH:-master}"
+
+# ---------- Parse args ----------
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --since) SINCE="$2"; shift 2 ;;
+        --limit) LIMIT="$2"; shift 2 ;;
+        -h|--help) echo "Usage: $0 [--since YYYY-MM-DD] [--limit N]"; exit 0 ;;
+        *) echo "Unknown option: $1"; exit 1 ;;
+    esac
+done
+
+cd "$REPO_ROOT"
+
+# ---------- Helpers ----------
+classify() {
+    local subject="$1"
+    case "$subject" in
+        feat*|feature*)  echo "feat" ;;
+        fix*|bugfix*)    echo "fix" ;;
+        docs*|doc*)      echo "docs" ;;
+        style*)          echo "style" ;;
+        refactor*)       echo "refactor" ;;
+        perf*)           echo "perf" ;;
+        test*)           echo "test" ;;
+        chore*)          echo "chore" ;;
+        ci*)             echo "ci" ;;
+        build*)          echo "build" ;;
+        revert*)         echo "revert" ;;
+        *)               echo "other" ;;
+    esac
+}
+
+clean_subject() {
+    echo "$1" | sed -E 's/^(feat|fix|docs|style|refactor|perf|test|chore|ci|build|revert)(\([^)]*\))?!?:\s*//'
+}
+
+extract_scope() {
+    if [[ "$1" =~ ^[a-z]+\(([^)]+)\) ]]; then
+        echo "${BASH_REMATCH[1]}"
+    fi
+}
+
+extract_pr() {
+    if [[ "$1" =~ \(#([0-9]+)\) ]]; then
+        echo "${BASH_REMATCH[1]}"
+    elif [[ "$1" =~ \#([0-9]+) ]]; then
+        echo "${BASH_REMATCH[1]}"
+    fi
+}
+
+# Extract shortstat from multi-line record
+# Input: full record with commit info + "\n N files changed, ..."
+extract_stats() {
+    echo "$1" | grep -E 'files? changed' | tail -1 | sed -E 's/^\s+//' | tr -d '\n'
+}
+
+# ---------- Collect commits with stats inline ----------
+# Format: \x1e separates commits. Fields separated by \x1f.
+GIT_FORMAT=$'\x1e''%h%x1f%H%x1f%ad%x1f%an%x1f%s'
+
+GIT_ARGS=(log --no-merges --date=short --shortstat --pretty=format:"$GIT_FORMAT")
+[[ -n "$SINCE" ]] && GIT_ARGS+=(--since="$SINCE")
+GIT_ARGS+=(-n "$LIMIT")
+
+RAW="$(git "${GIT_ARGS[@]}")"
+
+if [[ -z "$RAW" ]]; then
+    echo "No commits found."
+    exit 0
+fi
+
+# ---------- Parse ----------
+declare -A DAY_COMMITS
+DATES=()
+TOTAL_COMMITS=0
+
+# Split by \x1e; read char-by-char with custom delimiter
+while IFS= read -r -d $'\x1e' record || [[ -n "$record" ]]; do
+    [[ -z "$record" ]] && continue
+
+    # Drop leading newline from git's shortstat separation
+    record="${record#$'\n'}"
+
+    # First line is commit info, rest is shortstat
+    first_line="${record%%$'\n'*}"
+    full_record="$record"
+
+    IFS=$'\x1f' read -r short full date author subject <<< "$first_line"
+
+    type="$(classify "$subject")"
+    clean="$(clean_subject "$subject")"
+    scope="$(extract_scope "$subject")"
+    pr="$(extract_pr "$subject")"
+    stats="$(extract_stats "$full_record")"
+
+    # Build line
+    line="- "
+    case "$type" in
+        feat)     line+="**feat** " ;;
+        fix)      line+="**fix** " ;;
+        docs)     line+="docs " ;;
+        chore)    line+="chore " ;;
+        ci)       line+="ci " ;;
+        refactor) line+="refactor " ;;
+        style)    line+="style " ;;
+        perf)     line+="perf " ;;
+        test)     line+="test " ;;
+        build)    line+="build " ;;
+        revert)   line+="revert " ;;
+    esac
+    [[ -n "$scope" ]] && line+="\`$scope\` "
+    line+="[$clean](https://github.com/$GITHUB_REPO/commit/$full)"
+    [[ -n "$pr" ]] && line+=" ([#$pr](https://github.com/$GITHUB_REPO/pull/$pr))"
+    line+=" — @${author// /-}"
+
+    # Append stats on new line (proper $'\n')
+    if [[ -n "$stats" ]]; then
+        line+="  "$'\n  '"<sub>${stats}</sub>"
+    fi
+    line+=$'\n'
+
+    DAY_COMMITS[$date]+="$line"
+    DATES+=("$date")
+    TOTAL_COMMITS=$((TOTAL_COMMITS + 1))
+done < <(printf '%s' "$RAW")
+
+# ---------- Dedup dates (newest first) ----------
+UNIQUE_DATES=$(printf '%s\n' "${DATES[@]}" | sort -r -u)
+
+# ---------- Group by month ----------
+declare -A MONTH_DATES
+MONTHS=()
+
+while IFS= read -r date; do
+    [[ -z "$date" ]] && continue
+    month="${date:0:7}"
+    if [[ -z "${MONTH_DATES[$month]:-}" ]]; then
+        MONTHS+=("$month")
+        MONTH_DATES[$month]=""
+    fi
+    MONTH_DATES[$month]+="$date"$'\n'
+done <<< "$UNIQUE_DATES"
+
+# Sort months descending
+IFS=$'\n' MONTHS=($(printf '%s\n' "${MONTHS[@]}" | sort -r))
+unset IFS
+
+# ---------- Generate markdown ----------
+TODAY="$(date +%Y-%m-%d)"
+
+{
+    echo "+++"
+    echo "title = \"Changelog\""
+    echo "date = $TODAY"
+    echo "updated = $TODAY"
+    echo "description = \"All notable changes to this project, generated from git history.\""
+    echo "[taxonomies]"
+    echo "tags = [\"changelog\", \"reference\"]"
+    echo "categories = [\"meta\"]"
+    echo "+++"
+    echo ""
+    echo "All notable changes to this project. Generated from git history."
+    echo ""
+    echo "Source: [\`$GITHUB_REPO\`](https://github.com/$GITHUB_REPO) · Branch: \`$GITHUB_BRANCH\` · Updated: $TODAY · **$TOTAL_COMMITS commits**."
+    echo ""
+
+    for month in "${MONTHS[@]}"; do
+        pretty_month="$(date -d "${month}-01" +"%B %Y" 2>/dev/null || echo "$month")"
+        echo "## $pretty_month"
+        echo ""
+
+        month_dates_sorted=$(printf '%s\n' "${MONTH_DATES[$month]}" | sed '/^$/d' | sort -r)
+
+        while IFS= read -r date; do
+            [[ -z "$date" ]] && continue
+            pretty_date="$(date -d "$date" +"%A, %b %d, %Y" 2>/dev/null || echo "$date")"
+            echo "### $pretty_date"
+            echo ""
+            printf '%s' "${DAY_COMMITS[$date]}"
+            echo ""
+        done <<< "$month_dates_sorted"
+    done
+} > "$OUTPUT"
+
+echo "Wrote $OUTPUT ($TOTAL_COMMITS commits)"

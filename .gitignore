@@ -1,1 +1,7 @@
 /backup
+/target
+/public
+.snapcat.md
+.velodiff_dist.diff
+commit.sh
+pull_request_body.md
