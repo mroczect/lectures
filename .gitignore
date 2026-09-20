@@ -5,3 +5,7 @@
 .velodiff_dist.diff
 commit.sh
 pull_request_body.md
+*.bak
+.DS_Store
+__pycache__/
+*.pyc
