@@ -10,11 +10,14 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-20 · **70 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-20 · **72 commits**.
 
 ## September 2026
 
 ### Monday, Sep 21, 2026
+
+- **fix** `templates` [use get_url for menu links](https://github.com/mroczect/lectures/commit/cd21e7d9958ea11042b79bdc3641d19b84be25c3) — @mroczect
+  <sub>1 file changed, 26 insertions(+)</sub>
 
 - **feat** `site` [add changelog workflow and dark theme CSS (#37)](https://github.com/mroczect/lectures/commit/d3d4ebd55ce0b4459fbd2d01f5dc71e833cbf7bb) ([#37](https://github.com/mroczect/lectures/pull/37)) — @mroczect
 
@@ -26,6 +29,9 @@ Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `
   <sub>1 file changed, 437 insertions(+)</sub>
 
 ### Sunday, Sep 20, 2026
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/ef668aee52a4965bb0ad7490eabbe26f89dbdaea) — @github-actions[bot]
+  <sub>1 file changed, 5 insertions(+), 3 deletions(-)</sub>
 
 - [new migration](https://github.com/mroczect/lectures/commit/c6d730ea638082d1d995327032167648a034f47b) — @mroczect
 
