@@ -1,0 +1,29 @@
+/* Navbar spacing */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.25rem 1rem;
+}
+
+nav a {
+	white-space: nowrap;
+}
+
+/* Separator `|` di antara menu dan toggle */
+nav > span,
+nav > a + span {
+	opacity: 0.4;
+}
+
+/* Toggle icon align */
+#dark-mode-toggle {
+	display: inline-flex;
+	align-items: center;
+}
+
+#dark-mode-toggle svg {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
