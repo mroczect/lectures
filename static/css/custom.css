@@ -1,26 +1,10 @@
-nav {
+header nav {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 0.25rem 1rem;
+	gap: 0.5rem 1rem;
 }
 
-nav a {
+header nav a {
 	white-space: nowrap;
-}
-
-nav > span,
-nav > a + span {
-	opacity: 0.4;
-}
-
-#dark-mode-toggle {
-	display: inline-flex;
-	align-items: center;
-}
-
-#dark-mode-toggle svg {
-	width: 18px;
-	height: 18px;
-	vertical-align: middle;
 }
