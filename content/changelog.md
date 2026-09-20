@@ -10,11 +10,13 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **68 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **69 commits**.
 
 ## September 2026
 
 ### Monday, Sep 21, 2026
+
+- **feat** `scripts` [add Python changelog and deploy workflow (#36)](https://github.com/mroczect/lectures/commit/b228dae521b87b702bfc22481ecd3b4b6efdc8ed) ([#36](https://github.com/mroczect/lectures/pull/36)) — @mroczect
 
 - **feat** `site` [add Zola blog with content and templates (#35)](https://github.com/mroczect/lectures/commit/9db959e781aac6dd080cd18c037fdc91789eb700) ([#35](https://github.com/mroczect/lectures/pull/35)) — @mroczect
 
