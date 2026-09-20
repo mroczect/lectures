@@ -1,0 +1,54 @@
+name: Update Changelog
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - "content/changelog.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: changelog
+  cancel-in-progress: true
+
+jobs:
+  changelog:
+    name: Regenerate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate changelog
+        run: |
+          if [[ -x scripts/gen_changelog.py ]]; then
+            python3 scripts/gen_changelog.py --limit 1000
+          else
+            echo "No changelog script"; exit 0
+          fi
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet content/changelog.md; then
+            echo "No changelog changes"
+            exit 0
+          fi
+
+          git add content/changelog.md
+          git commit -m "chore(changelog): auto-update [skip ci]"
+          git push
