@@ -1,0 +1,205 @@
+body {
+	color: #e6e6e6;
+	background-color: #141414;
+}
+
+::-moz-selection {
+	background: rgba(239, 68, 68, 0.35);
+	color: #ffffff;
+	text-shadow: none;
+}
+
+::selection {
+	background: rgba(239, 68, 68, 0.35);
+	color: #ffffff;
+	text-shadow: none;
+}
+
+hr {
+	border-top: 1px solid #2a2a2a;
+}
+
+code {
+	background-color: #1e1e1e;
+	color: #e6e6e6;
+	padding: 0.15em 0.4em;
+	border-radius: 4px;
+}
+
+pre {
+	background-color: #1a1a1a;
+	border: 1px solid #2a2a2a;
+	border-radius: 6px;
+	line-height: 1.5;
+	overflow-x: auto;
+	padding: 1em;
+}
+
+blockquote {
+	border-left: 3px solid #ef4444;
+	color: #a3a3a3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #f5f5f5;
+}
+
+h1::before {
+	color: #ef4444;
+	content: "# ";
+}
+
+h2::before {
+	color: #ef4444;
+	content: "## ";
+}
+
+h3::before {
+	color: #ef4444;
+	content: "### ";
+}
+
+h4::before {
+	color: #ef4444;
+	content: "#### ";
+}
+
+h5::before {
+	color: #ef4444;
+	content: "##### ";
+}
+
+h6::before {
+	color: #ef4444;
+	content: "###### ";
+}
+
+a {
+	color: #f87171;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.15s ease;
+}
+
+a:hover {
+	background-color: transparent;
+	color: #f87171;
+	border-bottom-color: #f87171;
+}
+
+.site-description a {
+	color: #a3a3a3;
+	border-bottom: 1px solid transparent;
+}
+
+.site-description a:hover {
+	color: #f87171;
+	border-bottom-color: #f87171;
+}
+
+.tags a {
+	color: #a3a3a3;
+	background: #1e1e1e;
+	border: 1px solid #2a2a2a;
+	border-radius: 999px;
+	padding: 0.15rem 0.6rem;
+}
+
+.tags a:hover {
+	color: #f87171;
+	background: transparent;
+	border-color: #ef4444;
+}
+
+.site-title a {
+	color: #f5f5f5;
+	text-decoration: none !important;
+}
+
+.header nav,
+.footer {
+	border-color: #2a2a2a;
+}
+
+.highlight {
+	background-color: #1a1a1a;
+}
+
+.soc {
+	color: #a3a3a3;
+}
+
+.soc:hover {
+	color: #f87171;
+	background: transparent;
+}
+
+.draft-label {
+	color: #f87171;
+	background-color: rgba(239, 68, 68, 0.15);
+}
+
+
+.highlight pre code[class*="language-"]::before,
+pre code[class*="language-"]::before {
+	background: #1e1e1e;
+	color: #a3a3a3;
+	border: 1px solid #2a2a2a;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 0.1rem 0.5rem;
+	position: absolute;
+	right: 0.75rem;
+	top: 0.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.highlight pre code[class="language-javaScript"]::before,
+.highlight pre code[class="language-js"]::before,
+pre code[class*="language-js"]::before {
+	content: "js";
+}
+
+.highlight pre code[class*="language-yml"]::before,
+.highlight pre code[class*="language-yaml"]::before,
+pre code[class*="language-yaml"]::before {
+	content: "yaml";
+}
+
+.highlight pre code[class*="language-shell"]::before,
+.highlight pre code[class*="language-bash"]::before,
+.highlight pre code[class*="language-sh"]::before,
+pre code[class*="language-sh"]::before {
+	content: "sh";
+}
+
+.highlight pre code[class*="language-json"]::before,
+pre code[class*="language-json"]::before {
+	content: "json";
+}
+
+.highlight pre code[class*="language-python"]::before,
+.highlight pre code[class*="language-py"]::before,
+pre code[class*="language-py"]::before {
+	content: "py";
+}
+
+.highlight pre code[class*="language-css"]::before,
+pre code[class*="language-css"]::before {
+	content: "css";
+}
+
+.highlight pre code[class*="language-go"]::before,
+pre code[class*="language-go"]::before {
+	content: "go";
+}
+
+.highlight pre code[class*="language-md"]::before,
+pre code[class*="language-md"]::before {
+	content: "md";
+}
