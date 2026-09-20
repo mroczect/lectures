@@ -1,8 +1,15 @@
 # lectures
 
-> My go-to resource for university—it has everything, starting from assignment titles and more.
+To install dependencies:
 
----
+```bash
+bun install
+```
 
-> [!NOTE]
-> On September 18, 2026, I decided to start everything over from scratch; for more details, you can check issue #[27](https://github.com/mroczect/lectures/issues/27).
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.4.3. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
