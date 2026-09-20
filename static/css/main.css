@@ -1,3 +1,4 @@
+/* Markdown */
 :root {
   --maincolor: red;
   --bordercl: rebeccapurple;
@@ -43,6 +44,7 @@ body {
 }
 
 p {
+  /* font-family: 'Fira Sans', sans-serif; */
   line-height: 1.5;
 }
 
@@ -84,6 +86,7 @@ ul > li::before {
   font-weight: bold;
 }
 
+/* Images */
 img {
   border: 3px solid #ececec;
   max-width: 100%;
@@ -116,6 +119,7 @@ figure h4::before {
   content: "↳ ";
 }
 
+/* Code blocks */
 code {
   background-color: #f1f1f1;
   padding: 0.1em 0.2em;
@@ -140,6 +144,7 @@ pre code {
   padding: 0;
 }
 
+/* Containers */
 .content {
   margin-bottom: 4em;
   margin-left: auto;
@@ -149,6 +154,7 @@ pre code {
   word-wrap: break-word;
 }
 
+/* Header */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -205,6 +211,7 @@ h6::before {
   letter-spacing: -0.5px;
 }
 
+/* Footer */
 footer {
   display: flex;
   align-items: center;
@@ -230,6 +237,7 @@ footer {
   margin-bottom: 10px;
 }
 
+/* Common */
 .title h1 {
   margin-bottom: 0;
 }
@@ -242,10 +250,12 @@ span {
   color: grey;
 }
 
+/* Posts */
 article .title {
   margin-bottom: 1em;
 }
 
+/* Callout */
 .callout {
   background-color: var(--callouctcolor);
   color: #fff;
@@ -253,6 +263,7 @@ article .title {
 }
 
 .callout p {
+  /* font-family: 'IBM Plex Mono', monospace; */
   margin: 0;
 }
 
@@ -399,6 +410,7 @@ pre code[class*="language-c++"]::before {
   color: #044f88;
 }
 
+/* table */
 table {
   border-spacing: 0;
   border-collapse: collapse;

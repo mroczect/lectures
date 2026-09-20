@@ -1,43 +1,169 @@
-body {
+/* Markdown — dark */
+:root {
+	--maincolor: #ef4444;
+	--bordercl: #a78bfa;
+	--callouctcolor: #3b82f6;
+	--hovercolor: #dc2626;
+	--darkMaincolor: #ef4444;
+}
+
+html {
 	color: #e6e6e6;
+	font-family: "Roboto Mono", monospace;
+	font-size: 15px;
+	line-height: 1.6em;
+}
+
+body {
+	display: block;
+	margin: 8px;
 	background-color: #141414;
 }
 
-::-moz-selection {
-	background: rgba(239, 68, 68, 0.35);
-	color: #ffffff;
-	text-shadow: none;
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes intro {
+	0% {
+		opacity: 0.01;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.content {
+	animation: intro 0.3s both;
+	animation-delay: 0.15s;
 }
 
 ::selection {
-	background: rgba(239, 68, 68, 0.35);
-	color: #ffffff;
-	text-shadow: none;
+	background: var(--maincolor);
+	color: #fff;
+}
+
+p {
+	line-height: 1.5;
 }
 
 hr {
-	border-top: 1px solid #2a2a2a;
+	border: 0;
+	border-top: 3px dotted var(--bordercl);
+	margin: 1em 0;
 }
 
+blockquote {
+	border-left: 3px solid var(--bordercl);
+	color: #a3a3a3;
+	margin: 0;
+	padding-left: 1em;
+}
+
+a {
+	border-bottom: 3px solid var(--maincolor);
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: var(--hovercolor);
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+	padding-left: 2ch;
+}
+
+ul li {
+	text-indent: -2ch;
+}
+
+ul > li::before {
+	content: "* ";
+	font-weight: bold;
+}
+
+/* Images */
+img {
+	border: 3px solid #2a2a2a;
+	max-width: 100%;
+}
+
+figure {
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	max-width: 100%;
+}
+
+figure img {
+	max-height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+	figure {
+		padding: 0 40px;
+	}
+}
+
+figure h4 {
+	font-size: 1rem;
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+figure h4::before {
+	content: "↳ ";
+}
+
+/* Code blocks */
 code {
 	background-color: #1e1e1e;
-	color: #e6e6e6;
-	padding: 0.15em 0.4em;
-	border-radius: 4px;
+	padding: 0.1em 0.2em;
 }
 
 pre {
 	background-color: #1a1a1a;
-	border: 1px solid #2a2a2a;
-	border-radius: 6px;
-	line-height: 1.5;
+	line-height: 1.4;
 	overflow-x: auto;
 	padding: 1em;
 }
 
-blockquote {
-	border-left: 3px solid #ef4444;
-	color: #a3a3a3;
+.highlight pre ::selection {
+	background: rgba(255, 255, 255, 0.2);
+	color: inherit;
+}
+
+pre code {
+	background-color: transparent;
+	color: inherit;
+	font-size: 100%;
+	padding: 0;
+}
+
+/* Containers */
+.content {
+	margin-bottom: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	padding: 0 1ch;
+	word-wrap: break-word;
+}
+
+/* Header */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1em 0;
+}
+
+header .main {
+	font-size: 1.5rem;
 }
 
 h1,
@@ -46,160 +172,264 @@ h3,
 h4,
 h5,
 h6 {
-	color: #f5f5f5;
+	font-size: 1.2rem;
+	margin-top: 2em;
+	color: #e6e6e6;
 }
 
 h1::before {
-	color: #ef4444;
+	color: var(--darkMaincolor);
 	content: "# ";
 }
 
 h2::before {
-	color: #ef4444;
+	color: var(--darkMaincolor);
 	content: "## ";
 }
 
 h3::before {
-	color: #ef4444;
+	color: var(--darkMaincolor);
 	content: "### ";
 }
 
 h4::before {
-	color: #ef4444;
+	color: var(--darkMaincolor);
 	content: "#### ";
 }
 
 h5::before {
-	color: #ef4444;
+	color: var(--darkMaincolor);
 	content: "##### ";
 }
 
 h6::before {
-	color: #ef4444;
+	color: var(--darkMaincolor);
 	content: "###### ";
 }
 
-a {
-	color: #f87171;
-	border-bottom: 1px solid transparent;
-	transition: border-color 0.15s ease;
+.meta {
+	color: #999;
+	letter-spacing: -0.5px;
 }
 
-a:hover {
-	background-color: transparent;
-	color: #f87171;
-	border-bottom-color: #f87171;
-}
-
-.site-description a {
-	color: #a3a3a3;
-	border-bottom: 1px solid transparent;
-}
-
-.site-description a:hover {
-	color: #f87171;
-	border-bottom-color: #f87171;
-}
-
-.tags a {
-	color: #a3a3a3;
-	background: #1e1e1e;
-	border: 1px solid #2a2a2a;
-	border-radius: 999px;
-	padding: 0.15rem 0.6rem;
-}
-
-.tags a:hover {
-	color: #f87171;
-	background: transparent;
-	border-color: #ef4444;
-}
-
-.site-title a {
-	color: #f5f5f5;
-	text-decoration: none !important;
-}
-
-.header nav,
-.footer {
-	border-color: #2a2a2a;
-}
-
-.highlight {
-	background-color: #1a1a1a;
+/* Footer */
+footer {
+	display: flex;
+	align-items: center;
+	border-top: 0.4rem dotted var(--bordercl);
+	padding: 2rem 0rem;
+	margin-top: 2rem;
 }
 
 .soc {
-	color: #a3a3a3;
+	display: flex;
+	align-items: center;
+	padding-right: 1rem;
+	margin-right: 1rem;
+	border-right: 2px solid;
+	border-bottom: none;
+}
+
+.footer-info {
+	padding: var(--footer-padding);
+}
+
+#main_title {
+	margin-bottom: 10px;
+}
+
+/* Common */
+.title h1 {
+	margin-bottom: 0;
+}
+
+time {
+	color: grey;
+}
+
+span {
+	color: grey;
+}
+
+/* Posts */
+article .title {
+	margin-bottom: 1em;
+}
+
+/* Callout */
+.callout {
+	background-color: var(--callouctcolor);
+	color: #fff;
+	padding: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout a {
+	border-bottom: 3px solid #fff;
+}
+
+.callout a:hover {
+	background-color: #fff;
+	color: var(--callouctcolor);
+}
+
+.site-description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tags li::before {
+	content: "🏷 ";
+}
+
+.tags a {
+	border-bottom: 3px solid var(--maincolor);
+}
+
+.tags a:hover {
+	color: white;
+	background-color: var(--hovercolor);
+}
+
+svg {
+	max-height: 15px;
 }
 
 .soc:hover {
-	color: #f87171;
-	background: transparent;
+	color: white;
 }
 
 .draft-label {
-	color: #f87171;
-	background-color: rgba(239, 68, 68, 0.15);
+	color: var(--bordercl);
+	text-decoration: none;
+	padding: 2px 4px;
+	border-radius: 4px;
+	margin-left: 6px;
+	background-color: #2a1e33;
 }
 
+pre {
+	font-family: "Roboto Mono", monospace;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+}
 
-.highlight pre code[class*="language-"]::before,
+pre code[class*="language-"] {
+	-webkit-overflow-scrolling: touch;
+}
+
 pre code[class*="language-"]::before {
-	background: #1e1e1e;
-	color: #a3a3a3;
-	border: 1px solid #2a2a2a;
-	border-radius: 4px;
-	font-size: 11px;
+	background: black;
+	border-radius: 0 0 0.25rem 0.25rem;
+	color: white;
+	font-size: 12px;
+	letter-spacing: 0.025rem;
 	padding: 0.1rem 0.5rem;
 	position: absolute;
-	right: 0.75rem;
-	top: 0.6rem;
+	right: 1rem;
+	text-align: right;
 	text-transform: uppercase;
-	letter-spacing: 0.04em;
+	top: 0;
 }
 
-.highlight pre code[class="language-javaScript"]::before,
-.highlight pre code[class="language-js"]::before,
-pre code[class*="language-js"]::before {
+pre code[class="language-javaScript"]::before,
+pre code[class="language-js"]::before {
 	content: "js";
+	background: #f7df1e;
+	color: black;
 }
 
-.highlight pre code[class*="language-yml"]::before,
-.highlight pre code[class*="language-yaml"]::before,
+pre code[class="language-typescript"]::before,
+pre code[class="language-ts"]::before {
+	content: "ts";
+	background: dodgerblue;
+	color: black;
+}
+
+pre code[class*="language-yml"]::before,
 pre code[class*="language-yaml"]::before {
 	content: "yaml";
+	background: #f71e6a;
+	color: white;
 }
 
-.highlight pre code[class*="language-shell"]::before,
-.highlight pre code[class*="language-bash"]::before,
-.highlight pre code[class*="language-sh"]::before,
+pre code[class*="language-shell"]::before,
+pre code[class*="language-bash"]::before,
 pre code[class*="language-sh"]::before {
-	content: "sh";
+	content: "shell";
+	background: green;
+	color: white;
 }
 
-.highlight pre code[class*="language-json"]::before,
 pre code[class*="language-json"]::before {
 	content: "json";
+	background: dodgerblue;
+	color: #000000;
 }
 
-.highlight pre code[class*="language-python"]::before,
-.highlight pre code[class*="language-py"]::before,
+pre code[class*="language-python"]::before,
 pre code[class*="language-py"]::before {
 	content: "py";
+	background: blue;
+	color: yellow;
 }
 
-.highlight pre code[class*="language-css"]::before,
 pre code[class*="language-css"]::before {
 	content: "css";
+	background: cyan;
+	color: black;
 }
 
-.highlight pre code[class*="language-go"]::before,
 pre code[class*="language-go"]::before {
-	content: "go";
+	content: "Go";
+	background: cyan;
+	color: royalblue;
 }
 
-.highlight pre code[class*="language-md"]::before,
+pre code[class*="language-md"]::before,
 pre code[class*="language-md"]::before {
-	content: "md";
+	content: "Markdown";
+	background: royalblue;
+	color: whitesmoke;
+}
+
+pre code[class*="language-rust"]::before,
+pre code[class*="language-rs"]::before {
+	content: "rust";
+	background: #fff8f6;
+	color: #ff4647;
+}
+
+pre code[class*="language-cpp"]::before,
+pre code[class*="language-c++"]::before {
+	content: "cpp";
+	background: #5e97d0;
+	color: #044f88;
+}
+
+/* table */
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+table th {
+	padding: 6px 13px;
+	border: 1px solid #2a2a2a;
+	font-size: large;
+	color: #e6e6e6;
+}
+
+table td {
+	padding: 6px 13px;
+	border: 1px solid #2a2a2a;
+}
+
+.footnote-definition {
+	display: flex;
+	align-items: center;
+	grid-column-gap: 10px;
 }
