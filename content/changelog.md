@@ -10,11 +10,18 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **78 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **80 commits**.
 
 ## September 2026
 
+### Tuesday, Sep 22, 2026
+
+- `rpl106` [replace mermaid with d2 + build workflow](https://github.com/mroczect/lectures/commit/e406c7fcde8a3ed1b3d1cf1ee4438930178584d5) — @mroczect
+
 ### Monday, Sep 21, 2026
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/8d68e0e3c51bed7da218746860a0367e7f99bbab) — @github-actions[bot]
+  <sub>1 file changed, 6 insertions(+), 1 deletion(-)</sub>
 
 - chore `site` [move site back to lectures subpath (#40)](https://github.com/mroczect/lectures/commit/2011deb0dcf40e9a35c8645db4563333a615f1e4) ([#40](https://github.com/mroczect/lectures/pull/40)) — @mroczect
 
