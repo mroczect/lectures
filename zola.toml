@@ -1,4 +1,4 @@
-base_url = "https://mroczect.biz.id"
+base_url = "https://mroczect.biz.id/lectures/"
 title = "Lectures"
 description = "Lecture notes for Software Engineering Technology, Politeknik Negeri Batam."
 default_language = "en"
