@@ -1,0 +1,6 @@
+direction: right
+EMPLOYEE: {shape: sql_table; id: string {constraint: primary_key}; name: string}
+DEPARTMENT: {shape: sql_table; deptno: string {constraint: primary_key}; deptname: string}
+JOB: {shape: sql_table; position: string {constraint: primary_key}}
+EMPLOYEE -> JOB: "work_in"
+DEPARTMENT -> JOB: "work_in"

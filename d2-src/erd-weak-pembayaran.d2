@@ -1,0 +1,4 @@
+direction: right
+PINJAMAN: {shape: sql_table; no_pinjam: string {constraint: primary_key}; jumlah: int}
+PEMBAYARAN: {shape: sql_table; no_byr: string {constraint: primary_key}; jml_byr: int; tanggal: date}
+PINJAMAN -> PEMBAYARAN: "total 1:N"

@@ -1,0 +1,21 @@
+{
+  "rpl106-2026-ganjil": {
+    "author": "mroczect",
+    "body": "",
+    "category": "course",
+    "date": "2026-09-22",
+    "homepage": "",
+    "license": "",
+    "status": "stable",
+    "summary": "Rencana Pembelajaran Semester (RPS) for RPL106 — Introduction to Databases, Odd Semester 2026/2027.",
+    "tags": [
+      "rpl106",
+      "database",
+      "rps",
+      "2026",
+      "ganjil"
+    ],
+    "title": "RPL106 — Introduction to Databases (Odd 2026/2027)",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,4 @@
+<figure class="d2">
+  <img src="{{ get_url(path='d2/' ~ name ~ '.svg') }}" alt="{{ alt | default(value=name) }}" loading="lazy">
+  {% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}
+</figure>

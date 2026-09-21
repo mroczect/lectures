@@ -1,0 +1,5 @@
+direction: right
+CUSTOMER: {shape: sql_table; id: string {constraint: primary_key}; nama: string}
+PINJAMAN: {shape: sql_table; no_pinjam: string {constraint: primary_key}; jumlah: int}
+CUSTOMER -> PINJAMAN: "partial"
+PINJAMAN -> CUSTOMER: "total"

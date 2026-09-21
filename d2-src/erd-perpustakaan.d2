@@ -1,0 +1,8 @@
+direction: right
+ANGGOTA: {shape: sql_table; id_anggota: string {constraint: primary_key}; nama: string; alamat: string; telepon: string; tanggal_daftar: date}
+BUKU: {shape: sql_table; isbn: string {constraint: primary_key}; judul: string; penulis: string; penerbit: string; tahun: int; stok: int}
+PEMINJAMAN: {shape: sql_table; id_pinjam: string {constraint: primary_key}; tanggal_pinjam: date; tanggal_kembali: date; id_anggota: string {constraint: foreign_key}}
+DETAIL_PINJAM: {shape: sql_table; id_pinjam: string {constraint: foreign_key}; isbn: string {constraint: foreign_key}; jumlah: int}
+ANGGOTA -> PEMINJAMAN: "1:N"
+PEMINJAMAN -> DETAIL_PINJAM: "1:N"
+BUKU -> DETAIL_PINJAM: "1:N"

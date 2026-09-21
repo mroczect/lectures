@@ -1,0 +1,4 @@
+direction: right
+PEGAWAI: {shape: sql_table; nopeg: string {constraint: primary_key}; nama: string; tgllahir: date; umur: int; notelp: string}
+DEPARTEMEN: {shape: sql_table; nodep: string {constraint: primary_key}; namadept: string; budget: int}
+PEGAWAI -> DEPARTEMEN: "bekerja_di"

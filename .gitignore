@@ -9,3 +9,4 @@ pull_request_body.md
 .DS_Store
 __pycache__/
 *.pyc
+/resource_local

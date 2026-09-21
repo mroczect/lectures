@@ -11,9 +11,9 @@ Lecture notes, assignments, schedules, and academic references for Software Engi
 
 ## Quick Links
 
-- [Posts](/posts/) — all articles and notes
-- [Courses](/courses/) — per-course materials
-- [Tags](/tags/) — browse by topic
-- [About](/about) — project info
+- [Posts](./posts/) — all articles and notes
+- [Courses](./courses/) — per-course materials
+- [Tags](./tags/) — browse by topic
+- [About](./about) — project info
 
 ## Recent

@@ -5,7 +5,6 @@ on:
     branches: [master]
     paths-ignore:
       - "content/changelog.md"
-      - "**.md"
       - ".github/workflows/changelog.yml"
   workflow_dispatch:
     inputs:
@@ -30,10 +29,9 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout (with submodules)
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
           persist-credentials: false
 
@@ -47,14 +45,15 @@ jobs:
         with:
           tool: zola@0.23.4
 
-      - name: Cache Zola build
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/zola
-          key: zola-${{ runner.os }}-${{ hashFiles('zola.toml') }}
-          restore-keys: |
-            zola-${{ runner.os }}-
+      - name: Install D2
+        run: |
+          curl -fsSL https://d2lang.com/install.sh | sh -s --
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Verify tools
+        run: |
+          zola --version
+          d2 --version
 
       - name: Generate changelog
         if: ${{ !inputs.skip_changelog }}
@@ -67,11 +66,24 @@ jobs:
             echo "No changelog script found, skipping."
           fi
 
+      - name: Build D2 diagrams
+        run: |
+          if [[ -d d2-src ]]; then
+            mkdir -p static/d2
+            for f in d2-src/*.d2; do
+              [ -f "$f" ] || continue
+              name=$(basename "$f" .d2)
+              d2 --theme 0 --layout dagre --pad 20 --no-xml-tag --omit-version --center \
+                "$f" "static/d2/${name}.svg"
+              echo "✓ ${name}"
+            done
+          else
+            echo "No d2-src/ directory, skipping."
+          fi
+
       - name: Validate config
         run: |
           test -f zola.toml || (echo "zola.toml missing" && exit 1)
-          test -d themes/archie-zola || (echo "theme dir missing" && exit 1)
-          test -f themes/archie-zola/theme.toml || (echo "theme.toml missing" && exit 1)
 
       - name: Build site
         run: zola build
@@ -85,6 +97,7 @@ jobs:
           test -f public/index.html || (echo "index.html missing" && exit 1)
           echo "Build size: $(du -sh public | cut -f1)"
           echo "Pages: $(find public -name '*.html' | wc -l)"
+          echo "D2 SVGs: $(find public/d2 -name '*.svg' 2>/dev/null | wc -l)"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

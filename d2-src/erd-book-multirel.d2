@@ -1,0 +1,6 @@
+direction: down
+STUDENT: {shape: sql_table; S_ID: string {constraint: primary_key}; name: string; study_program: string}
+BOOK: {shape: sql_table; book_ID: string {constraint: primary_key}; title: string; author: string; year: int}
+BOOK_TYPE: {shape: sql_table; book_ID: string {constraint: primary_key}; type: string; status: string}
+STUDENT -> BOOK: "borrow"
+BOOK -> BOOK_TYPE: has
