@@ -10,11 +10,16 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **76 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **78 commits**.
 
 ## September 2026
 
 ### Monday, Sep 21, 2026
+
+- chore `site` [move site back to lectures subpath (#40)](https://github.com/mroczect/lectures/commit/2011deb0dcf40e9a35c8645db4563333a615f1e4) ([#40](https://github.com/mroczect/lectures/pull/40)) — @mroczect
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/59bd9c71fffba91776e956c8faafc0a19901282e) — @github-actions[bot]
+  <sub>1 file changed, 9 insertions(+), 3 deletions(-)</sub>
 
 - chore `ci` [remove comments from deploy workflow (#39)](https://github.com/mroczect/lectures/commit/3092f1be5b8a27f3b7e3efdf28ec911341bcfc83) ([#39](https://github.com/mroczect/lectures/pull/39)) — @mroczect
 
