@@ -213,4 +213,3 @@ Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `
 ### Monday, Sep 07, 2026
 
 - [Initial commit](https://github.com/mroczect/lectures/commit/aff434eafd6d9aa233af8032d25e1d0f75b40078) — @mroczect
-

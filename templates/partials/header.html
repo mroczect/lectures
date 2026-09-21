@@ -1,0 +1,68 @@
+<header>
+  <div class="main" id="main_title">
+    <a href="{{ config.base_url }}">{{ config.title or "" }}</a>
+  </div>
+
+  <nav>
+    {% set t = config.extra.translations.en %} {% for menu in t.menus %}
+    <a href="{{ get_url(path=menu.url) }}">{{ menu.name }}</a>
+    {% endfor %} {% if t.menus_more %}
+    <div class="nav-dropdown">
+      <button
+        class="nav-dropdown-toggle"
+        type="button"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        More <span class="nav-caret">▾</span>
+      </button>
+      <ul class="nav-dropdown-menu">
+        {% for menu in t.menus_more %}
+        <li>
+          <a href="{{ get_url(path=menu.url) }}">{{ menu.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %} {% if config.extra.mode == "toggle" %}
+    <a
+      id="dark-mode-toggle"
+      href="#"
+      onclick="
+        toggleTheme();
+        return false;
+      "
+      aria-label="Toggle theme"
+      >◐</a
+    >
+    {% endif %}
+  </nav>
+</header>
+
+<script>
+  (function () {
+    var toggle = document.querySelector(".nav-dropdown-toggle");
+    var dropdown = document.querySelector(".nav-dropdown");
+    if (!toggle || !dropdown) return;
+
+    toggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = dropdown.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        dropdown.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+</script>

@@ -1,12 +1,56 @@
 <!doctype html>
-<html lang="{{lang}}">
-  {% include "partials/header.html" %}
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
 
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta
+      name="description"
+      content="{% block description %}{{ config.description }}{% endblock description %}"
+    />
+
+    {% if config.extra.favicon %}
+    <link rel="icon" href="{{ get_url(path=config.extra.favicon) }}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ get_url(path='css/dark.css') }}" />
+    <link rel="stylesheet" href="{{ get_url(path='css/custom.css') }}" />
+
+    {% if config.generate_feeds %} {% for feed in config.feed_filenames %}
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="{{ config.title }}"
+      href="{{ get_url(path=feed) }}"
+    />
+    {% endfor %} {% endif %}
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          if (
+            saved === "dark" ||
+            (!saved &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
   <body>
     <div class="content">
-      {% include "partials/head.html" %} {% block main_content %}
+      {% include "partials/header.html" %} {% block main_content %}
       <main>{{ section.content | safe }}</main>
       {% endblock main_content %} {% include "partials/footer.html" %}
     </div>
+    {% if config.extra.mode == "toggle" %}
+    <script src="{{ get_url(path='js/themetoggle.js') }}"></script>
+    {% endif %}
   </body>
 </html>

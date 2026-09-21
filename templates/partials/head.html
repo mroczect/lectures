@@ -1,26 +1,41 @@
-<header>
-    <div class="main" id="main_title">
-        <a href="{{ config.base_url }}">{{ config.title or "" }}</a>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta
+    name="description"
+    content="{% block description %}{{ config.description }}{% endblock description %}"
+  />
 
-    <nav>
-        {% set english = config.extra.translations?.en?[0] or {} %}
-        {% set localized = config.extra.translations?[lang]?[0] or {} %}
-        {% set navigation = {...english, ...localized} %}
-        {% for menu in navigation.menus or [] %}
-            <a href="{{ get_url(path=menu.url) }}">{{ menu.name }}</a>
-        {% endfor %}
-        {% if config.extra.translations?.languages %}
-            |
+  {% if config.extra.favicon %}
+  <link rel="icon" href="{{ get_url(path=config.extra.favicon) }}" />
+  {% endif %}
 
-            {% for language in config.extra.translations.languages %}
-                <a href="{{ language.url }}">{{ language.name }}</a>
-            {% endfor %}
-        {% endif %}
+  <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}" />
+  <link rel="stylesheet" href="{{ get_url(path='css/dark.css') }}" />
+  <link rel="stylesheet" href="{{ get_url(path='css/custom.css') }}" />
 
-        {% if config.extra.mode == "toggle" %}
-            | <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
-            <script src="{{ get_url(path="js/themetoggle.js") }}"></script>
-        {% endif %}
-    </nav>
-</header>
+  {% if config.generate_feeds %} {% for feed in config.feed_filenames %}
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="{{ config.title }}"
+    href="{{ get_url(path=feed) }}"
+  />
+  {% endfor %} {% endif %}
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (
+          saved === "dark" ||
+          (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>

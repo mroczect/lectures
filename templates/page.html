@@ -1,0 +1,26 @@
+{% extends "index.html" %} {% block title %}{{ page.title }} — {{ config.title
+}}{% endblock title %} {% block description %}{{ page.description |
+default(value=config.description) }}{% endblock description %} {% block
+main_content %}
+<article>
+  <h1 class="title">{{ page.title }}</h1>
+
+  {% if page.date or page.reading_time %}
+  <div class="meta">
+    {% if page.date %}<time>{{ page.date | date(format="%Y-%m-%d") }}</time>{%
+    endif %} {% if page.reading_time %} · {{ page.reading_time }} {{
+    config.extra.translations.en.read_time }}{% endif %}
+  </div>
+  {% endif %} {% if page.taxonomies.tags %}
+  <ul class="tags">
+    {% for tag in page.taxonomies.tags %}
+    <li>
+      <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">#{{ tag }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="content">{{ page.content | safe }}</div>
+</article>
+{% endblock main_content %}
