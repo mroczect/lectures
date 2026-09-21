@@ -1,7 +1,7 @@
 +++
 title = "Changelog"
-date = 2026-09-20
-updated = 2026-09-20
+date = 2026-09-21
+updated = 2026-09-21
 description = "All notable changes to this project, generated from git history."
 [taxonomies]
 tags = ["changelog", "reference"]
@@ -10,11 +10,13 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-20 · **74 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **76 commits**.
 
 ## September 2026
 
 ### Monday, Sep 21, 2026
+
+- chore `ci` [remove comments from deploy workflow (#39)](https://github.com/mroczect/lectures/commit/3092f1be5b8a27f3b7e3efdf28ec911341bcfc83) ([#39](https://github.com/mroczect/lectures/pull/39)) — @mroczect
 
 - style `css` [restructure custom and dark theme stylesheets (#38)](https://github.com/mroczect/lectures/commit/7fefba0cb3c69ab1e1c5d2347b0a5b1c030c4a66) ([#38](https://github.com/mroczect/lectures/pull/38)) — @mroczect
 
@@ -31,6 +33,9 @@ Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `
   <sub>1 file changed, 437 insertions(+)</sub>
 
 ### Sunday, Sep 20, 2026
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/e99a39cbb7f9811debb1e1cfc4257e75f2f3e90b) — @github-actions[bot]
+  <sub>1 file changed, 6 insertions(+), 1 deletion(-)</sub>
 
 - chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/91094cb3c7591c46ba3e4a11ea0561f8e1c3a11d) — @github-actions[bot]
   <sub>1 file changed, 7 insertions(+), 1 deletion(-)</sub>
@@ -213,3 +218,4 @@ Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `
 ### Monday, Sep 07, 2026
 
 - [Initial commit](https://github.com/mroczect/lectures/commit/aff434eafd6d9aa233af8032d25e1d0f75b40078) — @mroczect
+
