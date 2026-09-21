@@ -1,0 +1,99 @@
+{% extends "index.html" %} {% block title %}Explore — {{ config.title }}{%
+endblock title %} {% block main_content %}
+<main class="explore">
+  <h1 class="page-title">Explore</h1>
+  <p class="meta">Every section and page in this site, in one place.</p>
+
+  <h2>Main</h2>
+  <ul class="explore-list">
+    <li><a href="{{ get_url(path='/') }}">Home</a></li>
+    <li><a href="{{ get_url(path='@/posts/_index.md') }}">Posts</a></li>
+    <li><a href="{{ get_url(path='@/courses/_index.md') }}">Courses</a></li>
+    <li><a href="{{ get_url(path='/tags') }}">Tags</a></li>
+    <li><a href="{{ get_url(path='/categories') }}">Categories</a></li>
+    <li><a href="{{ get_url(path='/search') }}">Search</a></li>
+  </ul>
+
+  {% set posts_section = get_section(path="posts/_index.md") %} {% if
+  posts_section.pages | length > 0 %}
+  <h2>Posts</h2>
+  <ul class="explore-list">
+    {% for page in posts_section.pages %}
+    <li>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
+      {% if page.date %}<span class="meta"
+        >{{ page.date | date(format="%Y-%m-%d") }}</span
+      >{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %} {% set courses_section = get_section(path="courses/_index.md") %}
+  {% if courses_section.subsections | length > 0 %}
+  <h2>Courses</h2>
+  <ul class="explore-list explore-courses">
+    {% for sub_path in courses_section.subsections %} {% set sub =
+    get_section(path=sub_path) %}
+    <li>
+      <a href="{{ sub.permalink }}"><strong>{{ sub.title }}</strong></a>
+      {% if sub.description %}<span class="meta">— {{ sub.description }}</span
+      >{% endif %} {% if sub.pages | length > 0 %}
+      <ul>
+        {% for page in sub.pages %}
+        <li>
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+          {% if page.date %}<span class="meta"
+            >{{ page.date | date(format="%Y-%m-%d") }}</span
+          >{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %} {% set all_tags = get_taxonomy(kind="tags", required=false) %} {%
+  if all_tags and all_tags.items | length > 0 %}
+  <h2>Tags</h2>
+  <ul class="explore-list explore-tags">
+    {% for term in all_tags.items %}
+    <li>
+      <a href="{{ term.permalink }}">#{{ term.name }}</a>
+      <span class="meta"
+        >{{ term.pages | length }} post{% if term.pages | length != 1 %}s{%
+        endif %}</span
+      >
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %} {% set all_cats = get_taxonomy(kind="categories", required=false)
+  %} {% if all_cats and all_cats.items | length > 0 %}
+  <h2>Categories</h2>
+  <ul class="explore-list explore-tags">
+    {% for term in all_cats.items %}
+    <li>
+      <a href="{{ term.permalink }}">{{ term.name }}</a>
+      <span class="meta"
+        >{{ term.pages | length }} post{% if term.pages | length != 1 %}s{%
+        endif %}</span
+      >
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <h2>Meta</h2>
+  <ul class="explore-list">
+    <li><a href="{{ get_url(path='@/about.md') }}">About</a></li>
+    <li>
+      <a href="{{ get_url(path='@/format.md') }}">Format &amp; Rules</a>
+    </li>
+    <li><a href="{{ get_url(path='@/license.md') }}">License</a></li>
+    <li><a href="{{ get_url(path='@/changelog.md') }}">Changelog</a></li>
+  </ul>
+
+  <h2>Feeds</h2>
+  <ul class="explore-list">
+    <li><a href="{{ get_url(path='atom.xml') }}">Atom Feed</a></li>
+  </ul>
+</main>
+{% endblock main_content %}

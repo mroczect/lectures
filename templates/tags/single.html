@@ -1,7 +1,7 @@
-{% extends "index.html" %} {% block title %}{{ term.name }} — {{ config.title
+{% extends "index.html" %} {% block title %}#{{ term.name }} — {{ config.title
 }}{% endblock title %} {% block main_content %}
 <main>
-  <h1 class="page-title">{{ term.name }}</h1>
+  <h1 class="page-title">#{{ term.name }}</h1>
 
   {% if paginator %} {% set pages = paginator.pages %} {% else %} {% set pages =
   term.pages %} {% endif %}

@@ -1,13 +1,18 @@
-base_url = "https://mroczect.biz.id/lectures"
+base_url = "https://mroczect.biz.id"
 title = "Lectures"
 description = "Lecture notes for Software Engineering Technology, Politeknik Negeri Batam."
-theme = "archie-zola"
 default_language = "en"
-compile_sass = true
+
+compile_sass = false
 minify_html = true
+output_dir = "public"
+
 build_search_index = true
 generate_feeds = true
 feed_filenames = ["atom.xml"]
+feed_limit = 50
+generate_sitemap = true
+generate_robots_txt = true
 
 taxonomies = [
   { name = "tags", feed = true },
@@ -18,10 +23,33 @@ taxonomies = [
 smart_punctuation = true
 external_links_target_blank = true
 external_links_no_referrer = true
+external_links_external = true
+bottom_footnotes = true
 
 [markdown.highlighting]
 theme = "one-light"
 style = "inline"
+error_on_missing_language = false
+
+[search]
+include_title = true
+include_description = true
+include_content = true
+index_format = "elasticlunr_javascript"
+
+[link_checker]
+internal_level = "warn"
+external_level = "warn"
+skip_prefixes = [
+  "https://learning-if.polibatam.ac.id",
+  "https://learningif.polibatam.ac.id",
+  "https://polibatam.id",
+]
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
 
 [extra]
 mode = "toggle"
@@ -60,20 +88,28 @@ url = "mailto:mroczect@proton.me"
 [extra.translations]
 languages = []
 
-[[extra.translations.en]]
-show_more = "Read more ⟶"
+[extra.translations.en]
+show_more    = "Read more ⟶"
 previous_page = "← Previous"
-next_page = "Next →"
-posted_on = "on "
-posted_by = "by"
-read_time = "min read"
-all_tags = "All tags"
+next_page    = "Next →"
+posted_on    = "on "
+posted_by    = "by"
+read_time    = "min read"
+all_tags     = "All tags"
+
 menus = [
-    { name = "Home",    url = "/",         weight = 1 },
-    { name = "Posts",   url = "/posts",    weight = 2 },
-    { name = "Tags",    url = "/tags",     weight = 3 },
-    { name = "Categories", url = "/categories",  weight = 5 },
-    { name = "License", url = "/license",  weight = 6 },
-    { name = "About",   url = "/about",    weight = 7 },
-    { name = "Changelog",   url = "/changelog",    weight = 8 },
+  { name = "Home",    url = "/",         weight = 1 },
+  { name = "Explore", url = "/explore",  weight = 2 },
+  { name = "Posts",   url = "/posts",    weight = 3 },
+  { name = "Courses", url = "/courses",  weight = 4 },
+  { name = "Search",  url = "/search",   weight = 5 },
+]
+
+menus_more = [
+  { name = "Tags",       url = "/tags",        weight = 1 },
+  { name = "Categories", url = "/categories",  weight = 2 },
+  { name = "About",      url = "/about",       weight = 3 },
+  { name = "License",    url = "/license",     weight = 4 },
+  { name = "Changelog",  url = "/changelog",   weight = 5 },
+  { name = "Format",     url = "/format",      weight = 6 },
 ]

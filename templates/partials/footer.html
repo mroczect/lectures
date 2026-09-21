@@ -1,0 +1,21 @@
+<footer>
+  <div class="footer-info">
+    © {{ now() | date(format="%Y") }} {{ config.extra.copyright or config.title
+    }} {% if config.extra.github_repo %} ·
+    <a href="https://github.com/{{ config.extra.github_repo }}"
+      >{{ config.extra.github_repo }}</a
+    >
+    {% endif %}
+  </div>
+  <div class="socials">
+    {% for social in config.extra.social %}
+    <a
+      class="soc"
+      href="{{ social.url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ social.name }}</a
+    >
+    {% endfor %}
+  </div>
+</footer>

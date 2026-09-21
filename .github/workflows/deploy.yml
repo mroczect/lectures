@@ -14,21 +14,16 @@ on:
         type: boolean
         default: false
 
-# Batasi permission — least privilege
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Cancel build lama kalau ada push baru
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  # ============================================
-  # Build & Deploy
-  # ============================================
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -83,7 +78,7 @@ jobs:
 
       - name: Check links
         run: zola check
-        continue-on-error: true   # jangan block deploy karena link luar rusak
+        continue-on-error: true
 
       - name: Verify build output
         run: |
@@ -100,9 +95,6 @@ jobs:
           path: ./public
           retention-days: 7
 
-  # ============================================
-  # Deploy
-  # ============================================
   deploy:
     name: Deploy
     environment:
