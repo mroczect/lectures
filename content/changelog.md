@@ -10,11 +10,20 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **87 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **91 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- `rpl106` [enrich pertemuan 1-2 and add pertemuan 3](https://github.com/mroczect/lectures/commit/3100d428203a3dbedfec46d702dae925b609f009) — @mroczect
+
+- **feat** `templates` [replace d2 shortcode with d2svg](https://github.com/mroczect/lectures/commit/950b25844e81147e01440306d32b697463ea6001) — @mroczect
+
+- refactor `d2` [restructure source and output as per-course modular layout](https://github.com/mroczect/lectures/commit/0ae54a15508336bdf95429e9c405e919005fc03f) — @mroczect
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/ef6152e4d4de3af4849486dbf7595e151888dd8e) — @github-actions[bot]
+  <sub>1 file changed, 9 insertions(+), 1 deletion(-)</sub>
 
 - **fix** `ci` [remove unsupported --omit-version; regenerate D2 SVGs](https://github.com/mroczect/lectures/commit/f36addaf11c8515bf36b0891f4273b0aa4a6eefa) — @mroczect
 
