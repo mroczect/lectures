@@ -10,11 +10,17 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **91 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **93 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- **fix** `ci` [correct D2 output paths for per-course layout](https://github.com/mroczect/lectures/commit/dcc8ebccb35789ee7eefe9bfedc7edb251e1d186) — @mroczect
+  <sub>1 file changed, 18 insertions(+), 10 deletions(-)</sub>
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/63f44a9a0049265f3d8dd5b543b2dd020146d526) — @github-actions[bot]
+  <sub>1 file changed, 10 insertions(+), 1 deletion(-)</sub>
 
 - `rpl106` [enrich pertemuan 1-2 and add pertemuan 3](https://github.com/mroczect/lectures/commit/3100d428203a3dbedfec46d702dae925b609f009) — @mroczect
 
