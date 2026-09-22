@@ -1,196 +1,255 @@
-# ═════════════════════════════════════════════════════════════
-#  RPL106 — Pertemuan 3 · EER Diagram
-#  Semua marker `# ===== name =====` → static/d2/rpl106/pertemuan-3/<name>.svg
-# ═════════════════════════════════════════════════════════════
-
-
-# ===== eer-specialization =====
 direction: down
+
+title: "Notasi Specialization" {shape: text; style.font-size: 18; style.bold: true}
+
 super: SUPERCLASS {
   shape: sql_table
-  style: {fill: "#E3F2FD"; stroke: "#1976D2"; stroke-width: 2}
+  style.fill: "#E3F2FD"
   id: "PK"
-  attr_shared: "string"
+  attr: string
 }
-is_a: "IS A" {shape: circle; style: {fill: "#FFE0B2"; stroke: "#E65100"; stroke-width: 3; bold: true}}
-sub1: SUBCLASS_1 {
+
+is_a: "IS A" {shape: circle; style.fill: "#FFE0B2"; style.bold: true}
+
+sub1: SUBCLASS_A {
   shape: sql_table
-  style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   id: "PK, FK"
-  attr_khas_1: "string"
+  attr_a: string
 }
-sub2: SUBCLASS_2 {
+
+sub2: SUBCLASS_B {
   shape: sql_table
-  style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   id: "PK, FK"
-  attr_khas_2: "string"
+  attr_b: string
 }
+
 super -> is_a
 is_a -> sub1
 is_a -> sub2
 
+title -> super: {style.stroke: transparent}
 
-# ===== eer-specialization-lecturer =====
 direction: down
+
 lecturer: LECTURER {
   shape: sql_table
-  style: {fill: "#E3F2FD"; stroke: "#1976D2"; stroke-width: 3; bold: true}
+  style.fill: "#E3F2FD"
+  style.stroke-width: 3
   employee_id: "PK"
-  name: "string"
-  gender: "char"
-  hp: "string"
-  education: "string"
-  home_address: "string"
+  name: string
+  gender: char
+  hp: string
+  education: string
+  home_address: string
 }
-is_a: "IS A" {shape: circle; style: {fill: "#FFE0B2"; stroke: "#E65100"; stroke-width: 3; bold: true}}
+
+is_a: "IS A" {shape: circle; style.fill: "#FFE0B2"; style.bold: true}
+
 perm: PERMANENT_LECTURER {
   shape: sql_table
-  style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   employee_id: "PK, FK"
-  grade: "string"
-  start_date: "date"
-  length_of_working: "int"
-  room_id: "string"
-  ext_no: "string"
-  boss: "string"
+  grade: string
+  start_date: date
+  length_of_working: int
+  room_id: string
+  ext_no: string
+  boss: string
 }
+
 part: PART_TIME_LECTURER {
   shape: sql_table
-  style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   employee_id: "PK, FK"
-  office_name: "string"
-  office_address: "string"
-  number_of_teaching_hours: "int"
+  office_name: string
+  office_address: string
+  number_of_teaching_hours: int
 }
+
 lecturer -> is_a
 is_a -> perm
 is_a -> part
 
-
-# ===== eer-attribute-inheritance =====
 direction: down
-lecturer: "LECTURER\n(shared attributes)" {shape: rectangle; style: {fill: "#E3F2FD"; stroke: "#1976D2"; stroke-width: 3; bold: true}}
-shared: "employee_id, name, gender,\nhp, education, home_address" {shape: text; style: {font-size: 12; font-color: "#1976D2"}}
-is_a: "IS A" {shape: circle; style: {fill: "#FFE0B2"; stroke: "#E65100"; stroke-width: 3; bold: true}}
-perm: "PERMANENT_LECTURER\n(inherits ALL + adds)\ngrade, start_date, length_of_working,\nroom_id, ext_no, boss" {shape: rectangle; style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}}
-part: "PART_TIME_LECTURER\n(inherits ALL + adds)\noffice_name, office_address,\nnumber_of_teaching_hours" {shape: rectangle; style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}}
+
+lecturer: "LECTURER" {
+  shape: rectangle
+  style.fill: "#E3F2FD"
+  style.stroke-width: 3
+  style.bold: true
+}
+
+shared: "employee_id, name, gender,\nhp, education, home_address" {
+  shape: text
+  style.font-size: 12
+}
+
+is_a: "IS A" {shape: circle; style.fill: "#FFE0B2"; style.bold: true}
+
+perm: "PERMANENT_LECTURER\ngrade, start_date, length_of_working,\nroom_id, ext_no, boss" {
+  shape: rectangle
+  style.fill: "#E8F5E9"
+}
+
+part: "PART_TIME_LECTURER\noffice_name, office_address,\nnumber_of_teaching_hours" {
+  shape: rectangle
+  style.fill: "#E8F5E9"
+}
+
+lecturer -> shared: {style.stroke: transparent}
 lecturer -> is_a
 is_a -> perm
 is_a -> part
-lecturer -> shared: {style.stroke: transparent}
 
-
-# ===== eer-relationship-inheritance =====
 direction: right
+
 lecturer: LECTURER {
   shape: sql_table
-  style: {fill: "#E3F2FD"; stroke: "#1976D2"; stroke-width: 3}
+  style.fill: "#E3F2FD"
+  style.stroke-width: 3
   employee_id: "PK"
-  name: "string"
+  name: string
 }
-teach: teach {shape: diamond; style: {fill: "#FFF9C4"; stroke: "#F9A825"; stroke-width: 2}}
+
+teach: teach {shape: diamond; style.fill: "#FFF9C4"}
+
 student: STUDENT {
   shape: sql_table
-  style: {fill: "#FFF3E0"; stroke: "#EF6C00"; stroke-width: 2}
+  style.fill: "#FFF3E0"
   S_ID: "PK"
-  name: "string"
+  name: string
 }
-is_a: "IS A" {shape: circle; style: {fill: "#FFE0B2"; stroke: "#E65100"; stroke-width: 2; bold: true}}
+
+is_a: "IS A" {shape: circle; style.fill: "#FFE0B2"; style.bold: true}
+
 perm: PERMANENT_LECTURER {
   shape: sql_table
-  style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   employee_id: "PK, FK"
-  grade: "string"
+  grade: string
 }
+
 part: PART_TIME_LECTURER {
   shape: sql_table
-  style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   employee_id: "PK, FK"
-  office_name: "string"
+  office_name: string
 }
-lecturer -> teach: "N"
-teach -> student: "M"
+
+lecturer -> teach: N
+teach -> student: M
 lecturer -> is_a
 is_a -> perm
 is_a -> part
 
-
-# ===== eer-constraints =====
 direction: down
-case_dt: "Disjoint + Total\n(d + garis ganda)\nSetiap super = tepat 1 subclass" {shape: rectangle; style: {fill: "#C8E6C9"; stroke: "#2E7D32"; stroke-width: 2}}
-case_dp: "Disjoint + Partial\n(d + garis tunggal)\nSebagian super tanpa subclass" {shape: rectangle; style: {fill: "#E8F5E9"; stroke: "#43A047"; stroke-width: 2}}
-case_ot: "Overlapping + Total\n(o + garis ganda)\nSetiap super ≥ 1 subclass" {shape: rectangle; style: {fill: "#FFF3E0"; stroke: "#EF6C00"; stroke-width: 2}}
-case_op: "Overlapping + Partial\n(o + garis tunggal)\nBebas" {shape: rectangle; style: {fill: "#FFE0B2"; stroke: "#E65100"; stroke-width: 2}}
-case_dt -> case_dp -> case_ot -> case_op: {style.stroke: "#455A64"; style.stroke-width: 1}
 
+case_dt: "Disjoint + Total\nd · garis ganda\nSetiap super = tepat 1 subclass" {
+  shape: rectangle
+  style.fill: "#C8E6C9"
+}
 
-# ===== eer-aggregation =====
+case_dp: "Disjoint + Partial\nd · garis tunggal\nSebagian super tanpa subclass" {
+  shape: rectangle
+  style.fill: "#E8F5E9"
+}
+
+case_ot: "Overlapping + Total\no · garis ganda\nSetiap super ≥ 1 subclass" {
+  shape: rectangle
+  style.fill: "#FFF3E0"
+}
+
+case_op: "Overlapping + Partial\no · garis tunggal\nBebas" {
+  shape: rectangle
+  style.fill: "#FFE0B2"
+}
+
+case_dt -> case_dp -> case_ot -> case_op
+
 direction: down
+
 customer: CUSTOMER {
   shape: sql_table
-  style: {fill: "#E3F2FD"; stroke: "#1976D2"; stroke-width: 2}
+  style.fill: "#E3F2FD"
   id_no: "PK"
-  name: "string"
-  address: "string"
+  name: string
+  address: string
 }
+
 borrow: BORROW {
   shape: diamond
-  style: {fill: "#FFF9C4"; stroke: "#F9A825"; stroke-width: 3}
-  borrow_date: "date"
+  style.fill: "#FFF9C4"
+  style.stroke-width: 3
+  borrow_date: date
 }
+
 loan: LOAN {
   shape: sql_table
-  style: {fill: "#E8F5E9"; stroke: "#43A047"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   loan_no: "PK"
-  amount: "int"
+  amount: int
 }
-aggregate_box: "AGGREGATE\n(customer + borrow + loan)" {shape: rectangle; style: {fill: "#F3E5F5"; stroke: "#8E24AA"; stroke-width: 2; stroke-dash: 4}}
+
+aggregate_box: "AGGREGATE\ncustomer + borrow + loan" {
+  shape: rectangle
+  style.fill: "#F3E5F5"
+  style.stroke-dash: 4
+}
+
 pay: PAY {
   shape: diamond
-  style: {fill: "#FFF9C4"; stroke: "#F9A825"; stroke-width: 2}
-  payment_date: "date"
+  style.fill: "#FFF9C4"
+  payment_date: date
 }
+
 payment: PAYMENT {
   shape: sql_table
-  style: {fill: "#FFEBEE"; stroke: "#C62828"; stroke-width: 3}
+  style.fill: "#FFEBEE"
   payment_no: "PK"
-  amount: "int"
+  amount: int
 }
-customer -> borrow: "N"
-borrow -> loan: "M"
+
+customer -> borrow: N
+borrow -> loan: M
 aggregate_box -> pay: "1"
-pay -> payment: "N"
+pay -> payment: N
 
-
-# ===== eer-bank-aggregation =====
 direction: right
+
 customer: CUSTOMER {
   shape: sql_table
-  style: {fill: "#E3F2FD"; stroke: "#1976D2"; stroke-width: 2}
+  style.fill: "#E3F2FD"
   id_no: "PK"
-  name: "string"
-  address: "string"
+  name: string
+  address: string
 }
+
 borrow: BORROW {
   shape: diamond
-  style: {fill: "#FFF9C4"; stroke: "#F9A825"; stroke-width: 3}
-  borrow_date: "date"
+  style.fill: "#FFF9C4"
+  style.stroke-width: 3
+  borrow_date: date
 }
+
 loan: LOAN {
   shape: sql_table
-  style: {fill: "#E8F5E9"; stroke: "#43A047"; stroke-width: 2}
+  style.fill: "#E8F5E9"
   loan_no: "PK"
-  amount: "int"
+  amount: int
 }
+
 payment: PAYMENT {
   shape: sql_table
-  style: {fill: "#FFEBEE"; stroke: "#C62828"; stroke-width: 3}
+  style.fill: "#FFEBEE"
   payment_no: "PK"
   id_no: "FK"
   loan_no: "FK"
-  payment_date: "date"
-  amount: "int"
+  payment_date: date
+  amount: int
 }
+
 customer -> borrow: "1"
-borrow -> loan: "N"
+borrow -> loan: N
 borrow -> payment: "1:N"
