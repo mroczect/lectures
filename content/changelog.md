@@ -10,11 +10,19 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **84 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **87 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- **fix** `ci` [remove unsupported --omit-version; regenerate D2 SVGs](https://github.com/mroczect/lectures/commit/f36addaf11c8515bf36b0891f4273b0aa4a6eefa) — @mroczect
+
+- **fix** `ci` [remove unsupported --omit-version flag from D2 build](https://github.com/mroczect/lectures/commit/a132063bc1e9a629b65d4aadcac7ca3922aa5b53) — @mroczect
+  <sub>1 file changed, 1 deletion(-)</sub>
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/b6bbcad2c0ff32c17dcf3a6b43487a380291f16f) — @github-actions[bot]
+  <sub>1 file changed, 14 insertions(+), 3 deletions(-)</sub>
 
 - [chore : uodate ci](https://github.com/mroczect/lectures/commit/6245063cb76ce69f116c809c8965fc81022e78ac) — @mroczect
   <sub>1 file changed, 74 insertions(+), 24 deletions(-)</sub>
