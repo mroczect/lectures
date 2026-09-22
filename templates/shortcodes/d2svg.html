@@ -1,0 +1,1 @@
+<img src="{{ get_url(path='d2/' ~ (page.extra.code | default(value='') | lower) ~ '/pertemuan-' ~ (page.extra.pertemuan | default(value=0)) ~ '/' ~ name ~ '.svg') }}" alt="{{ alt | default(value=name) }}" loading="lazy">
