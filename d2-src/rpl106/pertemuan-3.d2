@@ -1,6 +1,5 @@
+# ===== eer-specialization =====
 direction: down
-
-title: "Notasi Specialization" {shape: text; style.font-size: 18; style.bold: true}
 
 super: SUPERCLASS {
   shape: sql_table
@@ -29,8 +28,8 @@ super -> is_a
 is_a -> sub1
 is_a -> sub2
 
-title -> super: {style.stroke: transparent}
 
+# ===== eer-specialization-lecturer =====
 direction: down
 
 lecturer: LECTURER {
@@ -72,6 +71,8 @@ lecturer -> is_a
 is_a -> perm
 is_a -> part
 
+
+# ===== eer-attribute-inheritance =====
 direction: down
 
 lecturer: "LECTURER" {
@@ -103,6 +104,8 @@ lecturer -> is_a
 is_a -> perm
 is_a -> part
 
+
+# ===== eer-relationship-inheritance =====
 direction: right
 
 lecturer: LECTURER {
@@ -144,6 +147,8 @@ lecturer -> is_a
 is_a -> perm
 is_a -> part
 
+
+# ===== eer-constraints =====
 direction: down
 
 case_dt: "Disjoint + Total\nd · garis ganda\nSetiap super = tepat 1 subclass" {
@@ -168,6 +173,8 @@ case_op: "Overlapping + Partial\no · garis tunggal\nBebas" {
 
 case_dt -> case_dp -> case_ot -> case_op
 
+
+# ===== eer-aggregation =====
 direction: down
 
 customer: CUSTOMER {
@@ -216,6 +223,8 @@ borrow -> loan: M
 aggregate_box -> pay: "1"
 pay -> payment: N
 
+
+# ===== eer-bank-aggregation =====
 direction: right
 
 customer: CUSTOMER {

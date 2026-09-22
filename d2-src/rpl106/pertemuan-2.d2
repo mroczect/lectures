@@ -1,12 +1,15 @@
+# ===== erd-siklus =====
 direction: right
 
 req: "1 · Requirement" {shape: rectangle; style.fill: "#E3F2FD"}
-erd: "2 · Conceptual (ER)" {shape: rectangle; style.fill: "#FFE0B2"; style.stroke-width: 3; style.bold: true}
+erd: "2 · Conceptual (ER)" {shape: rectangle; style.fill: "#FFE0B2"; style.bold: true}
 logical: "3 · Logical (Relasional)" {shape: rectangle; style.fill: "#E3F2FD"}
 physical: "4 · Physical (Index)" {shape: rectangle; style.fill: "#E3F2FD"}
 
 req -> erd -> logical -> physical
 
+
+# ===== erd-pegawai-basic =====
 direction: down
 
 pegawai: PEGAWAI {
@@ -17,13 +20,11 @@ pegawai: PEGAWAI {
   alamat: string
 }
 
+
+# ===== erd-pegawai-composite =====
 direction: right
 
-pegawai: PEGAWAI {
-  shape: rectangle
-  style.fill: "#E3F2FD"
-  style.bold: true
-}
+pegawai: PEGAWAI {shape: rectangle; style.fill: "#E3F2FD"; style.bold: true}
 
 nopeg: "nopeg" {shape: oval; style.fill: "#FFF9C4"; style.bold: true}
 nama: "nama" {shape: oval; style.fill: "#E8F5E9"}
@@ -40,6 +41,8 @@ pegawai -> tgllahir
 pegawai -> notelp
 pegawai -> umur
 
+
+# ===== erd-pegawai-dept =====
 direction: right
 
 pegawai: PEGAWAI {
@@ -65,6 +68,8 @@ departemen: DEPARTEMEN {
 pegawai -> bekerja_di: N
 bekerja_di -> departemen: "1"
 
+
+# ===== erd-bekerja-di =====
 direction: right
 
 pegawai: PEGAWAI {
@@ -89,6 +94,8 @@ pegawai -> bekerja_di: N
 bekerja_di -> departemen: "1"
 bekerja_di -> mulai
 
+
+# ===== erd-keys-flow =====
 direction: right
 
 superkey: "SUPERKEY\nunik per entitas" {shape: rectangle; style.fill: "#E3F2FD"}
@@ -106,6 +113,8 @@ superkey -> ex1: {style.stroke: transparent}
 candidate -> ex2: {style.stroke: transparent}
 pk -> ex3: {style.stroke: transparent}
 
+
+# ===== erd-binary =====
 direction: right
 
 employee: EMPLOYEE {
@@ -129,6 +138,8 @@ department: DEPARTMENT {
 employee -> work_in: N
 work_in -> department: "1"
 
+
+# ===== erd-ternary =====
 direction: down
 
 employee: EMPLOYEE {
@@ -158,6 +169,8 @@ employee -> work_in
 department -> work_in
 job -> work_in
 
+
+# ===== erd-cardinality-1-1 =====
 direction: right
 
 pegawai: PEGAWAI {
@@ -179,6 +192,8 @@ departemen: DEPARTEMEN {
 pegawai -> manages: "1"
 manages -> departemen: "1"
 
+
+# ===== erd-cardinality-1-n =====
 direction: right
 
 manajer: MANAJER {
@@ -200,6 +215,8 @@ departemen: DEPARTEMEN {
 manajer -> manages: "1"
 manages -> departemen: N
 
+
+# ===== erd-cardinality-m-n =====
 direction: right
 
 pegawai: PEGAWAI {
@@ -221,6 +238,8 @@ departemen: DEPARTEMEN {
 pegawai -> bekerja_di: M
 bekerja_di -> departemen: N
 
+
+# ===== erd-participation =====
 direction: right
 
 customer: CUSTOMER {
@@ -242,6 +261,8 @@ pinjaman: PINJAMAN {
 customer -> peminjaman: "PARTIAL" {style.stroke: "#757575"}
 peminjaman -> pinjaman: "TOTAL" {style.stroke: "#C62828"; style.stroke-width: 3}
 
+
+# ===== erd-weak-pembayaran =====
 direction: right
 
 pinjaman: PINJAMAN {
@@ -271,6 +292,8 @@ pembayaran: PEMBAYARAN {
 pinjaman -> bayar: "1"
 bayar -> pembayaran: N
 
+
+# ===== erd-book-multirel =====
 direction: down
 
 student: STUDENT {
@@ -307,6 +330,8 @@ borrow -> book: M
 book -> has: N
 has -> book_type: "1"
 
+
+# ===== erd-pegawai-recursive =====
 direction: down
 
 pegawai: PEGAWAI {
@@ -322,6 +347,8 @@ supervisor: BERTANGGUNG_JAWAB {shape: diamond; style.fill: "#FFF9C4"}
 pegawai -> supervisor: "supervisor · 1"
 supervisor -> pegawai: "bawahan · N"
 
+
+# ===== erd-perpustakaan =====
 direction: right
 
 anggota: ANGGOTA {
