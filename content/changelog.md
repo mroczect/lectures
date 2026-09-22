@@ -10,11 +10,17 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **96 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **98 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- **feat** `d2` [detect <img> refs, add --strict, snippet, watch](https://github.com/mroczect/lectures/commit/d0a77cd6d1617a412fca5bc0855da3522ca27c2b) — @mroczect
+  <sub>1 file changed, 107 insertions(+), 94 deletions(-)</sub>
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/4c14494660883e934dd22993ce3c934dc0d1ce09) — @github-actions[bot]
+  <sub>1 file changed, 8 insertions(+), 1 deletion(-)</sub>
 
 - chore `static/d2` [regenerate SVGs for pertemuan 2 & 3](https://github.com/mroczect/lectures/commit/67537d5a8b3a78bc6a94c126f06c12320a89dce6) — @mroczect
 
