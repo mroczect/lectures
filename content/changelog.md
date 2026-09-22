@@ -1,7 +1,7 @@
 +++
 title = "Changelog"
-date = 2026-09-21
-updated = 2026-09-21
+date = 2026-09-22
+updated = 2026-09-22
 description = "All notable changes to this project, generated from git history."
 [taxonomies]
 tags = ["changelog", "reference"]
@@ -10,15 +10,26 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-21 · **80 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **84 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
 
+- [chore : uodate ci](https://github.com/mroczect/lectures/commit/6245063cb76ce69f116c809c8965fc81022e78ac) — @mroczect
+  <sub>1 file changed, 74 insertions(+), 24 deletions(-)</sub>
+
+- chore [add diagram d2](https://github.com/mroczect/lectures/commit/f1db4d9f417917f3aafa71ce1b5d83e794c945aa) — @mroczect
+
+- [Update d2.py](https://github.com/mroczect/lectures/commit/5958575b7a5fa1e3b82383706ad3f72465a39a5b) — @mroczect
+  <sub>1 file changed, 2308 insertions(+)</sub>
+
 - `rpl106` [replace mermaid with d2 + build workflow](https://github.com/mroczect/lectures/commit/e406c7fcde8a3ed1b3d1cf1ee4438930178584d5) — @mroczect
 
 ### Monday, Sep 21, 2026
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/8d063df489a6612ff459b063731db1a7e8e19f2f) — @github-actions[bot]
+  <sub>1 file changed, 8 insertions(+), 1 deletion(-)</sub>
 
 - chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/8d68e0e3c51bed7da218746860a0367e7f99bbab) — @github-actions[bot]
   <sub>1 file changed, 6 insertions(+), 1 deletion(-)</sub>
