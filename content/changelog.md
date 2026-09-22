@@ -10,11 +10,18 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **93 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **96 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- chore `static/d2` [regenerate SVGs for pertemuan 2 & 3](https://github.com/mroczect/lectures/commit/67537d5a8b3a78bc6a94c126f06c12320a89dce6) — @mroczect
+
+- refactor `d2-src` [cleaner palette, consistent naming, minimal styling](https://github.com/mroczect/lectures/commit/82eaa64f81a0a86674429ea99638bc20d64d0e75) — @mroczect
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/9461fe748718ecca91f3e0c73738ede970fbe93c) — @github-actions[bot]
+  <sub>1 file changed, 7 insertions(+), 1 deletion(-)</sub>
 
 - **fix** `ci` [correct D2 output paths for per-course layout](https://github.com/mroczect/lectures/commit/dcc8ebccb35789ee7eefe9bfedc7edb251e1d186) — @mroczect
   <sub>1 file changed, 18 insertions(+), 10 deletions(-)</sub>
