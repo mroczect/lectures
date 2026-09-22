@@ -81,8 +81,8 @@ jobs:
 
       - name: Verify tools
         run: |
-          echo "zola: $(zola --version)"
-          echo "d2:   $(d2 --version)"
+          echo "zola:   $(zola --version)"
+          echo "d2:     $(d2 --version)"
           echo "python: $(python3 --version)"
 
       - name: Generate changelog
@@ -111,18 +111,18 @@ jobs:
 
       - name: Verify D2 refs
         if: ${{ !inputs.skip_d2 }}
-        run: |
-          if [[ -f scripts/d2.py ]]; then
-            python3 scripts/d2.py check
-          fi
+        run: python3 scripts/d2.py check
 
       - name: List D2 output
         run: |
           echo "## D2 SVGs" >> $GITHUB_STEP_SUMMARY
           if [[ -d static/d2 ]]; then
-            count=$(find static/d2 -name '*.svg' | wc -l)
+            count=$(find static/d2 -name '*.svg' -type f | wc -l)
             echo "Generated: **$count** SVG(s)" >> $GITHUB_STEP_SUMMARY
-            ls -la static/d2/*.svg 2>/dev/null | head -30
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            find static/d2 -name '*.svg' -type f | sort | head -30 >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
           else
             echo "No static/d2/ directory" >> $GITHUB_STEP_SUMMARY
           fi
@@ -141,11 +141,19 @@ jobs:
       - name: Verify build output
         run: |
           test -f public/index.html || { echo "::error::public/index.html missing"; exit 1; }
+
+          # D2 output count — safe if dir missing
+          if [[ -d public/d2 ]]; then
+            d2_count=$(find public/d2 -name '*.svg' -type f | wc -l)
+          else
+            d2_count=0
+          fi
+
           echo "## Build output" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- Size: **$(du -sh public | cut -f1)**" >> $GITHUB_STEP_SUMMARY
-          echo "- HTML pages: **$(find public -name '*.html' | wc -l)**" >> $GITHUB_STEP_SUMMARY
-          echo "- D2 SVGs: **$(find public/d2 -name '*.svg' 2>/dev/null | wc -l)**" >> $GITHUB_STEP_SUMMARY
+          echo "- HTML pages: **$(find public -name '*.html' -type f | wc -l)**" >> $GITHUB_STEP_SUMMARY
+          echo "- D2 SVGs: **$d2_count**" >> $GITHUB_STEP_SUMMARY
           echo "- Total files: **$(find public -type f | wc -l)**" >> $GITHUB_STEP_SUMMARY
 
       - name: Setup Pages
