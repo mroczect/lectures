@@ -12,6 +12,10 @@ on:
         description: "Skip changelog generation"
         type: boolean
         default: false
+      skip_d2:
+        description: "Skip D2 diagram build"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -21,6 +25,10 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: true
+
+env:
+  ZOLA_VERSION: "0.23.4"
+  D2_VERSION: "0.6.9"
 
 jobs:
   build:
@@ -40,20 +48,42 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Cache Zola
+        id: cache-zola
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/bin/zola
+          key: zola-${{ env.ZOLA_VERSION }}-${{ runner.os }}
+
+      - name: Cache D2
+        id: cache-d2
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/bin/d2
+          key: d2-${{ env.D2_VERSION }}-${{ runner.os }}
+
       - name: Install Zola
+        if: steps.cache-zola.outputs.cache-hit != 'true'
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.23.4
+          tool: zola@${{ env.ZOLA_VERSION }}
 
       - name: Install D2
+        if: steps.cache-d2.outputs.cache-hit != 'true'
         run: |
-          curl -fsSL https://d2lang.com/install.sh | sh -s --
+          mkdir -p ~/.local/bin
+          curl -fsSL https://d2lang.com/install.sh \
+            | sh -s -- --version "v${D2_VERSION}"
           echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Add local bin to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Verify tools
         run: |
-          zola --version
-          d2 --version
+          echo "zola: $(zola --version)"
+          echo "d2:   $(d2 --version)"
+          echo "python: $(python3 --version)"
 
       - name: Generate changelog
         if: ${{ !inputs.skip_changelog }}
@@ -63,41 +93,60 @@ jobs:
           elif [[ -x scripts/gen-changelog.sh ]]; then
             ./scripts/gen-changelog.sh --limit 1000
           else
-            echo "No changelog script found, skipping."
+            echo "· no changelog script found, skipping"
           fi
 
       - name: Build D2 diagrams
+        if: ${{ !inputs.skip_d2 }}
         run: |
-          if [[ -d d2-src ]]; then
-            mkdir -p static/d2
-            for f in d2-src/*.d2; do
-              [ -f "$f" ] || continue
-              name=$(basename "$f" .d2)
-              d2 --theme 0 --layout dagre --pad 20 --no-xml-tag --omit-version --center \
-                "$f" "static/d2/${name}.svg"
-              echo "✓ ${name}"
-            done
+          if [[ ! -d d2-src ]]; then
+            echo "· d2-src/ not found, skipping"
+            exit 0
+          fi
+          if [[ ! -f scripts/d2.py ]]; then
+            echo "::error::scripts/d2.py not found — required for D2 build"
+            exit 1
+          fi
+          python3 scripts/d2.py build --prune --jobs 4
+
+      - name: Verify D2 refs
+        if: ${{ !inputs.skip_d2 }}
+        run: |
+          if [[ -f scripts/d2.py ]]; then
+            python3 scripts/d2.py check
+          fi
+
+      - name: List D2 output
+        run: |
+          echo "## D2 SVGs" >> $GITHUB_STEP_SUMMARY
+          if [[ -d static/d2 ]]; then
+            count=$(find static/d2 -name '*.svg' | wc -l)
+            echo "Generated: **$count** SVG(s)" >> $GITHUB_STEP_SUMMARY
+            ls -la static/d2/*.svg 2>/dev/null | head -30
           else
-            echo "No d2-src/ directory, skipping."
+            echo "No static/d2/ directory" >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: Validate config
         run: |
-          test -f zola.toml || (echo "zola.toml missing" && exit 1)
+          test -f zola.toml || { echo "::error::zola.toml missing"; exit 1; }
+          echo "✓ zola.toml present"
+
+      - name: Check Zola config
+        run: zola check --skip-external-links 2>&1 || true
 
       - name: Build site
         run: zola build
 
-      - name: Check links
-        run: zola check
-        continue-on-error: true
-
       - name: Verify build output
         run: |
-          test -f public/index.html || (echo "index.html missing" && exit 1)
-          echo "Build size: $(du -sh public | cut -f1)"
-          echo "Pages: $(find public -name '*.html' | wc -l)"
-          echo "D2 SVGs: $(find public/d2 -name '*.svg' 2>/dev/null | wc -l)"
+          test -f public/index.html || { echo "::error::public/index.html missing"; exit 1; }
+          echo "## Build output" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Size: **$(du -sh public | cut -f1)**" >> $GITHUB_STEP_SUMMARY
+          echo "- HTML pages: **$(find public -name '*.html' | wc -l)**" >> $GITHUB_STEP_SUMMARY
+          echo "- D2 SVGs: **$(find public/d2 -name '*.svg' 2>/dev/null | wc -l)**" >> $GITHUB_STEP_SUMMARY
+          echo "- Total files: **$(find public -type f | wc -l)**" >> $GITHUB_STEP_SUMMARY
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -129,3 +178,4 @@ jobs:
           echo "**URL:** ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
           echo "**Commit:** \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
           echo "**Ref:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Triggered by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
