@@ -10,3 +10,4 @@ pull_request_body.md
 __pycache__/
 *.pyc
 /resource_local
+.d2.cache.json
