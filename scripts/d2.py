@@ -52,7 +52,6 @@ D2_ARGS_BASE = [
     "--pad",
     "20",
     "--no-xml-tag",
-    "--omit-version",
     "--center",
     "--scale",
     "1",
