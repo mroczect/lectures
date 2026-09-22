@@ -11,3 +11,4 @@ __pycache__/
 *.pyc
 /resource_local
 .d2.cache.json
+.d2.cache.json
