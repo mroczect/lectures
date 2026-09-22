@@ -10,11 +10,16 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **100 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **102 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- **fix** `d2` [restore section markers in pertemuan 2 & 3 sources](https://github.com/mroczect/lectures/commit/c18cdc52f43f920eae8b0ce427be362d41201ed4) — @mroczect
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/50cbd5e1d8a8a93bf9b59a7ef854ecb73995462a) — @github-actions[bot]
+  <sub>1 file changed, 7 insertions(+), 1 deletion(-)</sub>
 
 - **fix** `d2` [tolerate CRLF in separator; enforce LF; regenerate](https://github.com/mroczect/lectures/commit/d8bce082ee6c19aee78cc71e837aae73c7aa657d) — @mroczect
   <sub>1 file changed, 8 insertions(+)</sub>
