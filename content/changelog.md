@@ -10,11 +10,17 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **98 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **100 commits**.
 
 ## September 2026
 
 ### Tuesday, Sep 22, 2026
+
+- **fix** `d2` [tolerate CRLF in separator; enforce LF; regenerate](https://github.com/mroczect/lectures/commit/d8bce082ee6c19aee78cc71e837aae73c7aa657d) — @mroczect
+  <sub>1 file changed, 8 insertions(+)</sub>
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/9821d95d516e864fb8e8801ef84893832a2a6031) — @github-actions[bot]
+  <sub>1 file changed, 7 insertions(+), 1 deletion(-)</sub>
 
 - **feat** `d2` [detect <img> refs, add --strict, snippet, watch](https://github.com/mroczect/lectures/commit/d0a77cd6d1617a412fca5bc0855da3522ca27c2b) — @mroczect
   <sub>1 file changed, 107 insertions(+), 94 deletions(-)</sub>
