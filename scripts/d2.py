@@ -1,34 +1,4 @@
 #!/usr/bin/env python3
-"""d2build — fully modular D2 → SVG compiler.
-
-Source layout:
-    d2-src/<course>/<bundle>.d2
-
-    Example:
-        d2-src/rpl106/pertemuan-2.d2
-        d2-src/rpl106/pertemuan-3.d2
-
-Each .d2 file may contain:
-    - Multiple diagrams split by   # ===== name =====
-    - Or a single diagram (whole file = one diagram, name = filename stem)
-
-Output layout (mirrors source, drops .d2):
-    static/d2/<course>/<bundle>/<name>.svg
-
-    Example:
-        static/d2/rpl106/pertemuan-2/erd-siklus.svg
-
-Markdown usage:
-    {{ d2svg(name="erd-siklus") }}
-
-The shortcode resolves the path via page.extra.code + page.extra.pertemuan.
-
-Commands:
-    build   compile diagrams
-    check   verify shortcode refs in content/ have matching source
-    list    show all diagram names
-    clean   remove generated SVGs
-"""
 
 from __future__ import annotations
 
@@ -50,6 +20,10 @@ CONTENT_DIR = Path("content")
 
 SEPARATOR = re.compile(r"^\s*#\s*={3,}\s*([A-Za-z0-9][A-Za-z0-9_-]*)\s*={3,}\s*$")
 REF_SHORTCODE = re.compile(r"""d2svg\s*\(\s*name\s*=\s*["']([^"']+)["']""")
+REF_IMG = re.compile(
+    r"""<img[^>]+src=["'][^"']*?/d2/([a-z0-9_-]+)/pertemuan-(\d+)/([a-zA-Z0-9_-]+)\.svg["']""",
+    re.IGNORECASE,
+)
 FRONTMATTER = re.compile(r"^\+{3,}\s*\n(.*?)\n\+{3,}", re.DOTALL)
 
 D2_ARGS_BASE = [
@@ -62,11 +36,6 @@ D2_ARGS_BASE = [
     "--scale",
     "1",
 ]
-
-
-# ─────────────────────────────────────────────────────────────
-#  Utilities
-# ─────────────────────────────────────────────────────────────
 
 
 def sha(text: str) -> str:
@@ -115,27 +84,15 @@ def split_sections(text: str) -> list[tuple[str, str]]:
 
 def ensure_d2() -> None:
     if shutil.which("d2") is None:
-        sys.exit("error: d2 CLI not found in PATH — install from https://d2lang.com")
-
-
-# ─────────────────────────────────────────────────────────────
-#  Job collection — reads d2-src/<course>/<bundle>.d2
-# ─────────────────────────────────────────────────────────────
+        sys.exit("error: d2 CLI not found in PATH")
 
 
 def collect_jobs() -> list[tuple[str, str, Path, str]]:
-    """Return [(name, body, out_dir, origin), ...].
-
-    - name     : diagram name (stem or marker)
-    - body     : .d2 source body
-    - out_dir  : absolute output dir (static/d2/<course>/<bundle>/)
-    - origin   : "<course>/<bundle>.d2" (for logging + cache)
-    """
     if not SRC_ROOT.is_dir():
         return []
 
     jobs: list[tuple[str, str, Path, str]] = []
-    seen: set[tuple[str, str]] = set()  # (course, name)
+    seen: set[tuple[str, str]] = set()
 
     for course_dir in sorted(SRC_ROOT.iterdir()):
         if not course_dir.is_dir() or course_dir.name.startswith("."):
@@ -161,20 +118,17 @@ def collect_jobs() -> list[tuple[str, str, Path, str]]:
                     seen.add(key)
                     jobs.append((name, body, out_dir, origin))
             else:
-                name = bundle
-                key = (course, name)
+                key = (course, bundle)
                 if key in seen:
-                    print(f"  ! duplicate '{course}/{name}', skipping", file=sys.stderr)
+                    print(
+                        f"  ! duplicate '{course}/{bundle}', skipping",
+                        file=sys.stderr,
+                    )
                     continue
                 seen.add(key)
-                jobs.append((name, text, out_dir, origin))
+                jobs.append((bundle, text, out_dir, origin))
 
     return jobs
-
-
-# ─────────────────────────────────────────────────────────────
-#  Compile
-# ─────────────────────────────────────────────────────────────
 
 
 def compile_one(name: str, body: str, out_dir: Path, theme: int) -> tuple[bool, str]:
@@ -189,17 +143,13 @@ def compile_one(name: str, body: str, out_dir: Path, theme: int) -> tuple[bool, 
         if proc.returncode != 0:
             return False, (proc.stderr or proc.stdout or "").strip()[:300]
         if not target.exists() or target.stat().st_size < 200:
-            return False, "output SVG missing or suspiciously small"
+            return False, "output SVG missing or too small"
         return True, ""
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         return False, f"{type(e).__name__}: {e}"
     finally:
         tmp.unlink(missing_ok=True)
 
-
-# ─────────────────────────────────────────────────────────────
-#  Commands
-# ─────────────────────────────────────────────────────────────
 
 def cmd_build(args) -> int:
     ensure_d2()
@@ -209,14 +159,14 @@ def cmd_build(args) -> int:
 
     jobs = collect_jobs()
     if not jobs:
-        sys.exit(f"error: no .d2 files found in {SRC_ROOT}/<course>/*.d2")
+        sys.exit(f"error: no .d2 files in {SRC_ROOT}/")
 
     cache = load_cache()
     new_cache: dict = {}
     to_compile: list[tuple[str, str, Path, str, str]] = []
 
     for name, body, out_dir, origin in jobs:
-        key = origin + "::" + name
+        key = f"{origin}::{name}"
         digest = sha(body)
         cached = cache.get(key)
         if cached and cached.get("hash") == digest and not args.force:
@@ -263,7 +213,7 @@ def cmd_build(args) -> int:
                     results.append((name, origin, digest, ok, err))
 
         for name, origin, digest, ok, err in results:
-            key = origin + "::" + name
+            key = f"{origin}::{name}"
             if ok:
                 new_cache[key] = {"hash": digest, "origin": origin}
                 ok_cnt += 1
@@ -294,7 +244,6 @@ def cmd_build(args) -> int:
                 if not args.quiet:
                     print(f"  pruned {svg.relative_to(OUT_ROOT)}")
                 pruned += 1
-        # remove empty dirs
         for d in sorted(OUT_ROOT.rglob("*"), reverse=True):
             if d.is_dir() and not any(d.iterdir()):
                 d.rmdir()
@@ -347,10 +296,9 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     m = FRONTMATTER.match(text)
     if not m:
         return {}
-    body = m.group(1)
     out: dict[str, str] = {}
     in_extra = False
-    for line in body.splitlines():
+    for line in m.group(1).splitlines():
         stripped = line.strip()
         if stripped == "[extra]":
             in_extra = True
@@ -361,10 +309,18 @@ def parse_frontmatter(text: str) -> dict[str, str]:
         m2 = re.match(r'^\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*=\s*"?([^"#]*)"?\s*$', line)
         if m2:
             key, val = m2.group(1), m2.group(2).strip()
-            if in_extra:
-                out["extra." + key] = val
-            else:
-                out[key] = val
+            out[("extra." if in_extra else "") + key] = val
+    return out
+
+
+def collect_refs(text: str, code: str) -> list[tuple[int, str, str]]:
+    out: list[tuple[int, str, str]] = []
+    for i, line in enumerate(text.splitlines(), 1):
+        for m in REF_SHORTCODE.finditer(line):
+            if code:
+                out.append((i, code, m.group(1)))
+        for m in REF_IMG.finditer(line):
+            out.append((i, m.group(1).lower(), m.group(3)))
     return out
 
 
@@ -373,29 +329,29 @@ def cmd_check(args) -> int:
         sys.exit(f"error: {CONTENT_DIR}/ not found")
 
     jobs = collect_jobs()
-    available: set[tuple[str, str]] = set()  # (course, name)
+    available: set[tuple[str, str]] = set()
     for name, _body, out_dir, _origin in jobs:
-        # out_dir = static/d2/<course>/<bundle>
         rel = out_dir.relative_to(OUT_ROOT)
-        course = rel.parts[0]
-        available.add((course, name))
+        available.add((rel.parts[0], name))
 
-    refs: list[tuple[Path, int, str, str]] = []  # (md_path, line_no, course, name)
+    refs: list[tuple[Path, int, str, str]] = []
     for md in CONTENT_DIR.rglob("*.md"):
         try:
             text = md.read_text(encoding="utf-8")
         except OSError:
             continue
-        fm = parse_frontmatter(text)
-        code = fm.get("extra.code", "").lower().replace('"', "").strip()
-        if not code:
-            continue
-        for i, line in enumerate(text.splitlines(), 1):
-            for m in REF_SHORTCODE.finditer(line):
-                refs.append((md, i, code, m.group(1)))
+        code = (
+            parse_frontmatter(text)
+            .get("extra.code", "")
+            .lower()
+            .replace('"', "")
+            .strip()
+        )
+        for line, course, name in collect_refs(text, code):
+            refs.append((md, line, course, name))
 
     if not refs:
-        print("no d2svg refs found in content/")
+        print("no d2 refs found in content/")
         return 0
 
     missing: list[tuple[Path, int, str, str]] = []
@@ -415,6 +371,7 @@ def cmd_check(args) -> int:
     print()
 
     rc = 0
+
     if missing:
         rc = 1
         print(f"✗ MISSING ({len(missing)}):")
@@ -429,6 +386,8 @@ def cmd_check(args) -> int:
         for course, name in orphan:
             print(f"  {course}/{name}")
         print()
+        if args.strict:
+            rc = 1
 
     if not missing and not orphan:
         print("✓ all clean")
@@ -436,9 +395,55 @@ def cmd_check(args) -> int:
     return rc
 
 
-# ─────────────────────────────────────────────────────────────
-#  CLI
-# ─────────────────────────────────────────────────────────────
+def cmd_snippet(args) -> int:
+    jobs = collect_jobs()
+    for name, _body, out_dir, _origin in jobs:
+        if name != args.name:
+            continue
+        rel = out_dir.relative_to(OUT_ROOT)
+        course = rel.parts[0]
+        bundle = rel.parts[1]
+        print(
+            f'<img src="../../../d2/{course}/{bundle}/{name}.svg" '
+            f'alt="{name}" loading="lazy">'
+        )
+        return 0
+    print(f"diagram '{args.name}' not found", file=sys.stderr)
+    return 1
+
+
+def cmd_watch(args) -> int:
+    ensure_d2()
+
+    if not SRC_ROOT.is_dir():
+        sys.exit(f"error: {SRC_ROOT}/ not found")
+
+    print(f"watching {SRC_ROOT}/ · Ctrl+C to stop")
+
+    build_args = argparse.Namespace(
+        force=False,
+        prune=True,
+        jobs=4,
+        theme=0,
+        quiet=False,
+    )
+
+    last = 0.0
+
+    try:
+        while True:
+            newest = max(
+                (p.stat().st_mtime for p in SRC_ROOT.rglob("*.d2")),
+                default=0,
+            )
+            if newest > last:
+                last = newest
+                print("\n→ change detected")
+                cmd_build(build_args)
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\nstopped")
+        return 0
 
 
 def main() -> int:
@@ -448,7 +453,7 @@ def main() -> int:
     )
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    b = sub.add_parser("build", help="compile diagrams")
+    b = sub.add_parser("build")
     b.add_argument("-f", "--force", action="store_true")
     b.add_argument("--prune", action="store_true")
     b.add_argument("--theme", type=int, default=0)
@@ -456,14 +461,22 @@ def main() -> int:
     b.add_argument("-q", "--quiet", action="store_true")
     b.set_defaults(func=cmd_build)
 
-    c = sub.add_parser("clean", help="remove generated SVGs")
+    c = sub.add_parser("clean")
     c.set_defaults(func=cmd_clean)
 
-    l = sub.add_parser("list", help="list all diagrams")
+    l = sub.add_parser("list")
     l.set_defaults(func=cmd_list)
 
-    k = sub.add_parser("check", help="verify shortcode refs")
+    k = sub.add_parser("check")
+    k.add_argument("--strict", action="store_true")
     k.set_defaults(func=cmd_check)
+
+    s = sub.add_parser("snippet")
+    s.add_argument("name")
+    s.set_defaults(func=cmd_snippet)
+
+    w = sub.add_parser("watch")
+    w.set_defaults(func=cmd_watch)
 
     args = p.parse_args()
     return args.func(args)
