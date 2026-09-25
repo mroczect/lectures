@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actorBackgroundColor white
+skinparam actorBorderColor black
+skinparam actorFontColor black
+skinparam usecaseBackgroundColor white
+skinparam usecaseBorderColor black
+skinparam usecaseFontColor black
+skinparam rectangleBackgroundColor white
+skinparam rectangleBorderColor black
+skinparam rectangleFontColor black
+skinparam rectangleBorderThickness 2
+skinparam arrowColor black
+
+actor "Agen / Kurir" as A
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Daftar Pesanan" as UC01
+  usecase "Lihat Detail Pesanan" as UC02
+  usecase "Atur Jadwal Pengantaran" as UC03
+  usecase "Antar Pesanan" as UC04
+  usecase "Update Status Pengantaran" as UC05
+}
+
+A --- UC01
+A --- UC02
+A --- UC03
+A --- UC04
+A --- UC05
+UC02 ... UC01 : <<include>>
+UC04 ... UC03 : <<include>>
+UC05 ... UC04 : <<include>>
+@enduml

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Pendaftaran Webinar Pemrograman Web 2026</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Webinar Pemrograman Web 2026</h1>
+			<p>
+				Belajar HTML, CSS, dan JavaScript dari dasar sampai bisa bikin
+				website sendiri.
+			</p>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="#jadwal">Jadwal</a></li>
+				<li><a href="#video">Video</a></li>
+				<li><a href="#daftar">Daftar</a></li>
+			</ul>
+		</nav>
+
+		<hr />
+
+		<main>
+			<section id="jadwal">
+				<h2>Jadwal Acara</h2>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Waktu</th>
+							<th>Materi</th>
+							<th>Pembicara</th>
+							<th>Ruangan</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>08:00 - 09:30</td>
+							<td>Pengenalan HTML & Struktur Dokumen</td>
+							<td>Muhammad Riduwan Khafidi</td>
+							<td>Lab 1</td>
+						</tr>
+						<tr>
+							<td>09:45 - 11:15</td>
+							<td>CSS Dasar dan Layout</td>
+							<td>Andi Pratama</td>
+							<td>Lab 1</td>
+						</tr>
+						<tr>
+							<td>13:00 - 14:30</td>
+							<td>JavaScript & DOM</td>
+							<td>Budi Santoso</td>
+							<td>Lab 2</td>
+						</tr>
+						<tr>
+							<td>14:45 - 16:00</td>
+							<td>Mini Project: Landing Page</td>
+							<td>Tim Pengajar</td>
+							<td>Lab 2</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<hr />
+
+			<section id="video">
+				<h2>Video Pengantar</h2>
+				<p>Tonton dulu video singkat ini sebelum ikut acara:</p>
+				<div style="margin: 24px 0; text-align: center">
+					<iframe
+						width="100%"
+						max-width="560"
+						height="315"
+						src="https://www.youtube.com/embed/R8bgW4Dzg1E"
+						title="YouTube video player"
+						frameborder="0"
+						allow="
+							accelerometer;
+							autoplay;
+							clipboard-write;
+							encrypted-media;
+							gyroscope;
+							picture-in-picture;
+						"
+						allowfullscreen
+						style="
+							border-radius: 8px;
+							box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+						"
+					>
+					</iframe>
+				</div>
+				<p>Atau dengerin jingle acaranya:</p>
+				<audio src="jingle-webinar.mp3" controls>
+					Browser kamu tidak mendukung tag audio.
+				</audio>
+			</section>
+
+			<hr />
+
+			<section id="daftar">
+				<h2>Formulir Pendaftaran</h2>
+				<form action="proses.php" method="post">
+					<p>
+						<label for="nama">Nama Lengkap (wajib):</label><br />
+						<input
+							type="text"
+							id="nama"
+							name="nama"
+							placeholder="Tulis nama lengkap"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="nim">NIM:</label><br />
+						<input
+							type="text"
+							id="nim"
+							name="nim"
+							placeholder="Contoh: 4342611034"
+						/>
+					</p>
+
+					<p>
+						<label for="email">Email (wajib):</label><br />
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="nama@email.com"
+							required
+						/>
+					</p>
+
+					<p>
+						<label for="tgl_lahir">Tanggal Lahir:</label><br />
+						<input type="date" id="tgl_lahir" name="tgl_lahir" />
+					</p>
+
+					<p>
+						<label for="usia">Usia:</label><br />
+						<input
+							type="number"
+							id="usia"
+							name="usia"
+							min="17"
+							max="60"
+						/>
+					</p>
+
+					<p>
+						<label>Jenis Kelamin:</label><br />
+						<input type="radio" id="pria" name="jk" value="pria" />
+						<label for="pria">Pria</label>
+						<input
+							type="radio"
+							id="wanita"
+							name="jk"
+							value="wanita"
+						/>
+						<label for="wanita">Wanita</label>
+					</p>
+
+					<p>
+						<label>Program Studi (wajib):</label><br />
+						<select name="prodi" required>
+							<option value="">-- Pilih Prodi --</option>
+							<option value="TRPL">TRPL</option>
+							<option value="TI">Teknik Informatika</option>
+							<option value="SI">Sistem Informasi</option>
+							<option value="TK">Teknik Komputer</option>
+						</select>
+					</p>
+
+					<p>
+						<label for="kota">Kota Domisili:</label><br />
+						<select id="kota" name="kota">
+							<option value="Batam">Batam</option>
+							<option value="Jakarta">Jakarta</option>
+							<option value="Bandung">Bandung</option>
+							<option value="Surabaya">Surabaya</option>
+							<option value="Medan">Medan</option>
+						</select>
+					</p>
+
+					<p>
+						<label>Materi yang diminati:</label><br />
+						<input
+							type="checkbox"
+							id="m1"
+							name="materi"
+							value="html"
+						/>
+						<label for="m1">HTML</label><br />
+						<input
+							type="checkbox"
+							id="m2"
+							name="materi"
+							value="css"
+						/>
+						<label for="m2">CSS</label><br />
+						<input
+							type="checkbox"
+							id="m3"
+							name="materi"
+							value="js"
+						/>
+						<label for="m3">JavaScript</label>
+					</p>
+
+					<p>
+						<label for="pesan">Pesan Tambahan:</label><br />
+						<textarea
+							id="pesan"
+							name="pesan"
+							rows="4"
+							cols="40"
+							placeholder="Tulis pesan di sini..."
+						></textarea>
+					</p>
+
+					<p>
+						<input
+							type="checkbox"
+							id="setuju"
+							name="setuju"
+							required
+						/>
+						<label for="setuju"
+							>Saya setuju dengan syarat dan ketentuan
+							acara.</label
+						>
+					</p>
+
+					<p>
+						<button type="submit">Kirim Pendaftaran</button>
+						<button type="reset">Reset</button>
+					</p>
+				</form>
+			</section>
+		</main>
+
+		<hr />
+
+		<footer>
+			<p>
+				&copy; 2026 Panitia Webinar Pemrograman Web. Hak Cipta
+				Dilindungi.
+			</p>
+			<p>
+				Kontak:
+				<a href="mailto:panitia@webinar.ac.id">panitia@webinar.ac.id</a>
+			</p>
+		</footer>
+	</body>
+</html>

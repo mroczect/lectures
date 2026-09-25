@@ -587,7 +587,7 @@ def cmd_check(args) -> int:
     else:
         for sz, f in big:
             print(f"  {C.RED}{human_size(sz):>10}{C.RST}  {f}")
-        warn("Move to a release: docrel new <tag> <files...>")
+        warn("Move to a release: docrel new <tag> <files....")
     print()
 
     step("Junk files")

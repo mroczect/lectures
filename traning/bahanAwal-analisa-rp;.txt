@@ -1,0 +1,1037 @@
+LEMBAR AKTIVITAS TUGAS 2
+Aktivitas #2 Memodelkan Kebutuhan Perangkat Lunak (Conceive)
+
+- Kode Project: PBL-TRPL106
+- Judul Project: Aplikasi Pengelolaan Depot Air | GALONKU
+- Ketua Tim: 4342611031 : Abiel Oktarefandi
+- Anggota Tim:
+  1. 4342611031 : Abiel Oktarefandi
+  2. 4342611032 : Syaikha Aprial Pratama
+  3. 4342611034 : Muhammad Riduwan Khafidi
+  4. 4342611037 : Esananta Ryan Saputri
+  5. 4342611039 : Ayla Azzura
+  6. 4342611036 : Randy Apriandri
+- Aktivitas 2: Memodelkan Kebutuhan Perangkat Lunak (Conceive)
+- Bab Laporan:
+  - 1.3.1. Kebutuhan Fungsional
+  - 1.3.2. Kebutuhan Non Fungsional
+  - 1.3.3. Diagram Use Case
+  - 1.3.3.1. Use Case Scenario 1
+  - …
+  - 1.3.3.n. Use Case Scenario n
+
+---
+
+1.3.1 Kebutuhan Fungsional
+
+Kebutuhan fungsional menjelaskan aksi dasar yang harus dilakukan sistem untuk menerima masukan, memprosesnya, dan menghasilkan keluaran. Setiap kebutuhan diberi kode F, dimulai dari F001.
+
+- F001 : Sistem mampu melakukan registrasi akun konsumen. (Modul: Autentikasi)
+- F002 : Sistem mampu melakukan login untuk konsumen, admin, kasir, dan agen/kurir. (Modul: Autentikasi)
+- F003 : Sistem mampu menampilkan menu dan fitur sesuai hak akses pengguna. (Modul: Autentikasi)
+- F004 : Sistem mampu mengelola data pengguna oleh admin. (Modul: Autentikasi)
+- F005 : Sistem mampu menampilkan daftar produk galon air dan gas beserta harga. (Modul: Pemesanan)
+- F006 : Sistem mampu mengelola data produk dan harga oleh admin. (Modul: Pemesanan)
+- F007 : Sistem mampu memproses pemesanan yang dilakukan konsumen. (Modul: Pemesanan)
+- F008 : Sistem mampu memeriksa ketersediaan stok saat pemesanan. (Modul: Pemesanan)
+- F009 : Sistem mampu menampilkan status pesanan. (Modul: Pemesanan)
+- F010 : Sistem mampu menampilkan riwayat pemesanan konsumen. (Modul: Pemesanan)
+- F011 : Sistem mampu mengelola pesanan oleh kasir/operator. (Modul: Pemesanan)
+- F012 : Sistem mampu mencetak struk transaksi. (Modul: Pemesanan)
+- F013 : Sistem mampu menghitung interval konsumsi berdasarkan riwayat pembelian. (Modul: Pengingat Otomatis)
+- F014 : Sistem mampu menjadwalkan pengingat otomatis. (Modul: Pengingat Otomatis)
+- F015 : Sistem mampu menampilkan notifikasi pengingat. (Modul: Pengingat Otomatis)
+- F016 : Sistem mampu mengatur pengingat manual. (Modul: Pengingat Otomatis)
+- F017 : Sistem mampu menampilkan daftar agen pengantar. (Modul: Kontak Agen)
+- F018 : Sistem mampu menghubungi agen melalui telepon atau chat. (Modul: Kontak Agen)
+- F019 : Sistem mampu menampilkan status ketersediaan agen. (Modul: Kontak Agen)
+- F020 : Sistem mampu mencatat stok galon kosong, galon isi, dan gas. (Modul: Inventaris & Laporan)
+- F021 : Sistem mampu memperbarui stok masuk dan keluar. (Modul: Inventaris & Laporan)
+- F022 : Sistem mampu memberikan notifikasi jika stok menipis. (Modul: Inventaris & Laporan)
+- F023 : Sistem mampu menghasilkan laporan penjualan harian, mingguan, dan bulanan. (Modul: Inventaris & Laporan)
+- F024 : Sistem mampu menampilkan grafik penjualan. (Modul: Inventaris & Laporan)
+- F025 : Sistem mampu mengelola data agen oleh admin. (Modul: Kontak Agen)
+- F026 : Sistem mampu melihat daftar antar dan memperbarui status pengantaran oleh agen/kurir. (Modul: Pemesanan)
+
+List Kebutuhan Fungsional (untuk Lembar Aktivitas)
+
+1. Registrasi akun konsumen.
+2. Login multi-user: konsumen, admin, kasir, agen/kurir.
+3. Menampilkan menu dan fitur sesuai hak akses.
+4. Admin mengelola data pengguna.
+5. Menampilkan daftar produk galon air dan gas beserta harga.
+6. Admin mengelola data produk dan harga.
+7. Memproses pemesanan konsumen.
+8. Memeriksa ketersediaan stok saat pemesanan.
+9. Menampilkan status pesanan.
+10. Menampilkan riwayat pemesanan konsumen.
+11. Kasir/operator mengelola pesanan.
+12. Mencetak struk transaksi.
+13. Menghitung interval konsumsi dari riwayat pembelian.
+14. Menjadwalkan pengingat otomatis.
+15. Menampilkan notifikasi pengingat.
+16. Mengatur pengingat manual.
+17. Menampilkan daftar agen pengantar.
+18. Menghubungi agen melalui telepon/chat.
+19. Menampilkan status ketersediaan agen.
+20. Mencatat stok galon kosong, galon isi, dan gas.
+21. Memperbarui stok masuk dan keluar.
+22. Memberikan notifikasi jika stok menipis.
+23. Menghasilkan laporan penjualan harian, mingguan, bulanan.
+24. Menampilkan grafik penjualan.
+25. Admin mengelola data agen.
+26. Agen/kurir melihat daftar antar dan memperbarui status pengantaran.
+
+---
+
+1.3.2 Kebutuhan Non Fungsional
+
+Kebutuhan non fungsional menjelaskan ukuran kuantitatif dan batasan yang harus dipenuhi oleh perangkat lunak.
+
+- Availability: Sistem dapat berjalan 24 jam non-stop, kecuali saat perawatan atau pembaruan sistem.
+- Performance: Waktu muat halaman maksimal 3 detik pada koneksi internet yang stabil.
+- Ergonomic: Antarmuka sederhana, mudah dipahami, dan responsif pada desktop maupun telepon pintar.
+- Bahasa: Menggunakan Bahasa Indonesia.
+- Safety: Koneksi data menggunakan HTTPS/SSL.
+- Security: Password disimpan dalam bentuk hash, sesi login dibatasi, dan hak akses diterapkan.
+- Reliability: Data transaksi tersimpan secara konsisten dan tidak hilang saat terjadi kesalahan.
+- Compatibility: Berjalan pada browser modern seperti Chrome, Firefox, Edge, dan Safari.
+- Maintainability: Kode disusun modular dan disertai dokumentasi agar mudah dipelihara.
+- Scalability: Sistem mampu menangani penambahan pengguna, produk, dan transaksi.
+- Portability: Dapat dijalankan pada server dengan PHP dan MariaDB.
+
+List Kebutuhan Non Fungsional (untuk Lembar Aktivitas)
+
+1. Availability: sistem berjalan 24 jam non-stop, kecuali maintenance.
+2. Performance: waktu muat halaman maksimal 3 detik.
+3. Ergonomic: antarmuka sederhana, mudah dipahami, responsif.
+4. Bahasa: menggunakan Bahasa Indonesia.
+5. Safety: koneksi data HTTPS/SSL.
+6. Security: password hash, sesi login dibatasi, hak akses diterapkan.
+7. Reliability: data transaksi konsisten dan tidak hilang.
+8. Compatibility: berjalan di Chrome, Firefox, Edge, Safari.
+9. Maintainability: kode modular dan terdokumentasi.
+10. Scalability: mampu menangani penambahan pengguna, produk, transaksi.
+11. Portability: dapat dijalankan pada server PHP dan MariaDB.
+
+---
+
+1.3.3 Diagram Use Case
+
+Diagram use case GALONKU menggambarkan interaksi antara aktor dengan fungsi-fungsi utama sistem. Aktor yang terlibat:
+
+- Konsumen/Rumah Tangga
+- Admin/Owner Depot
+- Kasir/Operator
+- Agen/Kurir
+
+Use case utama meliputi: registrasi, login, kelola pengguna, lihat produk, pesan galon/gas, cek stok, kelola pesanan, cetak struk, kelola stok, atur pengingat, terima notifikasi, hubungi agen, kelola agen, lihat laporan, lihat daftar antar, dan update status pengantaran.
+
+Catatan: Tempel gambar diagram use case GALONKU (yang sudah ada di dokumen laporan) pada bagian ini.
+
+Relasi:
+- Include: Proses pemesanan termasuk cek stok.
+- Extend: Pengaturan pengingat dapat menghasilkan notifikasi.
+- Aktor Konsumen berinteraksi dengan: registrasi, login, lihat produk, pesan, atur pengingat, terima notifikasi, hubungi agen.
+- Aktor Admin berinteraksi dengan: kelola pengguna, kelola produk, kelola stok, kelola agen, lihat laporan.
+- Aktor Kasir berinteraksi dengan: kelola pesanan, cetak struk, kelola stok.
+- Aktor Agen/Kurir berinteraksi dengan: lihat daftar antar, update status pengantaran.
+
+---
+
+1.3.3.1 Use Case Scenario 1: Registrasi dan Login Konsumen
+
+- Nomor: UC-01
+- Nama: Registrasi dan Login Konsumen
+- Deskripsi: Konsumen melakukan pendaftaran akun baru atau masuk ke dalam aplikasi untuk dapat melakukan pemesanan.
+- Aktor: Konsumen
+- Kondisi Awal: Pengguna membuka aplikasi dan belum memiliki sesi login.
+- Kondisi Akhir: Pengguna berhasil masuk ke halaman Home aplikasi.
+- Skenario Utama:
+  1. Konsumen membuka halaman Login/Register.
+  2. Sistem mengecek apakah konsumen sudah punya akun.
+  3. Jika Ya, konsumen menginput email/username dan password, lalu sistem memproses Login.
+  4. Jika Tidak, konsumen menginput data registrasi, lalu sistem memproses Register.
+  5. Sistem menampilkan pesan berhasil.
+  6. Sistem mengarahkan konsumen ke halaman Home.
+- Skenario Alternatif: Jika login gagal (password salah), sistem menampilkan pesan error dan meminta pengguna memasukkan ulang data. Jika registrasi gagal (email sudah terdaftar), sistem menampilkan pesan error.
+
+---
+
+1.3.3.2 Use Case Scenario 2: Pemesanan Produk (Galon/Gas)
+
+- Nomor: UC-02
+- Nama: Pemesanan Produk
+- Deskripsi: Konsumen melakukan pemesanan galon air atau gas melalui katalog produk hingga proses checkout.
+- Aktor: Konsumen
+- Kondisi Awal: Konsumen sudah login dan berada di halaman Home.
+- Kondisi Akhir: Pesanan berhasil dibuat dan status pesanan aktif.
+- Skenario Utama:
+  1. Konsumen membuka menu Produk.
+  2. Sistem menampilkan detail produk.
+  3. Konsumen memilih untuk membeli produk (Beli produk? Ya).
+  4. Sistem menambahkan produk ke cart.
+  5. Konsumen membuka cart, sistem menampilkan isi cart.
+  6. Konsumen melakukan checkout, menginput alamat pengiriman.
+  7. Sistem menampilkan order summary (ringkasan pesanan).
+  8. Konsumen mengonfirmasi pesanan (Konfirmasi? Ya).
+  9. Sistem membuat pesanan, menampilkan pesan "Pesanan Berhasil".
+  10. Sistem menampilkan status pesanan aktif.
+- Skenario Alternatif: Jika konsumen tidak jadi membeli (Beli produk? Tidak), sistem kembali ke halaman Home. Jika konsumen tidak jadi konfirmasi (Konfirmasi? Tidak), sistem kembali ke halaman Checkout.
+
+---
+
+1.3.3.3 Use Case Scenario 3: Lihat Riwayat Pemesanan
+
+- Nomor: UC-03
+- Nama: Lihat Riwayat Pemesanan
+- Deskripsi: Konsumen melihat riwayat pemesanan yang pernah dilakukan.
+- Aktor: Konsumen
+- Kondisi Awal: Konsumen sudah login dan pernah melakukan pemesanan.
+- Kondisi Akhir: Riwayat pemesanan tampil di layar.
+- Skenario Utama:
+  1. Konsumen membuka menu riwayat pemesanan.
+  2. Sistem menampilkan daftar pesanan sebelumnya.
+  3. Konsumen memilih detail pesanan untuk melihat informasi lengkap.
+- Skenario Alternatif: Jika belum ada riwayat, sistem menampilkan pesan "Belum ada riwayat pemesanan".
+
+---
+
+1.3.3.4 Use Case Scenario 4: Atur Pengingat Otomatis/Manual
+
+- Nomor: UC-04
+- Nama: Atur Pengingat
+- Deskripsi: Konsumen mengatur pengingat pembelian berikutnya, baik otomatis berdasarkan riwayat maupun manual.
+- Aktor: Konsumen
+- Kondisi Awal: Konsumen sudah login.
+- Kondisi Akhir: Jadwal pengingat tersimpan di sistem.
+- Skenario Utama:
+  1. Konsumen membuka menu pengingat.
+  2. Sistem menghitung interval konsumsi dari riwayat pembelian.
+  3. Konsumen memilih jadwal pengingat otomatis atau manual.
+  4. Sistem menyimpan jadwal pengingat.
+- Skenario Alternatif: Jika data riwayat belum cukup, sistem menyarankan konsumen untuk mengatur pengingat manual.
+
+---
+
+1.3.3.5 Use Case Scenario 5: Terima Notifikasi Pengingat
+
+- Nomor: UC-05
+- Nama: Terima Notifikasi Pengingat
+- Deskripsi: Sistem menampilkan notifikasi pengingat kepada konsumen sesuai jadwal.
+- Aktor: Konsumen, Sistem
+- Kondisi Awal: Jadwal pengingat sudah aktif.
+- Kondisi Akhir: Notifikasi tampil di halaman aplikasi konsumen.
+- Skenario Utama:
+  1. Sistem memeriksa jadwal pengingat.
+  2. Sistem menampilkan notifikasi pengingat.
+  3. Konsumen membaca notifikasi dan dapat langsung melakukan pemesanan ulang.
+- Skenario Alternatif: Jika notifikasi email/WhatsApp diaktifkan, sistem mengirim notifikasi ke layanan pihak ketiga.
+
+---
+
+1.3.3.6 Use Case Scenario 6: Hubungi Agen
+
+- Nomor: UC-06
+- Nama: Hubungi Agen
+- Deskripsi: Konsumen menghubungi agen pengantar melalui telepon atau chat.
+- Aktor: Konsumen
+- Kondisi Awal: Konsumen sudah login.
+- Kondisi Akhir: Konsumen terhubung ke agen via telepon/chat.
+- Skenario Utama:
+  1. Konsumen membuka menu kontak agen.
+  2. Sistem menampilkan daftar agen pengantar.
+  3. Konsumen memilih agen.
+  4. Sistem membuka aplikasi telepon/chat.
+- Skenario Alternatif: Jika agen tidak tersedia, sistem menampilkan status "Agen tidak tersedia".
+
+---
+
+1.3.3.7 Use Case Scenario 7: Login Agen
+
+- Nomor: UC-07
+- Nama: Login Agen
+- Deskripsi: Agen masuk ke dalam sistem untuk melihat dan mengelola pesanan yang akan diantar.
+- Aktor: Agen/Kurir
+- Kondisi Awal: Agen sudah didaftarkan oleh Admin (Agen hanya bisa login, tidak bisa register mandiri).
+- Kondisi Akhir: Agen berhasil masuk ke Dashboard Agen.
+- Skenario Utama:
+  1. Agen membuka halaman Login.
+  2. Agen menginput username/email dan password.
+  3. Sistem memverifikasi data login.
+  4. Jika login berhasil (Ya), sistem mengarahkan agen ke Dashboard.
+  5. Sistem menampilkan ringkasan pesanan.
+- Skenario Alternatif: Jika login gagal (Tidak), sistem menampilkan pesan error dan kembali ke halaman Login.
+
+---
+
+1.3.3.8 Use Case Scenario 8: Pengelolaan Pengantaran Pesanan (Agen)
+
+- Nomor: UC-08
+- Nama: Pengelolaan Pengantaran Pesanan
+- Deskripsi: Agen memproses pesanan yang masuk, mengatur jadwal, melakukan pengantaran, dan memperbarui status pesanan.
+- Aktor: Agen/Kurir
+- Kondisi Awal: Agen sudah login di Dashboard.
+- Kondisi Akhir: Status pesanan diperbarui menjadi "Pesanan Selesai" dan masuk ke riwayat.
+- Skenario Utama:
+  1. Agen membuka menu Pesanan, sistem menampilkan daftar pesanan.
+  2. Jika ada pesanan baru (Ya), agen memilih pesanan.
+  3. Sistem menampilkan detail pesanan dan data customer (nama, alamat, dll).
+  4. Agen memproses pesanan dan mengatur jadwal pengantaran.
+  5. Jika siap diantar (Ya), agen melakukan pengantaran.
+  6. Sistem menampilkan detail pengantaran, agen mengantar pesanan.
+  7. Jika pesanan berhasil diantar (Ya), agen mengupdate status pengantaran.
+  8. Sistem menampilkan "Pesanan Selesai" dan menyimpan ke riwayat pesanan.
+- Skenario Alternatif:
+  - Jika tidak ada pesanan baru (Tidak), agen dapat melihat/mengelola pesanan lain.
+  - Jika belum siap diantar (Tidak), agen kembali ke proses pesanan.
+  - Jika pesanan gagal diantar (Tidak), agen menampilkan status kendala dan mengupdate status.
+
+---
+
+1.3.3.9 Use Case Scenario 9: Kelola Pesanan (Kasir/Operator)
+
+- Nomor: UC-09
+- Nama: Kelola Pesanan
+- Deskripsi: Kasir/operator mengelola pesanan yang masuk dan memprosesnya.
+- Aktor: Kasir/Operator
+- Kondisi Awal: Kasir sudah login.
+- Kondisi Akhir: Status pesanan diperbarui.
+- Skenario Utama:
+  1. Kasir membuka daftar pesanan.
+  2. Kasir memilih pesanan.
+  3. Kasir memproses pesanan.
+  4. Sistem memperbarui status pesanan.
+- Skenario Alternatif: Jika pesanan sudah diproses, sistem menampilkan status terkini.
+
+---
+
+1.3.3.10 Use Case Scenario 10: Cetak Struk
+
+- Nomor: UC-10
+- Nama: Cetak Struk
+- Deskripsi: Kasir mencetak struk transaksi sebagai bukti pembelian.
+- Aktor: Kasir/Operator
+- Kondisi Awal: Transaksi sudah selesai.
+- Kondisi Akhir: Struk tercetak atau terunduh dalam bentuk PDF.
+- Skenario Utama:
+  1. Kasir menyelesaikan transaksi.
+  2. Sistem menampilkan tombol cetak.
+  3. Kasir menekan tombol cetak.
+  4. Sistem mengirim data ke printer.
+- Skenario Alternatif: Jika printer tidak tersedia, sistem menampilkan opsi simpan PDF.
+
+---
+
+1.3.3.11 Use Case Scenario 11: Kelola Stok
+
+- Nomor: UC-11
+- Nama: Kelola Stok
+- Deskripsi: Admin/kasir mencatat dan memperbarui stok galon kosong, galon isi, dan gas.
+- Aktor: Admin/Owner, Kasir/Operator
+- Kondisi Awal: Pengguna sudah login.
+- Kondisi Akhir: Data stok diperbarui.
+- Skenario Utama:
+  1. Pengguna membuka menu stok.
+  2. Pengguna melihat stok saat ini.
+  3. Pengguna menambah/mengurangi stok.
+  4. Sistem menyimpan perubahan.
+  5. Sistem memberi notifikasi jika stok menipis.
+- Skenario Alternatif: Jika jumlah stok tidak valid, sistem menolak input.
+
+---
+
+1.3.3.12 Use Case Scenario 12: Kelola Data Master (Admin)
+
+- Nomor: UC-12
+- Nama: Pengelolaan Data Master
+- Deskripsi: Admin mengelola data pengguna, produk, dan pesanan di dalam sistem.
+- Aktor: Admin/Owner
+- Kondisi Awal: Admin sudah login ke dalam sistem.
+- Kondisi Akhir: Data pengguna, produk, dan pesanan berhasil diperbarui.
+- Skenario Utama:
+  1. Admin membuka Dashboard Admin.
+  2. Admin memilih menu pengelolaan (Pengguna, Produk, atau Pesanan).
+  3. Sistem menampilkan data yang sesuai.
+  4. Admin melakukan aksi (Tambah/Ubah/Hapus data).
+  5. Sistem menyimpan perubahan data.
+  6. Admin menyampaikan pesanan ke agen.
+- Skenario Alternatif: Jika data yang dimasukkan tidak valid, sistem menolak perubahan dan menampilkan pesan error.
+
+---
+
+1.3.3.13 Use Case Scenario 13: Kelola Data Agen
+
+- Nomor: UC-13
+- Nama: Kelola Data Agen
+- Deskripsi: Admin mengelola data agen pengantar.
+- Aktor: Admin/Owner
+- Kondisi Awal: Admin sudah login.
+- Kondisi Akhir: Data agen tersimpan.
+- Skenario Utama:
+  1. Admin membuka menu agen.
+  2. Admin menambah/edit/hapus agen.
+  3. Sistem menyimpan data.
+- Skenario Alternatif: Jika data agen tidak lengkap, sistem menolak input.
+
+---
+
+1.3.3.14 Use Case Scenario 14: Lihat Laporan dan Grafik Penjualan
+
+- Nomor: UC-14
+- Nama: Lihat Laporan dan Grafik Penjualan
+- Deskripsi: Admin melihat laporan penjualan harian, mingguan, bulanan, dan grafik.
+- Aktor: Admin/Owner
+- Kondisi Awal: Admin sudah login.
+- Kondisi Akhir: Laporan dan grafik tampil.
+- Skenario Utama:
+  1. Admin membuka menu laporan.
+  2. Admin memilih periode.
+  3. Sistem menampilkan laporan.
+  4. Sistem menampilkan grafik.
+- Skenario Alternatif: Jika data kosong, sistem menampilkan pesan "Belum ada transaksi".
+
+---
+
+1.3.3.15 Use Case Scenario 15: Pengingat Otomatis (Sistem)
+
+- Nomor: UC-15
+- Nama: Pengingat Otomatis
+- Deskripsi: Sistem memberikan notifikasi pengingat kepada pengguna berdasarkan pola konsumsi.
+- Aktor: Sistem (Berjalan otomatis)
+- Kondisi Awal: Terdapat data riwayat pembelian pengguna di dalam database.
+- Kondisi Akhir: Notifikasi pengingat ditampilkan kepada pengguna.
+- Skenario Utama:
+  1. Sistem memproses riwayat pembelian pengguna.
+  2. Sistem menghitung interval konsumsi.
+  3. Sistem memberikan pengingat ketika pengguna diperkirakan perlu melakukan pemesanan ulang.
+  4. Sistem menampilkan notifikasi pengingat pada aplikasi pengguna.
+- Skenario Alternatif: Jika data riwayat belum mencukupi, sistem tidak menampilkan pengingat otomatis dan menyarankan pengguna untuk mengatur pengingat manual.
+
+---
+
+1.3.3.16 Use Case Scenario 16: Pengelolaan Pesanan oleh Sistem
+
+- Nomor: UC-16
+- Nama: Pengelolaan Pesanan oleh Sistem
+- Deskripsi: Sistem memproses pesanan yang masuk dari konsumen dan meneruskannya ke agen.
+- Aktor: Sistem
+- Kondisi Awal: Konsumen telah berhasil membuat pesanan.
+- Kondisi Akhir: Pesanan diterima oleh agen untuk diproses.
+- Skenario Utama:
+  1. Sistem menerima dan menyimpan riwayat pembelian pengguna.
+  2. Sistem memproses pemesanan.
+  3. Sistem menyampaikan pemesanan kepada agen untuk ditindaklanjuti.
+  4. Sistem memberikan pengingat ketika pengguna diperkirakan perlu melakukan pemesanan ulang.
+- Skenario Alternatif: Jika stok tidak tersedia saat pemrosesan, sistem menahan pesanan dan memberikan notifikasi ke admin.
+
+---
+
+Backlog Task SIAP-PBL
+
+1. Briefing Proyek & Penyusunan RPP
+   - Deskripsi: Diskusi awal tim, penentuan ruang lingkup, penyusunan RPP.
+   - PIC: Abiel, Syaikha
+   - Deadline: Minggu 1
+
+2. Analisis Kebutuhan Fungsional & Non Fungsional
+   - Deskripsi: Identifikasi F001–F026 dan kebutuhan non fungsional.
+   - PIC: Abiel, Syaikha
+   - Deadline: Minggu 2
+
+3. Use Case Diagram & Scenario
+   - Deskripsi: Membuat diagram use case dan skenario use case.
+   - PIC: Ayla, Randy
+   - Deadline: Minggu 2
+
+4. Desain ERD & Database
+   - Deskripsi: Merancang ERD, tabel, relasi, dan normalisasi.
+   - PIC: Riduwan, Esananta
+   - Deadline: Minggu 3
+
+5. Desain UI/UX
+   - Deskripsi: Wireframe/Figma halaman utama, login, dashboard, stok, laporan.
+   - PIC: Ayla, Randy
+   - Deadline: Minggu 3
+
+6. Setup Project & Autentikasi
+   - Deskripsi: Inisialisasi project, login multi-user, hak akses.
+   - PIC: Abiel, Riduwan
+   - Deadline: Minggu 4
+
+7. Modul Pemesanan
+   - Deskripsi: Lihat produk, pesan galon/gas, cek stok, status pesanan, riwayat.
+   - PIC: Syaikha, Esananta
+   - Deadline: Minggu 5
+
+8. Modul Pengingat Otomatis
+   - Deskripsi: Hitung interval konsumsi, jadwal pengingat, notifikasi.
+   - PIC: Ayla, Randy
+   - Deadline: Minggu 6
+
+9. Modul Kontak Agen
+   - Deskripsi: Daftar agen, hubungi agen, status ketersediaan.
+   - PIC: Riduwan, Esananta
+   - Deadline: Minggu 7
+
+10. Modul Inventaris & Laporan
+    - Deskripsi: Stok masuk/keluar, notifikasi stok menipis, laporan, grafik.
+    - PIC: Abiel, Syaikha
+    - Deadline: Minggu 8
+
+11. Pengujian Fungsional
+    - Deskripsi: Black box testing untuk semua use case yang diimplementasikan.
+    - PIC: Semua anggota
+    - Deadline: Minggu 9–10
+
+12. Perbaikan Bug
+    - Deskripsi: Memperbaiki temuan dari pengujian.
+    - PIC: Semua anggota
+    - Deadline: Minggu 11
+
+13. Dokumentasi Akhir
+    - Deskripsi: Menyusun laporan akhir, manual penggunaan, screenshot.
+    - PIC: Ayla, Randy
+    - Deadline: Minggu 12
+
+14. Presentasi & Demo
+    - Deskripsi: Persiapan demo aplikasi dan presentasi proyek.
+    - PIC: Abiel
+    - Deadline: Minggu 13–14
+
+---
+
+Tangkapan Layar SIAP-PBL
+
+[Tempel screenshot menu Backlog Task dan Kanban Board dari SIAP-PBL di sini]
+
+Link Dokumen Laporan
+
+[Upload di Google Drive dan set publik, lalu tempel link di sini]
+
+Dokumentasi Aktivitas
+
+[Tempel foto-foto diskusi tim bersama dosen/pengajar atau dokumentasi validasi kegiatan mingguan]
+
+Link Share Dokumentasi
+
+[Tempel link share Feed Post Instagram setiap anggota. Gunakan caption PBL dan hashtag: #Polibatam #TeknologiRekayasaPerangkatLunak #TRPL #Technoprenuer #KuliahSiapKerja #InovasiDigital #SoftwareDevelopment #KampusPBL #KampusCDIO]
+
+---
+
+Selesai. Dokumen ini sudah lengkap dari awal sampai akhir dengan format list (bukan tabel). Tinggal kamu copy-paste ke Word/Google Docs, lalu isi bagian screenshot dan link yang kosong.
+
+
+
+Nih, **16 PlantUML script** — satu untuk tiap Use Case Scenario. Masing-masing fokus ke satu use case saja (1:1). Putih bersih, simple.
+
+---
+
+## 📄 UC-01 — Registrasi dan Login Konsumen
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Konsumen" as Ko
+
+rectangle "Sistem GALONKU" {
+  usecase "Registrasi" as UC01
+  usecase "Login" as UC02
+  usecase "Lihat Home" as UC03
+}
+
+Ko --- UC01
+Ko --- UC02
+UC01 ... UC03 : <<include>>
+UC02 ... UC03 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-02 — Pemesanan Produk (Galon/Gas)
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Konsumen" as Ko
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Produk" as UC01
+  usecase "Tambah ke Cart" as UC02
+  usecase "Checkout" as UC03
+  usecase "Konfirmasi Pesanan" as UC04
+  usecase "Cek Stok" as UC05
+}
+
+Ko --- UC01
+Ko --- UC02
+Ko --- UC03
+Ko --- UC04
+UC04 ... UC05 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-03 — Lihat Riwayat Pemesanan
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Konsumen" as Ko
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Riwayat Pemesanan" as UC01
+  usecase "Lihat Detail Pesanan" as UC02
+}
+
+Ko --- UC01
+UC01 ... UC02 : <<extend>>
+@enduml
+```
+
+---
+
+## 📄 UC-04 — Atur Pengingat
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Konsumen" as Ko
+
+rectangle "Sistem GALONKU" {
+  usecase "Atur Pengingat" as UC01
+  usecase "Pengingat Otomatis" as UC02
+  usecase "Pengingat Manual" as UC03
+}
+
+Ko --- UC01
+UC01 ... UC02 : <<extend>>
+UC01 ... UC03 : <<extend>>
+@enduml
+```
+
+---
+
+## 📄 UC-05 — Terima Notifikasi Pengingat
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Konsumen" as Ko
+actor "Sistem" as S
+
+rectangle "Sistem GALONKU" {
+  usecase "Terima Notifikasi Pengingat" as UC01
+  usecase "Pesan Ulang" as UC02
+}
+
+S --- UC01
+Ko --- UC01
+UC01 ... UC02 : <<extend>>
+@enduml
+```
+
+---
+
+## 📄 UC-06 — Hubungi Agen
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Konsumen" as Ko
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Daftar Agen" as UC01
+  usecase "Hubungi Agen" as UC02
+}
+
+Ko --- UC01
+Ko --- UC02
+UC02 ... UC01 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-07 — Login Agen
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Agen / Kurir" as A
+
+rectangle "Sistem GALONKU" {
+  usecase "Login" as UC01
+  usecase "Dashboard Agen" as UC02
+  usecase "Lihat Ringkasan Pesanan" as UC03
+}
+
+A --- UC01
+UC01 ... UC02 : <<include>>
+UC02 ... UC03 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-08 — Pengelolaan Pengantaran Pesanan (Agen)
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Agen / Kurir" as A
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Daftar Pesanan" as UC01
+  usecase "Lihat Detail Pesanan" as UC02
+  usecase "Atur Jadwal Pengantaran" as UC03
+  usecase "Antar Pesanan" as UC04
+  usecase "Update Status Pengantaran" as UC05
+}
+
+A --- UC01
+A --- UC02
+A --- UC03
+A --- UC04
+A --- UC05
+UC02 ... UC01 : <<include>>
+UC04 ... UC03 : <<include>>
+UC05 ... UC04 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-09 — Kelola Pesanan (Kasir)
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Kasir / Operator" as K
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Daftar Pesanan" as UC01
+  usecase "Proses Pesanan" as UC02
+  usecase "Update Status Pesanan" as UC03
+}
+
+K --- UC01
+K --- UC02
+UC02 ... UC03 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-10 — Cetak Struk
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Kasir / Operator" as K
+
+rectangle "Sistem GALONKU" {
+  usecase "Selesaikan Transaksi" as UC01
+  usecase "Cetak Struk" as UC02
+  usecase "Simpan PDF" as UC03
+}
+
+K --- UC01
+K --- UC02
+UC02 ... UC03 : <<extend>>
+@enduml
+```
+
+---
+
+## 📄 UC-11 — Kelola Stok
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Admin / Owner" as Ad
+actor "Kasir / Operator" as K
+
+rectangle "Sistem GALONKU" {
+  usecase "Lihat Stok" as UC01
+  usecase "Tambah Stok" as UC02
+  usecase "Kurangi Stok" as UC03
+  usecase "Notifikasi Stok Menipis" as UC04
+}
+
+Ad --- UC01
+Ad --- UC02
+Ad --- UC03
+K --- UC01
+K --- UC02
+K --- UC03
+UC02 ... UC04 : <<extend>>
+UC03 ... UC04 : <<extend>>
+@enduml
+```
+
+---
+
+## 📄 UC-12 — Kelola Data Master (Admin)
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Admin / Owner" as Ad
+
+rectangle "Sistem GALONKU" {
+  usecase "Kelola Pengguna" as UC01
+  usecase "Kelola Produk" as UC02
+  usecase "Kelola Pesanan" as UC03
+  usecase "Kirim Pesanan ke Agen" as UC04
+}
+
+Ad --- UC01
+Ad --- UC02
+Ad --- UC03
+Ad --- UC04
+@enduml
+```
+
+---
+
+## 📄 UC-13 — Kelola Data Agen
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Admin / Owner" as Ad
+
+rectangle "Sistem GALONKU" {
+  usecase "Tambah Agen" as UC01
+  usecase "Edit Agen" as UC02
+  usecase "Hapus Agen" as UC03
+  usecase "Lihat Daftar Agen" as UC04
+}
+
+Ad --- UC01
+Ad --- UC02
+Ad --- UC03
+Ad --- UC04
+@enduml
+```
+
+---
+
+## 📄 UC-14 — Lihat Laporan dan Grafik Penjualan
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Admin / Owner" as Ad
+
+rectangle "Sistem GALONKU" {
+  usecase "Pilih Periode" as UC01
+  usecase "Lihat Laporan Penjualan" as UC02
+  usecase "Lihat Grafik Penjualan" as UC03
+}
+
+Ad --- UC01
+UC01 ... UC02 : <<include>>
+UC02 ... UC03 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-15 — Pengingat Otomatis (Sistem)
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Sistem" as S
+
+rectangle "Sistem GALONKU" {
+  usecase "Proses Riwayat Pembelian" as UC01
+  usecase "Hitung Interval Konsumsi" as UC02
+  usecase "Tampilkan Notifikasi Pengingat" as UC03
+}
+
+S --- UC01
+UC01 ... UC02 : <<include>>
+UC02 ... UC03 : <<include>>
+@enduml
+```
+
+---
+
+## 📄 UC-16 — Pengelolaan Pesanan oleh Sistem
+
+```plantuml
+@startuml
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam actor {BackgroundColor white; BorderColor black; FontColor black}
+skinparam usecase {BackgroundColor white; BorderColor black; FontColor black}
+skinparam rectangle {BackgroundColor white; BorderColor black; FontColor black; BorderThickness 2}
+skinparam arrow {Color black}
+
+actor "Sistem" as S
+
+rectangle "Sistem GALONKU" {
+  usecase "Simpan Riwayat Pembelian" as UC01
+  usecase "Proses Pemesanan" as UC02
+  usecase "Kirim Pesanan ke Agen" as UC03
+  usecase "Kirim Pengingat Pemesanan Ulang" as UC04
+}
+
+S --- UC01
+S --- UC02
+UC02 ... UC03 : <<include>>
+UC02 ... UC04 : <<include>>
+@enduml
+```
+
+---
+
+## 🔧 Tips Pakai
+
+1. Buka **https://www.plantuml.com/plantuml/uml/**
+2. Paste satu script (satu per satu)
+3. Klik **Submit** → Download PNG/SVG
+4. Sisipkan di laporan bagian **1.3.3.1** sampai **1.3.3.16**
+
+## 📌 Kalau mau tanpa "UC-XX" di use case
+
+Semua script di atas **sudah tanpa label UC-XX** di dalam oval — cuma nama use case saja, sesuai permintaanmu.
+
+## ⚡ Kalau mau lebih rapi (opsional)
+
+Tambahkan baris ini setelah `left to right direction` di setiap script:
+
+```plantuml
+skinparam linetype ortho
+skinparam nodesep 15
+skinparam ranksep 30
+```
+
+Bikin garis jadi siku-siku, tidak melengkung.
