@@ -1,7 +1,7 @@
 +++
 title = "Changelog"
-date = 2026-09-22
-updated = 2026-09-22
+date = 2026-09-25
+updated = 2026-09-25
 description = "All notable changes to this project, generated from git history."
 [taxonomies]
 tags = ["changelog", "reference"]
@@ -10,11 +10,18 @@ categories = ["meta"]
 
 All notable changes to this project. Generated from git history.
 
-Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-22 · **102 commits**.
+Source: [`mroczect/lectures`](https://github.com/mroczect/lectures) · Branch: `master` · Updated: 2026-09-25 · **104 commits**.
 
 ## September 2026
 
+### Friday, Sep 25, 2026
+
+- [chore : update docs](https://github.com/mroczect/lectures/commit/a2b528b7fe05224473ef36a43159e70134b87320) — @mroczect
+
 ### Tuesday, Sep 22, 2026
+
+- chore `changelog` [auto-update [skip ci]](https://github.com/mroczect/lectures/commit/2daa6db14c9aa1fa0e8c9dd0897a25b578f48640) — @github-actions[bot]
+  <sub>1 file changed, 6 insertions(+), 1 deletion(-)</sub>
 
 - **fix** `d2` [restore section markers in pertemuan 2 & 3 sources](https://github.com/mroczect/lectures/commit/c18cdc52f43f920eae8b0ce427be362d41201ed4) — @mroczect
 
